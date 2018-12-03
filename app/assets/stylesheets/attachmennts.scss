@@ -1,0 +1,66 @@
+// Colors
+$green: #5eab1f;
+$orange: #ee552a;
+$blue: #59adEb;
+
+
+// Variables
+$radius: 2px;
+
+
+// Default Base Styles
+.attach {
+  margin: 0 40px 20px 0;
+}
+
+
+// attach Mixin
+@mixin attach($width, $background, $padding) {
+
+  %base-shadow {
+    box-shadow: -18px 18px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  %attach-base {
+    position: relative;
+    float: left;
+    width: $width;
+    border-radius: $radius;
+    @extend %base-shadow;
+    background: $background;
+    overflow: hidden;
+  }
+
+  .attach {
+    @extend %attach-base;
+  }
+
+  .attach-header,
+  .attach-body {
+    position: relative;
+    padding: $padding;
+  }
+
+  .attach-header {
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+
+  }
+}
+
+h4 {
+	font-size: 62.5%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.attachmennt_main {
+  display: flex;
+  flex-direction: column;
+}
+// Mixin Calls
+@include attach(320px, #fff, 20px);

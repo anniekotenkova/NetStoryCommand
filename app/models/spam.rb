@@ -1,0 +1,2 @@
+class Spam < ApplicationRecord
+end

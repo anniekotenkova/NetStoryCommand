@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<link rel="stylesheet" href="../../assets/stylesheets/attachmennts.scss">
+<link rel="stylesheet" href="../../assets/stylesheets/menubar.scss">
+<link rel="stylesheet" href="../../assets/stylesheets/application.scss">
+
+<% if @attachmennt.cover.try(:url) %>
+<%= image_tag @attachmennt.cover.url %>
+<% end %>
+
+<br>
+<%= link_to 'Edit', edit_attachmennt_path(@attachmennt) %> |
+<%= link_to 'Back', attachmennts_path %>

@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="../../assets/stylesheets/attachmennts.scss">
+<link rel="stylesheet" href="../../assets/stylesheets/menubar.scss">
+<link rel="stylesheet" href="../../assets/stylesheets/application.scss">
+
+<h1>Attachmennts</h1>
+
+<section class="attachmennt_main">
+  <div class="massive">
+    <% @attachmennts.each do |attachmennt| %>
+    <%= render 'attachmennt', attachmennt: attachmennt %>
+    <% end %>
+  </div>
+  <div class="button">
+    <%= link_to 'New Attachmennt', new_attachmennt_path %>
+  </div>
+</section>
