@@ -27,10 +27,10 @@ html {
 	box-sizing: inherit;
 }
 
+
 body {
 	background-color: $color-tag-background;
 	padding: 2.1875em;
-
 }
 
 p {
@@ -41,6 +41,10 @@ p {
 }
 
 #browser-top {
+	cursor: grab;
+	.is-pointer-down & {
+		cursor: grabbing;
+	}
   background-color: $color-card-background;
   height: 40px;
   border-top-left-radius: $default-border-radius;
@@ -76,6 +80,7 @@ p {
 }
 
 .card {
+	resize: both;
 	background-color: $color-card-background;
 	border-radius: $default-border-radius;
 	box-shadow: -18px 18px 4px 0px rgba(0, 0, 0, 0.2);
@@ -83,7 +88,7 @@ p {
 	flex-direction: column;
 	width: 100%;
 	max-width: 500px;
-	margin-right: 2rem;
+	margin-right: 3rem;
 	margin-bottom: 2rem;
 
 	@media #{$breakpoint-medium} {
@@ -163,6 +168,7 @@ img {
 		ul {
 			@include list-reset;
 			font-size: 87.5%;
+			text-decoration: none;
 		}
 	}
 }
@@ -175,6 +181,11 @@ img {
 		font-size: 87.5%;
 		margin-top: 0.35em;
 		text-transform: lowercase;
+		text-decoration: none;
+	}
+
+	& :hover {
+		text-decoration: none;
 	}
 
 	li {
@@ -202,7 +213,7 @@ img {
   flex-direction: column;
 }
 
-.massive {
+.massive_article {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;

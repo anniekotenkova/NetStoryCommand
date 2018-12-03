@@ -1,18 +1,5 @@
-// Colors
-$green: #5eab1f;
-$orange: #ee552a;
-$blue: #59adEb;
-
-
 // Variables
 $radius: 2px;
-
-
-// Default Base Styles
-.attach {
-  margin: 0 40px 20px 0;
-}
-
 
 // attach Mixin
 @mixin attach($width, $background, $padding) {
@@ -33,6 +20,7 @@ $radius: 2px;
 
   .attach {
     @extend %attach-base;
+    margin: 0 40px 20px 0;
   }
 
   .attach-header,
@@ -48,19 +36,14 @@ $radius: 2px;
       max-width: 100%;
     }
 
-
   }
-}
-
-h4 {
-	font-size: 62.5%;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
 }
 
 .attachmennt_main {
   display: flex;
   flex-direction: column;
 }
+
+
 // Mixin Calls
 @include attach(320px, #fff, 20px);

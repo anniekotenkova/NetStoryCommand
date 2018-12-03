@@ -2,26 +2,12 @@
 
 <h1>Spams</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @spams.each do |spam| %>
-      <tr>
-        <td><%= spam.image %></td>
-        <td><%= link_to 'Show', spam %></td>
-        <td><%= link_to 'Edit', edit_spam_path(spam) %></td>
-        <td><%= link_to 'Destroy', spam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @spams.each do |spam| %>
+  <%= render 'spam', spam: spam %>
+<% end %>
 
 <br>
 
-<%= link_to 'New Spam', new_spam_path %>
+<div class="button">
+  <%= link_to 'New Spam', new_spam_path %>
+</div>

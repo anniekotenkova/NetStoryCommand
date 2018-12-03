@@ -69,6 +69,6 @@ class SpamsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def spam_params
-      params.require(:spam).permit(:image)
+      params.require(:spam).permit(:video)
     end
 end

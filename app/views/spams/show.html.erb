@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @spam.image %>
-</p>
+<%= render 'spam', spam: @spam %>
 
 <%= link_to 'Edit', edit_spam_path(@spam) %> |
 <%= link_to 'Back', spams_path %>
