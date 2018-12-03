@@ -12,24 +12,8 @@
   <% end %>
 
   <div class="field">
-    <div class="box">
-      <div class="content">
-
-
-        <form id="form1" runat="server">
-          <div class="left">
-            <img id="img-uploaded" src="http://placehold.it/350x350" alt="your image" />
-          </div>
-          <div class="right">
-            <input type="text" class="img-path" placeholder="Image Path">
-            <span class="file-wrapper">
-              <input type="file" name="photo" id="imgInp" class="uploader" />
-              <span class="btn btn-large btn-alpha"><%= form.file_field :pic %>Upload Image</span>
-            </span>
-          </div>
-        </form>
-      </div>
-    </div>
+    <%= form.label :pic %>
+    <%= form.file_field :pic %>
   </div>
 
 

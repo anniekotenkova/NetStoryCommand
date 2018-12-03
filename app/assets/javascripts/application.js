@@ -11,5 +11,5 @@
 
 $(function() {
   $('.draggable').draggable();
-  $('.ui-resizable-handle').resizable();
+  $('.resizable').resizable();
 });
