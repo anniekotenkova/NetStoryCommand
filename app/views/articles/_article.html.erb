@@ -1,42 +1,38 @@
+<div class="container draggable">
+  <div class="card resizable">
 
-  <div class="container draggable">
-    <div class="card resizable">
+  	<div id="browser-top">
+	    <div id="close-btn"></div>
+	    <div id="min-btn"></div>
+	    <div id="full-btn"></div>
+  	</div>
 
-    	<div id="browser-top">
-    	    <div id="close-btn"></div>
-    	    <div id="min-btn"></div>
-    	    <div id="full-btn"></div>
-    	</div>
+  	<div class="background">
+      <%= image_tag article.pic.url %>
+    </div>
 
-    	<div class="background"><%= image_tag article.pic.url %></div>
+  	<div class="details">
+  		<h2><%= article.title %></h2>
+  		<p><%= article.body %></p>
+  		<div class="meta">
+  			<div class="equipment">
+  				<h4>Publication Data</h4>
+  				<ul>
+  					<li><%= article.created_at.strftime("%d.%m.%Y")%></li>
+  				</ul>
+  			</div>
+  		</div>
 
-    	<div class="details">
-    		<h2><%= article.title %></h2>
-    		<p><%= article.body %></p>
-    		<div class="meta">
-    			<div class="equipment">
-    				<h4>Publication Data</h4>
-    				<ul>
-    					<li><%= article.created_at.strftime("%d.%m.%Y")%></li>
-    				</ul>
-    			</div>
-    		</div>
-
-    		<div class="tags">
-    			<h4>Actions</h4>
-    			<ul>
-    				<li><%= link_to 'Edit', edit_article_path(article) %></li>
-    				<li><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-            <li><%= link_to 'New Article', new_article_path %></li>
-    			</ul>
-    		</div>
-
-    	</div>
- </div>
-
-
+  		<div class="tags">
+  			<h4>Actions</h4>
+  			<ul>
+  				<li><%= link_to 'Edit', edit_article_path(article) %></li>
+  				<li><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+          <li><%= link_to 'New Article', new_article_path %></li>
+  			</ul>
+  		</div>
+  	</div>
+</div>
 </div>
 
-<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-<%= yield%>
