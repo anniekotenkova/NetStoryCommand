@@ -61,3 +61,24 @@ span.focus:after {
   border-radius: 15px;
   text-shadow: none !important;
 }
+
+.foldercontent {
+  //display: none;
+  position: absolute;
+  z-index: 3;
+  height: 500px;
+  width: 600px;
+  background-color: #F7F7F7;
+  padding: 10px 10px 40px 10px;
+  border-radius: 5px;
+}
+
+.infoldercontent {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.foldercontent #close-btn:hover #close-btn:focus {
+  cursor: pointer;
+}
