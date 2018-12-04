@@ -59,6 +59,7 @@ p {
   margin-bottom:5px;
   background-color: #FF85A6;
   display: inline-block;
+	cursor: pointer;
 }
 
 #min-btn {
@@ -68,6 +69,7 @@ p {
   background-color: #FFDF50;
   display: inline-block;
   margin:0 5px 5px 5px;
+	cursor: pointer;
 }
 
 #full-btn {
@@ -77,6 +79,7 @@ p {
   margin-bottom:5px;
   background-color: #74FFA4;
   display: inline-block;
+	cursor: pointer;
 }
 
 .card {
@@ -169,7 +172,7 @@ img {
 			@include list-reset;
 			font-size: 87.5%;
 			text-decoration: none;
-			
+
 		}
 	}
 }

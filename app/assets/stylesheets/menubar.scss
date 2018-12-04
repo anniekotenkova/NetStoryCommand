@@ -73,12 +73,13 @@ span.focus:after {
   border-radius: 5px;
 }
 
+#computer.foldercontent {
+  height: 400px;
+  width: 400px;
+}
+
 .infoldercontent {
   background-color: #fff;
   height: 100%;
   width: 100%;
-}
-
-.foldercontent #close-btn:hover #close-btn:focus {
-  cursor: pointer;
 }
