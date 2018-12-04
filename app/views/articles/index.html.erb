@@ -5,18 +5,54 @@
 <link rel="stylesheet" href="../../assets/stylesheets/application.scss">
 
 <div id="Desktop">
-  <span class="icon draggable" data-title="Справка">
+  <span id="infofolder" class="icon draggable" data-title="Справка">
     <%= image_tag 'about.png' %>
   </span>
-  <span class="icon draggable" data-title="Мой компьютер">
+  <span id="computerfolder" class="icon draggable" data-title="Мой компьютер">
     <%= image_tag 'computer.png' %>
   </span>
-	<span class="icon draggable" data-title="Папка">
+	<span id="folderfolder" class="icon draggable" data-title="Папка">
     <%= image_tag 'folder.png' %>
   </span>
-	<span class="icon draggable" data-title="Корзина">
+	<span id="trashfolder" class="icon draggable" data-title="Корзина">
     <%= image_tag 'trash.png' %>
   </span>
+</div>
+
+<div id="folder" class="foldercontent draggable">
+  <div id="close-btn"></div>
+  <div id="min-btn"></div>
+  <div id="full-btn"></div>
+  <div class="infoldercontent">
+    <div class="article-icon"></div>
+  </div>
+</div>
+
+<div id="trash" class="foldercontent draggable">
+  <div id="close-btn"></div>
+  <div id="min-btn"></div>
+  <div id="full-btn"></div>
+  <div class="infoldercontent">
+    <div class="article-icon"></div>
+  </div>
+</div>
+
+<div id="computer" class="foldercontent draggable">
+  <div id="close-btn"></div>
+  <div id="min-btn"></div>
+  <div id="full-btn"></div>
+  <div class="infoldercontent">
+    <div class="article-icon"></div>
+  </div>
+</div>
+
+<div id="info" class="foldercontent draggable">
+  <div id="close-btn"></div>
+  <div id="min-btn"></div>
+  <div id="full-btn"></div>
+  <div class="infoldercontent">
+    <div class="article-icon"></div>
+  </div>
 </div>
 
 <section class="article_main">
