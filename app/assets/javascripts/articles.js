@@ -78,26 +78,4 @@ var init = function(){
 	}
 }
 
-// Get openfolder element
-var foldercontent = document.GetElementByClassName('foldercontent');
-//Get open button
-var folderfolder = document.GetElementById('#folderfolder');
-//Get close button
-const close-btn = document.GetElementById('#close-btn');
-
-// Events
-folderfolder.addEventListener('click', openFoldercontent);
-close-btn.addEventListener('click', closeFoldercontent);
-
-// Open
-$(function openFoldercontent() {
-  foldercontent.style.display = 'block';
-});
-
-// Close
-$(function closeFoldercontent() {
-  foldercontent.style.display = 'none';
-});
-
-
 init();
