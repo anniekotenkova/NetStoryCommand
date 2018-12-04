@@ -23,3 +23,18 @@ $(function() {
   });
   $('.resizable').resizable();
 });
+
+$("#Desktop span").click(function(e) {
+		e.stopPropagation();
+		if (e.shiftKey) {
+				//Shift-Click
+				$(this).addClass("focus");
+		} else {
+				$(".focus").removeClass("focus");
+				$(this).addClass("focus");
+		}
+});
+$("body:not(#Desktop span)").click(function() {
+		$("#Desktop span").removeClass("focus");
+
+});
