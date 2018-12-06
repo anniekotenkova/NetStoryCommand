@@ -55,3 +55,8 @@ $( "#folderfolder" ).dblclick(function() {
 $( "#trashfolder" ).dblclick(function() {
   $('#trash').css('display','block');
 });
+
+
+$( "#close-btn" ).click(function() {
+  $('.foldercontent').css('display','none');
+});
