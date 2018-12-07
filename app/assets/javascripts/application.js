@@ -7,6 +7,7 @@
 //= require jquery-ui/widgets/selectable
 //= require jquery-ui/widgets/sortable
 //= require rails_sortable
+//= require_tree .
 
 
 $(function() {
@@ -22,7 +23,7 @@ $(function() {
     $(this).css('z-index', maxZindex + 1);
   });
   $('.resizable').resizable();
-});
+
 
 $("#Desktop span").click(function(e) {
 		e.stopPropagation();
@@ -59,4 +60,6 @@ $( "#trashfolder" ).dblclick(function() {
 
 $( "#close-btn" ).click(function() {
   $('.foldercontent').css('display','none');
+});
+
 });
