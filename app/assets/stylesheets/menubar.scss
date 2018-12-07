@@ -27,7 +27,7 @@
 #Desktop span.icon {
   display: block;
   float: left;
-  margin: 5px 0;
+  margin: 10px 15px;
   transition: all 0.2s;
   width: auto;
   z-index: 1;
@@ -38,17 +38,18 @@
   color: #fff;
   content: attr(data-title);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 1px 5px;
   text-shadow: 0px 0px 4px #000;
   transition: all 0.2s;
+  font-size: 15px;
 }
 
 #Desktop span.icon img {
   border: 2px solid rgba(225, 225, 225, 0);
   border-radius: 6px;
   transition: all 0.2s;
-  width: 75px;
+  width: 85px;
 }
 
 .focus img {
