@@ -72,5 +72,6 @@ $('#folder').css('display','none');
 
 $( ".cbtrash" ).click(function() {
 $('#trash').css('display','none');
+});
 
 });
