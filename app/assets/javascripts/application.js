@@ -58,8 +58,19 @@ $( "#trashfolder" ).dblclick(function() {
 });
 
 
-$( "#close-btn" ).click(function() {
-  $('.foldercontent').css('display','none');
+$( ".cbinfo" ).click(function() {
+$('#info').css('display','none');
 });
+
+$( ".cbcomputer" ).click(function() {
+$('#computer').css('display','none');
+});
+
+$( ".cbfolder" ).click(function() {
+$('#folder').css('display','none');
+});
+
+$( ".cbtrash" ).click(function() {
+$('#trash').css('display','none');
 
 });
