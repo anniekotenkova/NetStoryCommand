@@ -70,8 +70,8 @@ $(function() {
  $('#folder').css('display','none');
  });
 
- $( ".cbtrash" ).click(function() {
- $('#trash').css('display','none');
+ $( ".cberr" ).click(function() {
+ $('#err').css('display','none');
  });
 
 
@@ -103,6 +103,9 @@ $(function() {
 
 $( ".article-icon" ).click(function() {
   $('#err').css('display','block');
+});
+$( ".cbtrash" ).click(function() {
+$('#trash').css('display','none');
 });
 
 // $( ".article-icon" ).click(function() {
