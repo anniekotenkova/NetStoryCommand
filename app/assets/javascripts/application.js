@@ -141,6 +141,11 @@ $( function() {
   }
   });
 
-
+  $( "#mailb" ).click(function() {
+    $('#mailb').css('display','block');
+  });
+  // // $( ".cberr" ).click(function() {
+  // // $('#err').css('display','none');
+  // });
 
 });

@@ -449,3 +449,74 @@ display: none;
 #thirdPage {
     display: none;
 }
+
+/* имейл */
+
+
+@font-face {
+    font-family: Courier New;
+    src: url(/CourierStd.ttf)
+}
+
+#mailb.mailBackground {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #272827;
+    width: 900px;
+    height: 640px;
+    color: #ffffff;
+    font-family: Courier New;
+
+}
+
+.rectangle {
+    position: relative;
+    left: 8px;
+    top: 35px;
+    width: 860px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.top_header {
+width: 860px;
+position: relative;
+top: -565px;
+left: 8px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+#mailb h1{
+    font-family: Courier New;
+    font-size: 16px;
+
+}
+
+.messages {
+    font-family: Courier New;
+    font-size: 16px;
+    width: 840px;
+    position: relative;
+    left: 20px;
+    bottom: 545px;
+}
+
+.bottom_header {
+    width: 700px;
+    position: relative;
+    bottom: 515px;
+    left: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.date {
+    position: relative;
+    left: 150px;
+}

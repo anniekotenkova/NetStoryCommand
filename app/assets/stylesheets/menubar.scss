@@ -96,6 +96,21 @@ span.focus:after {
     border: 1px solid black;
     border-radius: 0;
 }
+
+#mailb.foldercontent {
+    width: 900px;
+    height: 760px;
+    background: #272827;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #272827;
+    width: 900px;
+    height: 640px;
+    color: #ffffff;
+    font-family: Courier New;
+}
+
 /* #guiewrise.foldercontent #secondPage {
     background: #729CFE;
     width: 780px;
@@ -136,7 +151,7 @@ span.focus:after {
     top: 30px;
 }
 
-#mail.article-icon {
+#mailb.article-icon {
     width: 100px;
     height: 50px;
     border: 2px solid black;
