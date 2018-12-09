@@ -88,13 +88,34 @@ span.focus:after {
     z-index: 6;
 }
 
+#guiewrise.foldercontent {
+    background: #729CFE;
+    width: 780px;
+    height: 600px;
+    z-index: 6;
+    border: 1px solid black;
+    border-radius: 0;
+}
+/* #guiewrise.foldercontent #secondPage {
+    background: #729CFE;
+    width: 780px;
+    height: 660px;
+    z-index: 6;
+    border: 1px solid black;
+    border-radius: 0;
+} */
+
 .infoldercontent {
   background-color: #fff;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.article-icon {
+
+
+#er.article-icon {
     width: 100px;
     height: 50px;
     border: 2px solid black;
@@ -103,6 +124,27 @@ span.focus:after {
     position: relative;
     left: 30px;
     top: 30px;
+}
+
+#gui.article-icon {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background: #f67889;
+    border-radius: 5%;
+    position: relative;
+    top: 30px;
+}
+
+#mail.article-icon {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background: #ff4f54;
+    border-radius: 5%;
+    position: relative;
+    top: 30px;
+    left: -30px;
 }
 
 /* <<<<<<< HEAD

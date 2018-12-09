@@ -71,7 +71,7 @@ $(function() {
  });
 
  $( ".cberr" ).click(function() {
- $('#err').css('display','none');
+ $('#trash').css('display','none');
  });
 
 
@@ -101,14 +101,46 @@ $(function() {
 //
 // }
 
-$( ".article-icon" ).click(function() {
+$( "#er" ).click(function() {
   $('#err').css('display','block');
 });
-$( ".cbtrash" ).click(function() {
-$('#trash').css('display','none');
+$( ".cberr" ).click(function() {
+$('#err').css('display','none');
 });
 
 // $( ".article-icon" ).click(function() {
 //   $(#article_ + article_id.css('display','block');
 // });
+
+// попап в статье
+$('#popup-close').on('click', function(){
+  $('.popup').toggleClass('isClosed')
+});
+$( function() {
+    $( ".popup" ).draggable();
+  });
+
+  $( "#gui" ).click(function() {
+    $('#guiewrise').css('display','block');
+    $('#firstPage').css('display','block');
+  });
+  $( "#close" ).click(function() {
+  $('#guiewrise').css('display','none');
+  });
+
+  $( ".next" ).click(function() {
+  if ('#firstPage') {
+            $('#firstPage').css('display','none');
+            $('#secondPage').css('display','block');
+  } else if ('#secondPage') {
+            $('#secondPage').css('display','none');
+            $('#thirdPage').css('display','block');
+  } else {
+            $('#secondPage').css('display','none');
+            $('#firstPage').css('display','none');
+  }
+  });
+
+
+
 });
