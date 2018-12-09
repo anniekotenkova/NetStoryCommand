@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+@import "reset.css";
 
 $color-card-background: #FFFFFF;
 $color-tag-background: #E3E5E9;
@@ -33,7 +34,7 @@ body {
 	padding: 2.1875em;
 }
 
-p {
+#info p {
 	font-size: 87.5%;
 	font-weight: 300;
 	margin-bottom: 1.375em;
@@ -222,3 +223,41 @@ img {
 	justify-content: flex-start;
 	flex-direction: row;
 }
+
+/* статьи */
+
+  #err {
+	  display: none;
+	/*   z-index: 3; */
+  }
+
+  .t {
+	  position: relative;
+	  left: 20px;
+  }
+
+  #err h1 {
+	  font: none;
+	  color: #000000;
+	  font-size: 30px;
+	  line-height: 60px;
+	  margin: 0 auto;
+  }
+  #err.line {
+	  width: 300px;
+	  height: 2px;
+	  background: black;
+  }
+
+  #err.text {
+	  font: none;
+	   color: #000000;
+	  width: 750px;
+
+  }
+
+  #err.quote {
+	  font: none;
+	   color: #000000;
+	  font-style: italic;
+  }

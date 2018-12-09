@@ -71,6 +71,7 @@ span.focus:after {
   background-color: #F7F7F7;
   padding: 10px 10px 40px 10px;
   border-radius: 5px;
+  border: 2px solid black;
 }
 
 #computer.foldercontent {
@@ -82,9 +83,26 @@ span.focus:after {
   height: 200px;
   width: 560px;
 }
+#err.foldercontent {
+    width: 800px;
+    height: 520px;
+    z-index: 6;
+}
 
 .infoldercontent {
   background-color: #fff;
   height: 100%;
   width: 100%;
+}
+
+.article-icon {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background: #F7F777;
+    border-radius: 5%;
+    position: relative;
+    left: 30px;
+    top: 30px;
+
 }
