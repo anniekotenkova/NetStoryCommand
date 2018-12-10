@@ -8,7 +8,7 @@
 //= require jquery-ui/widgets/sortable
 //= require rails_sortable
 
-
+//ARTICLES PREVIEW
 $(function() {
   $('.draggable').draggable();
   $('.draggable').mousedown(function() //associate mousedown event with developments
@@ -24,6 +24,7 @@ $(function() {
   $('.resizable').resizable();
 });
 
+//MENUBAR
 $("#Desktop span").click(function(e) {
 		e.stopPropagation();
 		if (e.shiftKey) {
@@ -39,7 +40,7 @@ $("body:not(#Desktop span)").click(function() {
 
 });
 
-
+//FOLDERS
 $( "#infofolder" ).dblclick(function() {
   $('#info').css('display','block');
 });
