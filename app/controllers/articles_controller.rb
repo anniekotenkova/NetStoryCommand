@@ -67,18 +67,6 @@ class ArticlesController < ApplicationController
       @article = Article.find(params[:id])
     end
 
-    def set_folderfolder
-        @folderfolder = Folderfolder.find(params[:article_id])
-    end
-
-    def set_folderfolder_from_params
-        @folderfolder = Folderfolder.find(params[:folderfolder_id])
-    end
-
-    def set_folderfolder_from_Article
-        @folderfolder = @article.folderfolder
-    end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
       params.require(:article).permit(:pic, :title, :body)

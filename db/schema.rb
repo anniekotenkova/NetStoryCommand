@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_09_092711) do
+ActiveRecord::Schema.define(version: 2018_11_21_172232) do
 
   create_table "article_attachments", force: :cascade do |t|
     t.integer "attachment_id"
@@ -42,11 +42,6 @@ ActiveRecord::Schema.define(version: 2018_12_09_092711) do
   create_table "designs", force: :cascade do |t|
     t.string "kind"
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "folderfolders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

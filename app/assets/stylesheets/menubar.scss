@@ -70,137 +70,15 @@ span.focus:after {
   background-color: #F7F7F7;
   padding: 10px 10px 40px 10px;
   border-radius: 5px;
-  border: 2px solid black;
 }
 
 #computer.foldercontent {
   height: 400px;
   width: 400px;
 }
-#info.foldercontent {
-  font-family: 'Lucida Console';
-  height: 200px;
-  width: 560px;
-}
-#err.foldercontent {
-    width: 800px;
-    height: 520px;
-    z-index: 6;
-}
-
-#guiewrise.foldercontent {
-    background: #729CFE;
-    width: 780px;
-    height: 600px;
-    z-index: 6;
-    border: 1px solid black;
-    border-radius: 0;
-}
-
-#mailb.foldercontent {
-    width: 900px;
-    height: 760px;
-    background: #272827;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #272827;
-    width: 900px;
-    height: 640px;
-    color: #ffffff;
-    font-family: Courier New;
-}
-
-/* #guiewrise.foldercontent #secondPage {
-    background: #729CFE;
-    width: 780px;
-    height: 660px;
-    z-index: 6;
-    border: 1px solid black;
-    border-radius: 0;
-} */
 
 .infoldercontent {
   background-color: #fff;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
-
-
-
-#er.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #F7F777;
-    border-radius: 5%;
-    position: relative;
-    left: 30px;
-    top: 30px;
-}
-
-#gui.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #f67889;
-    border-radius: 5%;
-    position: relative;
-    top: 30px;
-}
-
-#mailb.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #ff4f54;
-    border-radius: 5%;
-    position: relative;
-    top: 30px;
-    left: -30px;
-}
-
-/* <<<<<<< HEAD
-.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #F7F777;
-    border-radius: 5%;
-    position: relative;
-    left: 30px;
-    top: 30px;
-
-=======
-.setting {
-  display: flex;
-  flex-direction: row;
-  label {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 300;
-    min-width: 9.5em;
-  }
-  .palette {
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    span {
-      border: 1px solid rgba(#000, 0.2);
-      border-radius: 2px;
-      cursor: pointer;
-      width: 32px;
-      min-width: 32px;
-      height: 32px;
-      margin-right: 0.2rem;
-    }
-  }
->>>>>>> 6147db15686f2df2694ec3d7231796c1b369a07e
-}
- */
