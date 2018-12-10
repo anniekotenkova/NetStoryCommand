@@ -123,6 +123,10 @@ $( ".cberr" ).click(function() {
   $('#err').css('display','none');
 });
 
+$( ".article-icon" ).click(function() {
+   $('#err').css('display','block');
+ });
+
 // $( ".article-icon" ).click(function() {
 //   $(#article_ + article_id.css('display','block');
 // });
