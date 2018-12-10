@@ -4,4 +4,5 @@ class Article < ApplicationRecord
   mount_uploader :pic, PicUploader
   #belongs_to :design
   #belongs_to :year
+  belongs_to :folderfolder
 end
