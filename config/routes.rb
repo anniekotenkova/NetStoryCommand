@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :folderfolders
   # get 'welcome/index'
   root 'articles#index'
   resources :spams
