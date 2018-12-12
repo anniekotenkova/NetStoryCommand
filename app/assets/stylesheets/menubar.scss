@@ -1,6 +1,5 @@
-
 #Desktop {
-  	/*-moz-column-count: 15;
+  /*-moz-column-count: 15;
   	-moz-column-gap: 10px;
   	-webkit-column-count: 15;
   	-webkit-column-gap: 10px;
@@ -34,13 +33,14 @@
   text-align: center;
   cursor: pointer;
 }
+
 #Desktop span.icon:after {
   color: #fff;
   content: attr(data-title);
   display: block;
   margin-bottom: 10px;
   padding: 1px 5px;
-  text-shadow: 0px 0px 4px #000;
+  text-shadow: 0 0 4px #000;
   transition: all 0.2s;
 }
 
@@ -68,7 +68,7 @@ span.focus:after {
   height: 500px;
   width: 600px;
   background-color: #F7F7F7;
-  padding: 10px 10px 40px 10px;
+  padding: 10px 10px 40px;
   border-radius: 5px;
   border: 2px solid black;
 }
@@ -77,40 +77,50 @@ span.focus:after {
   height: 400px;
   width: 400px;
 }
+
 #info.foldercontent {
   font-family: 'Lucida Console';
   height: 200px;
   width: 560px;
 }
+
 #err.foldercontent {
-    width: 800px;
-    height: 520px;
-    z-index: 6;
+  width: 800px;
+  height: 520px;
+  z-index: 6;
 }
 
 #guiewrise.foldercontent {
-    background: #729CFE;
-    width: 780px;
-    height: 600px;
-    z-index: 6;
-    border: 1px solid black;
-    border-radius: 0;
+  background: #729CFE;
+  width: 780px;
+  height: 600px;
+  z-index: 6;
+  border: 1px solid black;
+  border-radius: 0;
 }
 
 #mailb.foldercontent {
-    width: 900px;
-    height: 760px;
-    background: #272827;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #272827;
-    width: 900px;
-    height: 640px;
-    color: #ffffff;
-    font-family: Courier New;
+  width: 900px;
+  height: 760px;
+  background: #272827;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #272827;
+  width: 900px;
+  height: 640px;
+  color: #ffffff;
+  font-family: Courier New;
 }
 
+#landing.foldercontent {
+  width: 654px;
+  height: 620px;
+  height: unset;
+  background: #bfbfbf;
+  padding: 0;
+  border-radius: 0;
+}
 /* #guiewrise.foldercontent #secondPage {
     background: #729CFE;
     width: 780px;
@@ -119,7 +129,6 @@ span.focus:after {
     border: 1px solid black;
     border-radius: 0;
 } */
-
 .infoldercontent {
   background-color: #fff;
   height: 100%;
@@ -128,38 +137,87 @@ span.focus:after {
   justify-content: space-between;
 }
 
-
-
 #er.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #F7F777;
-    border-radius: 5%;
-    position: relative;
-    left: 30px;
-    top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("icons/notfound_icon.png");
+  background-size: cover;
+  width: 91px;
+  height: 113px;
+  position: relative;
+  left: 30px;
+  top: 30px;
 }
 
 #gui.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #f67889;
-    border-radius: 5%;
-    position: relative;
-    top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("icons/erwise_icon.png");
+  background-size: cover;
+  width: 91px;
+  height: 113px;
+  position: relative;
+  top: 30px;
 }
 
 #mailb.article-icon {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    background: #ff4f54;
-    border-radius: 5%;
-    position: relative;
-    top: 30px;
-    left: -30px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("icons/mail_icon.png");
+  background-size: cover;
+  width: 91px;
+  height: 113px;
+  position: relative;
+  top: 30px;
+  left: -30px;
+}
+
+#att.article-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("icons/at&t_icon.png");
+  background-size: cover;
+  width: 91px;
+  height: 113px;
+  position: relative;
+  top: 30px;
+  left: -60px;
+}
+
+.article-icon p {
+  position: relative;
+  top: 118px;
+  text-align: center;
+}
+
+
+#fastlink_erwise {
+  width: 237px;
+  height: 300px;;
+  background-image: url(erwise/fastlink_erwise.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  left: 400px;
+  top: 450px;
+  box-shadow: -3px 5px;
+  color: #00000030;
+  cursor: pointer;
+}
+
+#fastlink_att {
+  width: 515px;
+  height: 60px;;
+  background-image: url(att/tfba.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  left: 800px;
+  top: 200px;
+  box-shadow: -3px 5px;
+  color: #00000030;
+  cursor: pointer;
 }
 
 /* <<<<<<< HEAD
