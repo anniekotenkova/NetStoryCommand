@@ -14,24 +14,26 @@
  *= require_self
  */
 
- $mainColor: #FF85A6;
- $secondaryColor: #EBFFFA;
- :root {
-     --main-color: $mainColor;
- }
-
 html{
   max-height: 1440px;
 }
 
 body {
-  overflow: hidden;
   background: #FF85A6;
+<<<<<<< HEAD
   //background: var(--main-color);
 
 
   /* font-family: "Open Sans", sans-serif; */
 
+=======
+  padding-top: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: white;
+>>>>>>> d3de11b225a71fc4930756a26356a779443fe11a
 }
 
 .button {
