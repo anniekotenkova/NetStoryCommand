@@ -432,6 +432,8 @@ img {
 
 	#secondPage {
 		display: none;
+		overflow: scroll;
+		height: 592px;
 	}
 
 	#secondPage.text {
@@ -533,5 +535,14 @@ img {
 		padding: 3px;
 		margin: auto;
 		background: #bfbfbf;
+	}
+
+	.write {
+		font-size: 20px;
+	}
+
+	.yw1 {
+		width: 50px;
+		height: 100px;
 	}
 }
