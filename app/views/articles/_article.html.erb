@@ -1,4 +1,4 @@
-<div class="container draggable resizable">
+<div class="container draggable">
   <div class="card">
 
   	<div id="browser-top">
@@ -22,12 +22,11 @@
   				</ul>
   			</div>
   		</div>
-
   		<div class="tags">
   			<h4>Actions</h4>
   			<ul>
   				<li><%= link_to 'Edit', edit_article_path(article) %></li>
-  				<li><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  				<li><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Вы уверены, что хотите удалить статью?' } %></li>
           <li><%= link_to 'New Article', new_article_path %></li>
   			</ul>
   		</div>

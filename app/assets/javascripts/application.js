@@ -22,6 +22,7 @@ $(function() {
     });
     $(this).css('z-index', maxZindex + 1);
   });
+
   $('.resizable').resizable();
 
   $("#Desktop span").click(function(e) {
@@ -147,4 +148,24 @@ $(function() {
   // // $('#err').css('display','none');
   // });
 
+});
+
+function setImgPosition() {
+  $('.massive_article').each(function() {
+    var randPosX = Math.ceil((Math.random() * maxPosX)),
+      randPosY = Math.ceil((Math.random() * maxPosY)),
+      randZind = Math.ceil((Math.random() * 3));
+    $('.article_main').css({
+      'left': randPosX,
+      'top': randPosY,
+      'z-index': randZind
+    });
+  });
+}
+window.onload = setImgPosition;
+
+// New position button
+$('.new-pos').click(function(e) {
+  e.preventDefault();
+  setImgPosition();
 });
