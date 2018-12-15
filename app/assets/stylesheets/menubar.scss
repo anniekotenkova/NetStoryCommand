@@ -148,6 +148,7 @@ span.focus:after {
   position: relative;
   left: 30px;
   top: 30px;
+  cursor: pointer;
 }
 
 #gui.article-icon {
@@ -159,6 +160,7 @@ span.focus:after {
   height: 113px;
   position: relative;
   top: 30px;
+  cursor: pointer;
 }
 
 #mailb.article-icon {
@@ -171,6 +173,7 @@ span.focus:after {
   position: relative;
   top: 30px;
   left: -30px;
+  cursor: pointer;
 }
 
 #att.article-icon {
@@ -184,6 +187,7 @@ span.focus:after {
   position: relative;
   top: 30px;
   left: -60px;
+  cursor: pointer;
 }
 
 .article-icon p {
