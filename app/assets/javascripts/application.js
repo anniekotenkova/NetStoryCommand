@@ -69,7 +69,7 @@ $(function() {
     $('#folder').css('display', 'none');
   });
 
-  $(".cberr").click(function() {
+  $(".cbtrash").click(function() {
     $('#trash').css('display', 'none');
   });
 
@@ -127,6 +127,10 @@ $(function() {
     $('#guiewrise').css('display', 'block');
     $('#firstPage').css('display', 'block');
   });
+  $("#close-btn.cbfastlink_erwise").click(function() {
+    $('.fastlink_erwise').css('display', 'none');
+  });
+
 
   $("#close").click(function() {
     $('#guiewrise').css('display', 'none');
@@ -145,12 +149,25 @@ $(function() {
     }
   });
 
+  $(".prev").click(function() {
+    if ('#secondPage') {
+      $('#secondPage').css('display', 'none');
+      $('#firstPage').css('display', 'block');
+    } else if ('#firstPage') {
+      $('#firstPage').css('display', 'none');
+      $('#secondPage').css('display', 'block');
+    } else {
+      $('#firstPage').css('display', 'none');
+      $('#secondPage').css('display', 'none');
+    }
+  });
+
   $("#mailb").click(function() {
     $('#mailb.foldercontent').css('display', 'block');
   });
-  // // $( ".cberr" ).click(function() {
-  // // $('#err').css('display','none');
-  // });
+   $( ".cbmail" ).click(function() {
+      $('#mailb.foldercontent').css('display','none');
+   });
 
 
   $("#att").click(function() {
