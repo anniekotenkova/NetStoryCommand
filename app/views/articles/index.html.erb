@@ -43,7 +43,8 @@
     <div class="fakeScreen">
       <p class="line1">&#91;&nbsp;Привет! Добро пожаловать в проект NetStory<span class="cursor1">_</span></p>
       <p class="line2">&nbsp;&nbsp;Этот сервис поможет узнать вам об Интернете все!<span class="cursor2">_</span></p>
-      <p class="line3">&nbsp;&nbsp;Открой Справку, чтобы узнать больше :)&nbsp;&#93; <span class="cursor3">_</span></p>
+      <p class="line3">&nbsp;&nbsp;Открой Справку, чтобы узнать больше :)&nbsp;&#93;
+        <span class="cursor3">_</span></p>
       <p class="line4">><span class="cursor4">_</span></p>
     </div>
   </div>
@@ -65,14 +66,10 @@
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
-<<<<<<< HEAD
-    <div class="setting">
-      <label>Background color</label>
-      <div class="palette" id="bg-setting"></div>
-    </div>
-=======
-    <div class="article-icon"></div>
->>>>>>> d3de11b225a71fc4930756a26356a779443fe11a
+     <div class="setting">
+       <label>Background color</label>
+       <div class="palette" id="bg-setting"></div> </div>
+       <div class="article-icon"></div>
   </div>
 </div>
 
@@ -81,7 +78,18 @@
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
-    <div class="article-icon"></div>
+    <div id="er" class="article-icon">
+      <p>Ошибка 404</p>
+    </div>
+    <div id="gui" class="article-icon">
+      <p>Erwise</p>
+    </div>
+    <div id="mailb" class="article-icon">
+      <p>Первый E-mail</p>
+    </div>
+    <div id="att" class="article-icon">
+      <p>Первый лендинг</p>
+    </div>
   </div>
 </div>
 
@@ -89,15 +97,8 @@
   <div id="close-btn" class="cbtrash"></div>
   <div id="min-btn"></div>
   <div id="full-btn"></div>
-<<<<<<< HEAD
-  <div class="infoldercontent"></div>
-=======
-  <div class="infoldercontent">
-    <div class="article-icon"></div>
-  </div>
->>>>>>> d3de11b225a71fc4930756a26356a779443fe11a
+   <div class="infoldercontent"></div> ======= <div class="infoldercontent"> <div class="article-icon"></div> </div>
 </div>
-
 
 <section class="article_main">
 
@@ -107,14 +108,14 @@
     <% end %>
   </div>
   <div id="log"></div>
-<!--   <div class="button">
-  <%= link_to 'New Article', new_article_path %>
-</div>
- -->
+  <!-- <div class="button"> <%= link_to 'New Article', new_article_path %> </div> -->
 </section>
 
+<!-- превью -->
+<div id="fastlink_erwise" class="draggable"></div>
+<div id="fastlink_att" class="draggable"></div>
+
 <!-- статьи -->
-<<<<<<< HEAD
 <div class="allArticles">
   <!-- ошибка 404 -->
   <div id="err" class="foldercontent draggable">
@@ -123,26 +124,6 @@
     <div id="full-btn"></div>
     <div class="infoldercontent">
       <div class="t" data-article="1">
-=======
-<div id="err" class="foldercontent draggable">
-  <div id="close-btn" class="cbfolder"></div>
-  <div id="min-btn"></div>
-  <div id="full-btn"></div>
-  <div class="infoldercontent">
-  <div class="t" data-article="1">
-
-  <h1>
-      Error: 404 Not Found
-  </h1>
-  <div class="line"></div>
-  <div class="text">
-  <p> The requested URL/page.html was not found on this server</p>
-  <p> До того, как современный интернет стал доступен по всему миру, сеть не была глобальной. Современные протоколы, которые в ней применяют, придумали в 80-х и 90-х годах в CERN. Тим Бернерс-Ли, изобретатель HTTP, самого известного из них, создал его на основе файлового протокола FTP. Бернерс-Ли ттакже изобрёл URI, URL, HTML и, конечно же, WWW в целом — аббревиатуры, знакомые любому опытному пользователю интернета.</p>
-  <p> Версия HTTP 0.9, которая появилась в 1992 году, включала в себя коды состояния из трёх цифр. Первая обозначала вид сообщения: 1 — информационное, 2 — успех, 3 — перенаправление, 4 — ошибка клиента, 5 — ошибка сервера. Вторая цифра обозначала подгруппу сообщений, третья — конкретное сообщение в этой группе. Коды вроде 200 («хорошо») и 304 («не изменилось») мы никогда не видим, потому что вместо этих цифр браузеры отображают содержимое страниц. А вот ошибка 404 («не найдено») хорошо всем известна. С&nbspней сталкивался любой пользователь, кто неправильно вводил адрес страницы в строку браузера или&nbspпереходил по ссылке на несуществующую страницу.</p>
-  <p> С ошибкой 404 связана городская легенда. Якобы в своё время в офисе CERN на четвёртом этаже была комната 404, где находился центральный сервер. Там сидели несколько человек, которые вручную обрабатывали приходившие запросы. Если запрос был ошибочным, то появлялось сообщение: «Room 404: file&nbspnot found». И хотя этто всего лишь легенда, она уже вошла в интернет-фольклор, а сама ошибка 404 стала часттью популярной культуры и сленга, полигоном для юмора веб-дизайнеров и символом благоттворительности</p>
-  <p class="quote"> «Как человек, который работал в CERN, говорю вам, что комнаты 404 на четвёртом этаже офиса не&nbspбыло. В CERN комнаты нумеруют по-другому: первая цифра обозначает номер здания, а две других — номер комнаты. Но в здании номер 4 нет комнаты номер 04, отсчёт там начинается с 410 и идёт по&nbspнарастанию — не спрашивайте меня, почему». цит. Тим Бернерс-Ли</p>
-  </div>
->>>>>>> d3de11b225a71fc4930756a26356a779443fe11a
 
         <h1>
           Error: 404 Not Found
@@ -170,8 +151,6 @@
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-
 
   <!-- первый браузер с ги -->
   <div id="guiewrise" class="foldercontent draggable">
@@ -288,8 +267,53 @@
         <h1 class="date">1971-09-16T23:59:58.75</h1>
       </div>
     </div>
-=======
   </div>
->>>>>>> d3de11b225a71fc4930756a26356a779443fe11a
+
+  <!-- первый лендос -->
+  <div id="landing" class="foldercontent draggable">
+    <div id="close-btn" class="cberr"></div>
+    <div id="min-btn"></div>
+    <div id="full-btn"></div>
+    <div id="old" style="width:650px;">
+      <img src="../../assets/images/att/att.gif">
+      <p>
+        <b>У вас получилось!</b>
+        Это первый лендинг, на который вы зашли.
+      </p>
+      <p>
+        Мы надеемся, что этта страница показалась вам интересной и захватывающей.</p>
+      <h2><img src="./app/assets/images/att/attstripe.gif" alt="-------------">
+        <p>
+          Вы когда нибудь посещали
+          <a href="http://thefirstbannerad.com/artmap.html">музей</a>
+          не двигаясь с места?
+        <p>
+          Вы когда нибудь хотели узнать больше о новых технологиях на
+          <a href="http://thefirstbannerad.com/attmap.html">AT&amp;T</a>?
+          <img src="/assets/images/att/yw1.gif" alt="You Will" align="top">
+        </p>
+        <img src="/assets/images/att/attstripe.gif" alt="-------------">
+        <p>Пожалуйста, помогите нам
+          <a href="http://thefirstbannerad.com/wewill.html">
+            улучшить это пространство</a>.<img src="/assets/images/att/yw1.gif" alt="You Will" align="top">
+        </p>
+      </h2>
+      <quote>
+
+        <dl>
+          <dt>
+            <i>"Criticism is easy. Art is difficult."</i><br>
+          </dt>
+          <dd>Le Glorieux [1732], act II, scene 6
+          </dd>
+        </dl>
+      </quote>
+
+      <img src="/assets/images/att/attstripe.gif" alt="-------------"><br>
+
+      � Copyright 1994 AT&amp;T<br>
+      <img src="/assets/images/at&t/attstripe.gif" alt="-------------">
+      <br>
+      Дизайн и разработка: TANGENT Design/Communications, Inc.
+    </div>
   </div>
-</div>
