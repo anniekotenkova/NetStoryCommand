@@ -1,0 +1,190 @@
+// Welcome alert
+
+.welcome {
+	.fakeScreen {
+		background-color: #151515;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 auto;
+		padding: 20px;
+		word-wrap: break-word;
+	}
+
+	p {
+		position: relative;
+		font-family: 'ClearSans';
+		font-weight: 300;
+		text-align: left;
+		font-size: 0.9em;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 0;
+		color: #fff;
+	}
+
+	span {
+		color: #fff;
+		font-weight: bold;
+	}
+
+	.line1 {
+		-webkit-animation: type 0.9s 2s steps(40, end) forwards;
+		-moz-animation: type 0.9s 2s steps(40, end) forwards;
+		-o-animation: type 0.9s 2s steps(40, end) forwards;
+		animation: type 0.9s 2s steps(40, end) forwards;
+	}
+
+	.welcome.cursor1 {
+		-webkit-animation: blink 1s 3s 2 forwards;
+		-moz-animation: blink 1s 3s 2 forwards;
+		-o-animation: blink 1s 3s 2 forwards;
+		animation: blink 1s 3s 2 forwards;
+	}
+
+	.line2 {
+		-webkit-animation: type 0.9s 5.25s steps(40, end) forwards;
+		-moz-animation: type 0.9s 5.25s steps(40, end) forwards;
+		-o-animation: type 0.9s 5.25s steps(40, end) forwards;
+		animation: type 0.9s 5.25s steps(40, end) forwards;
+	}
+
+	.welcome.cursor2 {
+		-webkit-animation: blink 1s 6.25s 2 forwards;
+		-moz-animation: blink 1s 6.25s 2 forwards;
+		-o-animation: blink 1s 6.25s 2 forwards;
+		animation: blink 1s 6.25s 2 forwards;
+	}
+
+	.line3 {
+		-webkit-animation: type 0.9s 8.5s steps(40, end) forwards;
+		-moz-animation: type 0.9s 8.5s steps(40, end) forwards;
+		-o-animation: type 0.9s 8.5s steps(40, end) forwards;
+		animation: type 0.9s 8.5s steps(40, end) forwards;
+	}
+
+	.welcome.cursor3 {
+		-webkit-animation: blink 1s 9.5s 2 forwards;
+		-moz-animation: blink 1s 9.5s 2 forwards;
+		-o-animation: blink 1s 9.5s 2 forwards;
+		animation: blink 1s 9.5s 2 forwards;
+	}
+
+	.line4 {
+		color: #fff;
+		-webkit-animation: type 0.9s 11.75s steps(40, end) forwards;
+		-moz-animation: type 0.9s 11.75s steps(40, end) forwards;
+		-o-animation: type 0.9s 11.75s steps(40, end) forwards;
+		animation: type 0.9s 11.75s steps(40, end) forwards;
+	}
+
+	.welcome.cursor4 {
+		-webkit-animation: blink 1s 12.5s infinite;
+		-moz-animation: blink 1s 9.5s infinite;
+		-o-animation: blink 1s 9.5s infinite;
+		animation: blink 1s 9.5s infinite;
+	}
+	@-webkit-keyframes blink {
+		0% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		90% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+	@-moz-keyframes blink {
+		0% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		90% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+	@-o-keyframes blink {
+		0% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		90% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes blink {
+		0% {
+			opacity: 0;
+		}
+
+		40% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		90% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+	@-webkit-keyframes type {
+		to {
+			width: 100%;
+		}
+	}
+	@-moz-keyframes type {
+		to {
+			width: 100%;
+		}
+	}
+	@-o-keyframes type {
+		to {
+			width: 100%;
+		}
+	}
+	@keyframes type {
+		to {
+			width: 100%;
+		}
+	}
+}

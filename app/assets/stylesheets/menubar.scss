@@ -1,16 +1,15 @@
+@import "reset.css";
+$color-card-background: #FFFFFF;
+$color-tag-background: #E3E5E9;
+$color-anchor: #E62A5D;
+$color-body-copy: #b9bcbd;
+$default-border-radius: 5px;
+$default-border: 1px solid black;
+$default-box-shadow:-0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+$breakpoint-medium: "screen and (min-width: 700px)";
+
+
 #Desktop {
-  /*-moz-column-count: 15;
-  	-moz-column-gap: 10px;
-  	-webkit-column-count: 15;
-  	-webkit-column-gap: 10px;
-  	-webkit-column-width: 80px;
-  	column-count: 15;
-  	column-gap: 10px;
-  	column-width: 80px;
-  	column-fill: balance;
-  -moz-column-fill: balance;
-  -webkit-column-fill: balance;
-  	direction: rtl;*/
   display: flex;
   align-content: left;
   flex-direction: column;
@@ -70,7 +69,8 @@ span.focus:after {
   background-color: #F7F7F7;
   padding: 10px 10px 40px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: $default-border;
+  box-shadow: $default-box-shadow;
 }
 
 #computer.foldercontent {
@@ -79,9 +79,16 @@ span.focus:after {
 }
 
 #info.foldercontent {
-  font-family: 'Clear Sans';
+  font-family: 'ClearSans';
   height: 200px;
-  width: 560px;
+  width: 600px;
+}
+
+.foldercontent p {
+  padding: 20px;
+  font-weight: lighter;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 #err.foldercontent {
@@ -95,7 +102,7 @@ span.focus:after {
   width: 780px;
   height: 600px;
   z-index: 6;
-  border: 1px solid black;
+  border: $default-border;
   border-radius: 0;
 }
 
@@ -108,7 +115,7 @@ span.focus:after {
   left: 0;
   background-color: #272827;
   width: 900px;
-  height: 640px;
+  height: 666px;
   color: #ffffff;
   font-family: Courier New;
 }
@@ -121,20 +128,49 @@ span.focus:after {
   padding: 0;
   border-radius: 0;
 }
-/* #guiewrise.foldercontent #secondPage {
-    background: #729CFE;
-    width: 780px;
-    height: 660px;
-    z-index: 6;
-    border: 1px solid black;
-    border-radius: 0;
-} */
+
 .infoldercontent {
   background-color: #fff;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  .setting {
+  	height: 100%;
+  	width: 100%;
+  }
+
+  .bgcolors {
+  	display: flex;
+  	height: 200px;
+  }
+
+  .backgroundcolor {
+  	display: block;
+  	height: 30px;
+  	width: 30px;
+  	border: 1px solid black;
+  	border-color: #000;
+    margin-right: 0.35em;
+    border-radius: 5px;
+  }
+
+  #pink {
+  	background-color: #ff85a6;
+  }
+
+  #blue {
+  	background-color: #2196F3;
+  }
+
+  #yellow {
+  	background-color: #FEC006;
+  }
+
+  #black {
+  	background-color: #2c302e;
+  }
 }
 
 #er.article-icon {
@@ -147,6 +183,7 @@ span.focus:after {
   position: relative;
   left: 30px;
   top: 30px;
+  cursor: pointer;
 }
 
 #gui.article-icon {
@@ -158,6 +195,7 @@ span.focus:after {
   height: 113px;
   position: relative;
   top: 30px;
+  cursor: pointer;
 }
 
 #mailb.article-icon {
@@ -170,6 +208,7 @@ span.focus:after {
   position: relative;
   top: 30px;
   left: -30px;
+  cursor: pointer;
 }
 
 #att.article-icon {
@@ -183,6 +222,7 @@ span.focus:after {
   position: relative;
   top: 30px;
   left: -60px;
+  cursor: pointer;
 }
 
 .article-icon p {
@@ -201,7 +241,7 @@ span.focus:after {
   z-index: 10;
   left: 400px;
   top: 450px;
-  box-shadow: -3px 5px;
+  box-shadow: $default-box-shadow;
   color: #00000030;
   cursor: pointer;
 }
@@ -215,7 +255,7 @@ span.focus:after {
   z-index: 10;
   left: 800px;
   top: 200px;
-  box-shadow: -3px 5px;
+  box-shadow: $default-border;
   color: #00000030;
   cursor: pointer;
 }

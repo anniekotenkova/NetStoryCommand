@@ -1,36 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<!-- <button class="new-pos">new position</button> -->
-<!--Menu-->
 <div id="Desktop">
-
   <div class="">
     <span id="infofolder" class="icon draggable" data-title="Справка">
       <%= image_tag 'about.png' %>
     </span>
   </div>
-
   <div class="">
     <span id="computerfolder" class="icon draggable" data-title="Мой компьютер">
       <%= image_tag 'computer.png' %>
     </span>
   </div>
-
   <div class="">
     <span id="folderfolder" class="icon draggable" data-title="Папка">
       <%= image_tag 'folder.png' %>
     </span>
   </div>
-
   <div class="">
     <span id="trashfolder" class="icon draggable" data-title="Корзина">
       <%= image_tag 'trash.png' %>
     </span>
   </div>
-
 </div>
-
-<!--Welcome alert-->
 
 <div class="container welcome draggable">
   <div class="card resizable">
@@ -50,14 +41,14 @@
   </div>
 </div>
 
+
 <div id="info" class="foldercontent draggable">
   <div id="close-btn" class="cbinfo"></div>
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
     <p>NetStory – это проект про историю интернета. На страницы собраны статьи о самых интересных событиях интернета с момента его зарождения до наших дней. На рабочем столе подборка избранных статей, остальные статьи можно найти в «Папке».
-      <br>
-      Переходи по годам и узнавай новые грани интернета вместе с NetStory!</p>
+    </p>
   </div>
 </div>
 
@@ -66,11 +57,17 @@
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
-     <div class="setting">
-       <label>Background color</label>
-       <div class="palette" id="bg-setting"></div> </div>
-       <div class="article-icon"></div>
+    <div class="setting">
+      <label>Background color</label>
+      <div class="bgcolors">
+        <div id="pink" class="backgroundcolor"></div>
+        <div id="blue" class="backgroundcolor"></div>
+        <div id="yellow" class="backgroundcolor"></div>
+        <div id="black" class="backgroundcolor"></div>
+      </div>
+    </div>
   </div>
+  <div class="article-icon"></div>
 </div>
 
 <div id="folder" class="foldercontent draggable">
@@ -78,18 +75,10 @@
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
-    <div id="er" class="article-icon">
-      <p>Ошибка 404</p>
-    </div>
-    <div id="gui" class="article-icon">
-      <p>Erwise</p>
-    </div>
-    <div id="mailb" class="article-icon">
-      <p>Первый E-mail</p>
-    </div>
-    <div id="att" class="article-icon">
-      <p>Первый лендинг</p>
-    </div>
+    <div id="er" class="article-icon"><p>Ошибка 404</p></div>
+    <div id="gui" class="article-icon"><p>Erwise</p></div>
+    <div id="mailb" class="article-icon"><p>Первый E-mail</p></div>
+    <div id="att" class="article-icon"><p>Первый лендинг</p></div>
   </div>
 </div>
 
@@ -97,7 +86,7 @@
   <div id="close-btn" class="cbtrash"></div>
   <div id="min-btn"></div>
   <div id="full-btn"></div>
-   <div class="infoldercontent"></div> ======= <div class="infoldercontent"> <div class="article-icon"></div> </div>
+  <div class="infoldercontent"></div>
 </div>
 
 <section class="article_main">
@@ -107,12 +96,15 @@
       <%= render 'article', article: article %>
     <% end %>
   </div>
-  <div id="log"></div>
+
   <!-- <div class="button"> <%= link_to 'New Article', new_article_path %> </div> -->
 </section>
 
+<!--Welcome alert-->
+
 <!-- превью -->
-<div id="fastlink_erwise" class="draggable"></div>
+
+<div id="fastlink_erwise" class="draggable"> <div id="close-btn" class="cbfastlink_erwise"></div> </div>
 <div id="fastlink_att" class="draggable"></div>
 
 <!-- статьи -->
@@ -235,6 +227,7 @@
   <!-- имейл -->
   <div id="mailb" class="foldercontent draggable">
     <div class="mailBackground">
+      <div id="close-btn" class="cbmail"></div>
       <div class="rectangle"></div>
       <div class="top_header">
         <h1>Electronic Mail Mailbox</h1>
@@ -275,27 +268,27 @@
     <div id="min-btn"></div>
     <div id="full-btn"></div>
     <div id="old" style="width:650px;">
-      <img src="../../assets/images/att/att.gif">
+      <%= image_tag 'att/att.gif' %>
       <p>
         <b>У вас получилось!</b>
         Это первый лендинг, на который вы зашли.
       </p>
       <p>
         Мы надеемся, что этта страница показалась вам интересной и захватывающей.</p>
-      <h2><img src="./app/assets/images/att/attstripe.gif" alt="-------------">
-        <p>
+      <h2> <%= image_tag 'att/attstripe.gif'%>
+        <p class="write">
           Вы когда нибудь посещали
           <a href="http://thefirstbannerad.com/artmap.html">музей</a>
           не двигаясь с места?
-        <p>
+        <p class="write">
           Вы когда нибудь хотели узнать больше о новых технологиях на
           <a href="http://thefirstbannerad.com/attmap.html">AT&amp;T</a>?
-          <img src="/assets/images/att/yw1.gif" alt="You Will" align="top">
+          <div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
         </p>
-        <img src="/assets/images/att/attstripe.gif" alt="-------------">
-        <p>Пожалуйста, помогите нам
+        <%= image_tag 'att/attstripe.gif'%>
+        <p class="write">Пожалуйста, помогите нам
           <a href="http://thefirstbannerad.com/wewill.html">
-            улучшить это пространство</a>.<img src="/assets/images/att/yw1.gif" alt="You Will" align="top">
+            улучшить это пространство</a>.<div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
         </p>
       </h2>
       <quote>
@@ -309,11 +302,13 @@
         </dl>
       </quote>
 
-      <img src="/assets/images/att/attstripe.gif" alt="-------------"><br>
+      <h2> <%= image_tag 'att/attstripe.gif'%><br>
 
-      � Copyright 1994 AT&amp;T<br>
-      <img src="/assets/images/at&t/attstripe.gif" alt="-------------">
+    <p class="write"> � Copyright 1994 AT&amp;T </p>  <br>
+      <h2> <%= image_tag 'att/attstripe.gif'%>
       <br>
-      Дизайн и разработка: TANGENT Design/Communications, Inc.
+      <p class="write"> Дизайн и разработка: TANGENT Design/Communications, Inc. </p>
     </div>
   </div>
+
+</div>

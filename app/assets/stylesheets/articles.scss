@@ -3,8 +3,17 @@ $color-card-background: #FFFFFF;
 $color-tag-background: #E3E5E9;
 $color-anchor: #E62A5D;
 $color-body-copy: #b9bcbd;
-$default-border-radius: 2px;
+$default-border-radius: 5px;
+$default-border: 1px solid black;
+$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 $breakpoint-medium: "screen and (min-width: 700px)";
+
+@font-face {
+ font-family: 'Clear Sans';
+ src: url("../fonts/ClearSans.eot");
+ src: local('Clear Sans'), local('ClearSans'), url("../fonts/ClearSans.eot?#iefix") format('embedded-opentype'), url("../fonts/ClearSans.woff") format('woff'), url("../fonts/ClearSans.ttf") format('truetype');
+ font-weight: normal;
+}
 
 @mixin list-reset() {
 	list-style-type: none;
@@ -12,16 +21,14 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 	padding: 0;
 }
 
-@font-face {
-	font-family: 'Clear Sans';
-	src: url("ClearSans.eot");
-	src: local('Clear Sans'), local('ClearSans'), url("ClearSans.eot?#iefix") format('embedded-opentype'), url("ClearSans.woff") format('woff'), url("ClearSans.ttf") format('truetype');
-	font-weight: normal;
-}
-
 html {
 	box-sizing: border-box;
 	color: $color-body-copy;
+	font: {
+		family: 'ClearSans', sans-serif;
+		size: 100%;
+		weight: 300;
+	}
 }
 
 *,
@@ -33,9 +40,6 @@ html {
 body {
 	background-color: $color-tag-background;
 	padding: 2.1875em;
-	font-family: 'Clear Sans';
-	letter-spacing: 0.07;
-	font-weight: 300;
 }
 
 #info p {
@@ -47,10 +51,10 @@ body {
 
 #browser-top {
 	cursor: grab;
-
 	.is-pointer-down & {
 		cursor: grabbing;
 	}
+	border-bottom: $default-border;
 	background-color: $color-card-background;
 	height: 40px;
 	border-top-left-radius: $default-border-radius;
@@ -67,6 +71,25 @@ body {
 	display: inline-block;
 	cursor: pointer;
 }
+
+#close-btn.cbmail {
+background-color: #ffffff;
+}
+
+#close-btn.cbfastlink_erwise{
+		border-radius: 0;
+    width: 23px;
+    height: 23px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    left: 8px;
+    top: 9px;
+	}
+
+
 
 #min-btn {
 	border-radius: 50%;
@@ -87,20 +110,19 @@ body {
 	display: inline-block;
 	cursor: pointer;
 }
-// Articles preview
-
-
 
 .card {
 	resize: both;
 	background-color: $color-card-background;
 	border-radius: $default-border-radius;
-	box-shadow: -18px 18px 4px 0 rgba(0, 0, 0, 0.2);
+	border: $default-border;
+	box-shadow: $default-box-shadow;
 	display: flex;
 	flex-direction: column;
-	width: 500px;
-	// margin-bottom: 2rem;
-	border: 1px solid #F3F3F3;
+	width: 100%;
+	max-width: 500px;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
 	@media #{$breakpoint-medium} {
 		flex-direction: column;
 	}
@@ -128,7 +150,7 @@ img {
 }
 
 .details {
-	padding: 28px;
+	padding: 2.1875em 5%;
 	@media #{$breakpoint-medium} {
 		width: 100%;
 	}
@@ -151,12 +173,6 @@ img {
 		font-size: 62.5%;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-	}
-
-	p {
-		color: #9A9A9A;
-		max-height: 70px;
-		overflow: hidden;
 	}
 }
 
@@ -181,7 +197,6 @@ img {
 		width: 48.75%;
 
 		ul {
-			color: #9A9A9A;
 			@include list-reset;
 			font-size: 87.5%;
 			text-decoration: none;
@@ -205,23 +220,44 @@ img {
 	}
 
 	li {
-		margin: 0 0.35em 0.35em 0;
+
+		margin: 0.35em 1em 0.35em 0;
 	}
 
 	a {
-		background-color: $color-tag-background;
-		border-radius: 50px;
-		color: #fff;
+		white-space: nowrap;
+		text-decoration: none !important;
+		text-transform: none;
+		text-transform: capitalize;
+		transition: all 150ms linear;
+		text-align: center;
+		border-radius: 4px;
+		border: $default-border;
+		border-color: #000;
 		display: block;
 		padding: 0.3125em 1.25em;
-		text-decoration: none;
 		transition: color 0.3s ease;
+		color: #202129;
+		background-color: #FFF;
 
-		&:focus,
-		&:hover {
-			color: $color-anchor;
-			background-color: $color-tag-background;
-		}
+		  &:hover {
+		    transition: all 150ms linear;
+				color: #202129;
+				background-color: #FFF;
+		    opacity: .85;
+		  }
+
+		  &:active {
+				background-color: #d5d6d6;
+				opacity: 1;
+		    transition: all 150ms linear;
+		    opacity: .75;
+		  }
+
+		  &:focus {
+		    outline: 1px dotted #959595;
+		    outline-offset: -4px;
+		  }
 	}
 }
 
@@ -236,242 +272,7 @@ img {
 	flex-direction: row;
 }
 
-// Welcome alert
-.welcome {
-	@font-face {
-		font-family: Courier New;
-		src: url("/CourierStd.ttf");
-	}
 
-	.fakeScreen {
-		background-color: #151515;
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0 auto;
-		padding: 20px;
-		word-wrap: break-word;
-	}
-
-	p {
-		position: relative;
-		font-family: Courier New;
-		text-align: left;
-		font-size: 0.9em;
-		white-space: nowrap;
-		overflow: hidden;
-		width: 0;
-		color: #fff;
-	}
-
-	span {
-		color: #fff;
-		font-weight: bold;
-	}
-
-	.line1 {
-		-webkit-animation: type 0.9s 2s steps(40, end) forwards;
-		-moz-animation: type 0.9s 2s steps(40, end) forwards;
-		-o-animation: type 0.9s 2s steps(40, end) forwards;
-		animation: type 0.9s 2s steps(40, end) forwards;
-	}
-
-	.welcome.cursor1 {
-		-webkit-animation: blink 1s 3s 2 forwards;
-		-moz-animation: blink 1s 3s 2 forwards;
-		-o-animation: blink 1s 3s 2 forwards;
-		animation: blink 1s 3s 2 forwards;
-	}
-
-	.line2 {
-		-webkit-animation: type 0.9s 5.25s steps(40, end) forwards;
-		-moz-animation: type 0.9s 5.25s steps(40, end) forwards;
-		-o-animation: type 0.9s 5.25s steps(40, end) forwards;
-		animation: type 0.9s 5.25s steps(40, end) forwards;
-	}
-
-	.welcome.cursor2 {
-		-webkit-animation: blink 1s 6.25s 2 forwards;
-		-moz-animation: blink 1s 6.25s 2 forwards;
-		-o-animation: blink 1s 6.25s 2 forwards;
-		animation: blink 1s 6.25s 2 forwards;
-	}
-
-	.line3 {
-		-webkit-animation: type 0.9s 8.5s steps(40, end) forwards;
-		-moz-animation: type 0.9s 8.5s steps(40, end) forwards;
-		-o-animation: type 0.9s 8.5s steps(40, end) forwards;
-		animation: type 0.9s 8.5s steps(40, end) forwards;
-	}
-
-	.welcome.cursor3 {
-		-webkit-animation: blink 1s 9.5s 2 forwards;
-		-moz-animation: blink 1s 9.5s 2 forwards;
-		-o-animation: blink 1s 9.5s 2 forwards;
-		animation: blink 1s 9.5s 2 forwards;
-	}
-
-	.line4 {
-		color: #fff;
-		-webkit-animation: type 0.9s 11.75s steps(40, end) forwards;
-		-moz-animation: type 0.9s 11.75s steps(40, end) forwards;
-		-o-animation: type 0.9s 11.75s steps(40, end) forwards;
-		animation: type 0.9s 11.75s steps(40, end) forwards;
-	}
-
-	.welcome.cursor4 {
-		-webkit-animation: blink 1s 12.5s infinite;
-		-moz-animation: blink 1s 9.5s infinite;
-		-o-animation: blink 1s 9.5s infinite;
-		animation: blink 1s 9.5s infinite;
-	}
-	@-webkit-keyframes blink {
-		0% {
-			opacity: 0;
-		}
-
-		40% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-
-		90% {
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-		}
-	}
-	@-moz-keyframes blink {
-		0% {
-			opacity: 0;
-		}
-
-		40% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-
-		90% {
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-		}
-	}
-	@-o-keyframes blink {
-		0% {
-			opacity: 0;
-		}
-
-		40% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-
-		90% {
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-		}
-	}
-	@keyframes blink {
-		0% {
-			opacity: 0;
-		}
-
-		40% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-
-		90% {
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-		}
-	}
-	@-webkit-keyframes type {
-		to {
-			width: 100%;
-		}
-	}
-	@-moz-keyframes type {
-		to {
-			width: 100%;
-		}
-	}
-	@-o-keyframes type {
-		to {
-			width: 100%;
-		}
-	}
-	@keyframes type {
-		to {
-			width: 100%;
-		}
-	}
-}
-
-.infoldercontent {
-	overflow: hidden;
-	padding: 20px;
-	font-family: 'Clear Sans';
-	font-size: 14px;
-
-	#err {
-		display: none;
-		/*   z-index: 3; */
-	}
-
-	.t {
-		position: relative;
-		left: 20px;
-	}
-
-	#err h1 {
-		font: none;
-		color: #000000;
-		font-size: 30px;
-		line-height: 60px;
-		margin: 0 auto;
-	}
-
-	#err.line {
-		width: 300px;
-		height: 2px;
-		background: black;
-	}
-
-	#err.text {
-		font: none;
-		color: #000000;
-		width: 750px;
-	}
-
-	#err.quote {
-		font: none;
-		color: #000000;
-		font-style: italic;
-	}
-}
 /* статьи */
 .allArticles {
 	/* ошибка 404 */
@@ -683,6 +484,8 @@ img {
 
 	#secondPage {
 		display: none;
+		overflow: scroll;
+		height: 592px;
 	}
 
 	#secondPage.text {
@@ -719,8 +522,8 @@ img {
 		width: 860px;
 		height: 550px;
 		background: transparent;
-		border: 2px solid #ffffff;
-		border-radius: 2px;
+		border: $default-border;
+		border-radius: $default-border-radius;
 	}
 
 	.top_header {
@@ -784,5 +587,14 @@ img {
 		padding: 3px;
 		margin: auto;
 		background: #bfbfbf;
+	}
+
+	.write {
+		font-size: 20px;
+	}
+
+	.yw1 {
+		width: 50px;
+		height: 100px;
 	}
 }

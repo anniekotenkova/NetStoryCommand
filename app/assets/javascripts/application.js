@@ -13,16 +13,15 @@
 $(function() {
   $('.draggable').draggable();
   $('.draggable').mousedown(function() //associate mousedown event with developments
-  {
-    var maxZindex = 0; // keep traking max z-index
-    $(this).siblings('.draggable').each(function() //find all the siblings of that development
     {
-      var currentZindex = Number($(this).css('z-index')); //retrieve z-index of each development we are looping through
-      maxZindex = currentZindex > maxZindex ? currentZindex : maxZindex;
+      var maxZindex = 0; // keep traking max z-index
+      $(this).siblings('.draggable').each(function() //find all the siblings of that development
+        {
+          var currentZindex = Number($(this).css('z-index')); //retrieve z-index of each development we are looping through
+          maxZindex = currentZindex > maxZindex ? currentZindex : maxZindex;
+        });
+      $(this).css('z-index', maxZindex + 1);
     });
-    $(this).css('z-index', maxZindex + 1);
-  });
-
   $('.resizable').resizable();
 
   $("#Desktop span").click(function(e) {
@@ -70,7 +69,7 @@ $(function() {
     $('#folder').css('display', 'none');
   });
 
-  $(".cberr").click(function() {
+  $(".cbtrash").click(function() {
     $('#trash').css('display', 'none');
   });
 
@@ -99,6 +98,11 @@ $(function() {
     $('#firstPage').css('display', 'block');
   });
 
+  $("#close-btn.cbfastlink_erwise").click(function() {
+    $('.fastlink_erwise').css('display', 'none');
+  });
+
+
   $("#close").click(function() {
     $('#guiewrise').css('display', 'none');
   });
@@ -116,14 +120,30 @@ $(function() {
     }
   });
 
+  $(".prev").click(function() {
+    if ('#secondPage') {
+      $('#secondPage').css('display', 'none');
+      $('#firstPage').css('display', 'block');
+    } else if ('#firstPage') {
+      $('#firstPage').css('display', 'none');
+      $('#secondPage').css('display', 'block');
+    } else {
+      $('#firstPage').css('display', 'none');
+      $('#secondPage').css('display', 'none');
+    }
+  });
+
   $("#mailb").click(function() {
     $('#mailb.foldercontent').css('display', 'block');
   });
+  $(".cbmail").click(function() {
+    $('#mailb.foldercontent').css('display', 'none');
+  });
+
 
   $("#att").click(function() {
     $('#landing').css('display', 'block');
   });
-
   $("#fastlink_att").click(function() {
     $('#landing').css('display', 'block');
   });
@@ -131,5 +151,23 @@ $(function() {
   $(".cberr").click(function() {
     $('#landing').css('display', 'none');
   });
-  
+
+  // background color change
+  $("#pink").click(function() {
+    $('body').css('background', '#FF85A6');
+  });
+
+  $("#blue").click(function() {
+    $('body').css('background', '#2196F3');
+  });
+
+  $("#yellow").click(function() {
+    $('body').css('background', '#FEC006');
+  });
+
+  $("#black").click(function() {
+    $('body').css('background', '#1B1725');
+  });
+
+
 });
