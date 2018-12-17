@@ -1,3 +1,3 @@
-class Spam < ApplicationRecord
-  mount_uploader :video, VideoUploader
-end
+# class Spam < ApplicationRecord
+#   mount_uploader :video, VideoUploader
+# end
