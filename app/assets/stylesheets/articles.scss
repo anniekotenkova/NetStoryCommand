@@ -287,6 +287,7 @@ img {
 	.t {
 		position: relative;
 		left: 20px;
+    width: 764px;
 	}
 
 	#err h1 {
@@ -393,7 +394,7 @@ img {
 		height: 25px;
 		width: 110px;
 		position: relative;
-		top: -19px;
+		/* top: -30px; */
 		background: #729CFE;
 		border: 1px solid rgba(0, 0, 0, 0.5);
 		box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
@@ -425,7 +426,7 @@ img {
 
 	.brow {
 		position: relative;
-		top: -25px;
+		top: -45px;
 		height: 20px;
 		width: 480px;
 		background: #818184;
@@ -446,7 +447,7 @@ img {
 	}
 
 	.popup .button {
-		top: -10px;
+    top: 38px;
 		left: 180px;
 	}
 
@@ -541,7 +542,7 @@ img {
 		font-size: 16px;
 	}
 
-	.messages {
+	.messages p {
 		font-family: Courier New;
 		font-size: 16px;
 		width: 840px;
@@ -591,6 +592,7 @@ img {
 
 	.write {
 		font-size: 20px;
+    font-weight: 300;
 	}
 
 	.yw1 {

@@ -23,7 +23,13 @@ test:
   #database: db/test.sqlite3
   database: NetStory_test
 
+#production:
+#  <<: *default
+#  #database: db/production.sqlite3
+#  database: NetStory_prod
+
 production:
   <<: *default
-  #database: db/production.sqlite3
-  database: NetStory_prod
+  database: NetStoryCommand-master_production
+  username: NetStoryCommand-master
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
