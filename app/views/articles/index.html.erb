@@ -41,7 +41,6 @@
   </div>
 </div>
 
-
 <div id="info" class="foldercontent draggable">
   <div id="close-btn" class="cbinfo"></div>
   <div id="min-btn"></div>
@@ -75,10 +74,18 @@
   <div id="min-btn"></div>
   <div id="full-btn"></div>
   <div class="infoldercontent">
-    <div id="er" class="article-icon"><p>Ошибка 404</p></div>
-    <div id="gui" class="article-icon"><p>Erwise</p></div>
-    <div id="mailb" class="article-icon"><p>Первый E-mail</p></div>
-    <div id="att" class="article-icon"><p>Первый лендинг</p></div>
+    <div id="er" class="article-icon">
+      <p>Ошибка 404</p>
+    </div>
+    <div id="gui" class="article-icon">
+      <p>Erwise</p>
+    </div>
+    <div id="mailb" class="article-icon">
+      <p>Первый E-mail</p>
+    </div>
+    <div id="att" class="article-icon">
+      <p>Первый лендинг</p>
+    </div>
   </div>
 </div>
 
@@ -91,20 +98,15 @@
 
 <section class="article_main">
 
-  <div class="massive_article">
-    <% @articles.each do |article| %>
-      <%= render 'article', article: article %>
-    <% end %>
-  </div>
-
-  <!-- <div class="button"> <%= link_to 'New Article', new_article_path %> </div> -->
 </section>
 
 <!--Welcome alert-->
 
 <!-- превью -->
 
-<div id="fastlink_erwise" class="draggable"> <div id="close-btn" class="cbfastlink_erwise"></div> </div>
+<div id="fastlink_erwise" class="draggable">
+  <div id="close-btn" class="cbfastlink_erwise"></div>
+</div>
 <div id="fastlink_att" class="draggable"></div>
 
 <!-- статьи -->
@@ -275,40 +277,48 @@
       </p>
       <p>
         Мы надеемся, что этта страница показалась вам интересной и захватывающей.</p>
-      <h2> <%= image_tag 'att/attstripe.gif'%>
+      <h2>
+        <%= image_tag 'att/attstripe.gif'%>
         <p class="write">
           Вы когда нибудь посещали
           <a href="http://thefirstbannerad.com/artmap.html">музей</a>
           не двигаясь с места?
-        <p class="write">
-          Вы когда нибудь хотели узнать больше о новых технологиях на
-          <a href="http://thefirstbannerad.com/attmap.html">AT&amp;T</a>?
-          <div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
-        </p>
-        <%= image_tag 'att/attstripe.gif'%>
-        <p class="write">Пожалуйста, помогите нам
-          <a href="http://thefirstbannerad.com/wewill.html">
-            улучшить это пространство</a>.<div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
-        </p>
-      </h2>
-      <quote>
+          <p class="write">
+            Вы когда нибудь хотели узнать больше о новых технологиях на
+            <a href="http://thefirstbannerad.com/attmap.html">AT&amp;T</a>?
+            <div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
+          </p>
+          <%= image_tag 'att/attstripe.gif'%>
+          <p class="write">Пожалуйста, помогите нам
+            <a href="http://thefirstbannerad.com/wewill.html">
+              улучшить это пространство</a>.<div class="yw1"><%= image_tag 'att/yw1.gif'%></div>
+          </p>
+        </h2>
+        <quote>
 
-        <dl>
-          <dt>
-            <i>"Criticism is easy. Art is difficult."</i><br>
-          </dt>
-          <dd>Le Glorieux [1732], act II, scene 6
-          </dd>
-        </dl>
-      </quote>
+          <dl>
+            <dt>
+              <i>"Criticism is easy. Art is difficult."</i><br>
+            </dt>
+            <dd>Le Glorieux [1732], act II, scene 6
+            </dd>
+          </dl>
+        </quote>
 
-      <h2> <%= image_tag 'att/attstripe.gif'%><br>
+        <h2>
+          <%= image_tag 'att/attstripe.gif'%><br>
 
-    <p class="write"> � Copyright 1994 AT&amp;T </p>  <br>
-      <h2> <%= image_tag 'att/attstripe.gif'%>
-      <br>
-      <p class="write"> Дизайн и разработка: TANGENT Design/Communications, Inc. </p>
-    </div>
-  </div>
+          <p class="write">
+            � Copyright 1994 AT&amp;T
+          </p>
+          <br>
+          <h2>
+            <%= image_tag 'att/attstripe.gif'%>
+            <br>
+            <p class="write">
+              Дизайн и разработка: TANGENT Design/Communications, Inc.
+            </p>
+          </div>
+        </div>
 
-</div>
+      </div>
