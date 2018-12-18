@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# require 'faker'
+#
+# # Reset database
+# Rake::Task['db:drop'].invoke
+# Rake::Task['db:create'].invoke
+# Rake::Task['db:migrate'].invoke
+#
+# def create_artciles
+#   3.times do
+#     create_artcile
+#   end
+# end
+#
+# def create_artcile
+#   post = Post.create
+# end
