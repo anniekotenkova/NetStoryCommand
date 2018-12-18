@@ -1,6 +1,17 @@
 // Welcome alert
 
+@font-face {
+  font-family: 'Cera Pro Light';
+  src: url('../../assets/fonts/CeraPro-Light.eot');
+  src: url('../../assets/fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('CeraPro-Light.woff') format('woff'),
+  url('CeraPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .welcome {
+	width: 400px !important;
 	.fakeScreen {
 		background-color: #151515;
 		box-sizing: border-box;
@@ -12,7 +23,7 @@
 
 	p {
 		position: relative;
-		font-family: 'ClearSans';
+		font-family: 'Cera Pro Light';
 		font-weight: 300;
 		text-align: left;
 		font-size: 0.9em;
