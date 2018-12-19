@@ -9,7 +9,6 @@
 //= require rails_sortable
 //= require_tree .
 
-
 $(function() {
   $('.draggable').draggable();
   $('.draggable').mousedown(function() //associate mousedown event with developments

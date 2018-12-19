@@ -62,7 +62,7 @@ span.focus:after {
 .foldercontent {
   display: none;
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   height: 500px;
   width: 600px;
   background-color: #F7F7F7;
@@ -92,14 +92,14 @@ span.focus:after {
 #err.foldercontent {
   width: 800px;
   height: 520px;
-  z-index: 6;
+  // z-index: 6;
 }
 
 #guiewrise.foldercontent {
   background: #729CFE;
   width: 780px;
   height: 600px;
-  z-index: 6;
+  // z-index: 6;
   border: $default-border;
   border-radius: 0;
 }
@@ -262,7 +262,7 @@ span.focus:after {
   background-image: url("att/tfba.png");
   background-size: cover;
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   left: 800px;
   top: 200px;
   box-shadow: $default-border;
