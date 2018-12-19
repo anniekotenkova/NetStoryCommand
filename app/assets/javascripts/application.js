@@ -9,7 +9,6 @@
 //= require rails_sortable
 //= require_tree .
 
-
 $(function() {
   $('.draggable').draggable();
   $('.draggable').mousedown(function() //associate mousedown event with developments
@@ -81,7 +80,7 @@ $(function() {
     $('#err').css('display', 'none');
   });
 
-  // попап в статье
+  // Pop-up in an article
   $('#popup-close').on('click', function() {
     $('.popup').toggleClass('isClosed')
   });
@@ -93,12 +92,12 @@ $(function() {
     $('#firstPage').css('display', 'block');
   });
 
-  $("#fastlink_erwise").click(function() {
+  $("#fastlink_erwise").dblclick(function() {
     $('#guiewrise').css('display', 'block');
     $('#firstPage').css('display', 'block');
   });
 
-  $("#close-btn.cbfastlink_erwise").click(function() {
+  $("#close-btn.cbfastlink_erwise").dblclick(function() {
     $('.fastlink_erwise').css('display', 'none');
   });
 
