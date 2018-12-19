@@ -148,7 +148,7 @@ $(function() {
     $('#landing').css('display', 'block');
   });
 
-  $(".cberr").click(function() {
+  $(".cbcblanding").click(function() {
     $('#landing').css('display', 'none');
   });
 
