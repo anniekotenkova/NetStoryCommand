@@ -87,3 +87,23 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'Cera Pro Light';
+  src: url('../../assets/fonts/CeraPro-Light.eot');
+  src: url('../../assets/fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('CeraPro-Light.woff') format('woff'),
+  url('CeraPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Cera Pro Bold';
+src: url('CeraPro-Bold.eot');
+src: url('CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('CeraPro-Bold.woff') format('woff'),
+url('CeraPro-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}

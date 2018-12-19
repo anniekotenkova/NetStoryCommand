@@ -8,13 +8,6 @@ $default-border: 1px solid black;
 $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 $breakpoint-medium: "screen and (min-width: 700px)";
 
-@font-face {
- font-family: 'Clear Sans';
- src: url("../fonts/ClearSans.eot");
- src: local('Clear Sans'), local('ClearSans'), url("../fonts/ClearSans.eot?#iefix") format('embedded-opentype'), url("../fonts/ClearSans.woff") format('woff'), url("../fonts/ClearSans.ttf") format('truetype');
- font-weight: normal;
-}
-
 @mixin list-reset() {
 	list-style-type: none;
 	margin: 0;
@@ -120,7 +113,7 @@ background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 500px;
+	max-width: 600px;
 	margin-right: 3rem;
 	margin-bottom: 2rem;
 	@media #{$breakpoint-medium} {
