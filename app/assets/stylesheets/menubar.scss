@@ -8,16 +8,6 @@ $default-border: 1px solid black;
 $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 $breakpoint-medium: "screen and (min-width: 700px)";
 
-@font-face {
-  font-family: 'Cera Pro Light';
-  src: url('../../assets/fonts/CeraPro-Light.eot');
-  src: url('../../assets/fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
-  url('CeraPro-Light.woff') format('woff'),
-  url('CeraPro-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 #Desktop {
   display: flex;
   align-content: left;
@@ -259,7 +249,6 @@ span.focus:after {
   background-image: url("erwise/fastlink_erwise.png");
   background-size: cover;
   position: absolute;
-  z-index: 10;
   left: 400px;
   top: 450px;
   box-shadow: $default-box-shadow;
