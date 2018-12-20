@@ -73,13 +73,15 @@ span.focus:after {
 }
 
 #computer.foldercontent {
-  font-family: 'Cera Pro Light';
+  font-family: 'Cera Pro';
+  font-weight: 300;
   height: 200px;
   width: 200px;
 }
 
 #info.foldercontent {
-  font-family: 'Cera Pro Light';
+  font-family: 'Cera Pro';
+  font-weight: 300;
   // height: 200px;
   width: 600px;
 }
@@ -130,6 +132,8 @@ span.focus:after {
 
 .infoldercontent {
   background-color: #fff;
+  font-family: 'Cera Pro';
+  font-weight: 300;
   height: 100%;
   width: 100%;
   display: flex;
@@ -271,7 +275,8 @@ span.focus:after {
 }
 
 .share-button {
-  font-family: 'Cera Pro Light';
+  font-family: 'Cera Pro';
+  font-weight: 300;
   text-align: center;
   position: relative;
   transition: all 150ms linear;
@@ -319,7 +324,8 @@ span.focus:after {
 }
 
 .lid {
-  font-family: 'Cera Pro Light';
+  font-family: 'Cera Pro';
+  font-weight: 300;
   width: 100%;
   height: 100%;
   // background: #fff;
@@ -336,7 +342,8 @@ span.focus:after {
 }
 
 .thank-you {
-  font-family: 'Cera Pro Light';
+  font-family: 'Cera Pro';
+  font-weight: 300;
   position: absolute;
   top: -100px;
   left: 0;
