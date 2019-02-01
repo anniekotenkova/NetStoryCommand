@@ -80,6 +80,7 @@ $(function() {
     $('#err').css('display', 'none');
   });
 
+
   // Pop-up in an article
   $('#popup-close').on('click', function() {
     $('.popup').toggleClass('isClosed')
