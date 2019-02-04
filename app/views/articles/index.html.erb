@@ -29,11 +29,11 @@
   <!-- Welcome alert -->
   <div class="container welcome draggable desk-elements">
     <div class="card resizable">
-
-      <div id="browser-top">
-        <div id="close-btn"></div>
-        <div id="min-btn"></div>
-        <div id="full-btn"></div>
+      <div class="menu_top">
+        <span class="folder_title"></span>
+        <div class="closebtn">
+          <%= image_tag 'x.svg' %>
+        </div>
       </div>
       <div class="fakeScreen">
         <p class="line1">&#91;&nbsp;Привет! Добро пожаловать в проект NetStory<span class="cursor1">_</span></p>
@@ -49,9 +49,10 @@
   <div id="info" class="foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">About</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
     <div class="infoldercontent infolder">
       <h4>Information about the project</h4>
       <p>NetStory – это&nbsp;проект про&nbsp;историю интернета. На&nbsp;страницы собраны статьи о&nbsp; самых интересных событиях интернета
@@ -85,9 +86,10 @@
   <div id="computer" class="foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">Settings</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
     <div class="infoldercontent">
       <div class="setting settings_first setting_border">
         <h3 class="setting__title">Change background</h3>
@@ -106,9 +108,10 @@
   <div id="folder" class="foldercontent draggable desktop-folder_center">
     <div class="menu_top">
       <span class="folder_title">Articles</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
     <div class="folder-content__wrap-overflow scrollbar">
       <ul class="project-list nav_basic">
         <li class="project-list__item">
@@ -133,9 +136,12 @@
 
   <!-- Trash -->
   <div id="trash" class="foldercontent draggable">
-    <div id="close-btn" class="cbtrash"></div>
-    <div id="min-btn"></div>
-    <div id="full-btn"></div>
+    <div class="menu_top">
+      <span class="folder_title">Trash</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
+    </div>
     <div class="infoldercontent"></div>
   </div>
 
@@ -152,9 +158,12 @@
   <div class="allArticles">
     <!-- Error 404 article-->
     <div id="err" class="foldercontent draggable">
-      <div id="close-btn" class="cberr"></div>
-      <div id="min-btn"></div>
-      <div id="full-btn"></div>
+      <div class="menu_top">
+        <span class="folder_title">Articles</span>
+        <div class="closebtn">
+          <%= image_tag 'x.svg' %>
+        </div>
+      </div>
       <div class="infoldercontent">
         <div class="t" data-article="1">
 
