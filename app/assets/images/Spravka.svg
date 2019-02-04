@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="145px" viewBox="0 0 118 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="7.46835443 0 95.5949367 0 97.0886076 0 107.544304 10.4556962 118 20.9113924 118 26.8860759 7.46835443 26.8860759"></polygon>
+        <polygon id="path-2" points="7.46835443 0 97.0886076 0 97.0886076 20.9113924 118 20.9113924 118 137.417722 7.46835443 137.417722"></polygon>
+        <rect id="path-3" x="22.4050633" y="35.8481013" width="80.6582278" height="80.6582278"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-Copy-2" transform="translate(-77.000000, -53.000000)">
+            <g id="Group-6" transform="translate(77.000000, 53.000000)">
+                <polygon id="Rectangle-7-Copy-2" fill-opacity="0.5" fill="#000000" points="0 7.46835443 89.6202532 7.46835443 89.6202532 28.3797468 110.531646 28.3797468 110.531646 144.886076 0 144.886076"></polygon>
+                <g id="Rectangle-8-Copy">
+                    <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#000000" stroke-width="4" d="M9.46835443,2 L9.46835443,24.8860759 L116,24.8860759 L116,21.7398195 L96.2601805,2 L9.46835443,2 Z"></path>
+                </g>
+                <g id="Rectangle-7-Copy-3">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#000000" stroke-width="4" d="M9.46835443,2 L9.46835443,135.417722 L116,135.417722 L116,22.9113924 L95.0886076,22.9113924 L95.0886076,2 L9.46835443,2 Z"></path>
+                </g>
+                <g id="Rectangle-9-Copy">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#000000" stroke-width="4" x="24.4050633" y="37.8481013" width="76.6582278" height="76.6582278"></rect>
+                </g>
+                <text id="Net-Copy-5" font-family="BebasNeue, Bebas Neue" font-size="30" font-weight="normal" fill="#000000">
+                    <tspan x="46.3037975" y="69.9442119">Net</tspan>
+                </text>
+                <text id="Story-Copy-6" font-family="BebasNeue, Bebas Neue" font-size="30" font-weight="normal" fill="#000000">
+                    <tspan x="34.3544304" y="98.9721222">Story</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

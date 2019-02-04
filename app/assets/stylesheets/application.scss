@@ -24,12 +24,18 @@ html{
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  cursor: default;
+  cursor: url('../img/cursor-mouse.png'), default;
   position: relative;
   overflow: hidden;
   background: #FF85A6;
-  padding-top: 40px;
-  max-width: 100vh;
-  max-height: 100vh;
+
 }
 
 .button {
