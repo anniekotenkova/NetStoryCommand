@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # get 'welcome/index'
-  root 'articles#index'
+  get 'welcome/index'
+  resources :folders
   resources :spams
   resources :article_attachments
   resources :attachmennts
@@ -8,11 +8,10 @@ Rails.application.routes.draw do
   resources :articles
   resources :designs
 
-
   get 'designs/index' do
-resources :designs
-end
+    resources :designs
+  end
 
-root 'designs#index'
+  root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
