@@ -56,19 +56,19 @@ $(function() {
   });
 
 
-  $(".cbinfo").click(function() {
+  $(".closebtn").click(function() {
     $('#info').css('display', 'none');
   });
 
-  $(".cbcomputer").click(function() {
+  $(".closebtn").click(function() {
     $('#computer').css('display', 'none');
   });
 
-  $(".cbfolder").click(function() {
+  $(".closebtn").click(function() {
     $('#folder').css('display', 'none');
   });
 
-  $(".cbtrash").click(function() {
+  $(".closebtn").click(function() {
     $('#trash').css('display', 'none');
   });
 
@@ -76,7 +76,7 @@ $(function() {
     $('#err').css('display', 'block');
   });
 
-  $(".cberr").click(function() {
+  $(".closebtn").click(function() {
     $('#err').css('display', 'none');
   });
 
