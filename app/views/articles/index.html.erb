@@ -27,7 +27,7 @@
   </div>
 
   <!-- Welcome alert -->
-  <div class="container welcome draggable desk-elements">
+  <div class="window welcome draggable desk-elements">
     <div class="card resizable">
       <div class="menu_top">
         <span class="folder_title"></span>
@@ -46,7 +46,7 @@
   </div>
 
   <!-- "About" folder -->
-  <div id="info" class="foldercontent draggable">
+  <div id="info" class="window foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">About</span>
       <div class="closebtn">
@@ -83,7 +83,7 @@
   </div>
 
   <!-- "My computer" folder -->
-  <div id="computer" class="foldercontent draggable">
+  <div id="computer" class="window foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">Settings</span>
       <div class="closebtn">
@@ -101,11 +101,34 @@
         </div>
       </div>
     </div>
+    <section class="setting setting_100">
+        <h3 class="setting__title">Filters</h3>
+        <div class="setting__dropdown-wrap">
+            <button class="setting__dropdown-button">Normal</button>
+            <div class="dropdown__arrow-wrap">
+              <%= image_tag  'dropdown-arrow.svg' %>
+            </div>
+            <div class="setting__dropdown hidden">
+                <a href="#" class="setting__dropdown__option" id="normal">
+                    Normal
+                </a>
+                <a href="#" class="setting__dropdown__option" id="black-white">
+                    Black and white
+                </a>
+                <a href="#" class="setting__dropdown__option" id="hue-rotate">
+                    Invert Hue
+                </a>
+                <a href="#" class="setting__dropdown__option" id="negative">
+                    Negative
+                </a>
+            </div>
+        </div>
+    </section>
     <div class="article-icon"></div>
   </div>
 
   <!-- Folder with articles -->
-  <div id="folder" class="foldercontent draggable desktop-folder_center">
+  <div id="folder" class="window foldercontent draggable desktop-folder_center">
     <div class="menu_top">
       <span class="folder_title">Articles</span>
       <div class="closebtn">
@@ -135,7 +158,7 @@
   </div>
 
   <!-- Trash -->
-  <div id="trash" class="foldercontent draggable">
+  <div id="trash" class="window foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">Trash</span>
       <div class="closebtn">
@@ -149,7 +172,7 @@
 
   <!-- Preview on the desktop -->
 
-  <div id="fastlink_erwise" class="draggable desk-elements">
+  <div id="fastlink_erwise" class="window draggable desk-elements">
     <div id="close-btn" class="cbfastlink_erwise"></div>
   </div>
   <div id="fastlink_att" class="draggable desk-elements"></div>
@@ -157,9 +180,9 @@
   <!-- Articles -->
   <div class="allArticles">
     <!-- Error 404 article-->
-    <div id="err" class="foldercontent draggable">
+    <div id="err" class="window foldercontent draggable">
       <div class="menu_top">
-        <span class="folder_title">Articles</span>
+        <span class="folder_title"Error: 404 Not Found</span>
         <div class="closebtn">
           <%= image_tag 'x.svg' %>
         </div>
