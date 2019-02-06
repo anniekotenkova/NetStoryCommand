@@ -10,7 +10,6 @@
 //= require_tree .
 
 $(function() {
-
   $('.draggable').draggable();
   $('.draggable').mousedown(function() //associate mousedown event with developments
     {
@@ -80,10 +79,6 @@ $(function() {
   $(".closebtn").click(function() {
     $('#err').css('display', 'none');
   });
-
-  // $(".closebtn").click(function() {
-  //   $('.welcome').css('display', 'none');
-  // });
 
   // Pop-up in an article
   $('#popup-close').on('click', function() {
@@ -194,36 +189,35 @@ $(function() {
   });
 });
 
-
 /*FILTER SETTINGS*/
-$(function() {
-  function toggleDropDown() {
-    var dropDown = document.querySelector('.setting__dropdown');
+	$(function() {
+	  function toggleDropDown() {
+	    var dropDown = document.querySelector('.setting__dropdown');
 
-    if (dropDown.className.indexOf('hidden') >= 0) {
-      dropDown.classList.remove('hidden');
-    } else {
-      dropDown.classList.add('hidden');
-    }
-  }
+	    if (dropDown.className.indexOf('hidden') >= 0) {
+	      dropDown.classList.remove('hidden');
+	    } else {
+	      dropDown.classList.add('hidden');
+	    }
+	  }
 
-  function getFilter(e) {
-    e.preventDefault();
+	  function getFilter(e) {
+	    e.preventDefault();
 
-    var dropDown = document.querySelector('.setting__dropdown'),
-      dropDownButton = document.querySelector('.setting__dropdown-button');
+	    var dropDown = document.querySelector('.setting__dropdown'),
+	      dropDownButton = document.querySelector('.setting__dropdown-button');
 
-    dropDown.classList.add('hidden');
-    dropDownButton.textContent = e.target.textContent;
+	    dropDown.classList.add('hidden');
+	    dropDownButton.textContent = e.target.textContent;
 
-    document.querySelector('body').className = 'body-overflow-h' + ' ' + e.target.id;
-  }
+	    document.querySelector('body').className = 'body-overflow-h' + ' ' + e.target.id;
+	  }
 
-  document.querySelector('.setting__dropdown-button').addEventListener('click', toggleDropDown);
-  document.querySelector('.setting__dropdown').addEventListener('click', getFilter);
+	  document.querySelector('.setting__dropdown-button').addEventListener('click', toggleDropDown);
+	  document.querySelector('.setting__dropdown').addEventListener('click', getFilter);
 
 
-  for (i = 0; i < appleSliders.length; i++) {
-    appleSliders[i].addEventListener('click', switchOnOff);
-  }
-});
+	  for (i = 0; i < appleSliders.length; i++) {
+	    appleSliders[i].addEventListener('click', switchOnOff);
+	  }
+	});
