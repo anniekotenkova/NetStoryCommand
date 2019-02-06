@@ -1,0 +1,91 @@
+#start {
+  background-size: 17px 15px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  float: left;
+  width: 10rem;
+  height: 3rem;
+  display: inline-block;
+  padding: 2px 6px;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  cursor: default;
+  background-image: url(Pusk.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#startMenu {
+  top: -230px;
+  left: 2rem;
+  height: 240px;
+  width: 164px;
+  background-color: #C1C1BF;
+  position: absolute;
+  display: block;
+  border: 2px solid black;
+}
+
+#startMenu #left {
+  width: 28px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: rgb(128, 128, 128);
+  font-family: Arial;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+#startMenu .menuItem {
+  color: black;
+  height: 32px;
+  width: 100%;
+  /* margin-left: 24px; */
+  padding-left: 10px;
+  padding-top: 10px;
+  vertical-align: central;
+}
+
+#startMenu .menuItem:hover {
+  color: white;
+  background-color: black;
+}
+
+#startMenu .menuItem:first-letter {
+  text-decoration: underline;
+}
+
+#startMenu #shutdown:first-letter {
+  text-decoration: none;
+}
+
+#startMenu #left .b {
+  color: rgb(192, 192, 192);
+  transform: rotateZ(-90deg);
+  transform-origin: center left;
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  font-size: 20px;
+  margin-top: 215px;
+  margin-left: 10px;
+}
+
+#startMenu #left .num95 {
+  font-weight: 100 !important;
+  color: white;
+}
+
+.startRest {
+  color: black;
+  /* border: 2px solid black; */
+}
+
+.startRest:hover {
+  color: black;
+}

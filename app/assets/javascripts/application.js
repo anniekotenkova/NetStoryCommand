@@ -80,6 +80,16 @@ $(function() {
     $('#err').css('display', 'none');
   });
 
+  // Hidden taskber
+  $(".sbtn").click(function() {
+    $('#computer').css('display', 'block');
+  });
+
+  $(".abtn").click(function() {
+    $('#info').css('display', 'block');
+  });
+
+
   // Pop-up in an article
   $('#popup-close').on('click', function() {
     $('.popup').toggleClass('isClosed')

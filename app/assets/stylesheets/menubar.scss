@@ -27,7 +27,7 @@ $breakpoint-medium: "screen and (min-width: 700px)";
   margin: 5px 0;
   transition: all 0.2s;
   width: auto;
-  z-index: 1;
+  // z-index: 1;
   text-align: center;
   cursor: pointer;
 }
@@ -103,7 +103,12 @@ div.closebtn {
   margin: 0 auto;
 }
 
-
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
 // ARTICLES FOLDER
 .menu_top {
   border-bottom: 2px solid #1d1e1c;
@@ -270,7 +275,6 @@ div.closebtn {
   text-align: center;
   position: relative;
   transition: all 150ms linear;
-  border-radius: 4px;
   border: 1px solid black;
   transition: color 0.3s ease;
   color: #202129;
