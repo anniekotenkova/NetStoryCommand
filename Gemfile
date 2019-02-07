@@ -34,6 +34,7 @@ gem 'barista'
 gem 'therubyracer', :require => nil
 
 gem 'youtube_rails'
+gem 'kaminari'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
