@@ -17,7 +17,7 @@ class FoldersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create folder" do
     assert_difference('Folder.count') do
-      post folders_url, params: { folder: { icon: @folder.icon, name: @folder.name, type: @folder.type } }
+      post folders_url, params: { folder: {  } }
     end
 
     assert_redirected_to folder_url(Folder.last)
@@ -34,7 +34,7 @@ class FoldersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update folder" do
-    patch folder_url(@folder), params: { folder: { icon: @folder.icon, name: @folder.name, type: @folder.type } }
+    patch folder_url(@folder), params: { folder: {  } }
     assert_redirected_to folder_url(@folder)
   end
 

@@ -14,9 +14,6 @@ class FoldersTest < ApplicationSystemTestCase
     visit folders_url
     click_on "New Folder"
 
-    fill_in "Icon", with: @folder.icon
-    fill_in "Name", with: @folder.name
-    fill_in "Type", with: @folder.type
     click_on "Create Folder"
 
     assert_text "Folder was successfully created"
@@ -27,9 +24,6 @@ class FoldersTest < ApplicationSystemTestCase
     visit folders_url
     click_on "Edit", match: :first
 
-    fill_in "Icon", with: @folder.icon
-    fill_in "Name", with: @folder.name
-    fill_in "Type", with: @folder.type
     click_on "Update Folder"
 
     assert_text "Folder was successfully updated"

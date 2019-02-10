@@ -26,15 +26,14 @@
     </div>
   </div>
 
-
   <!-- Welcome alert -->
-  <div class="container welcome draggable desk-elements">
+  <div class="window welcome draggable desk-elements">
     <div class="card resizable">
-
-      <div id="browser-top">
-        <div id="close-btn"></div>
-        <div id="min-btn"></div>
-        <div id="full-btn"></div>
+      <div class="menu_top">
+        <span class="folder_title"></span>
+        <div class="closebtn">
+          <%= image_tag 'x.svg' %>
+        </div>
       </div>
       <div class="fakeScreen">
         <p class="line1">&#91;&nbsp;Привет! Добро пожаловать в проект NetStory<span class="cursor1">_</span></p>
@@ -50,10 +49,11 @@
   <div id="info" class="foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">About</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
-    <div class="infoldercontent infolder">
+    <div class="infoldercontent infolder information">
       <h4>Information about the project</h4>
       <p>NetStory – это&nbsp;проект про&nbsp;историю интернета. На&nbsp;страницы собраны статьи о&nbsp; самых интересных событиях интернета
         <br>с&nbsp; момента его&nbsp;зарождения до&nbsp;наших дней. На&nbsp;рабочем столе подборка избранных статей, остальные статьи можно найти
@@ -86,9 +86,22 @@
   <div id="computer" class="foldercontent draggable">
     <div class="menu_top">
       <span class="folder_title">Settings</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
+    </section>
+    <div class="article-icon"></div>
+  </div>
+
+<!-- settings -->
+  <div id="setting" class="foldercontent draggable">
+    <div class="menu_top">
+      <span class="folder_title">Settings</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
+    </div>
     <div class="infoldercontent">
       <div class="setting settings_first setting_border">
         <h3 class="setting__title">Change background</h3>
@@ -100,16 +113,38 @@
         </div>
       </div>
     </div>
-    <div class="article-icon"></div>
+    <section class="setting setting_100">
+      <h3 class="setting__title">Filters</h3>
+      <div class="setting__dropdown-wrap">
+        <button class="setting__dropdown-button">Normal</button>
+        <div class="dropdown__arrow-wrap">
+          <%= image_tag 'dropdown-arrow.svg' %>
+        </div>
+        <div class="setting__dropdown hidden">
+          <a href="#" class="setting__dropdown__option" id="normal">
+            Normal
+          </a>
+          <a href="#" class="setting__dropdown__option" id="black-white">
+            Black and white
+          </a>
+          <a href="#" class="setting__dropdown__option" id="hue-rotate">
+            Invert Hue
+          </a>
+          <a href="#" class="setting__dropdown__option" id="negative">
+            Negative
+          </a>
+        </div>
+      </div>
   </div>
 
   <!-- Folder with articles -->
   <div id="folder" class="foldercontent draggable desktop-folder_center">
     <div class="menu_top">
       <span class="folder_title">Articles</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
     </div>
-    <button class="close">
-    </button>
     <div class="folder-content__wrap-overflow scrollbar">
       <ul class="project-list nav_basic">
         <li class="project-list__item">
@@ -134,9 +169,12 @@
 
   <!-- Trash -->
   <div id="trash" class="foldercontent draggable">
-    <div id="close-btn" class="cbtrash"></div>
-    <div id="min-btn"></div>
-    <div id="full-btn"></div>
+    <div class="menu_top">
+      <span class="folder_title">Trash</span>
+      <div class="closebtn">
+        <%= image_tag 'x.svg' %>
+      </div>
+    </div>
     <div class="infoldercontent"></div>
   </div>
 
@@ -149,40 +187,33 @@
   </div>
   <div id="fastlink_att" class="draggable desk-elements"></div>
 
-  <!-- Articles -->
-  <div class="allArticles">
-    <!-- Error404 -->
-    <div id="err" class="foldercontent draggable">
-          <%= render "articles/error404" %>
-    </div>
-
-    <!-- First Landing -->
-    <div id="landing" class="foldercontent draggable">
-        <%= render "articles/firstlanding" %>
-    </div>
-
-    <!-- Email -->
-    <div id="mailb" class="foldercontent draggable">
-        <%= render "articles/email" %>
-    </div>
-
-    <!-- First Browser -->
-    <div id="guiewrise" class="foldercontent draggable">
-        <%= render "articles/firstbrowser" %>
-      </div>
-    </div>
-  </div>
-
   <!-- Taskbar -->
+  <!-- <div id="taskbar">
+    <div id="start" class="startRest">Start</div>
+    <div id="startMenu">
+      <div class="menuItem">Settings</div>
+      <div class="menuItem">About</div>
+      <div class="menuItem">Help</div>
+      <div class="menuItem">Find</div>
+    </div>
+    <div id="notifications">
+      <div id="clock"></div>
+    </div>
+  </div> -->
+
   <div class="taskbar">
     <div class="icons">
       <div class="icons-left">
-        <a href="#" id="start-menu"></a>
-        <a href="#infofolder" id="about-icon"></a>
-        <a href="#trashfolder" id="trash-icon"></a>
-        <a href="#" class="px"></a>
-        <a href="#folderfolder" id="folder-icon" class="border"></a>
-        <a href="#computerfolder" id="computer-icon" class="border"></a>
+        <a href="#" id="start-menu">
+          <div id="start" class="startRest"></div>
+          <div id="startMenu">
+            <div class="menuItem sbtn">Settings</div>
+            <div class="menuItem abtn">About</div>
+            <div class="menuItem hbtn">Help</div>
+            <div class="menuItem">Find</div>
+          </div>
+        </a>
+        <!-- <a href="#infofolder" id="about-icon"></a> <a href="#trashfolder" id="trash-icon"></a> <a href="#" class="px"></a> <a href="#folderfolder" id="folder-icon" class="border"></a> <a href="#computerfolder" id="computer-icon" class="border"></a> -->
       </div>
       <div class="icons-right">
         <a href="#up" id="up" class="small-icons">

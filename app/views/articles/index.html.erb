@@ -1,235 +1,26 @@
+
 <p id="notice"><%= notice %></p>
 
-<section id="body">
+<h1>articles</h1>
 
-  <!-- Menubar -->
-  <div id="Desktop">
-    <div class="">
-      <span id="infofolder" class="icon draggable" data-title="Справка">
-        <%= image_tag 'about.png' %>
-      </span>
-    </div>
-    <div class="">
-      <span id="computerfolder" class="icon draggable" data-title="Мой компьютер">
-        <%= image_tag 'computer.png' %>
-      </span>
-    </div>
-    <div class="">
-      <span id="folderfolder" class="icon draggable" data-title="Папка">
-        <%= image_tag 'folder.png' %>
-      </span>
-    </div>
-    <div class="">
-      <span id="trashfolder" class="icon draggable" data-title="Корзина">
-        <%= image_tag 'trash.png' %>
-      </span>
-    </div>
-  </div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-  <!-- Welcome alert -->
-  <div class="window welcome draggable desk-elements">
-    <div class="card resizable">
-      <div class="menu_top">
-        <span class="folder_title"></span>
-        <div class="closebtn">
-          <%= image_tag 'x.svg' %>
-        </div>
-      </div>
-      <div class="fakeScreen">
-        <p class="line1">&#91;&nbsp;Привет! Добро пожаловать в проект NetStory<span class="cursor1">_</span></p>
-        <p class="line2">&nbsp;&nbsp;Этот сервис поможет узнать вам об Интернете все!<span class="cursor2">_</span></p>
-        <p class="line3">&nbsp;&nbsp;Открой Справку, чтобы узнать больше :)&nbsp;&#93;
-          <span class="cursor3">_</span></p>
-        <p class="line4">><span class="cursor4">_</span></p>
-      </div>
-    </div>
-  </div>
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-  <!-- "About" folder -->
-  <div id="info" class="foldercontent draggable">
-    <div class="menu_top">
-      <span class="folder_title">About</span>
-      <div class="closebtn">
-        <%= image_tag 'x.svg' %>
-      </div>
-    </div>
-    <div class="infoldercontent infolder information">
-      <h4>Information about the project</h4>
-      <p>NetStory – это&nbsp;проект про&nbsp;историю интернета. На&nbsp;страницы собраны статьи о&nbsp; самых интересных событиях интернета
-        <br>с&nbsp; момента его&nbsp;зарождения до&nbsp;наших дней. На&nbsp;рабочем столе подборка избранных статей, остальные статьи можно найти
-        <br>в&nbsp; «Папке».
-      </p>
-      <div class="share-button">
-        <div class="lid">Поделиться</div>
-        <div class="share-items-wrapper">
-          <div class="share-items">
-            <a href="#" class="share-item">
-              <span class="fa fa-facebook"></span>
-            </a>
-            <a href="#" class="share-item">
-              <span class="fa fa-twitter"></span>
-            </a>
-            <a href="#" class="share-item">
-              <span class="fa fa-instagram"></span>
-            </a>
-          </div>
-        </div>
-        <div class="thank-you">
-          Спасибо!
-        </div>
-      </div>
-    </div>
+<br>
 
-  </div>
-
-  <!-- "My computer" folder -->
-  <div id="computer" class="foldercontent draggable">
-    <div class="menu_top">
-      <span class="folder_title">Settings</span>
-      <div class="closebtn">
-        <%= image_tag 'x.svg' %>
-      </div>
-    </div>
-    <div class="infoldercontent">
-      <div class="setting settings_first setting_border">
-        <h3 class="setting__title">Change background</h3>
-        <div class="color-list">
-          <div id="pink" class="backgroundcolor"></div>
-          <div id="blue" class="backgroundcolor"></div>
-          <div id="yellow" class="backgroundcolor"></div>
-          <div id="black" class="backgroundcolor"></div>
-        </div>
-      </div>
-    </div>
-    <section class="setting setting_100">
-      <h3 class="setting__title">Filters</h3>
-      <div class="setting__dropdown-wrap">
-        <button class="setting__dropdown-button">Normal</button>
-        <div class="dropdown__arrow-wrap">
-          <%= image_tag 'dropdown-arrow.svg' %>
-        </div>
-        <div class="setting__dropdown hidden">
-          <a href="#" class="setting__dropdown__option" id="normal">
-            Normal
-          </a>
-          <a href="#" class="setting__dropdown__option" id="black-white">
-            Black and white
-          </a>
-          <a href="#" class="setting__dropdown__option" id="hue-rotate">
-            Invert Hue
-          </a>
-          <a href="#" class="setting__dropdown__option" id="negative">
-            Negative
-          </a>
-        </div>
-      </div>
-    </section>
-    <div class="article-icon"></div>
-  </div>
-
-  <!-- Folder with articles -->
-  <div id="folder" class="foldercontent draggable desktop-folder_center">
-    <div class="menu_top">
-      <span class="folder_title">Articles</span>
-      <div class="closebtn">
-        <%= image_tag 'x.svg' %>
-      </div>
-    </div>
-    <div class="folder-content__wrap-overflow scrollbar">
-      <ul class="project-list nav_basic">
-        <li class="project-list__item">
-          <div id="er" class="article-icon"></div>
-          <p>Ошибка 404</p>
-        </li>
-        <li class="project-list__item">
-          <div id="gui" class="article-icon"></div>
-          <p>Erwise</p>
-        </li>
-        <li class="project-list__item">
-          <div id="mailb" class="article-icon"></div>
-          <p>Первый E-mail</p>
-        </li>
-        <li class="project-list__item">
-          <div id="att" class="article-icon"></div>
-          <p>Первый лендинг</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Trash -->
-  <div id="trash" class="foldercontent draggable">
-    <div class="menu_top">
-      <span class="folder_title">Trash</span>
-      <div class="closebtn">
-        <%= image_tag 'x.svg' %>
-      </div>
-    </div>
-    <div class="infoldercontent"></div>
-  </div>
-
-  <section class="article_main"></section>
-
-  <!-- Preview on the desktop -->
-
-  <div id="fastlink_erwise" class="draggable desk-elements">
-    <div id="close-btn" class="cbfastlink_erwise"></div>
-  </div>
-  <div id="fastlink_att" class="draggable desk-elements"></div>
-
-
-  <div class="container video draggable desk-elements">
-    <div class="card">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/21eFwbb48sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-      <div class="card-content">
-        <h1>Кто придумал интернет? И зачем...</h1>
-        <h4>#VIDEO // 19 Декабря 2018</h4>
-      </div>
-    </div>
-  </div>
-
-  <!-- Taskbar -->
-  <div id="taskbar">
-    <div id="start" class="startRest">Start</div>
-    <div id="startMenu">
-      <div class="menuItem">Settings</div>
-      <div class="menuItem">About</div>
-      <div class="menuItem">Help</div>
-      <div class="menuItem">Find</div>
-    </div>
-    <div id="notifications">
-      <div id="clock"></div>
-    </div>
-  </div>
-  <div class="taskbar">
-    <div class="icons">
-      <div class="icons-left">
-        <a href="#" id="start-menu">
-          <div id="start" class="startRest"></div>
-          <div id="startMenu">
-            <div class="menuItem sbtn">Settings</div>
-            <div class="menuItem abtn">About</div>
-            <div class="menuItem hbtn">Help</div>
-            <div class="menuItem">Find</div>
-          </div>
-        </a>
-        <!-- <a href="#infofolder" id="about-icon"></a> <a href="#trashfolder" id="trash-icon"></a> <a href="#" class="px"></a> <a href="#folderfolder" id="folder-icon" class="border"></a> <a href="#computerfolder" id="computer-icon" class="border"></a> -->
-      </div>
-      <div class="icons-right">
-        <a href="#up" id="up" class="small-icons">
-          <i class="fas fa-chevron-up"></i>
-        </a>
-        <a href="#sound-modal" id="sound" class="small-icons"></a>
-        <a href="#wifi-modal" id="wifi" class="small-icons"></a>
-        <div class="datetime">
-          <span class="float_right" id="clock"></span>
-        </div>
-        <a href="#notifications" id="notifications">
-          <i class="far fa-bell"></i>
-        </a>
-        <a href="#" class="clear disabled"></a>
-        <a href="#" id="return"></a>
-      </div>
-    </div>
-  </div>
-</section>
+<%= link_to 'New article', new_article_path %>

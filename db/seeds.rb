@@ -1,3 +1,4 @@
+
 # require 'faker'
 
 # Reset database

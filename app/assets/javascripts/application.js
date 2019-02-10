@@ -65,6 +65,10 @@ $(function() {
   });
 
   $(".closebtn").click(function() {
+    $('#setting').css('display', 'none');
+  });
+
+  $(".closebtn").click(function() {
     $('#folder').css('display', 'none');
   });
 
@@ -82,7 +86,7 @@ $(function() {
 
   // Hidden taskber
   $(".sbtn").click(function() {
-    $('#computer').css('display', 'block');
+    $('#setting').css('display', 'block');
   });
 
   $(".abtn").click(function() {
