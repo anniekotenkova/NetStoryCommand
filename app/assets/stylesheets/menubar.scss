@@ -248,8 +248,8 @@ div.closebtn {
   background-image: url("erwise/fastlink_erwise.png");
   background-size: cover;
   position: absolute;
-  left: 400px;
-  top: 450px;
+  left: 928px;
+  top: 21px;
   box-shadow: $default-box-shadow;
   color: #00000030;
   cursor: pointer;
@@ -262,23 +262,24 @@ div.closebtn {
   background-size: cover;
   position: absolute;
   z-index: 2;
-  left: 800px;
-  top: 200px;
   box-shadow: $default-border;
   color: #00000030;
   cursor: pointer;
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+  top: 420px;
+  left: 554px;
 }
 
 .share-button {
   font-family: 'Cera Pro';
-  font-weight: 300;
+  font-weight: bold;
   text-align: center;
   position: relative;
   transition: all 150ms linear;
-  border: 1px solid black;
+  border: 2px solid black;
   transition: color 0.3s ease;
   color: #202129;
-  background-color: #fff;
+  background-color: #DADAD3;
   height: 30px;
   width: 100px;
   padding-top: 0.35em;
@@ -288,12 +289,12 @@ div.closebtn {
   &:hover {
     transition: all 150ms linear;
     color: #202129;
-    background-color: #fff;
+    background-color: #DADAD3;
     opacity: 0.85;
   }
 
   &:active {
-    background-color: #d5d6d6;
+    background-color: #DADAD3;
     opacity: 1;
     transition: all 150ms linear;
     opacity: 0.75;
@@ -342,7 +343,7 @@ div.closebtn {
   top: -100px;
   left: 0;
   width: 100%;
-  color: #FFF;
+  color: #000;
   transition: 300ms ease all;
 }
 

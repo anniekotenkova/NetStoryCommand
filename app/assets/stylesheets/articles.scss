@@ -51,8 +51,8 @@ body {
 	border-bottom: $default-border;
 	background-color: $color-card-background;
 	height: 40px;
-	border-top-left-radius: $default-border-radius;
-	border-top-right-radius: $default-border-radius;
+	// border-top-left-radius: $default-border-radius;
+	// border-top-right-radius: $default-border-radius;
 	padding: 8px 15px;
 }
 
@@ -108,7 +108,7 @@ background-color: #ffffff;
 .card {
 	resize: both;
 	background-color: $color-card-background;
-	border-radius: $default-border-radius;
+	// border-radius: $default-border-radius;
 	border: $default-border;
 	box-shadow: $default-box-shadow;
 	display: flex;

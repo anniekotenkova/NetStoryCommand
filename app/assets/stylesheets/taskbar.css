@@ -26,6 +26,7 @@ body {
   position: relative;
 }
 
+
 .taskbar .icons-left #start-menu i, .taskbar .icons-left #trash i {
   position: absolute;
   top: 50%;
@@ -188,4 +189,9 @@ body {
 
 .taskbar .icons-right .small-icons {
   width: 24px !important;
+}
+
+#clock {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
