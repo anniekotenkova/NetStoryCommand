@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 2019_02_04_142406) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "video"
   end
 
   create_table "years", force: :cascade do |t|
