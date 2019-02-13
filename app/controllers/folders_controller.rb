@@ -5,6 +5,10 @@ class FoldersController < ApplicationController
   # GET /folders.json
   def index
     @folders = Folder.all
+
+    respond_to do |format|
+      format.js
+    end
   end
 
   # GET /folders/1
