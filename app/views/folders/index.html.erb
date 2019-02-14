@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<!--
 <h1>Folders</h1>
 
 <table>
@@ -28,4 +28,7 @@
 
 <br>
 
-<%= link_to 'New Folder', new_folder_path %>
+<%= link_to 'New Folder', new_folder_path %> -->
+<div class="ajaxFolders">
+  <%= render partial: "articles/#{ article.partial_name }", article: article %>
+</div>

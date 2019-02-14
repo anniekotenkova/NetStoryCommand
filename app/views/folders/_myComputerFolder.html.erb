@@ -1,0 +1,106 @@
+<!-- "My computer" folder -->
+<div id="computer" class="foldercontent draggable">
+  <div class="menu_top">
+    <span class="folder_title">My computer</span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <!-- <div class="article-icon"></div> -->
+
+  <div class="folder-content__wrap-overflow scrollbar">
+    <div class="infoldercontent">
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <p>1970-е</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="article-icon"></div> -->
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <p>1980-е</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="article-icon"></div> -->
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <p>1990-е</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <p>2000-е</p>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- settings -->
+<div id="setting" class="foldercontent draggable">
+  <div class="menu_top">
+    <span class="folder_title">Settings</span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div class="infoldercontent">
+    <div class="setting settings_first setting_border">
+      <h3 class="setting__title">Change background</h3>
+      <div class="color-list">
+        <div id="pink" class="backgroundcolor"></div>
+        <div id="blue" class="backgroundcolor"></div>
+        <div id="yellow" class="backgroundcolor"></div>
+        <div id="black" class="backgroundcolor"></div>
+      </div>
+    </div>
+  </div>
+  <section class="setting setting_100">
+    <h3 class="setting__title">Filters</h3>
+    <div class="setting__dropdown-wrap">
+      <button class="setting__dropdown-button">Normal</button>
+      <div class="dropdown__arrow-wrap">
+        <%= image_tag 'dropdown-arrow.svg' %>
+      </div>
+      <div class="setting__dropdown hidden">
+        <a href="#" class="setting__dropdown__option" id="normal">
+          Normal
+        </a>
+        <a href="#" class="setting__dropdown__option" id="black-white">
+          Black and white
+        </a>
+        <a href="#" class="setting__dropdown__option" id="hue-rotate">
+          Invert Hue
+        </a>
+        <a href="#" class="setting__dropdown__option" id="negative">
+          Negative
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
