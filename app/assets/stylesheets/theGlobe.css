@@ -87,17 +87,18 @@
   overflow: scroll;
   position: relative;
   top: -460px;
-}
 
-.globeText p {
-  font-size: 12px;
-  font-weight: normal;
-  display: flex;
-}
-.globeText p, h4 {
-  width: 400px;
-  margin: 0 auto;
-  position: relative;
-  left: -85px;
-  top: 200px;
+  p {
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+  }
+
+  p, h4 {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    left: -85px;
+    top: 200px;
+  }
 }
