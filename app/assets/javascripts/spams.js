@@ -7,7 +7,7 @@ $(function() {
 
   var i;
 
-  var delay = 900,
+  var delay = 300,
     called = false;
 
   $("#spamfolder").dblclick(function() {
