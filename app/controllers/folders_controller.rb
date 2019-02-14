@@ -4,11 +4,14 @@ class FoldersController < ApplicationController
   # GET /folders
   # GET /folders.json
   def index
-    #@folders = Folder.all
+    @folders = Folder.all
     respond_to do |format|
     format.html
     format.js
+    end
   end
+
+
 
   # GET /folders/1
   # GET /folders/1.json
@@ -67,7 +70,11 @@ class FoldersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_folder
-      @folder = Folder.find(params[:id])
+    #  @folder = Folder.find(params[:id])
+      respond_to do |format|
+        format.html { redirect_to folders_url}
+        format.js { redirect_to folders_url}
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

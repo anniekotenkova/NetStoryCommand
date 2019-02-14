@@ -1,34 +1,53 @@
 <p id="notice"><%= notice %></p>
-<!--
-<h1>Folders</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Name</th>
-      <th>Icon</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<!-- Folder with articles -->
+<div id="folder" class="foldercontent draggable desktop-folder_center">
+  <div class="menu_top">
+    <span class="folder_title">Articles</span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div class="folder-content__wrap-overflow scrollbar">
+    <ul class="project-list nav_basic">
+      <li class="project-list__item">
+        <div id="er" class="article-icon"></div>
+        <p>Ошибка 404</p>
+      </li>
+      <li class="project-list__item">
+        <div id="gui" class="article-icon"></div>
+        <p>Erwise</p>
+      </li>
+      <li class="project-list__item">
+        <div id="mailb" class="article-icon"></div>
+        <p>Первый E-mail</p>
+      </li>
+      <li class="project-list__item">
+        <div id="att" class="article-icon"></div>
+        <p>Первый лендинг</p>
+      </li>
+    </ul>
+    <div class="allArticles">
 
-  <tbody>
-    <% @folders.each do |folder| %>
-      <tr>
-        <td><%= folder.type %></td>
-        <td><%= folder.name %></td>
-        <td><%= folder.icon %></td>
-        <td><%= link_to 'Show', folder %></td>
-        <td><%= link_to 'Edit', edit_folder_path(folder) %></td>
-        <td><%= link_to 'Destroy', folder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <!-- Error404 -->
+  <div id="err" class="foldercontent draggable">
+        <%= render "articles/error404" %>
+  </div>
 
-<br>
+  <!-- First Landing -->
+  <div id="landing" class="foldercontent draggable">
+      <%= render "articles/firstlanding" %>
+  </div>
 
-<%= link_to 'New Folder', new_folder_path %> -->
-<div class="ajaxFolders">
-  <%= render partial: "articles/#{ article.partial_name }", article: article %>
+  <!-- Email -->
+  <div id="mailb" class="foldercontent draggable">
+      <%= render "articles/email" %>
+  </div>
+
+  <!-- First Browser -->
+  <div id="guiewrise" class="foldercontent draggable">
+      <%= render "articles/firstbrowser" %>
+    </div>
+  </div>
 </div>
+<!-- </div> -->

@@ -1,0 +1,6 @@
+// $("postContainer").append("<%= j render partial: "articles/#{ article.partial_name }", article: article %>")
+
+// $("folders/yearsFolders").replaceWith("<%= j render partial: "folder/yearsFolders", folder: @folder %>")
+
+// $("yearsFolders").replaceWith("<%= j render partial: "{folders/folderWithArticles}", folder: folder %>")
+$('#folderfolder').on('click').replaceWith("<%= j render partial: 'folderWithArticles', folder: @folder %>");
