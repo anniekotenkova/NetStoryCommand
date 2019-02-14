@@ -61,8 +61,6 @@ span.focus:after {
 
 .foldercontent {
   display: none;
-  position: absolute;
-  z-index: 2;
   height: 403px;
   width: 560px;
   background-color: #FFF;
@@ -79,6 +77,7 @@ span.focus:after {
 }
 
 div.closebtn {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;

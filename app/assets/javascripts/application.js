@@ -11,12 +11,11 @@
 
 $(function() {
   var maxZindex = 0;
-
   $('.draggable').draggable();
 
   $('.draggable').mousedown(function() {
     $(this).siblings('.draggable').each(function() {
-      var currentZindex = Number($(this).css('z-index')); //retrieve z-index of each development we are looping through
+      var currentZindex = Number($(this).css('z-index'));
       maxZindex = currentZindex > maxZindex ? currentZindex : maxZindex;
     });
     $(this).css('z-index', maxZindex + 1);
@@ -56,34 +55,6 @@ $(function() {
     $('#trash').css('display', 'block');
   });
 
-
-  $(".closebtn").click(function() {
-    $('#info').css('display', 'none');
-  });
-
-  $(".closebtn").click(function() {
-    $('#computer').css('display', 'none');
-  });
-
-  $(".closebtn").click(function() {
-    $('#setting').css('display', 'none');
-  });
-
-  $(".closebtn").click(function() {
-    $('#folder').css('display', 'none');
-  });
-
-  $(".closebtn").click(function() {
-    $('#trash').css('display', 'none');
-  });
-
-  $("#er").click(function() {
-    $('#err').css('display', 'block');
-  });
-
-  $(".closebtn").click(function() {
-    $('#err').css('display', 'none');
-  });
 
   // Hidden taskber
   $(".sbtn").click(function() {

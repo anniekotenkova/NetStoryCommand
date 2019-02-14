@@ -1,46 +1,47 @@
-
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
-(function(){
-    var pornLinks = document.querySelectorAll('[href="#porn"]'),
-        pornWindows = document.querySelectorAll('.porn-window'),
-        pornContainer = document.querySelector('.porn');
+$(function() {
 
-    var i;
+  var spamLinks = document.querySelectorAll('[href="#spam"]'),
+    spamWindows = document.querySelectorAll('.spam-window'),
+    spamContainer = document.querySelector('.spam');
 
-    var delay = 900,
-        called = false;
+  var i;
 
-    function delayWindowOpen(el, time){
-        setTimeout(function(){
-            el.classList.remove('hidden');
-        }, time)
+  var delay = 900,
+    called = false;
+
+  $("#spamfolder").dblclick(function() {
+    for (i = 1; i < spamWindows.length; i++) {
+      var time = delay * i;
+      delayWindowOpen(spamWindows[i], time);
     }
+    $('.spam').removeClass('hidden');
+  });
 
-    function animatePornWindows(){
-        for(i = 1; i < pornWindows.length; i++){
-            var time = delay * i;
-            delayWindowOpen(pornWindows[i], time);
+  function delayWindowOpen(el, time) {
+    setTimeout(function() {
+      el.classList.remove('hidden');
+    }, time)
+  }
+
+  for (i = 0; i < spamLinks.length; i++) {
+    spamLinks[i].addEventListener('click', function() {
+      setTimeout(function() {
+        if (called == false) {
+          document.querySelector('#alert1').classList.remove('hidden');
+          called = true;
+          animatespamWindows();
         }
-    }
-
-    for(i = 0; i < pornLinks.length; i++){
-        pornLinks[i].addEventListener('click', function(){
-            setTimeout(function(){
-                if(called == false){
-                    document.querySelector('#porn1').classList.remove('hidden');
-                    called = true;
-                    animatePornWindows();
-                }
-            }, 2000);
-        });
-    }
-
-    pornContainer.addEventListener('click', function(){
-        if(pornContainer.querySelector('.hidden')){
-            called = false;
-            for(i = 1; i < pornWindows.length; i++){
-                pornWindows[i].classList.remove('.hidden');
-            }
-        }
+      }, 2000);
     });
-})();
+  }
+
+  spamContainer.addEventListener('click', function() {
+    if (spamContainer.querySelector('.hidden')) {
+      called = false;
+      for (i = 1; i < spamWindows.length; i++) {
+        spamWindows[i].classList.remove('.hidden');
+      }
+    }
+  });
+});
