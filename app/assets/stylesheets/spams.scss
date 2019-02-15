@@ -1,14 +1,13 @@
+$default-border: 2px solid black;
+$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+
 /* SPAM */
 .spam-window {
-    display: -webkit-flex;
-    display: -moz-flex;
     display: flex;
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+    box-shadow:$default-box-shadow;
 }
 .spam {
     position: relative;
@@ -18,14 +17,15 @@
     width: 20vw;
     left: 612px;
     top: 5px;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 #alert2 {
     width: 17vw;
     left: 327px;
     top: 138px;
 }
+
 #alert3 {
     width: 10vw;
     left: 106px;
@@ -36,16 +36,19 @@
     left: 612px;
     top: 5px;
 }
+
 #alert5 {
     width: 13vw;
     left: 938px;
     top: -218px;
 }
+
 #alert6 {
     width: 13vw;
     left: 709px;
     top: 276px;
 }
+
 #alert7 {
     width: 19vw;
     left: 73px;
@@ -53,11 +56,11 @@
 }
 
 .spam_img {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
+
 .spam-window {
-  border: 2px solid black;
+  border: $default-border;
   width: 100%;
 }
