@@ -15,7 +15,26 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 	padding: 0;
 }
 
-/* CARDS PREVIEW */
+html {
+	box-sizing: border-box;
+	color: $color-body-copy;
+	font: {
+		family: 'Cera Pro', sans-serif;
+		size: 100%;
+		weight: 300;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: $color-tag-background;
+	padding: 2.1875em;
+}
 
 #info p {
 	font-size: 87.5%;
@@ -32,6 +51,8 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 	border-bottom: $default-border;
 	background-color: $color-card-background;
 	height: 40px;
+	// border-top-left-radius: $default-border-radius;
+	// border-top-right-radius: $default-border-radius;
 	padding: 8px 15px;
 }
 
@@ -246,9 +267,9 @@ img {
 }
 
 
-/* ARTICLES */
+/* статьи */
 .allArticles {
-	/* ERROR 404 */
+	/* ошибка 404 */
 	#err {
 		display: none;
 		position: absolute;
@@ -472,8 +493,7 @@ img {
 	#thirdPage {
 		display: none;
 	}
-
-	/* EMAIL */
+	/* имейл */
 	@font-face {
 		font-family: Courier New;
 		src: url("/CourierStd.ttf");
@@ -540,8 +560,7 @@ img {
 		position: relative;
 		left: 150px;
 	}
-
-	/* FIRST LANDING */
+	/* первый лендос  */
 
 	#landing {
 		display: none;
