@@ -10,8 +10,10 @@ def data_seed
 end
 
 def create_folders
-  Folder.create(name: '1960', icon: File.open(File.join(Rails.root, 'assets/images/folder.png')))
-  Folder.create(name: '1970', icon: File.open(File.join(Rails.root, 'assets/images/folder.png')))
-  Folder.create(name: '1980', icon: File.open(File.join(Rails.root, 'assets/images/folder.png')))
-  Folder.create(name: '1990', icon: File.open(File.join(Rails.root, 'assets/images/folder.png')))
+  Folder.create(name: '1960', icon: File.open(File.join(Rails.root, 'app/assets/images/folder.png')))
+  Folder.create(name: '1970', icon: File.open(File.join(Rails.root, 'app/assets/images/folder.png')))
+  Folder.create(name: '1980', icon: File.open(File.join(Rails.root, 'app/assets/images/folder.png')))
+  Folder.create(name: '1990', icon: File.open(File.join(Rails.root, 'app/assets/images/folder.png')))
 end
+
+data_seed
