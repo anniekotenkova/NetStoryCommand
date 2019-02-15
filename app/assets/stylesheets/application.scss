@@ -14,16 +14,37 @@
  *= require_self
  */
 
+ @import "reset.css";
+ $color-card-background: #FFFFFF;
+ $color-tag-background: #E3E5E9;
+ $color-anchor: #E62A5D;
+ $color-body-copy: #b9bcbd;
+ $default-border-radius: 5px;
+ $default-border: 2px solid black;
+ $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+ $default-font-family: 'Cera Pro';
+ $breakpoint-medium: "screen and (min-width: 700px)";
  $mainColor: #FF85A6;
  $secondaryColor: #EBFFFA;
  :root {
      --main-color: $mainColor;
  }
 
-html{
-}
+ html {
+ 	box-sizing: border-box;
+ 	color: $color-body-copy;
+ 	font-family: $default-font-family;
+  overflow: hidden;
+ }
+
+ *,
+ *:after,
+ *:before {
+ 	box-sizing: inherit;
+ }
 
 body {
+  background-color: $color-tag-background;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -35,43 +56,42 @@ body {
   position: relative;
   overflow: hidden;
   background: #FF85A6;
-
 }
 
-.button {
-  a {
-		white-space: nowrap;
-		text-decoration: none !important;
-		text-transform: none;
-		text-transform: capitalize;
-		transition: all 150ms linear;
-		text-align: center;
-		border-radius: 4px;
-		border: 1px solid black;
-		border-color: #000;
-		display: block;
-		padding: 0.3125em 1.25em;
-		transition: color 0.3s ease;
-		color: #202129;
-		background-color: #FFF;
-
-		  &:hover {
-		    transition: all 150ms linear;
-				color: #202129;
-				background-color: #FFF;
-		    opacity: .85;
-		  }
-
-		  &:active {
-				background-color: #d5d6d6;
-				opacity: 1;
-		    transition: all 150ms linear;
-		    opacity: .75;
-		  }
-
-		  &:focus {
-		    outline: 1px dotted #959595;
-		    outline-offset: -4px;
-		  }
-	}
-}
+// .button {
+//   a {
+// 		white-space: nowrap;
+// 		text-decoration: none !important;
+// 		text-transform: none;
+// 		text-transform: capitalize;
+// 		transition: all 150ms linear;
+// 		text-align: center;
+// 		border-radius: 4px;
+// 		border: 1px solid black;
+// 		border-color: #000;
+// 		display: block;
+// 		padding: 0.3125em 1.25em;
+// 		transition: color 0.3s ease;
+// 		color: #202129;
+// 		background-color: #FFF;
+//
+// 		  &:hover {
+// 		    transition: all 150ms linear;
+// 				color: #202129;
+// 				background-color: #FFF;
+// 		    opacity: .85;
+// 		  }
+//
+// 		  &:active {
+// 				background-color: #d5d6d6;
+// 				opacity: 1;
+// 		    transition: all 150ms linear;
+// 		    opacity: .75;
+// 		  }
+//
+// 		  &:focus {
+// 		    outline: 1px dotted #959595;
+// 		    outline-offset: -4px;
+// 		  }
+// 	}
+// }
