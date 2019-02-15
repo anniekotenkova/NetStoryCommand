@@ -1,12 +1,9 @@
+$default-border: 2px solid black;
+$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+$background-size: 26px 26px;
+$position: center;
+$repeat: no-repeat;
 
-html,
-body {
-  overflow: hidden;
-}
-
-/* ==========================================================================
-    Taskbar
-========================================================================== */
 .taskbar {
   position: fixed;
   bottom: 0;
@@ -15,19 +12,19 @@ body {
   background: #D8D8D8;
 }
 
-.taskbar .icons-left {
+.icons-left {
   height: 43px;
   display: inline-block;
 }
 
-.taskbar .icons-left #start-menu, .taskbar .icons-left #trash {
+#start-menu, .taskbar .icons-left #trash {
   height: 43px;
   width: 48px;
   position: relative;
 }
 
 
-.taskbar .icons-left #start-menu i, .taskbar .icons-left #trash i {
+#start-menu i, .taskbar .icons-left #trash i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -36,54 +33,47 @@ body {
   color: white;
 }
 
-.taskbar .icons-left #start-menu {
+#start-menu, #about-icon, #computer-icon, #folder-icon,  #trash-icon {
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+#about-icon, #computer-icon, #folder-icon,  #trash-icon {
+  background-size: $background-size;
+}
+
+#start-menu {
   height: 43px;
   width: 100px;
-  /* background-image: url(Pusk.svg); */
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 100px 28px;
 }
 
-.taskbar .icons-left #start:active {
+#start:active {
   transform: translateY(2px);
 }
 
-.taskbar .icons-left #about-icon {
+#about-icon {
   height: 43px;
   width: 49px;
   background-image: url(Spravka.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px 26px;
 }
 
-.taskbar .icons-left #computer-icon {
+#computer-icon {
   height: 43px;
   width: 49px;
   background-image: url(Komp.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 21px 21px;
-  background-size: 26px 26px;
 }
 
-.taskbar .icons-left #folder-icon {
+#folder-icon {
   height: 43px;
   width: 49px;
   background-image: url(Papka.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px 26px;
 }
 
-.taskbar .icons-left #trash-icon {
+#trash-icon {
   height: 43px;
   width: 49px;
   background-image: url(Korzina.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px 26px;
 }
 
 .taskbar .icons-left a {

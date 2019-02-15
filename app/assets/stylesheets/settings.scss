@@ -1,22 +1,28 @@
+$default-border: 2px solid black;
+$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+$default-font-family: 'Cera Pro';
+$breakpoint-medium: "screen and (min-width: 700px)";
+$cursor-pointer: url('cursor-pointer.png'), pointer;
+$background-elemts: #DADAD3;
+
 #setting.foldercontent {
-  font-family: 'Cera Pro';
-  font-weight: 300;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
   height: 384px;
   width: 224px;
   left: 135px;
   top: 53px;
+  font-family: $default-font-family;
+  font-weight: 300;
 }
 
 .infoldercontent {
-  background-color: #fff;
-  font-family: 'Cera Pro';
-  font-weight: 300;
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
+  font-family: $default-font-family;
+  font-weight: 300;
+  background-color: #fff;
+  /* width: 100%; */
 }
 
 
@@ -32,18 +38,18 @@ h3 {
 }
 
 .settings_first {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 120px;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .setting_border {
   padding-bottom: 1rem;
-  border-bottom: 2px solid black;
+  border-bottom: $default-border;
 }
 
 .color-list {
@@ -56,10 +62,9 @@ h3 {
   width: 32px;
   height: 32px;
   font-size: 0;
-  border: 2px solid black;
+  border: $default-border;
   margin-top: 1rem;
-  cursor: pointer;
-  cursor: url('cursor-pointer.png'), pointer;
+  cursor: $cursor-pointer;
 }
 
 #pink {
@@ -77,7 +82,6 @@ h3 {
 #black {
   background-color: #2c302e;
 }
-}
 
 h4 {
   font-size: 62.5%;
@@ -86,14 +90,8 @@ h4 {
 }
 
 .color-list {
-  display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -110,18 +108,21 @@ h4 {
 	    color: black;
 	    font-size: 1.2rem;
 	    text-align: left;
-	    background-color: #DADAD3;
-	    border: 2px solid black;
-	    cursor: url('cursor-pointer.png'), pointer;
+	    background-color: $background-elemts;
+	    border: $default-border;
+	    cursor: $cursor-pointer;
 	}
+
 	.setting__dropdown {
 	    position: relative;
 	    margin: 0 auto;
 	    width: 80%;
-	    background-color: #DADAD3;
-	    border: 2px solid black;
+	    background-color: $background-elemts;
+	    background-color: $background-elemts;
+	    border: $default-border;
 	    border-top: none;
 	}
+
 	.setting__dropdown-wrap {
 	    position: relative;
 	}
@@ -129,16 +130,9 @@ h4 {
 	.dropdown__arrow-wrap {
 	    position: absolute;
 	    margin-right: 2.2rem;
-	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
-	    display: -webkit-flex;
-	    display: -moz-flex;
 	    display: flex;
-	    -webkit-justify-content: center;
-	    -moz-justify-content: center;
 	    justify-content: center;
-	    -webkit-align-items: center;
-	    -moz-align-items: center;
 	    align-items: center;
 	    top: 0;
 	    right: 0;
@@ -146,7 +140,7 @@ h4 {
 	    width: 32px;
 	    /* padding: 0.4rem; */
 	    background-color: #c1c1bf;
-	    border: 2px solid black;
+	    border: $default-border;
 	    pointer-events: none;
 	}
 	.dropdown__arrow-wrap img{
@@ -168,19 +162,17 @@ h4 {
 	}
 
 	.normal {
-	    -webkit-filter: none;
 	    filter: none;
 	}
 
 	.black-white {
-	    -webkit-filter: grayscale(100%);
 	    filter: grayscale(100%);
 	}
+
 	.hue-rotate {
-	    -webkit-filter: hue-rotate(180deg);
 	    filter: hue-rotate(180deg);
 	}
+
 	.negative {
-	    -webkit-filter: invert(100%);
 	    filter: invert(100%);
 	}
