@@ -1,53 +1,54 @@
-<p id="notice"><%= notice %></p>
 
-<!-- Folder with articles -->
-<div id="folder" class="foldercontent draggable desktop-folder_center">
-  <div class="menu_top">
-    <span class="folder_title">Articles</span>
-    <div class="closebtn">
-      <%= image_tag 'x.svg' %>
+<div class="folder-content__wrap-overflow scrollbar">
+  <div class="infoldercontent">
+    <div class="">
+      <ul class="project-list nav_basic">
+        <li class="project-list__item">
+          <span id="folderfolder" class="article-icon" data-title="Папка">
+            <%= image_tag 'Papka.svg' %>
+            <!-- <p>1970-е</p> -->
+            <%= link_to '1970-е', 'folders/folderWithArticles', folder: @folder, remote: true %>
+          </span>
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="folder-content__wrap-overflow scrollbar">
-    <ul class="project-list nav_basic">
-      <li class="project-list__item">
-        <div id="er" class="article-icon"></div>
-        <p>Ошибка 404</p>
-      </li>
-      <li class="project-list__item">
-        <div id="gui" class="article-icon"></div>
-        <p>Erwise</p>
-      </li>
-      <li class="project-list__item">
-        <div id="mailb" class="article-icon"></div>
-        <p>Первый E-mail</p>
-      </li>
-      <li class="project-list__item">
-        <div id="att" class="article-icon"></div>
-        <p>Первый лендинг</p>
-      </li>
-    </ul>
-    <div class="allArticles">
 
-  <!-- Error404 -->
-  <div id="err" class="foldercontent draggable">
-        <%= render "articles/error404" %>
-  </div>
+    <!-- <div class="article-icon"></div> -->
 
-  <!-- First Landing -->
-  <div id="landing" class="foldercontent draggable">
-      <%= render "articles/firstlanding" %>
-  </div>
+    <div class="">
+      <ul class="project-list nav_basic">
+        <li class="project-list__item">
+          <span id="folderfolder" class="article-icon" data-title="Папка">
+            <%= image_tag 'Papka.svg' %>
+            <p>1980-е</p>
+          </span>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Email -->
-  <div id="mailb" class="foldercontent draggable">
-      <%= render "articles/email" %>
-  </div>
+    <!-- <div class="article-icon"></div> -->
 
-  <!-- First Browser -->
-  <div id="guiewrise" class="foldercontent draggable">
-      <%= render "articles/firstbrowser" %>
+    <div class="">
+      <ul class="project-list nav_basic">
+        <li class="project-list__item">
+          <span id="folderfolder" class="article-icon" data-title="Папка">
+            <%= image_tag 'Papka.svg' %>
+            <p>1990-е</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="">
+      <ul class="project-list nav_basic">
+        <li class="project-list__item">
+          <span id="folderfolder" class="article-icon" data-title="Папка">
+            <%= image_tag 'Papka.svg' %>
+            <p>2000-е</p>
+          </span>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
-<!-- </div> -->
+</div>
