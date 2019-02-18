@@ -266,6 +266,14 @@ img {
 	flex-direction: row;
 }
 
+.articlecontent {
+  display: flex;
+  justify-content: space-between;
+  font-family: $default-font-family;
+  font-weight: 300;
+  background-color: #fff;
+  /* width: 100%; */
+}
 
 /* статьи */
 .allArticles {
