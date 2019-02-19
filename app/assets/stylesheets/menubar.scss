@@ -70,6 +70,10 @@ span.focus:after {
   box-shadow: $default-box-shadow;
 }
 
+#computer.foldercontent {
+  display: block;
+}
+
 .desktop-folder_center {
   left: -webkit-calc(50vw - 26rem);
   left: calc(50vw - 26rem);
@@ -202,6 +206,7 @@ div.closebtn {
 
 .project-list__item {
   display: flex;
+  flex-direction: column;
   width: 19%;
   position: relative;
   -moz-box-sizing: border-box;

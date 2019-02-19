@@ -4,12 +4,20 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    #@articles = Article.all
+    @articles = Article.all
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /articles/new
@@ -65,18 +73,22 @@ class ArticlesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_article
       @article = Article.find(params[:id])
+      respond_to do |format|
+        format.html
+        format.js
+      end
     end
 
     def set_folderfolder
-        @folderfolder = Folderfolder.find(params[:article_id])
+        #@folderfolder = Folderfolder.find(params[:article_id])
     end
 
     def set_folderfolder_from_params
-        @folderfolder = Folderfolder.find(params[:folderfolder_id])
+        #@folderfolder = Folderfolder.find(params[:folderfolder_id])
     end
 
     def set_folderfolder_from_Article
-        @folderfolder = @article.folderfolder
+        #@folderfolder = @article.folderfolder
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
