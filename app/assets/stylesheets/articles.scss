@@ -707,4 +707,43 @@ img {
 	    top: 200px;
 	  }
 	}
+
+  /* friends */
+	#Friends {
+  display: block;
+  position: absolute;
+  width: 700px;
+	}
+
+	#Friends .head h1 {
+	  font-size: 42pt;
+	  font-weight: bold;
+		color: #000000;
+	  margin-left: 45px;
+	  margin-right: 23px;
+	}
+
+	#Friends .text {
+	  margin-left: 45px;
+	  margin-right: 23px;
+	}
+
+	#Friends .text h2 {
+	  font-size: 33pt;
+	  font-weight: bold;
+		color: #575756;
+	  margin-top: 20px;
+	  margin-bottom: 60px;
+	}
+
+	#Friends .text p {
+	  font-size: 15pt;
+	  font-weight: normal;
+		color: #000000;
+	  margin-top: 40px;
+	}
+
+	#Friends .friends_gif {
+	  width: 100%
+	}
 }
