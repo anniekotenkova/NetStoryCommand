@@ -22,6 +22,8 @@ def create_articles
   Article.create(title: 'Ошибка 404', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/notfound_icon.png')))
   Article.create(title: 'Первый браузер', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/erwise_icon.png')))
   Article.create(title: 'Первый лендинг', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/at&t_icon.png')))
+  Article.create(title: 'Друзья', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/at&t_icon.png')))
+  Article.create(title: 'Википедия', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/at&t_icon.png')))
 end
 
 data_seed
