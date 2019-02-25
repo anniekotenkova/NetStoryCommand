@@ -1,4 +1,3 @@
-
 class FoldersController < ApplicationController
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
 
@@ -18,9 +17,12 @@ class FoldersController < ApplicationController
   # GET /folders/1
   # GET /folders/1.json
   def show
+    @folders = @folder.folders
+    @articles = @folder.articles
+
     respond_to do |format|
-      format.html
-      format.js {render layout: false}
+      #format.html
+      format.js
     end
   end
 
@@ -76,10 +78,7 @@ class FoldersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_folder
-      respond_to do |format|
-        format.html
-        format.js
-      end
+      @folder = Folder.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

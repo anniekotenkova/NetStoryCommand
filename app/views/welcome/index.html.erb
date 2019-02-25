@@ -4,6 +4,23 @@
 
   <!-- Menubar -->
   <div id="Desktop">
+    <div class="folderContainer"></div>
+
+    <%= render @folders %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="">
       <span id="infofolder" class="icon draggable" data-title="Справка">
         <%= image_tag 'Spravka.svg' %>
@@ -14,7 +31,7 @@
         <span id="computerfolder" class="icon draggable">
         <span class="myc">
           <%= image_tag 'Komp.png' %>
-          <%= link_to 'Мой компьютер', 'folders/show_path', remote: true %>
+          <%= link_to 'Мой компьютер', 'folders/', remote: true %>
         </span>
       </span>
     </div>
