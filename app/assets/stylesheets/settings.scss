@@ -18,11 +18,11 @@ $background-elemts: #DADAD3;
 
 .infoldercontent {
   display: flex;
+  position: relative;
   justify-content: space-between;
   font-family: $default-font-family;
   font-weight: 300;
   background-color: #fff;
-  /* width: 100%; */
 }
 
 
@@ -86,7 +86,7 @@ h3 {
 h4 {
   font-size: 62.5%;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .color-list {

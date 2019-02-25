@@ -109,7 +109,6 @@ div.closebtn {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
 }
 
 // ARTICLES FOLDER
@@ -134,11 +133,12 @@ div.closebtn {
   margin: 0 auto;
 }
 
-#info.foldercontent {
-  position: absolute;
+#info.folder-content {
+  position: relative;
   font-family: 'Cera Pro';
   font-weight: 300;
   width: 600px;
+  overflow-y: scroll;
 }
 
 .foldercontent p {
@@ -184,7 +184,7 @@ div.closebtn {
 }
 
 .folder-content__wrap-overflow {
-  padding: 1.5rem;
+  // padding: 1.5rem;
 }
 
 .nav_basic {
@@ -458,4 +458,32 @@ div.closebtn {
   p {
     color: #000;
   }
+}
+
+.folder-content{
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin-left: 2rem;
+  overflow: hidden;
+  height: 216px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+    border: 2px solid #1D1D1B;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+::-webkit-scrollbar {
+    width: 1.2 rem;
+    background-color: #DADAD3;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid #1D1D1B;
+    border-right: none;
+    background-color: #C1C1BF;
 }
