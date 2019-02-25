@@ -1,3 +1,4 @@
+
 class FoldersController < ApplicationController
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
 
@@ -17,6 +18,9 @@ class FoldersController < ApplicationController
   # GET /folders/1
   # GET /folders/1.json
   def show
+    respond_to do |format|
+      format.js {render layout: false}
+    end
   end
 
   # GET /folders/new
