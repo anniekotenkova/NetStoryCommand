@@ -38,6 +38,14 @@ $(function() {
     $("#Desktop span").removeClass("focus");
   });
 
+  // close
+  $(".welalert").click(function() {
+    $('.welcome').hide();
+  });
+
+  $("#close-btn").click(function() {
+    $('#fastlink_erwise').hide();
+  });
 
   $("#infofolder").dblclick(function() {
     $('#info').css('display', 'block');
@@ -56,7 +64,7 @@ $(function() {
   });
 
 
-  // Hidden taskber
+  // Hidden taskbar
   $(".sbtn").click(function() {
     $('#setting').css('display', 'block');
   });
