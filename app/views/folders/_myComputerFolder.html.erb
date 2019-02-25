@@ -1,11 +1,62 @@
 <!-- "My computer" folder -->
-<div id="computer" class="foldercontent draggable">
+<!-- <div id="computer" class="foldercontent draggable">
   <div class="menu_top">
     <span class="folder_title">My computer</span>
     <div class="closebtn">
       <%= image_tag 'x.svg' %>
     </div>
   </div>
-  <!-- <div class="article-icon"></div> -->
-<%= render "folders/yearsFolders" %>
-</div>
+ -->
+  <div class="folder-content__wrap-overflow scrollbar">
+    <div class="infoldercontent">
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <!-- <p>1970-е</p> -->
+              <%= link_to '1970-е', 'folderWithArticles', remote: true %>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="article-icon"></div> -->
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <%= link_to '1980-е', 'folderWithArticles', remote: true %>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="article-icon"></div> -->
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <%= link_to '1990-е', 'folderWithArticles', remote: true %>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <ul class="project-list nav_basic">
+          <li class="project-list__item">
+            <span id="folderfolder" class="article-icon" data-title="Папка">
+              <%= image_tag 'Papka.svg' %>
+              <%= link_to '2000-е', 'folderWithArticles', remote: true %>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->

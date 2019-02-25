@@ -10,8 +10,12 @@
       </span>
     </div>
     <div class="">
-      <span id="computerfolder" class="icon draggable" data-title="Мой компьютер">
+      <!-- <span id="computerfolder" class="icon draggable" data-title="Мой компьютер"> -->
+        <span id="computerfolder" class="icon draggable">
+        <span class="myc">
+        <%= link_to 'Мой компьютер', 'folders/show_path', remote: true %>
         <%= image_tag 'Komp.png' %>
+        </span>
       </span>
     </div>
 
@@ -35,7 +39,7 @@
   <%= render "preview" %>
   <%= render "settings" %>
   <%= render "welcomeAlert" %>
-  <%= render "folders/myComputerFolder" %>
+  <%#= render "folders/myComputerFolder" %>
   <%= render "about" %>
   <%= render "trash" %>
   <%= render "spams/spam" %>

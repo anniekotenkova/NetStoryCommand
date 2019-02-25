@@ -75,13 +75,13 @@ $(function() {
     $('#info').css('display', 'block');
   });
 
-  $("#computerfolder").dblclick(function() {
-    $('#computer').css('display', 'block');
-  });
+  // $("#computerfolder").dblclick(function() {
+    // $('#computer').css('display', 'block');
+  // });
 
-  $("#folderfolder").dblclick(function() {
-    $('#folder').css('display', 'block');
-  });
+  // $("#folderfolder").dblclick(function() {
+  //   $('#folder').css('display', 'block');
+  // });
 
   $("#trashfolder").dblclick(function() {
     $('#trash').css('display', 'block');

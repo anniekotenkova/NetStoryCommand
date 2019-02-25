@@ -19,6 +19,10 @@ class FoldersController < ApplicationController
   # GET /folders/1.json
   def show
     respond_to do |format|
+<<<<<<< HEAD
+      format.html
+=======
+>>>>>>> master
       format.js {render layout: false}
     end
   end
@@ -75,10 +79,9 @@ class FoldersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_folder
-    #  @folder = Folder.find(params[:id])
       respond_to do |format|
-        format.html { redirect_to folders_url}
-        format.js { redirect_to folders_url}
+        format.html
+        format.js
       end
     end
 
