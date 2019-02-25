@@ -27,7 +27,6 @@ $breakpoint-medium: "screen and (min-width: 700px)";
   margin: 5px 0;
   transition: all 0.2s;
   width: auto;
-  // z-index: 1;
   text-align: center;
   cursor: pointer;
 }
@@ -60,6 +59,7 @@ span.focus:after {
 }
 
 .foldercontent {
+  position: absolute;
   display: none;
   height: 403px;
   width: 560px;
@@ -97,7 +97,6 @@ div.closebtn {
   border-bottom: 2px solid #1d1e1c !important;
   cursor: pointer;
   cursor: url('cursor-pointer.png'), pointer !important;;
-  z-index: 2;
 }
 
 .closebtn img {
@@ -136,6 +135,7 @@ div.closebtn {
 }
 
 #info.foldercontent {
+  position: absolute;
   font-family: 'Cera Pro';
   font-weight: 300;
   width: 600px;
@@ -266,7 +266,6 @@ div.closebtn {
   background-image: url("att/tfba.png");
   background-size: cover;
   position: absolute;
-  z-index: 2;
   box-shadow: $default-border;
   color: #00000030;
   cursor: pointer;

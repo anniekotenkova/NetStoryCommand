@@ -38,6 +38,10 @@ $(function() {
   $(".cbtrash").click(function() {
     $('#trash-icon').css('background-color', 'transparent');
   });
+
+  $(".closebtn").click(function() {
+    $('#setting').hide();
+  });
 });
 
 
