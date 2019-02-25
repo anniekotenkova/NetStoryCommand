@@ -1,6 +1,5 @@
 $(function() {
   //show
-
   $("#infofolder").dblclick(function() {
     $('#info').show();
   });
