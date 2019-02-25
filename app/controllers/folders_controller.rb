@@ -19,10 +19,7 @@ class FoldersController < ApplicationController
   # GET /folders/1.json
   def show
     respond_to do |format|
-<<<<<<< HEAD
       format.html
-=======
->>>>>>> master
       format.js {render layout: false}
     end
   end
