@@ -11,17 +11,24 @@ def data_seed
 end
 
 def create_folders
+
+  Folder.create(name: 'Справка', icon: 'Spravka.svg')
   computer = Folder.create(name: 'Мой компьютер', icon: 'computer.png')
 
+
+  folder = Folder.find_by_name('Мой компьютер')
   computer.folders.create(name: '1970', icon: 'folder.svg')
   computer.folders.create(name: '1980', icon: 'folder.svg')
   computer.folders.create(name: '1990', icon: 'folder.svg')
   computer.folders.create(name: '2000', icon: 'folder.svg')
+
+  Folder.create(name: 'Корзина', icon: 'Korzina.png')
+  Folder.create(name: 'Интернет', icon: 'internet.svg')
 end
 
 def create_articles
   folder = Folder.find_by_name('1970')
-  folder.articles.create(title: 'Первая почта',   pic: File.open(File.join(Rails.root, 'app/assets/images/icons/mail_icon.png')))
+  folder.articles.create(title: 'Первая почта', pic: 'mail_icon.png')
 
   folder = Folder.find_by_name('1980')
 
