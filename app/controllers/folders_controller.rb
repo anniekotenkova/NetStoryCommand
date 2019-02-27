@@ -31,7 +31,7 @@ class FoldersController < ApplicationController
     @articles = @folder.articles
 
     respond_to do |format|
-      #format.html
+      format.html
       format.js
     end
   end

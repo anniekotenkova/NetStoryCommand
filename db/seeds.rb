@@ -33,7 +33,7 @@ def create_articles
   folder = Folder.find_by_name('1980')
 
   folder = Folder.find_by_name('1990')
-  folder.articles.create(title: 'Ошибка 404',     pic: File.open(File.join(Rails.root, 'app/assets/images/icons/notfound_icon.png')))
+  folder.articles.create(title: 'Ошибка 404',     pic: 'notfound_icon.png')
   folder.articles.create(title: 'Первый браузер', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/erwise_icon.png')))
   folder.articles.create(title: 'Первый лендинг', pic: File.open(File.join(Rails.root, 'app/assets/images/icons/at&t_icon.png')))
   folder.articles.create(title: 'Друзья',         pic: File.open(File.join(Rails.root, 'app/assets/images/icons/at&t_icon.png')))
