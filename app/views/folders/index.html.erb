@@ -21,33 +21,33 @@
 
 
 
-    <div class="">
-      <span id="infofolder" class="icon draggable" data-title="Справка">
-        <%= image_tag 'Spravka.svg' %>
-      </span>
-    </div>
-    <div class="">
-      <!-- <span id="computerfolder" class="icon draggable" data-title="Мой компьютер"> -->
-        <span id="computerfolder" class="icon draggable">
-        <span class="myc">
-          <%= image_tag 'Komp.png' %>
-          <%= link_to 'Мой компьютер', 'folders/', remote: true %>
-        </span>
-      </span>
-    </div>
+<!--     <div class="">
+  <span id="infofolder" class="icon draggable" data-title="Справка">
+    <%= image_tag 'Spravka.svg' %>
+  </span>
+</div>
+<div class="">
+  <span id="computerfolder" class="icon draggable" data-title="Мой компьютер">
+    <span id="computerfolder" class="icon draggable">
+    <span class="myc">
+      <%= image_tag 'Komp.png' %>
+      <%= link_to 'Мой компьютер', 'folders/', remote: true %>
+    </span>
+  </span>
+</div>
 
-    <div class="">
-      <span id="trashfolder" class="icon draggable" data-title="Корзина">
-        <%= image_tag 'Korzina.png' %>
-      </span>
-    </div>
+<div class="">
+  <span id="trashfolder" class="icon draggable" data-title="Корзина">
+    <%= image_tag 'Korzina.png' %>
+  </span>
+</div>
 
-    <div class="">
-      <span id="spamfolder" class="icon draggable" data-title="Интернет">
-        <%= image_tag 'internet.svg' %>
-      </span>
-    </div>
-  </div>
+<div class="">
+  <span id="spamfolder" class="icon draggable" data-title="Интернет">
+    <%= image_tag 'internet.svg' %>
+  </span>
+</div>
+  </div> -->
 
 <!-- что это?
 <section class="article_main"></section> -->
@@ -60,5 +60,15 @@
   <%= render "about" %>
   <%= render "trash" %>
   <%= render "spams/spam" %>
+  
+  <!-- Email -->
+  <div id="mailb" class="foldercontent draggable">
+    <%= render "articles/email" %>
+  </div>
+
+  <!-- First Browser -->
+  <div id="guiewrise" class="foldercontent draggable">
+    <%= render "articles/firstbrowser" %>
+  </div>
 
 </section>
