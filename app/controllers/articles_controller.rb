@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Articles.where(parent_id: 1)
+    @articles = Article.all
     respond_to do |format|
       format.html
       format.js
