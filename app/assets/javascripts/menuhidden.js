@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   startTime();
   $('#startMenu').hide();
   $('#start').click(function() {
