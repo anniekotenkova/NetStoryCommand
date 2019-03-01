@@ -1,5 +1,5 @@
 <div class="menu_top">
-  <span class="folder_title">Error: 404 Not Found</span>
+  <span class="folder_title">Первый браузер</span>
   <div class="closebtn">
     <%= image_tag 'x.svg' %>
   </div>
@@ -79,3 +79,10 @@
   <p>E-mail: erwise@cs.hut.fi</p>
   <div class="button" id="popup-close">Ок</div>
 </div>
+
+<script type="text/javascript">
+  $('.closebtn').on('click', function() {
+    console.log('Click')
+    $(this).parents('.articleContainer').remove()
+  })
+</script>

@@ -1,8 +1,4 @@
 <div class="menu_top">
-    <span class="folder_title">theGlobe</span>
-    <div class="closebtn">
-      <%= image_tag 'x.svg' %>
-    </div>
   <span class="folder_title">theGlobe</span>
   <div class="closebtn">
     <%= image_tag 'x.svg' %>
@@ -71,3 +67,10 @@
     <div class="blueLineMin"></div>
     <div class="blueLineMin"></div>
   </div>
+
+  <script type="text/javascript">
+    $('.closebtn').on('click', function() {
+      console.log('Click')
+      $(this).parents('.articleContainer').remove()
+    })
+  </script>

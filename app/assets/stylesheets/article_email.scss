@@ -1,0 +1,70 @@
+@import "reset.css";
+$color-card-background: #FFFFFF;
+$color-tag-background: #E3E5E9;
+$color-anchor: #E62A5D;
+$color-body-copy: #b9bcbd;
+$default-font-family: 'Cera Pro';
+$breakpoint-medium: "screen and (min-width: 700px)";
+
+.mailbody{
+ position: relative;
+ top: 0;
+ left: 0;
+ background-color: #272827;
+ width: 900px;
+ height: 740px;
+ color: #ffffff;
+ border-radius: 0 0 5px 5px;
+ font-family: Courier New;
+
+  h1 {
+    font-family: Courier New;
+    font-size: 16px;
+  }
+
+  .rectangle {
+    position: relative;
+    left: 8px;
+    top: 35px;
+    width: 870px;
+    height: 685px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .top_header {
+    width: 840px;
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .messages p {
+    font-family: Courier New;
+    font-size: 16px;
+    width: 840px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+  }
+
+  .bottom_header {
+    width: 700px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .date {
+    position: relative;
+    left: 150px;
+  }
+
+}
