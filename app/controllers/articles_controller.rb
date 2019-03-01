@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Articles.where(parent_id: 1)
+    @articles = Article.where(folder_id: 1)
     respond_to do |format|
       format.html
       format.js
@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @articles = Article.where(folder_id: 1)
     respond_to do |format|
       format.html
       format.js
