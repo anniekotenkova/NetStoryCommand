@@ -31,6 +31,7 @@ def create_articles
   folder.articles.create(title: 'Первая почта',   pic: 'mail_icon.png',      partial_name: 'email')
 
   folder = Folder.find_by_name('1980')
+  folder.articles.create(title: 'NSFNET', pic: 'mail_icon.png')
 
   folder = Folder.find_by_name('1990')
   folder.articles.create(title: 'Ошибка 404',     pic: 'notfound_icon.png', partial_name: 'error404')
