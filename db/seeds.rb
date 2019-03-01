@@ -27,20 +27,61 @@ def create_folders
 end
 
 def create_articles
-  folder = Folder.find_by_name('1970')
-  folder.articles.create(title: 'Первая почта',   pic: 'mail_icon.png',      partial_name: 'email')
+  articles = [
+    {
+      folder_name:  '1970',
+      title:        'Первая почта',
+      pic:          'mail_icon.png',
+      partial_name: 'email'
+    }, {
+      folder_name:  '1980',
+      title:        'NSFNET',
+      pic:          'mail_icon.png',
+      partial_name: 'nsfnet'
+    }, {
+      folder_name:  '1990',
+      title:        'Ошибка 404',
+      pic:          'notfound_icon.png',
+      partial_name: 'error404'
+    }, {
+      folder_name:  '1990',
+      title:        'Первый браузер',
+      pic:          'erwise_icon.png',
+      partial_name: 'erwise_icon'
+    }, {
+      folder_name:  '1990',
+      title:        'Первый лендинг',
+      pic:          'att_icon.png',
+      partial_name: 'att'
+    }, {
+      folder_name:  '1990',
+      title:        'Друзья',
+      pic:          'att_icon.png',
+      partial_name: 'att'
+    }, {
+      folder_name:  '2000',
+      title:        'Википедия',
+      pic:          'att_icon.png',
+      partial_name: 'att'
+    }
+  ]
 
-  folder = Folder.find_by_name('1980')
-  folder.articles.create(title: 'NSFNET', pic: 'mail_icon.png', partial_name: 'nsfnet')
+  articles.each do |article|
+    create_article(article)
+  end
+end
 
-  folder = Folder.find_by_name('1990')
-  folder.articles.create(title: 'Ошибка 404',     pic: 'notfound_icon.png', partial_name: 'error404')
-  folder.articles.create(title: 'Первый браузер', pic: 'erwise_icon.png',   partial_name: 'firstbrowser')
-  folder.articles.create(title: 'Первый лендинг', pic: 'at&t_icon.png',     partial_name: 'att')
-  folder.articles.create(title: 'Друзья',         pic: 'at&t_icon.png',     partial_name: 'att')
+def create_article(article)
+  folder = Folder.find_by_name(article[:folder_name])
+  icon = File.open(File.join(Rails.root, "public/autoupload/article_icons/#{ article[:pic] }"))
 
-  folder = Folder.find_by_name('2000')
-  folder.articles.create(title: 'Википедия',      pic: 'at&t_icon.png',     partial_name: 'att')
+  article = folder.articles.create(
+    title:        article[:title],
+    pic:          icon,
+    partial_name: article[:partial_name]
+  )
+
+  puts "Article with title #{ article.title } created"
 end
 
 data_seed
