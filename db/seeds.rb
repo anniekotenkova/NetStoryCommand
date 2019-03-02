@@ -26,6 +26,51 @@ def create_folders
   Folder.create(name: 'Интернет', icon: 'internet.svg')
 end
 
+#def create_folders
+#  folders = [
+#    {
+#      name: 'Справка',
+#      icon: 'Spravka.svg'
+#    }, {
+#      name: 'Мой компьютер',
+#      icon: 'computer.png'
+#    }, {
+#      name: '1970',
+#      icon: 'folder.svg'
+#    }, {
+#      name: '1980',
+#      icon: 'folder.svg'
+#    }, {
+#      name: '1990',
+#      icon: 'folder.svg'
+#    }, {
+#      name: '2000',
+#      icon: 'folder.svg'
+#    }, {
+#      name: 'Корзина',
+#      icon: 'Korzina.png'
+#    }, {
+#      name: 'Интернет',
+#      icon: 'internet.svg'
+#      }
+#  ]
+#
+#  folders.each do |folder|
+#    create_folder(folder)
+#  end
+#end
+#
+#def create_folder(folder)
+#  folder = Folder.find_by_name(folder[:name])
+#
+#  f = folder.folders.create(
+#    name:      folder[:name],
+#    icon:      folder[:icon]
+#  )
+#
+#  puts "Folder with name #{ f.name } created"
+#end
+
 def create_articles
   articles = [
     {
