@@ -1,7 +1,7 @@
 <div class="">
 <div class="folder-content__wrap-overflow scrollbar" id="<%= "article_#{ article.id }" %>">
   <ul class="project-list nav_basic">
-      <span id="folderfolder" class="article-icon ">
+      <span id="article-icon" class="article-icon ">
           <%#= article.pic %>
           <%= image_tag(article.pic.url) %>
           <%= link_to article.title, article_path(article), remote: true %>

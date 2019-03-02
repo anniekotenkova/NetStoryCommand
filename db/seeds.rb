@@ -92,22 +92,22 @@ def create_articles
       folder_name:  '1990',
       title:        'Первый браузер',
       pic:          'erwise_icon.png',
-      partial_name: 'erwise_icon'
+      partial_name: 'firstbrowser'
     }, {
       folder_name:  '1990',
       title:        'Первый лендинг',
       pic:          'att_icon.png',
-      partial_name: 'att'
+      partial_name: 'firstlanding'
     }, {
       folder_name:  '1990',
       title:        'Друзья',
       pic:          'att_icon.png',
-      partial_name: 'att'
+      partial_name: 'friends'
     }, {
       folder_name:  '2000',
       title:        'Википедия',
       pic:          'att_icon.png',
-      partial_name: 'att'
+      partial_name: 'wikipedia'
     }
   ]
 

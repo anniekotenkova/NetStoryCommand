@@ -1,5 +1,5 @@
 <div class="menu_top">
-  <span class="folder_title">Error: 404 Not Found</span>
+  <span class="folder_title">NSFNET</span>
   <div class="closebtn">
     <%= image_tag 'x.svg' %>
   </div>
@@ -11,7 +11,7 @@
         <h1>NSFNET</h1>
       </div>
       <div id="100_width_pic">
-        <img src="../assets/images/articles/nsfnet/NSFNET.jpg" alt="">
+        <%= image_tag 'articles/nsfnet/NSFNET.jpg'%>
       </div>
       <div class="text">
         <h2>Сеть, которая помогла сделать образование более доступным</h2>
@@ -25,3 +25,10 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $('.closebtn').on('click', function() {
+    console.log('Click')
+    $(this).parents('.articleContainer').remove()
+  })
+</script>

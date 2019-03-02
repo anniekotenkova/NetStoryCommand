@@ -1,0 +1,46 @@
+@import "reset.css";
+$color-card-background: #FFFFFF;
+$color-tag-background: #E3E5E9;
+$color-anchor: #E62A5D;
+$color-body-copy: #b9bcbd;
+$default-font-family: 'Cera Pro';
+$breakpoint-medium: "screen and (min-width: 700px)";
+
+#default_article {
+  display: block;
+  position: absolute;
+  width: 700px;
+  height: 850px;
+  background-color: #ffffff;
+  overflow: scroll;
+
+  .head h1 {
+    font-size: 30pt;
+    font-weight: bold;
+    color: #000000;
+    margin: 45px 40px 30px 40px
+  }
+
+  .text {
+    margin: 0 40px 50px 40px;
+
+    h2 {
+      font-size: 21pt;
+      font-weight: bold;
+      color: #575756;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 11pt;
+      font-weight: normal;
+      color: #000000;
+      margin-top: 40px;
+    }
+
+    #100_width_pic {
+      width: 100%;
+    }
+  }
+}

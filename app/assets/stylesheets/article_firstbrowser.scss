@@ -1,0 +1,190 @@
+@import "reset.css";
+$color-card-background: #FFFFFF;
+$color-tag-background: #E3E5E9;
+$color-anchor: #E62A5D;
+$color-body-copy: #b9bcbd;
+$default-font-family: 'Cera Pro';
+$breakpoint-medium: "screen and (min-width: 700px)";
+
+@font-face {
+  font-family: Courier New;
+  src: url("/CourierStd.ttf");
+}
+
+.erwise {
+  background: #729CFE;
+  width: 780px;
+  height: 600px;
+  border: 2px solid black;
+
+  .text {
+    width: 740px;
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+
+  p {
+    font-family: Courier New;
+    font-size: 16px;
+    pointer-events: none;
+  }
+
+  h1 {
+    font-family: Courier New;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pages {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: underline;
+    width: 40px;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    height: 40px;
+    width: 780px;
+    position: relative;
+    top: -4px;
+    left: -11px;
+    background: #729CFE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  .left {
+    width: 400px;
+    position: relative;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #close {
+    position: relative;
+    left: 255px;
+  }
+
+  .button {
+    font-family: Courier New;
+    height: 25px;
+    width: 110px;
+    position: relative;
+    /* top: -30px; */
+    background: #729CFE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .popup {
+    /* display: none; */
+    height: 320px;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background: #818184;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .brow {
+    position: relative;
+    top: -45px;
+    height: 20px;
+    width: 480px;
+    background: #818184;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  }
+
+  .field {
+    position: absolute;
+    z-index: -1;
+    height: 300px;
+    width: 480px;
+    background: #729CFE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  }
+
+  .popup .button {
+    top: 38px;
+    left: 180px;
+  }
+
+  .button:hover {
+    box-shadow: inset rgba(255, 255, 255, 0.3) 3px 3px 3px;
+  }
+
+  .popup p {
+    width: 350px;
+    text-align: center;
+  }
+
+  #first-child {
+    width: 180px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    background-image: url("er.svg");
+    background-size: cover;
+  }
+
+  .isClosed {
+    display: none;
+  }
+
+  #firstPage {
+    display: none;
+  }
+
+  #secondPage {
+    display: none;
+    overflow: scroll;
+    height: 592px;
+  }
+
+  #secondPage.text {
+    width: 740px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  #thirdPage {
+    display: none;
+  }
+
+}

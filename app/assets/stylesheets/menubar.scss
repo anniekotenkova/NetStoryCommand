@@ -145,43 +145,6 @@ div.closebtn {
   font-size: 1.4rem;
 }
 
-#err.foldercontent {
-  width: 800px;
-  height: 520px;
-}
-
-#guiewrise.foldercontent {
-  background: #729CFE;
-  width: 780px;
-  height: 600px;
-  border: $default-border;
-  border-radius: 0;
-}
-
-#mailb.foldercontent {
-  width: 900px;
-  height: 760px;
-  background: #272827;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: #272827;
-  width: 900px;
-  height: 666px;
-  color: #ffffff;
-  font-family: Courier New;
-}
-
-#landing.foldercontent {
-  width: 654px;
-  height: 620px;
-  height: 600px;
-  overflow: scroll;
-  background: #bfbfbf;
-  padding: 0;
-  border-radius: 0;
-}
-
 .folder-content__wrap-overflow {
   // padding: 1.5rem;
 }
@@ -216,27 +179,12 @@ div.closebtn {
   text-align: center;
 }
 
-#er.article-icon {
-  background-image: url("icons/notfound_icon.png");
-}
-
-#gui.article-icon {
-  background-image: url("icons/erwise_icon.png");
-}
-
-#mailb.article-icon {
-  background-image: url("icons/mail_icon.png");
-}
-
-#att.article-icon {
-  background-image: url("icons/at&t_icon.png");
-}
-
 .article-icon {
+  display: inline-block;
   width: 65px;
   height: 80px;
   position: relative;
-  margin: 0 auto;
+  margin: 20px;
   background-size: cover;
   cursor: pointer;
   margin-bottom: 0.8rem;
