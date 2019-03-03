@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails_sortable'
+gem 'draggable-rails'
 
 gem 'barista'
 
