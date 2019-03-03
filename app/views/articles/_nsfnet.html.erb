@@ -1,11 +1,10 @@
-<div class="menu_top">
-  <span class="folder_title">NSFNET</span>
-  <div class="closebtn">
-    <%= image_tag 'x.svg' %>
+<div class="articleContainer" id="NFSNET">
+  <div class="menu_top">
+    <span class="folder_title"><%= @article.title %></span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
   </div>
-</div>
-<div class="articlecontent">
-  <div id="NFSNET">
     <div id="default_article">
       <div class="head">
         <h1>NSFNET</h1>
@@ -25,10 +24,3 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  $('.closebtn').on('click', function() {
-    console.log('Click')
-    $(this).parents('.articleContainer').remove()
-  })
-</script>

@@ -1,11 +1,10 @@
-<div class="menu_top">
-  <span class="folder_title">Википедия</span>
-  <div class="closebtn">
-    <%= image_tag 'x.svg' %>
+<div class="articleContainer" id="wikipedia">
+  <div class="menu_top">
+    <span class="folder_title"><%= @article.title %></span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
   </div>
-</div>
-  <div class="articlecontent">
-    <div id="Wikipedia">
       <div id="content" class="mw-body">
         <h1 id="firstHeading" class="firstHeading">Википедия</h1>
         <div id="bodyContent" class="mw-body-content">
@@ -397,10 +396,3 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  $('.closebtn').on('click', function() {
-    console.log('Click')
-    $(this).parents('.articleContainer').remove()
-  })
-</script>

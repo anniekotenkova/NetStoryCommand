@@ -13,7 +13,7 @@ end
 def create_folders
 
   Folder.create(name: 'Справка', icon: 'Spravka.svg')
-  computer = Folder.create(name: 'Мой компьютер', icon: 'computer.png')
+  computer = Folder.create(name: 'Мой компьютер', icon: 'Komp.png')
 
 
   folder = Folder.find_by_name('Мой компьютер')

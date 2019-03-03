@@ -1,6 +1,6 @@
 <div class="articleContainer" id="mail">
   <div class="menu_top">
-    <span class="folder_title">Первая почта</span>
+    <span class="folder_title"><%= @article.title %></span>
     <div class="closebtn">
       <%= image_tag 'x.svg' %>
     </div>
@@ -43,10 +43,3 @@
   </div>
 
 </div>
-
-<script type="text/javascript">
-  $('.closebtn').on('click', function() {
-    console.log('Click')
-    $(this).parents('.articleContainer').remove()
-  })
-</script>
