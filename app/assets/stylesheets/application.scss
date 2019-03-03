@@ -41,7 +41,7 @@
  *:after,
  *:before {
  	box-sizing: inherit;
- }
+}
 
 body {
   background-color: $color-tag-background;
@@ -61,11 +61,15 @@ body {
 a {
   text-decoration: none!important;
   text-transform: none;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1rem;
 
   &:hover {
     text-decoration: none!important;
     text-transform: none;
     background-color: inherit;
+    color: #000;
 
   }
 }
