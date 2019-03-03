@@ -12,7 +12,8 @@ end
 
 def create_folders
 
-  Folder.create(name: 'Справка', icon: 'Spravka.svg')
+  about = Folder.create(name: 'Справка', icon: 'Spravka.svg')
+  
   computer = Folder.create(name: 'Мой компьютер', icon: 'Komp.png')
 
 
