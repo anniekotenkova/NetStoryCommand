@@ -1,17 +1,16 @@
-<div class="menu_top">
-  <span class="folder_title">Error: 404 Not Found</span>
-  <div class="closebtn">
-    <%= image_tag 'x.svg' %>
+<div class="articleContainer" id="friends">
+  <div class="menu_top">
+    <span class="folder_title"><%= @article.title %></span>
+    <div class="closebtn">
+      <%= image_tag 'x.svg' %>
+    </div>
   </div>
-</div>
-<div class="articlecontent">
-  <div id="Friends">
     <div id="default_article">
       <div class="head">
-        <h1>“Друзья” и реклама Windows 95</h1>
+        <h1>“Друзья” и реклама <br>Windows 95</h1>
       </div>
       <div id="100_width_pic">
-        <img src="../assets/images/articles/friends/file.gif" alt="">
+          <%= image_tag 'articles/friends/taskbar.gif'%>
       </div>
       <div class="text">
         <h2>Прекрасный туториал, который покажет, что большие компании только пугали нас</h2>

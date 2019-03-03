@@ -1,6 +1,6 @@
 //= require jquery
 //= require jquery_ujs
-//= require rails-ujs
+//# require rails-ujs
 //= require jquery-ui/widgets/mouse
 //# require jquery-ui/widgets/draggable
 //# require jquery-ui/widgets/droppable
@@ -84,9 +84,9 @@ $(function() {
   //   $('#folder').css('display', 'block');
   // });
 
-  $("#trashfolder").dblclick(function() {
-    $('#trash').css('display', 'block');
-  });
+  // $("#trashfolder").dblclick(function() {
+  //   $('#trash').css('display', 'block');
+  // });
 
 
   // Hidden taskbar
@@ -121,9 +121,9 @@ $(function() {
   });
 
 
-  $("#close").click(function() {
-    $('#guiewrise').css('display', 'none');
-  });
+  // $("#close").click(function() {
+  //   $('#guiewrise').css('display', 'none');
+  // });
 
   $(".next").click(function() {
     if ('#firstPage') {
@@ -151,24 +151,24 @@ $(function() {
     }
   });
 
-  $("#mailb").click(function() {
-    $('#mailb.foldercontent').css('display', 'block');
-  });
-  $(".cbmail").click(function() {
-    $('#mailb.foldercontent').css('display', 'none');
-  });
-
-
-  $("#att").click(function() {
-    $('#landing').css('display', 'block');
-  });
-  $("#fastlink_att").click(function() {
-    $('#landing').css('display', 'block');
-  });
-
-  $(".cblanding").click(function() {
-    $('#landing').css('display', 'none');
-  });
+  // $("#mailb").click(function() {
+  //   $('#mailb.foldercontent').css('display', 'block');
+  // });
+  // $(".cbmail").click(function() {
+  //   $('#mailb.foldercontent').css('display', 'none');
+  // });
+  //
+  //
+  // $("#att").click(function() {
+  //   $('#landing').css('display', 'block');
+  // });
+  // $("#fastlink_att").click(function() {
+  //   $('#landing').css('display', 'block');
+  // });
+  //
+  // $(".cblanding").click(function() {
+  //   $('#landing').css('display', 'none');
+  // });
 
   // background color change
   $("#pink").click(function() {

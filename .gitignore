@@ -32,5 +32,6 @@
 /config/secrets.yml
 
 public/uploads
+public/autoupload
 .DS_Store
 .env

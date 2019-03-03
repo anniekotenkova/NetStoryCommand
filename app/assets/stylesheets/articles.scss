@@ -35,6 +35,20 @@ body {
 	padding: 2.1875em;
 }
 
+.articleContainer {
+	position: absolute;
+	left: 300px;
+}
+
+#computer.foldercontent.draggable {
+	display: flex;
+	flex-wrap: wrap;
+}
+.computerFolders {
+	position: relative;
+	top: -130px;
+}
+
 #info p {
 	font-size: 87.5%;
 	font-weight: 300;
@@ -271,6 +285,7 @@ img {
 	background-color: #fff;
 	/* width: 100%; */
 }
+<<<<<<< HEAD
 /* статьи */
 .allArticles {
 	/* ошибка 404 */
@@ -1150,3 +1165,5 @@ img {
 		}
 	}
 }
+=======
+>>>>>>> 9ae10b64c26f00e6781088451305ef91a3cacf4d
