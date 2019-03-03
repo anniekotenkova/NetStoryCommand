@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   '@interactjs/types' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ '@interactjs/types', null ]
+6 verbose cache add name=undefined spec="@interactjs/types" args=["@interactjs/types",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '@interactjs/types',
+7 verbose parsed url   path: '@interactjs/types',
+7 verbose parsed url   href: '@interactjs/types' }
+8 verbose cache add name="" spec="interactjs/types" args=["","interactjs/types"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'interactjs/types',
+9 verbose parsed url   path: 'interactjs/types',
+9 verbose parsed url   href: 'interactjs/types' }
+10 silly lockFile 86b1c878-interactjs-types interactjs/types
+11 verbose lock interactjs/types /home/hse/.npm/86b1c878-interactjs-types.lock
+12 info maybeGithub Attempting interactjs/types from git://github.com/interactjs/types
+13 silly lockFile ec808993-git-github-com-interactjs-types git://github.com/interactjs/types
+14 verbose lock git://github.com/interactjs/types /home/hse/.npm/ec808993-git-github-com-interactjs-types.lock
+15 verbose addRemoteGit [ 'git://github.com/interactjs/types', 'master' ]
+16 verbose git clone git://github.com/interactjs/types Cloning into bare repository '/home/hse/.npm/_git-remotes/git-github-com-interactjs-types-ec808993'...
+16 verbose git clone git://github.com/interactjs/types fatal: remote error:
+16 verbose git clone git://github.com/interactjs/types   Repository not found.
+17 silly lockFile ec808993-git-github-com-interactjs-types git://github.com/interactjs/types
+18 silly lockFile ec808993-git-github-com-interactjs-types git://github.com/interactjs/types
+19 info maybeGithub Attempting interactjs/types from git+ssh://git@github.com:interactjs/types
+20 silly lockFile 43f733bc--git-github-com-interactjs-types git+ssh://git@github.com:interactjs/types
+21 verbose lock git+ssh://git@github.com:interactjs/types /home/hse/.npm/43f733bc--git-github-com-interactjs-types.lock
+22 verbose addRemoteGit [ 'git@github.com:interactjs/types', 'master' ]
+23 error git clone git@github.com:interactjs/types Cloning into bare repository '/home/hse/.npm/_git-remotes/git-github-com-interactjs-types-b77f579b'...
+23 error git clone git@github.com:interactjs/types Warning: Permanently added 'github.com,140.82.118.3' (RSA) to the list of known hosts.
+23 error git clone git@github.com:interactjs/types Permission denied (publickey).
+23 error git clone git@github.com:interactjs/types fatal: Could not read from remote repository.
+23 error git clone git@github.com:interactjs/types
+23 error git clone git@github.com:interactjs/types Please make sure you have the correct access rights
+23 error git clone git@github.com:interactjs/types and the repository exists.
+24 silly lockFile b77f579b-git-github-com-interactjs-types git@github.com:interactjs/types
+25 silly lockFile 86b1c878-interactjs-types interactjs/types
+26 silly lockFile 86b1c878-interactjs-types interactjs/types
+27 error addLocal Could not install interactjs/types
+28 error Error: ENOENT, stat 'interactjs/types'
+29 error If you need help, you may report this log at:
+29 error     <http://github.com/isaacs/npm/issues>
+29 error or email it to:
+29 error     <npm-@googlegroups.com>
+30 error System Linux 4.4.0-62-generic
+31 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save-dev" "@interactjs/types"
+32 error cwd /media/sf_Share/Netstory
+33 error node -v v0.10.25
+34 error npm -v 1.3.10
+35 error path interactjs/types
+36 error code ENOENT
+37 error errno 34
+38 verbose exit [ 34, true ]
