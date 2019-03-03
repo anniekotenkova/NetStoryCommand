@@ -104,6 +104,11 @@ def create_articles
       pic:          'att_icon.png',
       partial_name: 'friends'
     }, {
+      folder_name:  '1990',
+      title:        'TheGlobe',
+      pic:          'theglobe_icon.png',
+      partial_name: 'TheGlobe'
+    }, {
       folder_name:  '2000',
       title:        'Википедия',
       pic:          'att_icon.png',
