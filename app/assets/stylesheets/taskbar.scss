@@ -2,6 +2,7 @@ $default-border: 2px solid black;
 $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 $background-size: 26px 26px;
 $position: center;
+$default-cursor: url('cursor-pointer.png'), pointer;
 $repeat: no-repeat;
 
 .taskbar {
@@ -43,9 +44,12 @@ $repeat: no-repeat;
 }
 
 #start-menu {
-  height: 43px;
-  width: 100px;
+  height: 47px;
+  width: 150px;
   background-size: 100px 28px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
 }
 
 #start:active {
@@ -102,86 +106,30 @@ $repeat: no-repeat;
 }
 
 .taskbar .icons-right {
-  height: 43px;
+  height: 47px;
   float: right;
 }
 
-.taskbar .icons-right #sound {
-  height: 43px;
-  width: 49px;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 22px;
+.datetime {
+  display: inline-block;
+  cursor: $default-cursor;
+  height: 47px;
+  padding-right: 1.5rem;
 }
 
-.taskbar .icons-right #return {
-  width: 4px;
-  border-left: 1px solid grey;
-}
-
-.taskbar .icons-right #notifications, .taskbar .icons-right #up {
-  height: 43px;
-  width: 42px;
-  position: relative;
-}
-
-.taskbar .icons-right #notifications i, .taskbar .icons-right #up i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 17px;
+.datetime span {
+  display: flex;
+  align-items: center;
   color: black;
-}
-
-.taskbar .icons-right .clear {
-  height: 43px;
-  width: 7px;
-  display: table-cell;
-}
-
-.taskbar .icons-right .disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-.taskbar .icons-right .datetime {
-  display: table-cell;
-  width: 60px !important;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.taskbar .icons-right .datetime span {
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-  font-size: 11.3px;
-  color: black;
+  height: 47px;
+  width: 70px;
 }
 
 .taskbar .icons-right .datetime:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.taskbar .icons-right a {
-  display: table-cell;
-}
-
-.taskbar .icons-right a:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.taskbar .icons-right a:not(:first-child) {
-  margin-left: -4px;
-}
-
-.taskbar .icons-right .small-icons {
-  width: 24px !important;
-}
-
 #clock {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
