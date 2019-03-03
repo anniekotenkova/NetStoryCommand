@@ -1,1 +1,5 @@
 $('.folderContainer').html("<%= j render partial: 'folders/window' %>");
+$('.closebtn').on('click', function() {
+  console.log('Click')
+  $(this).parents('#computer').remove()
+})
