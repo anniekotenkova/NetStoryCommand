@@ -6,7 +6,8 @@ $color-body-copy: #b9bcbd;
 $default-font-family: 'Cera Pro';
 $breakpoint-medium: "screen and (min-width: 700px)";
 
-#theGlobe.foldercontent {
+#theGlobe.theglobearticle {
+  display: block;
   height: 550px;
   width: 700px;
 }
