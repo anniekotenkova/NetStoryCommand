@@ -58,6 +58,18 @@ body {
   background: #FF85A6;
 }
 
+a {
+  text-decoration: none!important;
+  text-transform: none;
+
+  &:hover {
+    text-decoration: none!important;
+    text-transform: none;
+    background-color: inherit;
+
+  }
+}
+
 // .button {
 //   a {
 // 		white-space: nowrap;

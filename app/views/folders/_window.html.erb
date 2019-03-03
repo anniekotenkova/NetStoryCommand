@@ -4,9 +4,12 @@
     <div class="closebtn">
       <%= image_tag 'x.svg' %>
     </div>
-    <div class="back"><p>Назад</p></div>
+    <div class="back">
+      <%= image_tag 'back.svg' %>
+    </div>
   </div>
-
-  <%= render @folders %>
-  <%= render @articles %>
+  <div class="content_inside">
+    <%= render @folders %>
+    <%= render @articles %>
+  </div>
 </div>
