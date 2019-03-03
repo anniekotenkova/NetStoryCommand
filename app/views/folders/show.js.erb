@@ -1,11 +1,9 @@
 $('.folderContainer').html("<%= j render partial: 'folders/window' %>");
-
 $('.closebtn').on('click', function() {
-  console.log('Click');
-  $(this).parents('#computer').remove();
+  console.log('Click')
+  $(this).parents('#computer').remove()
 })
-
 $('.back').on('click', function() {
-  console.log('Click');
-  window.history.back();
+  console.log('Click')
+  window.history.back()
 })

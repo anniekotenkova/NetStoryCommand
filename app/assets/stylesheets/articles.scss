@@ -45,10 +45,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-// .computerFolders {
-// 	position: relative;
-// }
+.computerFolders {
+	position: relative;
+	top: -130px;
+}
 
 #info p {
 	font-size: 87.5%;
