@@ -14,14 +14,13 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 .erwise {
   background: #729CFE;
   width: 780px;
-  height: 600px;
-  border: 2px solid black;
+  height: 650px;
 
   .text {
     width: 740px;
     position: relative;
     left: 20px;
-    top: 40px;
+    top: 20px;
   }
 
   p {
@@ -36,6 +35,23 @@ $breakpoint-medium: "screen and (min-width: 700px)";
     display: flex;
     justify-content: center;
   }
+
+  .secondpage {
+    display: none;
+  }
+
+  // #second.text {
+  //   width: 740px;
+  //   position: relative;
+  //   left: 0;
+  //   top: 0;
+  // }
+
+  .thirdpage {
+    display: none;
+  }
+
+}
 
   .pages {
     position: relative;
@@ -52,48 +68,48 @@ $breakpoint-medium: "screen and (min-width: 700px)";
     height: 40px;
     width: 780px;
     position: relative;
-    top: -4px;
-    left: -11px;
     background: #729CFE;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
     box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
     display: flex;
     align-items: center;
-  }
 
-  .left {
-    width: 400px;
-    position: relative;
-    left: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
-  #close {
-    position: relative;
-    left: 255px;
-  }
+    .left {
+      width: 400px;
+      position: relative;
+      left: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  .button {
-    font-family: Courier New;
-    height: 25px;
-    width: 110px;
-    position: relative;
-    /* top: -30px; */
-    background: #729CFE;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+
+    #close {
+      position: relative;
+      left: 255px;
+    }
+
+    .button {
+      font-family: Courier New;
+      height: 25px;
+      width: 110px;
+      position: relative;
+      /* top: -30px; */
+      background: #729CFE;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
   }
 
   .popup {
-    /* display: none; */
+    display: block;
     height: 320px;
     width: 500px;
     position: absolute;
@@ -109,82 +125,59 @@ $breakpoint-medium: "screen and (min-width: 700px)";
     align-items: center;
     justify-content: center;
     font-weight: bold;
-  }
 
-  .brow {
-    position: relative;
-    top: -45px;
-    height: 20px;
-    width: 480px;
-    background: #818184;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-  }
+    .brow {
+      position: relative;
+      top: -50px;
+      height: 20px;
+      width: 480px;
+      background: #818184;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+    }
 
-  .field {
-    position: absolute;
-    z-index: -1;
-    height: 300px;
-    width: 480px;
-    background: #729CFE;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-  }
+    .field {
+      position: absolute;
+      z-index: -1;
+      height: 300px;
+      width: 480px;
+      background: #729CFE;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+    }
 
-  .popup .button {
-    top: 38px;
-    left: 180px;
-  }
+    .button {
+      top: 38px;
+      left: 180px;
+    }
 
-  .button:hover {
-    box-shadow: inset rgba(255, 255, 255, 0.3) 3px 3px 3px;
-  }
+    .button:hover {
+      box-shadow: inset rgba(255, 255, 255, 0.3) 3px 3px 3px;
+    }
 
-  .popup p {
-    width: 350px;
-    text-align: center;
-  }
+    p {
+      width: 350px;
+      text-align: center;
+    }
 
-  #first-child {
-    width: 180px;
-    text-align: center;
-  }
+    #first-child {
+      width: 180px;
+      text-align: center;
+    }
 
-  .logo {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 40px;
-    top: 60px;
-    background-image: url("er.svg");
-    background-size: cover;
-  }
+    .logo {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 40px;
+      top: 60px;
+      background-image: url("er.svg");
+      background-size: cover;
+    }
 
-  .isClosed {
-    display: none;
+    .isClosed {
+      display: none;
+    }
   }
-
-  #firstPage {
-    display: none;
-  }
-
-  #secondPage {
-    display: none;
-    overflow: scroll;
-    height: 592px;
-  }
-
-  #secondPage.text {
-    width: 740px;
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-
-  #thirdPage {
-    display: none;
-  }
-
-}

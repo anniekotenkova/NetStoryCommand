@@ -7,10 +7,8 @@ $default-font-family: 'Cera Pro';
 $breakpoint-medium: "screen and (min-width: 700px)";
 
 #default_article {
-  display: block;
-  position: absolute;
   width: 700px;
-  height: 850px;
+  height: 700px;
   background-color: #ffffff;
   overflow: scroll;
 
@@ -18,11 +16,11 @@ $breakpoint-medium: "screen and (min-width: 700px)";
     font-size: 30pt;
     font-weight: bold;
     color: #000000;
-    margin: 45px 40px 30px 40px
+    margin: 45px 70px 30px 70px
   }
 
   .text {
-    margin: 0 40px 50px 40px;
+    margin: 0 70px 50px 70px;
 
     h2 {
       font-size: 21pt;
@@ -36,7 +34,7 @@ $breakpoint-medium: "screen and (min-width: 700px)";
       font-size: 11pt;
       font-weight: normal;
       color: #000000;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     #100_width_pic {
