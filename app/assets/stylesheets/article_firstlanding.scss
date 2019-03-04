@@ -8,13 +8,13 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 
 #old {
   width: 654px;
-  height: 620px;
-  height: 800px;
+  height: 650px;
   border: 1px solid #aaaaaa;
   padding: 3px;
   margin: auto;
   background: #bfbfbf;
   padding: 0;
+  overflow: scroll;
 
   img a {
     color: blue;

@@ -14,7 +14,7 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 .erwise {
   background: #729CFE;
   width: 780px;
-  height: 650px;
+  height: 700px;
 
   .text {
     width: 740px;
@@ -38,6 +38,7 @@ $breakpoint-medium: "screen and (min-width: 700px)";
 
   .secondpage {
     display: none;
+    margin-top: -20px;
   }
 
   // #second.text {
