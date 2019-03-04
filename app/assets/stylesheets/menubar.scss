@@ -130,12 +130,6 @@ span.focus:after {
   margin: 0 auto;
 }
 
-.information {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
 // ARTICLES FOLDER
 .menu_top {
   border-bottom: 2px solid #1d1e1c;
@@ -149,7 +143,7 @@ span.focus:after {
   font-size: 1.2rem;
   font-weight: normal;
   letter-spacing: 1px;
-  text-align: center;
+  // text-align: center;
   background-color: #DADAD3;
   vertical-align: middle;
 }
@@ -169,14 +163,6 @@ span.focus:after {
   margin-top: 1.2rem;
   width: 100%;
   height: 100%;
-}
-
-#info.folder-content {
-  position: relative;
-  font-family: 'Cera Pro';
-  font-weight: 300;
-  width: 600px;
-  overflow-y: scroll;
 }
 
 .foldercontent p {
@@ -216,6 +202,8 @@ span.focus:after {
   flex: 1;
   padding: 0.5rem;
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .article-icon {
@@ -435,15 +423,6 @@ span.focus:after {
 
 .shared .share-item:nth-child(6) {
   transition: 2200ms cubic-bezier(.32,-0.22,.9,.93) all;
-}
-
-#info {
-  height: 250px !important;
-  width: 400px !important;
-
-  p {
-    color: #000;
-  }
 }
 
 .folder-content{
