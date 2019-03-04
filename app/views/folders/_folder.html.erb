@@ -1,10 +1,10 @@
 <div class="folderfolder" id="<%= "folder_#{ folder.id }" %>">
   <div class="project-list nav_basic">
-    <div id="folderfolder" class="project-list__item ">
+    <%= link_to folder_path(folder), class: 'project-list__item', id: 'folderfolder', remote: true do %>
       <span class="article-icon " data-title="Папка">
         <%= image_tag folder.icon %>
-        <%= link_to folder.name, folder_path(folder), remote: true %>
+        <div><%= folder.name %></div>
       </span>
-    </div>
+    <% end %>
   </div>
 </div>

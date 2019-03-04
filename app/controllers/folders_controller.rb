@@ -19,6 +19,7 @@ class FoldersController < ApplicationController
   def show
     @folders = @folder.folders
     @articles = @folder.articles
+    @my_computer_folder = Folder.find_by_name('Мой компьютер')
 
     respond_to do |format|
       format.html
@@ -58,9 +59,11 @@ class FoldersController < ApplicationController
       if @folder.update(folder_params)
         format.html { redirect_to @folder, notice: 'Folder was successfully updated.' }
         format.json { render :show, status: :ok, location: @folder }
+        format.js
       else
         format.html { render :edit }
         format.json { render json: @folder.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -83,6 +86,6 @@ class FoldersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def folder_params
-      params.require(:folder).permit(:type, :name, :icon)
+      params.require(:folder).permit(:type, :name, :icon, :partial_name)
     end
 end

@@ -1,17 +1,22 @@
-$('.folderContainer').html("<%= j render partial: 'folders/window' %>");
+<% if @folder.partial_name == "window" %>
+  $('.folderContainer').html('<%= j render partial: "#{ @folder.partial_name }" %>');
+<% else %>
+  $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>');
+<% end %>
 
 $('.closebtn').on('click', function() {
   console.log('Click');
   $(this).parents('#computer').remove();
 })
-<<<<<<< HEAD
-// $('.back').on('click', function() {
-//   $('.folderfolder').toggleClass('.folderContainer');
-// })
-=======
 
-$('.back').on('click', function() {
-  console.log('Click');
-  $('.content_inside').replaceWith('<%= escape_javascript render partial: 'folders/window' %>');
-})
->>>>>>> 165df07782f8ec0c15e3154e77ca1b240092c334
+// $('#folder_1').on('click', function() {
+// $('content_inside').replaceWith("<%= j render partial: 'folders/about' %>");
+// })
+
+// $('.back').on('click', function() {
+//   console.log('Click');
+//   $('.content_inside').replaceWith('<%= escape_javascript render partial: 'folders/window' %>');
+// })
+// $('.back').on('click', function() {
+//   $('.content_inside').remove();
+// })

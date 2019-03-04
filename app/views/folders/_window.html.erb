@@ -4,12 +4,14 @@
     <div class="closebtn">
       <%= image_tag 'x.svg' %>
     </div>
-    <div class="back">
+
+    <%= link_to @my_computer_folder, class: 'back', remote: true do %>
       <%= image_tag 'back.svg' %>
-    </div>
+    <% end %>
   </div>
   <div class="content_inside">
     <%= render @folders %>
     <%= render @articles %>
+    <%#= render 'folders/about' %>
   </div>
 </div>
