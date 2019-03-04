@@ -1,8 +1,17 @@
 $('.folderContainer').html("<%= j render partial: 'folders/window' %>");
+
 $('.closebtn').on('click', function() {
-  console.log('Click')
-  $(this).parents('#computer').remove()
+  console.log('Click');
+  $(this).parents('#computer').remove();
 })
+<<<<<<< HEAD
 // $('.back').on('click', function() {
 //   $('.folderfolder').toggleClass('.folderContainer');
 // })
+=======
+
+$('.back').on('click', function() {
+  console.log('Click');
+  $('.content_inside').replaceWith('<%= escape_javascript render partial: 'folders/window' %>');
+})
+>>>>>>> 165df07782f8ec0c15e3154e77ca1b240092c334

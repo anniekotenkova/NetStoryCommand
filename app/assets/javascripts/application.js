@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require draggable
 //# require rails-ujs
 //= require jquery-ui/widgets/mouse
 //# require jquery-ui/widgets/draggable
@@ -103,22 +104,22 @@ $(function() {
   $('#popup-close').on('click', function() {
     $('.popup').toggleClass('isClosed')
   });
-
-  $(".popup").draggable();
-
-  $("#gui").click(function() {
-    $('#guiewrise').css('display', 'block');
-    $('#firstPage').css('display', 'block');
-  });
-
-  $("#fastlink_erwise").dblclick(function() {
-    $('#guiewrise').css('display', 'block');
-    $('#firstPage').css('display', 'block');
-  });
-
-  $("#close-btn.cbfastlink_erwise").dblclick(function() {
-    $('.fastlink_erwise').css('display', 'none');
-  });
+  //
+  // $(".popup").draggable();
+  //
+  // $("#gui").click(function() {
+  //   $('#guiewrise').css('display', 'block');
+  //   $('.firstpage').css('display', 'block');
+  // });
+  //
+  // $("#fastlink_erwise").dblclick(function() {
+  //   $('#guiewrise').css('display', 'block');
+  //   $('.firstpage').css('display', 'block');
+  // });
+  //
+  // $("#close-btn.cbfastlink_erwise").dblclick(function() {
+  //   $('.fastlink_erwise').css('display', 'none');
+  // });
 
 
   // $("#close").click(function() {
@@ -126,28 +127,28 @@ $(function() {
   // });
 
   $(".next").click(function() {
-    if ('#firstPage') {
-      $('#firstPage').css('display', 'none');
-      $('#secondPage').css('display', 'block');
-    } else if ('#secondPage') {
-      $('#secondPage').css('display', 'none');
-      $('#thirdPage').css('display', 'block');
+    if ('.firstpage') {
+      $('.firstpage').css('display', 'none');
+      $('.secondpage').css('display', 'block');
+    } else if ('.secondpage') {
+      $('.secondpage').css('display', 'none');
+      $('.thirdpage').css('display', 'block');
     } else {
-      $('#secondPage').css('display', 'none');
-      $('#firstPage').css('display', 'none');
+      $('.secondpage').css('display', 'none');
+      $('.firstpage').css('display', 'none');
     }
   });
 
   $(".prev").click(function() {
-    if ('#secondPage') {
-      $('#secondPage').css('display', 'none');
-      $('#firstPage').css('display', 'block');
-    } else if ('#firstPage') {
-      $('#firstPage').css('display', 'none');
-      $('#secondPage').css('display', 'block');
+    if ('.secondpage') {
+      $('.secondpage').css('display', 'none');
+      $('.firstpage').css('display', 'block');
+    } else if ('.firstpage') {
+      $('.firstpage').css('display', 'none');
+      $('.secondpage').css('display', 'block');
     } else {
-      $('#firstPage').css('display', 'none');
-      $('#secondPage').css('display', 'none');
+      $('.firstpage').css('display', 'none');
+      $('.secondpage').css('display', 'none');
     }
   });
 

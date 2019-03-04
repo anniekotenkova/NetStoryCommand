@@ -7,6 +7,7 @@ $default-border-radius: 5px;
 $default-border: 2px solid black;
 $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 $breakpoint-medium: "screen and (min-width: 700px)";
+$default-cursor: url('cursor-pointer.png'), pointer;
 
 #Desktop {
   display: flex;
@@ -27,7 +28,7 @@ $breakpoint-medium: "screen and (min-width: 700px)";
   transition: all 0.2s;
   width: auto;
   text-align: center;
-  cursor: pointer;
+  cursor: $default-cursor;
 }
 
 #Desktop span.icon:after {
@@ -81,18 +82,17 @@ span.focus:after {
 
 .back{
   position: relative;
-  left: -464px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: default;
   box-sizing: border-box;
-  width: 64px;
+  width: 32px;
   height: 32px;
   background-color: #C1C1BF;
-  border: 2px solid #1d1e1c !important;
-  cursor: pointer;
-  cursor: url('cursor-pointer.png'), pointer !important;
+  border-right: $default-border;
+  border-top: $default-border;
+  border-bottom: $default-border;
+  cursor: $default-cursor !important;
 }
 
 .back p {
@@ -100,22 +100,27 @@ span.focus:after {
   font-size: 1.2rem;
 }
 
-div.closebtn {
-  position: relative;
-  left: -2px;
+.back img {
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.closebtn {
+  position: relative !important;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  cursor: default;
   box-sizing: border-box;
   width: 32px;
   height: 32px;
   position: absolute;
   background-color: #C1C1BF;
-  border: 2px solid #1d1e1c !important;
-  cursor: pointer;
-  cursor: url('cursor-pointer.png'), pointer !important;
+  border-right: $default-border;
+  border-top: $default-border;
+  border-bottom: $default-border;
+  cursor: $default-cursor !important;
 }
 
 .closebtn img {
@@ -136,6 +141,7 @@ div.closebtn {
   box-sizing: border-box;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   height: 30px;
@@ -148,8 +154,20 @@ div.closebtn {
 }
 
 .folder_title {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+}
+
+.content_inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   position: relative;
-  margin: 0 auto;
+  margin-top: 1.2rem;
+  width: 100%;
+  height: 100%;
 }
 
 #info.folder-content {
@@ -206,13 +224,13 @@ div.closebtn {
   position: relative;
   margin: 20px;
   background-size: cover;
-  cursor: pointer;
+  cursor: $default-cursor;
   margin-bottom: 0.8rem;
 }
 
-.article-icon:hover {
-  transform: scale(1.1);
-}
+// .article-icon:hover {
+//   transform: scale(1.1);
+// }
 
 #fastlink_erwise {
   width: 237px;
@@ -224,7 +242,7 @@ div.closebtn {
   top: 21px;
   box-shadow: $default-box-shadow;
   color: #00000030;
-  cursor: pointer;
+  cursor: $default-cursor;
 }
 
 #fastlink_att {
@@ -235,7 +253,7 @@ div.closebtn {
   position: absolute;
   box-shadow: $default-border;
   color: #00000030;
-  cursor: pointer;
+  cursor: $default-cursor;
   box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
   top: 420px;
   left: 554px;

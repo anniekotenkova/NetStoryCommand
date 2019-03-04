@@ -38,16 +38,17 @@ body {
 .articleContainer {
 	position: absolute;
 	left: 300px;
+  border: 2px solid black;
 }
 
 #computer.foldercontent.draggable {
 	display: flex;
 	flex-wrap: wrap;
 }
-.computerFolders {
-	position: relative;
-	top: -130px;
-}
+
+// .computerFolders {
+// 	position: relative;
+// }
 
 #info p {
 	font-size: 87.5%;
