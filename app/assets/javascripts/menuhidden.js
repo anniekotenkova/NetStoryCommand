@@ -1,20 +1,23 @@
 $(function() {
   startTime();
-  $('#startMenu').hide();
+  $('#setting').hide();
   $('#start').click(function() {
-    $('#startMenu').toggle();
+    $('#setting').toggle();
     $(this).toggleClass('startClick');
   });
 
   $('#desktop').click(function() {
-    $('#startMenu').hide();
+    $('#setting').hide();
     $('#start').removeClass('startClick').addClass('startRest');
   })
-
 
   $('.desktopIcon').dblclick(function() {
     alert($(this).text());
   });
+
+  $('.setting__dropdown-button').click(function() {
+    $('.setting__dropdown').removeClass('hidden');
+  })
 
 });
 

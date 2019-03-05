@@ -15,12 +15,16 @@
   background-repeat: no-repeat;
 }
 
+#setting {
+  box-shadow: none;
+  background-color: #D8D8D8;
+}
+
 #startMenu {
   top: -230px;
-  left: 2rem;
   height: 240px;
   width: 164px;
-  background-color: #C1C1BF;
+  background-color: #fff;
   position: absolute;
   display: block;
   border: 2px solid black;

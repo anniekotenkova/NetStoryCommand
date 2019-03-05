@@ -10,8 +10,8 @@ $background-elemts: #DADAD3;
   position: absolute;
   height: 384px;
   width: 224px;
-  left: 135px;
-  top: 53px;
+  left: 1.5rem;
+  top: 230px;
   font-family: $default-font-family;
   font-weight: 300;
 }
@@ -22,7 +22,6 @@ $background-elemts: #DADAD3;
   justify-content: space-between;
   font-family: $default-font-family;
   font-weight: 300;
-  background-color: #fff;
 }
 
 
@@ -152,7 +151,7 @@ h4 {
 	    display: block;
 	    margin: 0 auto;
 	    width: 100%;
-	    padding: 0.3rem;
+	    padding: 1rem;
 	    color: black;
 	    text-decoration: none !important;
 	}
