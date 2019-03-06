@@ -1,5 +1,7 @@
 {
   "name": "NetStory",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "interactjs": "^1.3.4"
+  }
 }

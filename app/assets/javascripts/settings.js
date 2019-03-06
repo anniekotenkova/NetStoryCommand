@@ -16,15 +16,4 @@ $(function() {
     $('body').css('background', '#1B1725');
   });
 
-  $('.setting__dropdown-button').click(function() {
-    console.log('Click');
-    var dropDown = document.querySelector('.setting__dropdown');
-
-    if (dropDown.className.indexOf('hidden') >= 0) {
-      dropDown.classList.remove('hidden');
-    } else {
-      dropDown.classList.add('hidden');
-    }
-  }
-  
 });
