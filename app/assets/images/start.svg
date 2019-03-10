@@ -1,0 +1,75 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8d8d8;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-8, .cls-9 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill-opacity: 0.3;
+      }
+
+      .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        font-size: 24px;
+        font-family: Circe-ExtraBold, Circe;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.02em;
+      }
+
+      .cls-8 {
+        fill: #74ffa4;
+      }
+
+      .cls-9 {
+        fill: #ff85a6;
+      }
+
+      .cls-10 {
+        fill: #3544f1;
+      }
+
+      .cls-11 {
+        fill: #ffdf50;
+      }
+    </style>
+  </defs>
+  <title>start</title>
+  <g id="Page-1">
+    <g id="Group-30">
+      <g id="Group-29">
+        <path id="Path-18-Copy" class="cls-1" d="M2,7V44a5,5,0,0,0,5,5H128q6-1,6-6V7q-2-5-6-5H7A5,5,0,0,0,2,7Z" transform="translate(-0.5 -0.5)"/>
+        <path id="Path-19-Copy" class="cls-2" d="M3.62,4q3,31,5,35c2,4,8,6,16,6h110q-4,4-12,4H8.62q-5-.16-6-2c-1.19-2.15-.36-6.32,0-11Q3.62,23,3.62,4Z" transform="translate(-0.5 -0.5)"/>
+        <g id="start-copy" class="cls-3">
+          <text class="cls-4" transform="translate(47.5 32.5)">S<tspan class="cls-5" x="14.57" y="0">T</tspan><tspan class="cls-6" x="28.87" y="0">A</tspan><tspan class="cls-7" x="47.47" y="0">R</tspan><tspan class="cls-6" x="64.1" y="0">T</tspan></text>
+        </g>
+      </g>
+      <g id="Group-2">
+        <rect id="Rectangle-51" class="cls-8" x="18" y="12" width="12" height="12"/>
+        <rect id="Rectangle-51-Copy-2" class="cls-9" x="18" y="24" width="12" height="12"/>
+        <rect id="Rectangle-51-Copy" class="cls-10" x="30" y="12" width="12" height="12"/>
+        <rect id="Rectangle-51-Copy-3" class="cls-11" x="30" y="24" width="12" height="12"/>
+      </g>
+    </g>
+  </g>
+</svg>

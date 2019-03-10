@@ -124,10 +124,90 @@ span.focus:after {
   cursor: $default-cursor !important;
 }
 
+.scaleimg{
+  position: relative !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-color: #C1C1BF;
+  border-left: $default-border;
+  border-top: $default-border;
+  border-bottom: $default-border;
+  cursor: $default-cursor !important;
+  transform: scale(-1, 1);
+}
+
+.reload{
+  position: relative !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-color: #C1C1BF;
+  border-right: $default-border;
+  border-top: $default-border;
+  border-bottom: $default-border;
+  cursor: $default-cursor !important;
+}
+
+.search{
+  margin: 3rem;
+  position: relative;
+  width: 400px;
+  height: 21px;
+  background-color: #FFF;
+  border: $default-border;
+  border-radius: 10px;
+}
+
+.searchtext{
+  position: relative;
+  font-size: 1.2rem !important;
+  font-weight: normal !important;
+  margin-left: 2rem;
+  color: #000;
+}
+
 .closebtn img {
   width: 21px;
   height: 21px;
   margin: 0 auto;
+}
+
+.scaleimg img{
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.reload img{
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.searchfield{
+  margin: 2rem;
+  position: relative;
+  width: 80%;
+  height: 32px;
+  color: #DADAD3;
+  border: $default-border;
+}
+
+.forinternet{
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 // ARTICLES FOLDER
