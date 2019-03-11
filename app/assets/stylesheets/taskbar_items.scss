@@ -1,0 +1,19 @@
+.taskbarItems {
+  height: 43px;
+  width: 43px;
+  display: flex;
+  flex-direction: row;
+}
+.taskbarItemsBox {
+  height: 43px;
+  width: 43px;
+}
+
+.taskbarHover {
+  display: none;
+
+
+  &:hover{
+    display: block;
+  }
+}

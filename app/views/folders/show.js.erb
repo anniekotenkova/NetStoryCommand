@@ -8,3 +8,9 @@ $('.closebtn').on('click', function() {
   console.log('Click');
   $(this).parents('#computer').remove();
 })
+
+$('.taskbar_elements').append('<%= j render "task_bar_item" %>');
+
+<% if @folder.icon == 'folder.svg' %>
+  $('#computer .menu_top').append('<%= j render "back" %>');
+<% end %>

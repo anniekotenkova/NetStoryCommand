@@ -1,14 +1,12 @@
 <div id="computer" class="foldercontent draggable">
-  <div class="menu_top">
-    <span class="folder_title"><%= @folder.name %></span>
-    <div class="closebtn">
-      <%= image_tag 'x.svg' %>
-    </div>
-
-    <%= link_to @my_computer_folder, class: 'back', remote: true do %>
-      <%= image_tag 'back.svg' %>
-    <% end %>
+<!--   <div class="menu_top">
+  <span class="folder_title"><%= @folder.name %></span>
+  <div class="closebtn">
+    <%= image_tag 'x.svg' %>
   </div>
+
+</div> -->
+  <%= render 'folders/menu' %>
   <div class="content_inside">
     <%= render @folders %>
     <%= render @articles %>
