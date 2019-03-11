@@ -13,6 +13,19 @@ $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
   position: absolute;
 }
 
+.google{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.google img{
+  position: relative;
+  width: 70%;
+}
+
 #alert1 {
   width: 20vw;
   left: 844px;

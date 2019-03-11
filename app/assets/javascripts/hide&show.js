@@ -35,6 +35,10 @@ $(function() {
     $('#fastlink_erwise').hide();
   });
 
+  $(".cbfastlink_att").click(function() {
+    $('#fastlink_att').hide();
+  });
+
   $(".infobtn").click(function() {
     $('#info').hide();
   });
@@ -95,5 +99,6 @@ $(function() {
   $("#infofolder").dblclick(function() {
     $('#info').css('display', 'block');
   });
+
 
 });

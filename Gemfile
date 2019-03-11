@@ -37,6 +37,10 @@ gem 'therubyracer', :require => nil
 gem 'youtube_rails'
 gem 'kaminari'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-interact'
+end
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

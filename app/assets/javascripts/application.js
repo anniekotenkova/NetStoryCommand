@@ -10,20 +10,9 @@
 //= require jquery-ui/widgets/sortable
 //= require rails_sortable
 //= require_tree .
+//= require interact/interact
 
 $(function() {
-  var maxZindex = 0;
-  $('.draggable').draggable();
-
-  $('.draggable').mousedown(function() {
-    $(this).siblings('.draggable').each(function() {
-      var currentZindex = Number($(this).css('z-index'));
-      maxZindex = currentZindex > maxZindex ? currentZindex : maxZindex;
-    });
-    $(this).css('z-index', maxZindex + 1);
-  });
-
-  $('.resizable').resizable();
 
   $("#Desktop span").click(function(e) {
     e.stopPropagation();
@@ -40,7 +29,7 @@ $(function() {
     $("#Desktop span").removeClass("focus");
   });
 
-  
+
   // Hidden taskbar
   $(".sbtn").click(function() {
     $('#setting').css('display', 'block');

@@ -102,13 +102,13 @@ def create_articles
     }, {
       folder_name:  '1990',
       title:        'Друзья',
-      pic:          'att_icon.png',
+      pic:          'friends_icon.png',
       partial_name: 'friends'
     }, {
       folder_name:  '1990',
       title:        'TheGlobe',
       pic:          'theglobe_icon.png',
-      partial_name: 'TheGlobe'
+      partial_name: 'theGlobe'
     }, {
       folder_name:  '2000',
       title:        'Википедия',
