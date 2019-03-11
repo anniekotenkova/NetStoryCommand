@@ -14,7 +14,6 @@
  *= require_self
  */
 
- @import "reset.css";
  $color-card-background: #FFFFFF;
  $color-tag-background: #E3E5E9;
  $color-anchor: #E62A5D;
@@ -26,6 +25,9 @@
  $breakpoint-medium: "screen and (min-width: 700px)";
  $mainColor: #FF85A6;
  $secondaryColor: #EBFFFA;
+
+ @import "reset.css";
+
  :root {
      --main-color: $mainColor;
  }

@@ -102,7 +102,7 @@ def create_articles
     }, {
       folder_name:  '1990',
       title:        'Друзья',
-      pic:          'friends_icon.png',
+      pic:          'friends_icon.svg',
       partial_name: 'friends'
     }, {
       folder_name:  '1990',
