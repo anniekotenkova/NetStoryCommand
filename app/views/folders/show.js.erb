@@ -9,8 +9,17 @@ $('.closebtn').on('click', function() {
   $(this).parents('#computer').remove();
 })
 
-$('.taskbar_elements').append('<%= j render "task_bar_item" %>');
+// $('.taskbar_elements').append('<%= j render "task_bar_item" %>');
 
 <% if @folder.icon == 'folder.svg' %>
   $('#computer .menu_top').append('<%= j render "back" %>');
 <% end %>
+
+
+// $('#desktop').click(function() {
+//   $('#setting').css('display', 'none');
+// })
+
+// $('#fastlink_erwise').on('click', function() {
+//   $(this).append('<%= j render partial: "article/firstlanding}" %>');
+// })
