@@ -88,35 +88,3 @@
     <div class="button" id="popup-close">Ок</div>
   </div>
 </div>
-
-<script type="text/javascript">
-  $('#popup-close').click(function() {
-    $('.popup').toggleClass('isClosed')
-  });
-
-  $(".next").click(function() {
-    if ('.firstpage') {
-      $('.firstpage').css('display', 'none');
-      $('.secondpage').css('display', 'block');
-    } else if ('.secondpage') {
-      $('.secondpage').css('display', 'none');
-      $('.thirdpage').css('display', 'block');
-    } else {
-      $('.secondpage').css('display', 'none');
-      $('.firstpage').css('display', 'none');
-    }
-  });
-
-  $(".prev").click(function() {
-    if ('.secondpage') {
-      $('.secondpage').css('display', 'none');
-      $('.firstpage').css('display', 'block');
-    } else if ('.thirdpage') {
-      $('.thirdpage').css('display', 'none');
-      $('.secondpage').css('display', 'block');
-    } else {
-      $('.firstpage').css('display', 'none');
-      $('.secondpage').css('display', 'none');
-    }
-  });
-</script>

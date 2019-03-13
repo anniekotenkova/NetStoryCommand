@@ -1,107 +1,116 @@
 @import "application.scss";
 
-#theGlobe.theglobearticle {
+#theGlobe{
   display: block;
-  height: 550px;
+  height: 520px;
   width: 700px;
-}
 
-.blueLine {
-  width: 100%;
-  height: 20px;
-  background: #32679E;
-}
+  .theglobearticle {
+    overflow: scroll;
+    width: 100%;
+    height: 496px;
+    background: #679A9A;
 
-.back {
-  width: 100%;
-  height: 496px;
-  background: #679A9A;
-}
+    .blueLine {
+      width: 100%;
+      height: 20px;
+      background: #32679E;
+    }
 
-.content {
-  position: relative;
-  // top: -470px;
-  left: 0;
-}
+    .content {
+      position: relative;
+      .white {
+        background-color: #ffff;
+        border-radius: 43%;
+      }
 
-.white {
-  height: 130px;
-  background: #ffff;
-  border-radius: 43%;
-  position: fixed;
-}
+      .whiteBlock {
+        width: 540px;
+        height: 3300px;
+        background-color: #ffff;
+        border-top-right-radius: 50px;
+        border: 3px solid #E6E6FA;
+      }
 
-.whiteBlock {
-  width: 540px;
-  height: 470px;
-  background: #ffff;
-  border-top-right-radius: 10%;
-}
+      .adv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-.adv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+      .oval {
+        width: 158px;
+        height: 86px;
+        background: #FEFDC5;
+        border: 3px solid #32679E;
+        border-radius: 69%;
+        position: relative;
+        top: 20px;
+        left: 10px;
 
-.oval {
-  width: 158px;
-  height: 86px;
-  background: #FEFDC5;
-  border: 3px solid #32679E;
-  border-radius: 69%;
-  position: relative;
-  top: 20px;
-  left: 10px;
-}
+        p {
+          color: #32679E;
+          font-size: 13px;
+          margin-left: 31px;
+          margin-top: 12px;
+        }
+      }
 
-.oval p {
-  color: #32679E;
-  font-size: 13px;
-  margin-left: 31px;
-  margin-top: 12px;
-}
+      .explore {
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        top: 23px;
 
-.explore {
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  top: 23px;
-}
+        p {
+          color: #FF5900;
+          line-height: 22px;
+          position: relative;
+          left: -5px;
+        }
+      }
 
-.explore p {
-  color: #FF5900;
-  line-height: 22px;
-  position: relative;
-  left: -5px;
-}
+      .globeIcon {
+        width: 30px;
+        height: 30px;
+      }
 
-.globeIcon {
-  width: 30px;
-  height: 30px;
-}
+      .globeText {
+        width: 100%;
+        scroll-behavior: smooth;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 50px;
 
-.globeText {
-  width: 100%;
-  scroll-behavior: smooth;
-  height: 451px;
-  overflow: scroll;
-  position: relative;
-  top: -460px;
+        p {
+          font-size: 15px;
+          font-weight: normal;
+          display: flex;
+        }
 
-  p {
-    font-size: 12px;
-    font-weight: normal;
-    display: flex;
-  }
+        h4{
+          margin-top: 40px;
+        }
 
-  h4,
-  p {
-    width: 400px;
-    margin: 0 auto;
-    position: relative;
-    left: -85px;
-    top: 200px;
+        h4,
+        p {
+          width: 400px;
+          position: relative;
+        }
+      }
+    }
+
+    .rightBlock {
+      display: block;
+      width: 100%;
+      position: relative;
+
+      .blueLineMin {
+        color: #32679E;
+        width: 100%;
+        height: 20px;
+      }
+    }
   }
 }
