@@ -1,12 +1,5 @@
-@import "reset.css";
-$color-card-background: #FFFFFF;
-$color-tag-background: #E3E5E9;
-$color-anchor: #E62A5D;
-$color-body-copy: #b9bcbd;
-$default-border-radius: 5px;
-$default-border: 2px solid black;
-$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
-$breakpoint-medium: "screen and (min-width: 700px)";
+@import "application.scss";
+
 $default-cursor: url('cursor-pointer.png'), pointer;
 
 #Desktop {

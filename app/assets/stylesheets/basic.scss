@@ -1,0 +1,87 @@
+ @import "application.scss";
+
+:root {
+  --main-color: $mainColor;
+}
+
+html {
+ box-sizing: border-box;
+ color: $color-body-copy;
+ font-family: $default-font-family;
+ overflow: hidden;
+}
+
+*,
+*:after,
+*:before {
+ box-sizing: inherit;
+}
+
+html body {
+ background-color: $color-tag-background;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ width: 100vw;
+ background-position: center;
+ background-size: cover;
+ cursor: default;
+ cursor: url('../images/cursor-mouse.png'), default;
+ position: relative;
+ overflow: hidden;
+ background-color: $mainColor;
+}
+
+body a {
+ text-decoration: none!important;
+ text-transform: none;
+ color: #000;
+ font-size: 1.2rem;
+ line-height: 1rem;
+
+ &:hover {
+   text-decoration: none!important;
+   text-transform: none;
+   background-color: inherit;
+   color: #000;
+
+ }
+}
+
+// .button {
+//   a {
+// 		white-space: nowrap;
+// 		text-decoration: none !important;
+// 		text-transform: none;
+// 		text-transform: capitalize;
+// 		transition: all 150ms linear;
+// 		text-align: center;
+// 		border-radius: 4px;
+// 		border: 1px solid black;
+// 		border-color: #000;
+// 		display: block;
+// 		padding: 0.3125em 1.25em;
+// 		transition: color 0.3s ease;
+// 		color: #202129;
+// 		background-color: #FFF;
+//
+// 		  &:hover {
+// 		    transition: all 150ms linear;
+// 				color: #202129;
+// 				background-color: #FFF;
+// 		    opacity: .85;
+// 		  }
+//
+// 		  &:active {
+// 				background-color: #d5d6d6;
+// 				opacity: 1;
+// 		    transition: all 150ms linear;
+// 		    opacity: .75;
+// 		  }
+//
+// 		  &:focus {
+// 		    outline: 1px dotted #959595;
+// 		    outline-offset: -4px;
+// 		  }
+// 	}
+// }
