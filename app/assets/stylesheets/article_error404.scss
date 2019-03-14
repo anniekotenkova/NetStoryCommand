@@ -1,11 +1,5 @@
-@import "reset.css";
-$color-card-background: #FFFFFF;
-$color-tag-background: #E3E5E9;
-$color-anchor: #E62A5D;
-$color-body-copy: #b9bcbd;
-$default-font-family: 'Cera Pro';
-$breakpoint-medium: "screen and (min-width: 700px)";
-
+ @import "application.scss";
+ 
 #error {
   width: 800px;
   height: 560px;

@@ -8,7 +8,36 @@ $('.closebtn').on('click', function() {
 $(".articleContainer").draggable()
 $(".content_inside .draggable").draggable()
 
+<<<<<<< HEAD
 $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>');
+=======
+//articles
+$('#popup-close').on('click', function() {
+  console.log('close')
+  $(this).parents('.popup').remove()
+})
+
+$(".next").click(function() {
+  if ('.firstpage') {
+    $('.firstpage').css('display', 'none');
+    $('.secondpage').css('display', 'block');
+  } else if ('.secondpage') {
+    $('.secondpage').css('display', 'none');
+    $('.thirdpage').css('display', 'block');
+  }
+});
+
+$(".prev").click(function() {
+  if ('.secondpage') {
+    $('.secondpage').css('display', 'none');
+    $('.firstpage').css('display', 'block');
+  } else if ('.thirdpage') {
+    $('.thirdpage').css('display', 'none');
+    $('.secondpage').css('display', 'block');
+  }
+});
+
+>>>>>>> ce7865a80d1a08930072a8e0d1c8df61bf8d4b6f
 //
 // let cursor = {
 //   x: 0,

@@ -1,5 +1,5 @@
-$default-border: 2px solid black;
-$default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+@import "application.scss";
+
 /* SPAM */
 .spam-window {
   display: flex;

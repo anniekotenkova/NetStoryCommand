@@ -1,10 +1,4 @@
-@import "reset.css";
-$color-card-background: #FFFFFF;
-$color-tag-background: #E3E5E9;
-$color-anchor: #E62A5D;
-$color-body-copy: #b9bcbd;
-$default-font-family: 'Cera Pro';
-$breakpoint-medium: "screen and (min-width: 700px)";
+@import "application.scss";
 
 @font-face {
   font-family: Courier New;
@@ -114,8 +108,8 @@ $breakpoint-medium: "screen and (min-width: 700px)";
     height: 320px;
     width: 500px;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
     background: #818184;
     border: 1px solid rgba(0, 0, 0, 0.5);

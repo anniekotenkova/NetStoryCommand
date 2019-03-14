@@ -82,7 +82,7 @@ def create_articles
     }, {
       folder_name:  '1980',
       title:        'NSFNET',
-      pic:          'mail_icon.png',
+      pic:          'nsfnet_icon.png',
       partial_name: 'nsfnet'
     }, {
       folder_name:  '1990',
@@ -102,7 +102,7 @@ def create_articles
     }, {
       folder_name:  '1990',
       title:        'Друзья',
-      pic:          'friends_icon.svg',
+      pic:          'friends_icon.png',
       partial_name: 'friends'
     }, {
       folder_name:  '1990',
@@ -112,7 +112,7 @@ def create_articles
     }, {
       folder_name:  '2000',
       title:        'Википедия',
-      pic:          'att_icon.png',
+      pic:          'wiki_icon.png',
       partial_name: 'wikipedia'
     }
   ]

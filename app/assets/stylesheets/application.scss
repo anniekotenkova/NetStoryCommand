@@ -10,7 +10,31 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require about_folder.scss
+ *= require article_default.scss
+ *= require article_email.scss
+ *= require article_error404.scss
+ *= require article_firstbrowser.scss
+ *= require article_firstlanding.scss
+ *= require article_theGlobe.scss
+ *= require article_wikipedia.scss
+ *= require articles.scss
+ *= require basic.scss
+ *= require err.scss
+ *= require folders.scss
+ *= require fonts.css
+ *= require matrix.scss
+ *= require menubar.scss
+ *= require menuhidden.scss
+ *= require my_computer_folder.scss
+ *= require reset.css
+ *= require scaffolds.scss
+ *= require settings.scss
+ *= require spams.scss
+ *= require taskbar_items.scss
+ *= require taskbar.scss
+ *= require videocard.scss
+ *= require welcomealert.scss
  *= require_self
  */
 
@@ -27,89 +51,3 @@
  $secondaryColor: #EBFFFA;
 
  @import "reset.css";
-
- :root {
-     --main-color: $mainColor;
- }
-
- html {
- 	box-sizing: border-box;
- 	color: $color-body-copy;
- 	font-family: $default-font-family;
-  overflow: hidden;
- }
-
- *,
- *:after,
- *:before {
- 	box-sizing: inherit;
-}
-
-body {
-  background-color: $color-tag-background;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-size: cover;
-  cursor: default;
-  cursor: url('../images/cursor-mouse.png'), default;
-  position: relative;
-  overflow: hidden;
-  background: #FF85A6;
-}
-
-a {
-  text-decoration: none!important;
-  text-transform: none;
-  color: #000;
-  font-size: 1.2rem;
-  line-height: 1rem;
-
-  &:hover {
-    text-decoration: none!important;
-    text-transform: none;
-    background-color: inherit;
-    color: #000;
-
-  }
-}
-
-// .button {
-//   a {
-// 		white-space: nowrap;
-// 		text-decoration: none !important;
-// 		text-transform: none;
-// 		text-transform: capitalize;
-// 		transition: all 150ms linear;
-// 		text-align: center;
-// 		border-radius: 4px;
-// 		border: 1px solid black;
-// 		border-color: #000;
-// 		display: block;
-// 		padding: 0.3125em 1.25em;
-// 		transition: color 0.3s ease;
-// 		color: #202129;
-// 		background-color: #FFF;
-//
-// 		  &:hover {
-// 		    transition: all 150ms linear;
-// 				color: #202129;
-// 				background-color: #FFF;
-// 		    opacity: .85;
-// 		  }
-//
-// 		  &:active {
-// 				background-color: #d5d6d6;
-// 				opacity: 1;
-// 		    transition: all 150ms linear;
-// 		    opacity: .75;
-// 		  }
-//
-// 		  &:focus {
-// 		    outline: 1px dotted #959595;
-// 		    outline-offset: -4px;
-// 		  }
-// 	}
-// }
