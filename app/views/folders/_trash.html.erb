@@ -1,11 +1,25 @@
-<!-- Trash
-<div id="trash" class="foldercontent draggable">
+
+<div id="computer" class="foldercontent draggable">
   <div class="menu_top">
-    <span class="folder_title">Trash</span>
+    <span class="folder_title"><%= @folder.name %></span>
     <div class="closebtn">
       <%= image_tag 'x.svg' %>
     </div>
   </div>
-  <div class="infoldercontent"></div>
+  <div class="infoldercontent">
+    <span class="article-icon draggable" data-title="Папка">
+      <%= image_tag 'rainbow_icon.png' %>
+      <div>Unknown</div>
+    </span>
+  </div>
 </div>
- -->
+
+<!-- div id="computer" class="foldercontent draggable">
+
+  <%= render 'folders/menu' %>
+  <div class="content_inside">
+    <%= render @folders %>
+    <%= render @articles %>
+    <%#= render 'folders/about' %>
+  </div>
+</div> -->

@@ -9,19 +9,30 @@
 <% end %>
 
 $('.closebtn').on('click', function() {
-  console.log('Click');
   $(this).parents('#computer').remove();
   $(this).parents('.spam-window').remove();
-  $('.taskbarItems').remove();
+  // $('.taskbarItems').remove();
+  // $('.taskbarItems').filter(":contains('#{ @folder.partial_name }')").remove();
 })
 
 <% if @folder.icon == 'folder.svg' %>
-  $('#computer .menu_top').append('<%= j render "back" %>');
+  $('.folderContainer #computer .menu_top').append('<%= j render "back" %>');
+<% end %>
+
+<% if @folder.id == '#{ @folder.partial_name }' %>
+  $('.closebtn').on('click'{
+      $('.taskbarItems').remove();
+  })
 <% end %>
 
 $(".draggable").draggable()
 
 $('.taskbar_elements').append('<%= j render "task_bar_folder" %>');
+
+// $( '.closebtn').on('click', function() {
+//   $('.taskbarItems ').remove();
+// })
+
 
 //spam
 
