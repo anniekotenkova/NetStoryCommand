@@ -4,6 +4,10 @@
   $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>');
 <% end %>
 
+<% if @folder.partial_name == "matrix" %>
+  $('body').append('<%= j render partial: "spams/spam" %>');
+<% end %>
+
 $('.closebtn').on('click', function() {
   console.log('Click');
   $(this).parents('#computer').remove();
@@ -18,3 +22,49 @@ $('.closebtn').on('click', function() {
 $(".draggable").draggable()
 
 $('.taskbar_elements').append('<%= j render "task_bar_folder" %>');
+
+//spam
+
+var spamLinks = document.querySelectorAll('[href="#spam"]'),
+  spamWindows = document.querySelectorAll('.spam-window'),
+  spamContainer = document.querySelector('.spam');
+
+var i;
+
+var delay = 300,
+  called = false;
+
+  $('.searchbutton').on('click', function() {
+    for (i = 1; i < spamWindows.length; i++) {
+      var time = delay * i;
+      delayWindowOpen(spamWindows[i], time);
+    }
+    $('.spam').removeClass('hidden');
+  })
+
+function delayWindowOpen(el, time) {
+  setTimeout(function() {
+    el.classList.remove('hidden');
+  }, time)
+}
+
+for (i = 0; i < spamLinks.length; i++) {
+  spamLinks[i].addEventListener('click', function() {
+    setTimeout(function() {
+      if (called == false) {
+        document.querySelector('#alert1').classList.remove('hidden');
+        called = true;
+        animatespamWindows();
+      }
+    }, 2000);
+  });
+}
+
+spamContainer.addEventListener('click', function() {
+  if (spamContainer.querySelector('.hidden')) {
+    called = false;
+    for (i = 1; i < spamWindows.length; i++) {
+      spamWindows[i].classList.remove('.hidden');
+    }
+  }
+});

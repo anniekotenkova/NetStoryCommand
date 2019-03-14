@@ -188,13 +188,29 @@ span.focus:after {
   margin: 0 auto;
 }
 
-.searchfield{
+.searchfield {
   margin: 2rem;
   position: relative;
   width: 80%;
   height: 32px;
   color: #DADAD3;
   border: $default-border;
+}
+
+.searchbutton {
+  margin: 1rem;
+  position: relative;
+  width: 20%;
+  height: 32px;
+  border: $default-border;
+
+  p {
+        margin: 5px 30px;
+  }
+
+  &:hover {
+    cursor: $default-cursor;
+  }
 }
 
 .forinternet{
