@@ -1,5 +1,7 @@
 $('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>');
 
+$('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>');
+
 $('.closebtn').on('click', function() {
   console.log('Click')
   $(this).parents('.articleContainer').remove()
@@ -8,9 +10,9 @@ $('.closebtn').on('click', function() {
 $(".articleContainer").draggable()
 $(".content_inside .draggable").draggable()
 
-<<<<<<< HEAD
+
 $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>');
-=======
+
 //articles
 $('#popup-close').on('click', function() {
   console.log('close')
@@ -37,7 +39,7 @@ $(".prev").click(function() {
   }
 });
 
->>>>>>> ce7865a80d1a08930072a8e0d1c8df61bf8d4b6f
+
 //
 // let cursor = {
 //   x: 0,
