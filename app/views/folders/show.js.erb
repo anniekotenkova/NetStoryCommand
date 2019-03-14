@@ -11,9 +11,9 @@
 $('.closebtn').on('click', function() {
   console.log('Click');
   $(this).parents('#computer').remove();
-  $('taskbarItems').remove();
+  $(this).parents('.spam-window').remove();
+  $('.taskbarItems').remove();
 })
-
 
 <% if @folder.icon == 'folder.svg' %>
   $('#computer .menu_top').append('<%= j render "back" %>');
