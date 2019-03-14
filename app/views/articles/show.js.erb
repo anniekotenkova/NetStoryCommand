@@ -6,7 +6,9 @@ $('.closebtn').on('click', function() {
 })
 
 $(".articleContainer").draggable()
+$(".content_inside .draggable").draggable()
 
+$('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>');
 //
 // let cursor = {
 //   x: 0,
