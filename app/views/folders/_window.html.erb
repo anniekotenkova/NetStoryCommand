@@ -1,4 +1,4 @@
-<div id="computer" class="foldercontent draggable">
+<div id='<%= "folder_#{ @folder.id }" %>' class="foldercontent draggable computer <%= @folder.partial_name %>">
   <%= render 'folders/menu' %>
   <div class="content_inside">
     <%= render @folders %>

@@ -6,7 +6,7 @@ $(function() {
 
   $("#computer-icon").click(function() {
     $(this).css('background-color', 'rgba(255, 255, 255, 0.4)');
-    $('#computer').css('display', 'block');
+    $('.computer').css('display', 'block');
   });
 
   $("#folder-icon").click(function() {

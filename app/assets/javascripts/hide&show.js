@@ -5,7 +5,7 @@ $(function() {
   });
 
   $("#computerfolder").dblclick(function() {
-    $('#computer').show();
+    $('.computer').show();
   });
 
   $("#folderfolder").dblclick(function() {

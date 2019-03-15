@@ -1,38 +1,38 @@
+var prevFolderId = $('.window').attr('id')
+
 <% if @folder.partial_name == "window" %>
-  $('.folderContainer').html('<%= j render partial: "#{ @folder.partial_name }" %>');
+  $('.folderContainer').html('<%= j render partial: "#{ @folder.partial_name }" %>')
 <% else %>
-  $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>');
+  $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
 <% end %>
 
+if ($('.taskbarItems').length == 0) {
+  $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
+} else {
+  $('.taskbarItems#' + prevFolderId).replaceWith('<%= j render "task_bar_folder" %>')
+}
+
+
 <% if @folder.partial_name == "matrix" %>
-  $('body').append('<%= j render partial: "spams/spam" %>');
+  $('body').append('<%= j render partial: "spams/spam" %>')
 <% end %>
 
 $('.closebtn').on('click', function() {
-  $(this).parents('#computer').remove();
-  $(this).parents('.spam-window').remove();
+  var id = $(this).parents('.foldercontent').attr("id")
+  $('.foldercontent#' + id).remove()
+  $('.taskbarItems#' + id).remove()
+
+  // $(this).parents('.computer').remove();
+  $(this).parents('.spam-window').remove()
   // $('.taskbarItems').remove();
   // $('.taskbarItems').filter(":contains('#{ @folder.partial_name }')").remove();
 })
 
 <% if @folder.icon == 'folder.svg' %>
-  $('.folderContainer #computer .menu_top').append('<%= j render "back" %>');
-<% end %>
-
-<% if @folder.id == '#{ @folder.partial_name }' %>
-  $('.closebtn').on('click'{
-      $('.taskbarItems').remove();
-  })
+  $('.folderContainer .computer .menu_top').append('<%= j render "back" %>')
 <% end %>
 
 $(".draggable").draggable()
-
-$('.taskbar_elements').append('<%= j render "task_bar_folder" %>');
-
-// $( '.closebtn').on('click', function() {
-//   $('.taskbarItems ').remove();
-// })
-
 
 //spam
 
