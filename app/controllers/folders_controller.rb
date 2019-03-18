@@ -19,10 +19,11 @@ class FoldersController < ApplicationController
   def show
     @folders = @folder.folders
     @articles = @folder.articles
-    @my_computer_folder = Folder.find_by_name('Мой компьютер')
+    @parent_folder = @folder.parent_folder
+    #@my_computer_folder = Folder.find_by_name('Мой компьютер')
 
     respond_to do |format|
-      format.html
+      #format.html
       format.js
     end
   end

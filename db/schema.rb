@@ -10,17 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_04_051105) do
+ActiveRecord::Schema.define(version: 2019_03_18_135301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "article_attachments", force: :cascade do |t|
-    t.integer "attachment_id"
-    t.integer "article_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "articles", force: :cascade do |t|
     t.integer "design_id"
@@ -59,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_051105) do
     t.datetime "updated_at", null: false
     t.integer "parent_id"
     t.string "partial_name"
+    t.boolean "same_window", default: false
   end
 
   create_table "spams", force: :cascade do |t|

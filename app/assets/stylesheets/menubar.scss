@@ -247,7 +247,7 @@ span.focus:after {
 .content_inside {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   position: relative;
   margin-top: 1.2rem;
   width: 100%;
@@ -259,8 +259,10 @@ span.focus:after {
   font-size: 1.4rem;
 }
 
-.folder-content__wrap-overflow {
-  // padding: 1.5rem;
+.atitle {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .nav_basic {

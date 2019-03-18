@@ -4,7 +4,7 @@
       <span id="article-icon" class="article-icon ">
         <%= link_to article_path(article), remote: true do %>
           <%= image_tag(article.pic.url) %>
-          <div><%= article.title %></div>
+          <div class="atitle"><%= article.title %></div>
         <% end %>
       </span>
     </div>

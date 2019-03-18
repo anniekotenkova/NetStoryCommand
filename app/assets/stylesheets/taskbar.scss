@@ -130,6 +130,7 @@ $default-cursor: url('cursor-pointer.png'), pointer;
 .datetime span {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: black;
   height: 47px;
   width: 70px;

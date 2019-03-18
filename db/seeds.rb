@@ -15,13 +15,10 @@ def create_folders
   Folder.create(name: 'Справка', icon: 'Spravka.svg', partial_name: 'about')
 
   computer = Folder.create(name: 'Мой компьютер', icon: 'Komp.png', partial_name: 'window')
-
-
-  folder = Folder.find_by_name('Мой компьютер')
-  computer.folders.create(name: '1970', icon: 'folder.svg', partial_name: 'window',)
-  computer.folders.create(name: '1980', icon: 'folder.svg', partial_name: 'window',)
-  computer.folders.create(name: '1990', icon: 'folder.svg', partial_name: 'window',)
-  computer.folders.create(name: '2000', icon: 'folder.svg', partial_name: 'window',)
+  computer.folders.create(name: '1970', icon: 'folder.svg', partial_name: 'window', same_window: true)
+  computer.folders.create(name: '1980', icon: 'folder.svg', partial_name: 'window', same_window: true)
+  computer.folders.create(name: '1990', icon: 'folder.svg', partial_name: 'window', same_window: true)
+  computer.folders.create(name: '2000', icon: 'folder.svg', partial_name: 'window', same_window: true)
 
 
   Folder.create(name: 'Корзина', icon: 'Korzina.png', partial_name: 'trash')

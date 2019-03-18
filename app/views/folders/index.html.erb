@@ -4,7 +4,8 @@
 
   <!-- Menubar -->
   <div id="Desktop">
-    <div class="folderContainer"></div>
+    <div class="folderContainer" style="position:absolute"></div>
+    <div class="computerContainer"></div>
     <div class="folderArticles" style="position:absolute"></div>
 
     <%= render @folders %>
@@ -14,5 +15,6 @@
   <%= render "preview" %>
   <%= render "settings" %>
   <%= render "welcomeAlert"%>
+  </div>
 
 </section>
