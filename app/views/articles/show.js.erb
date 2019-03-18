@@ -11,6 +11,11 @@ $(".content_inside .draggable").draggable()
 
 $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>');
 
+$('.closebtn').on('click', function() {
+  var id = $(this).parents('.articleContainer').attr("id")
+  $('.articleContainer#' + id).remove()
+  $('.taskbarItems#' + id).remove()
+})
 
 //articles
 $('#popup-close').on('click', function() {

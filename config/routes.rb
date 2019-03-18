@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :folders
   resources :spams
-  resources :article_attachments
   resources :attachmennts
   resources :years
   resources :articles

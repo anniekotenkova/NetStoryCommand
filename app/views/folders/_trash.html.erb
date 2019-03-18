@@ -1,5 +1,5 @@
 
-<div id="computer" class="foldercontent draggable">
+<div id="<%= "folder_#{ @folder.id }" %>" class=" computer foldercontent draggable">
   <div class="menu_top">
     <span class="folder_title"><%= @folder.name %></span>
     <div class="closebtn">
@@ -13,13 +13,3 @@
     </span>
   </div>
 </div>
-
-<!-- div id="computer" class="foldercontent draggable">
-
-  <%= render 'folders/menu' %>
-  <div class="content_inside">
-    <%= render @folders %>
-    <%= render @articles %>
-    <%#= render 'folders/about' %>
-  </div>
-</div> -->

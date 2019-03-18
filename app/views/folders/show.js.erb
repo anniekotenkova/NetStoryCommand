@@ -1,81 +1,69 @@
 var prevFolderId = $('.window').attr('id')
+var spamLinks = document.querySelectorAll('[href="#spam"]'),
+    spamWindows = document.querySelectorAll('.spam-window'),
+    spamContainer = document.querySelector('.spam');
+var i;
+var delay = 300,
+  called = false;
 
-<% if @folder.partial_name == "window" %>
-  $('.folderContainer').html('<%= j render partial: "#{ @folder.partial_name }" %>')
-<% else %>
-  $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
-<% end %>
-
-if ($('.taskbarItems').length == 0) {
-  $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
-} else {
-  $('.taskbarItems#' + prevFolderId).replaceWith('<%= j render "task_bar_folder" %>')
-}
-
-
-<% if @folder.partial_name == "matrix" %>
-  $('body').append('<%= j render partial: "spams/spam" %>')
-<% end %>
-
-$('.closebtn').on('click', function() {
-  var id = $(this).parents('.foldercontent').attr("id")
-  $('.foldercontent#' + id).remove()
-  $('.taskbarItems#' + id).remove()
-
-  // $(this).parents('.computer').remove();
-  $(this).parents('.spam-window').remove()
-  // $('.taskbarItems').remove();
-  // $('.taskbarItems').filter(":contains('#{ @folder.partial_name }')").remove();
-})
-
-<% if @folder.icon == 'folder.svg' %>
-  $('.folderContainer .computer .menu_top').append('<%= j render "back" %>')
+//открытие папок
+<% if @folder.partial_name != "window" %>
+$('#Desktop').append('<%= j render partial: "#{ @folder.partial_name }" %>')
+$('#Desktop').append('<%= j render partial: "spams/spam" %>')
+<% elsif @folder.partial_name == "window" %>
+    $('.folderContainer').html('<%= j render partial: "#{ @folder.partial_name }" %>')
 <% end %>
 
 $(".draggable").draggable()
 
+//рендер в таскбар
+// $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
+if ($('.taskbarItems').length == 0) {
+  $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
+//} else if ($('.taskbarItems').length == 1) {
+} else if ($('.taskbarItems').id == folder_2) {
+} {
+  $('.taskbar_elements').html('<%= j render "task_bar_folder" %>')
+  $('.taskbarItems#' + prevFolderId).replaceWith('<%= j render "task_bar_folder" %>')
+}
+
+
+//закрытие папок
+$('.closebtn').on('click', function() {
+  var id = $(this).parents('.foldercontent').attr("id")
+  $('.foldercontent#' + id).remove()
+  $('.taskbarItems#' + id).remove()
+  $(this).parents('.spam-window').remove()
+})
+
+//кнопка назад
+<% if @folder.icon == 'folder.svg' %>
+  $('.folderContainer .computer .menu_top').append('<%= j render "back" %>')
+<% end %>
+
+
+
 //spam
+$('.searchbutton').on('click', function() {
+  for (i = 0; i < spamWindows.length; i++) {
+    var time = delay * i;
+    delayWindowOpen(spamWindows[i], time);
+  }
+  $('.spam').removeClass('hidden');
+})
 
-var spamLinks = document.querySelectorAll('[href="#spam"]'),
-  spamWindows = document.querySelectorAll('.spam-window'),
-  spamContainer = document.querySelector('.spam');
-
-var i;
-
-var delay = 300,
-  called = false;
-
-  $('.searchbutton').on('click', function() {
-    for (i = 1; i < spamWindows.length; i++) {
-      var time = delay * i;
-      delayWindowOpen(spamWindows[i], time);
-    }
-    $('.spam').removeClass('hidden');
-  })
-
-function delayWindowOpen(el, time) {
-  setTimeout(function() {
-    el.classList.remove('hidden');
-  }, time)
-}
-
-for (i = 0; i < spamLinks.length; i++) {
-  spamLinks[i].addEventListener('click', function() {
+  function delayWindowOpen(el, time) {
+    console.log(i);
     setTimeout(function() {
-      if (called == false) {
-        document.querySelector('#alert1').classList.remove('hidden');
-        called = true;
-        animatespamWindows();
-      }
-    }, 2000);
-  });
-}
+      el.classList.remove('hidden');
+    }, time)
+  }
 
 spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
     called = false;
-    for (i = 1; i < spamWindows.length; i++) {
+    for (i = 0; i < spamWindows.length; i++) {
       spamWindows[i].classList.remove('.hidden');
     }
   }
-});
+})
