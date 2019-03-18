@@ -3,14 +3,14 @@
   width: 43px;
   display: flex;
   flex-direction: row;
-  margin-right: 10px;
-  padding: 3px;
-  padding-top: 6px;
-  background: rgba(255, 255, 255, 0.1)
+  background: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items:center;
 }
+
 .taskbarItemsBox {
-  height: 29px;
-  width: 27px;
+  height: 28px;
+  width: 28px;
   display: flex;
 }
 

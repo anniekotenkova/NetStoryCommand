@@ -3,7 +3,7 @@
 $background-size: 26px 26px;
 $position: center;
 $default-cursor: url('cursor-pointer.png'), pointer;
-$repeat: no-repeat;
+
 
 .taskbar {
   position: fixed;
@@ -92,7 +92,6 @@ $repeat: no-repeat;
   width: 90%;
   display: flex;
   flex-direction: row;
-/*   background-color: white; */
 }
 
 .taskbar .icons-left a {
@@ -100,17 +99,11 @@ $repeat: no-repeat;
   border-bottom: 2px solid transparent;
 }
 
-.taskbar .icons-left a:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
 
 .taskbar .icons-left a:not(:first-child) {
   margin-left: -4px;
 }
 
-.taskbar .icons-left a.border:focus {
-  border-bottom: 2px solid rgba(245, 245, 245, 0.651);
-}
 
 .taskbar .icons-left .px {
   width: 1px;
@@ -124,6 +117,8 @@ $repeat: no-repeat;
   height: 47px;
   float: right;
 }
+
+/* TIME AND DATE */
 
 .datetime {
   display: inline-block;
@@ -140,11 +135,7 @@ $repeat: no-repeat;
   width: 70px;
 }
 
-.taskbar .icons-right .datetime:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
 #clock {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
