@@ -22,16 +22,13 @@
  *= require basic.scss
  *= require err.scss
  *= require fonts.css
- *= require matrix.scss
  *= require menubar.scss
- *= require menuhidden.scss
  *= require my_computer_folder.scss
  *= require reset.css
  *= require settings.scss
  *= require spams.scss
  *= require taskbar_items.scss
  *= require taskbar.scss
- *= require videocard.scss
  *= require welcomealert.scss
  *= require_self
  */
@@ -47,5 +44,8 @@
  $breakpoint-medium: "screen and (min-width: 700px)";
  $mainColor: #FF85A6;
  $secondaryColor: #EBFFFA;
+ $cursor-pointer: url('cursor-pointer.png'), pointer;
+ $background-elemts: #DADAD3;
+ $repeat: no-repeat;
 
  @import "reset.css";

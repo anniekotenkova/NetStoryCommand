@@ -1,4 +1,13 @@
 $(function() {
+  // Hidden taskbar
+  $(".sbtn").click(function() {
+    $('#setting').css('display', 'block');
+  });
+
+  $(".abtn").click(function() {
+    $('#info').css('display', 'block');
+  });
+  
   $("#about-icon").click(function() {
     $(this).css('background-color', 'rgba(255, 255, 255, 0.4)');
     $('#info').css('display', 'block');
