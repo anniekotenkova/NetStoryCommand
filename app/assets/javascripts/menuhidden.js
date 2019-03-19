@@ -6,15 +6,6 @@ $(function() {
     $(this).toggleClass('startClick');
   });
 
-  $('#desktop').click(function() {
-    $('#setting').hide();
-    $('#start').removeClass('startClick').addClass('startRest');
-  })
-
-  $('.desktopIcon').dblclick(function() {
-    alert($(this).text());
-  });
-
   $('.setting__dropdown-button').click(function() {
     var dropDown = document.querySelector('.setting__dropdown');
     if (dropDown.className.indexOf('hidden') >= 0) {
@@ -24,7 +15,7 @@ $(function() {
     }
   });
 
-  $('.setting__dropdown__option').click(function() {
+  $('.setting__dropdown__option').click(function(e) {
     console.log('Filter');
     e.preventDefault();
 
