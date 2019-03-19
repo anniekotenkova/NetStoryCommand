@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  resources :folders
+
+  resources :folders do
+    member do
+      get :back
+    end
+  end
+
   resources :spams
   resources :attachmennts
   resources :years

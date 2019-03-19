@@ -1,3 +1,3 @@
-<%= link_to @my_computer_folder, class: 'back', remote: true do %>
+<%= link_to back_folder_path(@parent_folder, current_folder_id: @folder.id), class: 'back', remote: true do %>
   <%= image_tag 'back.svg' %>
 <% end %>

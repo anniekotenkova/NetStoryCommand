@@ -1,5 +1,5 @@
 class FoldersController < ApplicationController
-  before_action :set_folder, only: [:show, :edit, :update, :destroy]
+  before_action :set_folder, only: [:show, :back, :edit, :update, :destroy]
 
   # GET /folders
   # GET /folders.json
@@ -31,6 +31,19 @@ class FoldersController < ApplicationController
   # GET /folders/new
   def new
     @folder = Folder.new
+  end
+
+  def back
+    @folders = @folder.folders
+    @articles = @folder.articles
+    @parent_folder = @folder.parent_folder
+    @current_folder_id = params[:current_folder_id]
+    #@my_computer_folder = Folder.find_by_name('Мой компьютер')
+
+    respond_to do |format|
+      #format.html
+      format.js
+    end
   end
 
   # GET /folders/1/edit

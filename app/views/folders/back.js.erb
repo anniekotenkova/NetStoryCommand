@@ -1,0 +1,29 @@
+var folderId = "#folder_" + "<%= @current_folder_id %>"
+var layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer)
+
+console.log($('.foldercontent' + folderId))
+
+$('.foldercontent' + folderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
+$('.taskbarItems' + folderId).replaceWith('<%= j render "task_bar_folder" %>')
+
+$(".draggable").draggable({
+  zIndex: layer,
+  stop: function() {
+    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+    $('.foldercontent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+  }
+})
+
+$('.foldercontent' + folderId).on("click", function() {
+  $(this).css("z-index", layer)
+  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+})
+
+
+//закрытие папок
+$('.closebtn').on('click', function() {
+  var id = $(this).parents('.foldercontent').attr("id")
+  $('.foldercontent#' + id).remove()
+  $('.taskbarItems#' + id).remove()
+  $(this).parents('.spam-window').remove()
+})

@@ -6,10 +6,12 @@ console.log(layer)
 
 <% if @folder.same_window %>
   $('.foldercontent' + parentFolderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
+  $('.mycomputer .menu_top').append('<%= j render partial: "back", folder: @parent_folder %>')
   $('.taskbarItems' + parentFolderId).replaceWith('<%= j render "task_bar_folder" %>')
 <% else %>
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
+    $('#Desktop').append('<%= j render partial: "spams/spam" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
     $('.foldercontent' + folderId).css("z-index", layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
@@ -27,4 +29,45 @@ $(".draggable").draggable({
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+})
+
+
+//закрытие папок
+$('.closebtn').on('click', function() {
+  var id = $(this).parents('.foldercontent').attr("id")
+  $('.foldercontent#' + id).remove()
+  $('.taskbarItems#' + id).remove()
+  $(this).parents('.spam-window').remove()
+})
+
+//spam
+var spamLinks = document.querySelectorAll('[href="#spam"]'),
+    spamWindows = document.querySelectorAll('.spam-window'),
+    spamContainer = document.querySelector('.spam');
+var i;
+var delay = 300,
+  called = false;
+
+$('.searchbutton').on('click', function() {
+  for (i = 0; i < spamWindows.length; i++) {
+    var time = delay * i;
+    delayWindowOpen(spamWindows[i], time);
+  }
+  $('.spam').removeClass('hidden');
+})
+
+  function delayWindowOpen(el, time) {
+    console.log(i);
+    setTimeout(function() {
+      el.classList.remove('hidden');
+    }, time)
+  }
+
+spamContainer.addEventListener('click', function() {
+  if (spamContainer.querySelector('.hidden')) {
+    called = false;
+    for (i = 0; i < spamWindows.length; i++) {
+      spamWindows[i].classList.remove('.hidden');
+    }
+  }
 })
