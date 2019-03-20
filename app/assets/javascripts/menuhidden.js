@@ -32,9 +32,4 @@ $(function() {
   var dropDown = document.querySelector('.setting__dropdown'),
   dropDownButton = document.querySelector('.setting__dropdown-button');
 
-
-  for (i = 0; i < appleSliders.length; i++) {
-    appleSliders[i].addEventListener('click', switchOnOff);
-  }
-
 });
