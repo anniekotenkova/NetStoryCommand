@@ -17,6 +17,23 @@ $('.closebtn').on('click', function() {
   $('.taskbarItems#' + id).remove()
 })
 
+
+var articleId = "#article_" + "<%= @article.id %>"
+var layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer)
+
+$(".draggable").draggable({
+  zIndex: layer,
+  stop: function() {
+    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+    $('.articleContainer' + articleId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+  }
+})
+
+$('.articleContainer' + articleId).on("click", function() {
+  $(this).css("z-index", layer)
+  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+})
+
 //articles
 $('#popup-close').on('click', function() {
   console.log('close')
