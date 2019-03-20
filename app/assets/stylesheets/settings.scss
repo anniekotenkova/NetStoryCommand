@@ -249,19 +249,19 @@ h4 {
 	    background-color: black;
 	}
 
-	.normal {
+	#normal {
 	    filter: none;
 	}
 
-	.black-white {
+	#black-white {
 	    filter: grayscale(100%);
 	}
 
-	.hue-rotate {
+	#hue-rotate {
 	    filter: hue-rotate(180deg);
 	}
 
-	.negative {
+	#negative {
 	    filter: invert(100%);
 	}
 
