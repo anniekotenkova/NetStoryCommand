@@ -2,6 +2,7 @@
 
 $default-cursor: url('cursor-pointer.png'), pointer;
 
+/*Desktop icons and images*/
 #Desktop {
   display: flex;
   align-content: left;
@@ -52,13 +53,10 @@ span.focus:after {
 }
 
 .foldercontent {
-  /* position: absolute; */
   display: none;
   height: 403px;
   width: 560px;
   background-color: #FFF;
-  // padding: 10px 10px 40px;
-  // border-radius: 5px;
   border: $default-border;
   box-shadow: $default-box-shadow;
 }
@@ -74,6 +72,7 @@ span.focus:after {
   top: 14vh;
 }
 
+/*Buttons*/
 .back{
   position: relative;
   display: flex;
@@ -117,7 +116,7 @@ span.focus:after {
   cursor: $default-cursor !important;
 }
 
-.scaleimg{
+.scaleimg {
   position: relative !important;
   display: flex;
   justify-content: flex-start;
@@ -135,7 +134,7 @@ span.focus:after {
   transform: scale(-1, 1);
 }
 
-.reload{
+.reload {
   position: relative !important;
   display: flex;
   justify-content: flex-start;
@@ -152,7 +151,48 @@ span.focus:after {
   cursor: $default-cursor !important;
 }
 
-.search{
+.closebtn img {
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.scaleimg img {
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.reload img {
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+}
+
+.searchbutton {
+  margin: 1rem;
+  position: relative;
+  width: 20%;
+  height: 32px;
+  border: $default-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DADAD3;
+
+  p {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal !important;
+  }
+
+  &:hover {
+    cursor: $default-cursor;
+  }
+}
+
+/*Google search*/
+.search {
   margin: 3rem;
   position: relative;
   width: 400px;
@@ -162,30 +202,12 @@ span.focus:after {
   border-radius: 10px;
 }
 
-.searchtext{
+.searchtext {
   position: relative;
   font-size: 1.2rem !important;
   font-weight: normal !important;
   margin-left: 2rem;
   color: #000;
-}
-
-.closebtn img {
-  width: 21px;
-  height: 21px;
-  margin: 0 auto;
-}
-
-.scaleimg img{
-  width: 21px;
-  height: 21px;
-  margin: 0 auto;
-}
-
-.reload img{
-  width: 21px;
-  height: 21px;
-  margin: 0 auto;
 }
 
 .searchfield {
@@ -197,29 +219,13 @@ span.focus:after {
   border: $default-border;
 }
 
-.searchbutton {
-  margin: 1rem;
-  position: relative;
-  width: 20%;
-  height: 32px;
-  border: $default-border;
-
-  p {
-        margin: 5px 30px;
-  }
-
-  &:hover {
-    cursor: $default-cursor;
-  }
-}
-
-.forinternet{
+.forinternet {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
 }
 
-// ARTICLES FOLDER
+/*Articles folder*/
 .menu_top {
   border-bottom: 2px solid #1d1e1c;
   box-sizing: border-box;
@@ -307,10 +313,6 @@ span.focus:after {
   cursor: $default-cursor;
   margin-bottom: 0.8rem;
 }
-
-// .article-icon:hover {
-//   transform: scale(1.1);
-// }
 
 #fastlink_erwise {
   width: 237px;
