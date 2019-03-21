@@ -40,7 +40,7 @@
   top: 0px;
   bottom: 0px;
   background-color: rgb(128, 128, 128);
-  font-family: Arial;
+  font-family:  $default-font-family;
   font-weight: 900;
   text-transform: capitalize;
 }
@@ -272,14 +272,17 @@ h4 {
       -webkit-filter: none;
       filter: none;
   }
+
   .black-white {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
   }
+
   .hue-rotate {
       -webkit-filter: hue-rotate(180deg);
       filter: hue-rotate(180deg);
   }
+
   .negative {
       -webkit-filter: invert(100%);
       filter: invert(100%);

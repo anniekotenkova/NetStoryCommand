@@ -27,6 +27,7 @@
 }
 
 #alert1 {
+  z-index: 100;
   width: 20vw;
   left: 844px;
   top: 205px;
@@ -34,39 +35,38 @@
 }
 
 #alert2 {
+  z-index: 100;
   width: 17vw;
   left: 208px;
   top: 331px;
 }
 
 #alert3 {
+  z-index: 100;
   width: 10vw;
   left: 71px;
   top: 135px;
 }
 
 #alert4 {
+  z-index: 100;
   width: 19vw;
-  left: 457px;
-  top: 312px;
+  left: 34px;
+  top: 87px;
 }
 
 #alert5 {
   width: 13vw;
+  z-index: 100;
   left: 938px;
   top: -218px;
 }
 
 #alert6 {
   width: 13vw;
-  left: 987px;
-  top: 363px;
-}
-
-#alert7 {
-  width: 19vw;
-  left: 261px;
-  top: 32px;
+  z-index: 100;
+  left: 1092px;
+  top: 290px;
 }
 
 .spam_img {
