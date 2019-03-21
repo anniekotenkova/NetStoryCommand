@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_135301) do
+ActiveRecord::Schema.define(version: 2019_03_21_110051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_03_18_135301) do
     t.string "pic"
     t.integer "folder_id"
     t.string "partial_name"
+    t.string "preview_partial"
   end
 
   create_table "attachmennts", force: :cascade do |t|
