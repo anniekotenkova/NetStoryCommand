@@ -7,4 +7,5 @@
 //= require jquery-ui/widgets/sortable
 //= require jquery-ui/widgets/draggable
 //= require jquery-ui/widgets/droppable
+//= require settings.js
 //= require_tree .
