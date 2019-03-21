@@ -243,7 +243,9 @@ h4 {
 	    padding: 1rem;
 	    color: black;
 	    text-decoration: none !important;
+      filter: none !important;
 	}
+  
 	.setting__dropdown__option:hover {
 	    color: white;
 	    background-color: black;
