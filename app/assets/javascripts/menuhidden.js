@@ -1,10 +1,14 @@
+
 $(function() {
-  startTime();
-  $('#setting').hide();
+  var dropDown = document.querySelector('.setting__dropdown'),
+  dropDownButton = document.querySelector('.setting__dropdown-button');
+
+  startTime()
+  $('#setting').hide()
   $('#start').click(function() {
-    $('#setting').toggle();
-    $(this).toggleClass('startClick');
-  });
+    $('#setting').toggle()
+    $(this).toggleClass('startClick')
+  })
 
 
   var dropDown = document.querySelector('.setting__dropdown'),
@@ -16,7 +20,7 @@ $(function() {
     } else {
         dropDown.classList.add('hidden');
     }
-  });
+  })
 
   $('.setting__dropdown__option').click(function(e) {
     e.preventDefault();
