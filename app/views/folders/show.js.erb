@@ -41,6 +41,17 @@ $('.closebtn').on('click', function() {
   $(this).parents('.spam-window').remove()
 })
 
+//Unknow открытие
+$('#unknown').on('click', function() {
+  $('.nodata').css('display', 'flex');
+});
+
+$('.re').on('click', function() {
+  location.reload(true);
+});
+
+
+
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
     spamWindows = document.querySelectorAll('.spam-window'),

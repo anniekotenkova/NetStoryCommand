@@ -20,6 +20,13 @@ $('.foldercontent' + folderId).on("click", function() {
 })
 
 
+
+$('#unknown').dbclick(function() {
+  $('.nodata').remove('hidden')
+});
+
+
+
 //закрытие папок
 $('.closebtn').on('click', function() {
   var id = $(this).parents('.foldercontent').attr("id")

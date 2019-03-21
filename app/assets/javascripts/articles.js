@@ -1,5 +1,6 @@
 
 $(function() {
+
   // Pop-up in an article
   $('#popup-close').on('click', function() {
     $('.popup').toggleClass('isClosed')
@@ -30,4 +31,5 @@ $(function() {
       $('.secondpage').css('display', 'none');
     }
   });
+
 });

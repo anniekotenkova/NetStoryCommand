@@ -1,0 +1,29 @@
+.nodata {
+  position: absolute;
+  z-index: 1000;
+  background-color: #E4E4E4;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.message {
+  position: relative;
+  left: 7rem;
+}
+
+.nodata img {
+  position: relative;
+  width: 100px;
+  height: 122.58px;
+}
+
+.re{
+  margin-left: 0;
+  margin-top: 3rem;
+  width: 100px;
+}
