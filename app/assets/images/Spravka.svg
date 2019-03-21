@@ -24,10 +24,10 @@
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                     <rect stroke="#000000" stroke-width="4" x="24.4050633" y="37.8481013" width="76.6582278" height="76.6582278"></rect>
                 </g>
-                <text id="Net-Copy-5" font-family="BebasNeue, Bebas Neue" font-size="30" font-weight="normal" fill="#000000">
+                <text id="Net-Copy-5" font-family="Cera Pro" font-size="30" font-weight="normal" fill="#000000">
                     <tspan x="46.3037975" y="69.9442119">Net</tspan>
                 </text>
-                <text id="Story-Copy-6" font-family="BebasNeue, Bebas Neue" font-size="30" font-weight="normal" fill="#000000">
+                <text id="Story-Copy-6" font-family="Cera Pro" font-size="30" font-weight="normal" fill="#000000">
                     <tspan x="34.3544304" y="98.9721222">Story</tspan>
                 </text>
             </g>

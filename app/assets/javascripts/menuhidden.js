@@ -27,7 +27,6 @@ $(function() {
     dropDownButton.textContent = e.target.textContent;
 
     document.querySelector('body').className = '#body' + ' ' + e.target.id;
-    console.log('Fil');
   })
 
 })

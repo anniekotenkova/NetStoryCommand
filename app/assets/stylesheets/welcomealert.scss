@@ -4,6 +4,7 @@
 .welcome {
 	width: 400px !important;
   position: absolute;
+	cursor:  $cursor-pointer;
 	.fakeScreen {
 		background-color: #151515;
 		box-sizing: border-box;
