@@ -12,7 +12,7 @@ end
 
 def create_folders
 
-  Folder.create(name: 'Справка', icon: 'Spravka.svg', partial_name: 'about')
+  Folder.create(name: 'Справка', icon: 'about.png', partial_name: 'about')
 
   computer = Folder.create(name: 'Мой компьютер', icon: 'Komp.png', partial_name: 'window')
   computer.folders.create(name: '1970', icon: 'folder.svg', partial_name: 'window', same_window: true)
@@ -30,7 +30,7 @@ end
 #  folders = [
 #    {
 #      name: 'Справка',
-#      icon: 'Spravka.svg'
+#      icon: 'about.svg'
 #    }, {
 #      name: 'Мой компьютер',
 #      icon: 'computer.png'
