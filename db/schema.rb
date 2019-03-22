@@ -38,13 +38,6 @@ ActiveRecord::Schema.define(version: 2019_03_21_110051) do
     t.string "cover"
   end
 
-  create_table "designs", force: :cascade do |t|
-    t.string "kind"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "folders", force: :cascade do |t|
     t.string "type"
     t.string "name"
@@ -58,12 +51,6 @@ ActiveRecord::Schema.define(version: 2019_03_21_110051) do
 
   create_table "spams", force: :cascade do |t|
     t.string "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "years", force: :cascade do |t|
-    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
