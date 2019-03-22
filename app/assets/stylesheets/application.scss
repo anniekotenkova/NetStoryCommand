@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require reset.css
  *= require about_folder.scss
  *= require article_default.scss
  *= require article_email.scss
@@ -24,7 +25,7 @@
  *= require fonts.css
  *= require menubar.scss
  *= require my_computer_folder.scss
- *= require reset.css
+ *= require fonts.css
  *= require settings.scss
  *= require nodata.scss
  *= require spams.scss

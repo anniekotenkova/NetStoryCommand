@@ -30,10 +30,9 @@ $('.foldercontent' + folderId).on("click", function() {
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
-$(".draggable").draggable({
+$(".folderfolder #folderfolder").draggable({
   containment: ".content_inside",
-});
-
+})
 
 //закрытие папок
 $('.closebtn').on('click', function() {

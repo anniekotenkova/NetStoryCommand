@@ -9,8 +9,8 @@ $('.closebtn').on('click', function() {
   $(this).parents('.articleContainer').remove()
 })
 
-$(".articleContainer").draggable()
-$(".content_inside .draggable").draggable()
+ $(".articleContainer").draggable()
+
 
 $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>')
 

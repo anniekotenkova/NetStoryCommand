@@ -9,6 +9,14 @@ html {
  color: $color-body-copy;
  font-family: $default-font-family;
  overflow: hidden;
+
+ a:focus {
+    text-decoration: none!important;
+    text-transform: none;
+    background-color: inherit;
+    color: #000;
+
+  }
 }
 
 *,
