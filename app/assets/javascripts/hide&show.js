@@ -1,22 +1,4 @@
 $(function() {
-  //show
-  $("#infofolder").dblclick(function() {
-    $('#info').show();
-  });
-
-  $("#computerfolder").dblclick(function() {
-    $('.computer').show();
-  });
-
-  $("#folderfolder").dblclick(function() {
-    $('#folder').show();
-  });
-
-  $("#trashfolder").dblclick(function() {
-    $('#trash').show();
-  });
-
-
   // Hidden taskbar
   $(".sbtn").click(function() {
     $('#setting').show();
@@ -36,7 +18,7 @@ $(function() {
   });
 
   $(".cbfastlink_att").click(function() {
-    $('.fastlink_att').hide();
+    $('#fastlink_att').hide();
   });
 
   $(".infobtn").click(function() {
@@ -68,13 +50,9 @@ $(function() {
     $('.welcome').hide();
   });
 
-  $("#close-btn").click(function() {
-    $('#fastlink_erwise').hide();
-  });
-
-  $(".infobtn").click(function() {
-    $('#info').hide();
-  });
+  // $(".infobtn").click(function() {
+  //   $('#info').hide();
+  // });
 
   $(".prizebtn").click(function() {
     $('#alert7').hide();
