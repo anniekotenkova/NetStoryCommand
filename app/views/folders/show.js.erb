@@ -25,12 +25,15 @@ $(".draggable").draggable({
     $('.foldercontent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
   }
 })
-
-
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
+
+$(".draggable").draggable({
+  containment: ".content_inside",
+});
+
 
 //закрытие папок
 $('.closebtn').on('click', function() {
@@ -39,6 +42,17 @@ $('.closebtn').on('click', function() {
   $('.taskbarItems#' + id).remove()
   $(this).parents('.spam-window').remove()
 })
+
+//Unknow открытие
+$('#unknown').on('click', function() {
+  $('.nodata').css('display', 'flex');
+});
+
+$('.re').on('click', function() {
+  location.reload(true);
+});
+
+
 
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),

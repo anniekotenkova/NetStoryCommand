@@ -40,7 +40,7 @@
   top: 0px;
   bottom: 0px;
   background-color: rgb(128, 128, 128);
-  font-family: Arial;
+  font-family:  $default-font-family;
   font-weight: 900;
   text-transform: capitalize;
 }
@@ -100,7 +100,7 @@
   height: 384px;
   width: 224px;
   left: -.5rem;
-  bottom: 51px;
+  bottom: 41px;
   font-family: $default-font-family;
   font-weight: 300;
 }
@@ -199,13 +199,14 @@ h4 {
 	    background-color: $background-elemts;
 	    border: $default-border;
 	    cursor: $cursor-pointer;
+      cursor: pointer;
+      cursor: url('../img/cursor-pointer.png'), pointer;
 	}
 
 	.setting__dropdown {
 	    position: relative;
 	    margin: 0 auto;
 	    width: 80%;
-	    background-color: $background-elemts;
 	    background-color: $background-elemts;
 	    border: $default-border;
 	    border-top: none;
@@ -226,12 +227,12 @@ h4 {
 	    right: 0;
 	    height: 32px;
 	    width: 32px;
-	    /* padding: 0.4rem; */
 	    background-color: #c1c1bf;
 	    border: $default-border;
 	    pointer-events: none;
 	}
-	.dropdown__arrow-wrap img{
+
+	.dropdown__arrow-wrap img {
 	    width: 1.7rem;
 	}
 
@@ -243,7 +244,9 @@ h4 {
 	    padding: 1rem;
 	    color: black;
 	    text-decoration: none !important;
+      filter: none !important;
 	}
+
 	.setting__dropdown__option:hover {
 	    color: white;
 	    background-color: black;
@@ -264,3 +267,23 @@ h4 {
 	#negative {
 	    filter: invert(100%);
 	}
+
+  .normal {
+      -webkit-filter: none;
+      filter: none;
+  }
+
+  .black-white {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+
+  .hue-rotate {
+      -webkit-filter: hue-rotate(180deg);
+      filter: hue-rotate(180deg);
+  }
+
+  .negative {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+  }

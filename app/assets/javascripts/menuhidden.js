@@ -26,8 +26,7 @@ $(function() {
     dropDown.classList.add('hidden')
     dropDownButton.textContent = e.target.textContent;
 
-    document.querySelector('body').className = 'body-overflow-h' + ' ' + e.target.id;
-    console.log(e)
+    document.querySelector('body').className = '#body' + ' ' + e.target.id;
   })
 
 })

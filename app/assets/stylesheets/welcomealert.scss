@@ -1,18 +1,10 @@
 /*WELCOME ALERT*/
-
-@font-face {
-  font-family: 'Cera Pro Light';
-  src: url('../../assets/fonts/CeraPro-Light.eot');
-  src: url('../../assets/fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
-  url('CeraPro-Light.woff') format('woff'),
-  url('CeraPro-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "application.scss";
 
 .welcome {
 	width: 400px !important;
   position: absolute;
+	cursor:  $cursor-pointer;
 	.fakeScreen {
 		background-color: #151515;
 		box-sizing: border-box;
@@ -24,7 +16,7 @@
 
 	p {
 		position: relative;
-		font-family: 'Cera Pro Light';
+		font-family:  $default-font-family;
 		font-weight: 300;
 		text-align: left;
 		font-size: 0.9em;

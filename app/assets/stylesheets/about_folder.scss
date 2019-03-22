@@ -1,3 +1,5 @@
+@import "application.scss";
+
 .computer.foldercontent.about {
   width: 400px !important;
   height: 300px;
@@ -27,7 +29,7 @@
 
 #info.folder-content {
   position: relative;
-  font-family: 'Cera Pro';
+  font-family:  $default-font-family;
   font-weight: 300;
 }
 

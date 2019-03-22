@@ -14,10 +14,21 @@ $(".draggable").draggable({
   }
 })
 
+$(".draggable").draggable({
+  containment: ".content_inside",
+});
+
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
+
+
+
+$('#unknown').dbclick(function() {
+  $('.nodata').remove('hidden')
+});
+
 
 
 //закрытие папок
