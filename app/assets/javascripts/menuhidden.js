@@ -27,7 +27,7 @@ $(function() {
     dropDownButton.textContent = e.target.textContent;
 
     document.querySelector('body').className = 'body-overflow-h' + ' ' + e.target.id;
-    console.log('Fil')
+    console.log(e)
   })
 
 })

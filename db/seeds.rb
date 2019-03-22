@@ -1,5 +1,3 @@
-#require 'faker'
-
 # Reset database
 Rake::Task['db:drop'].invoke
 Rake::Task['db:create'].invoke
@@ -12,78 +10,67 @@ end
 
 def create_folders
 
-  Folder.create(name: 'Справка', icon: 'Spravka.svg', partial_name: 'about')
+  icons = Folder.create(
+    name: 'Справка',
+    icon: 'about.png',
+    partial_name: 'about'
+  )
 
-  computer = Folder.create(name: 'Мой компьютер', icon: 'Komp.png', partial_name: 'window')
-  computer.folders.create(name: '1970', icon: 'folder.svg', partial_name: 'window', same_window: true)
-  computer.folders.create(name: '1980', icon: 'folder.svg', partial_name: 'window', same_window: true)
-  computer.folders.create(name: '1990', icon: 'folder.svg', partial_name: 'window', same_window: true)
-  computer.folders.create(name: '2000', icon: 'folder.svg', partial_name: 'window', same_window: true)
+  computer = Folder.create(
+    name: 'Мой компьютер',
+    icon: 'Komp.png',
+    partial_name: 'window'
+  )
 
+  computer.folders.create([{
+    name: '1970',
+    icon: 'folder.svg',
+    partial_name: 'window',
+    same_window: true
+    },{
+      name: '1980',
+      icon: 'folder.svg',
+      partial_name: 'window',
+      same_window: true
+    }, {
+      name: '1990',
+      icon: 'folder.svg',
+      partial_name: 'window',
+      same_window: true
+    }, {
+      name: '2000',
+      icon: 'folder.svg',
+      partial_name: 'window',
+      same_window: true
+    }
+  ])
 
-  Folder.create(name: 'Корзина', icon: 'Korzina.png', partial_name: 'trash')
-
-  Folder.create(name: 'Интернет', icon: 'internet.svg', partial_name: 'matrix')
+  icons = Folder.create([{
+      name: 'Корзина',
+      icon: 'Korzina.png',
+      partial_name: 'trash'
+    }, {
+      name: 'Интернет',
+      icon: 'internet.svg',
+      partial_name: 'matrix'
+    }
+  ])
 end
 
-#def create_folders
-#  folders = [
-#    {
-#      name: 'Справка',
-#      icon: 'Spravka.svg'
-#    }, {
-#      name: 'Мой компьютер',
-#      icon: 'computer.png'
-#    }, {
-#      name: '1970',
-#      icon: 'folder.svg'
-#    }, {
-#      name: '1980',
-#      icon: 'folder.svg'
-#    }, {
-#      name: '1990',
-#      icon: 'folder.svg'
-#    }, {
-#      name: '2000',
-#      icon: 'folder.svg'
-#    }, {
-#      name: 'Корзина',
-#      icon: 'Korzina.png'
-#    }, {
-#      name: 'Интернет',
-#      icon: 'internet.svg'
-#      }
-#  ]
-#
-#  folders.each do |folder|
-#    create_folder(folder)
-#  end
-#end
-#
-#def create_folder(folder)
-#  folder = Folder.find_by_name(folder[:name])
-#
-#  f = folder.folders.create(
-#    name:      folder[:name],
-#    icon:      folder[:icon]
-#  )
-#
-#  puts "Folder with name #{ f.name } created"
-#end
-
 def create_articles
-  articles = [
-    {
+  articles = [{
       folder_name:  '1970',
       title:        'Первая почта',
       pic:          'mail_icon.png',
       partial_name: 'email'
-    }, {
+    },
+    {
       folder_name:  '1980',
       title:        'NSFNET',
       pic:          'nsfnet_icon.png',
       partial_name: 'nsfnet'
-    }, {
+    },
+    {
       folder_name:  '1990',
       title:        'Ошибка 404',
       pic:          'notfound_icon.png',
@@ -92,12 +79,14 @@ def create_articles
       folder_name:  '1990',
       title:        'Первый браузер',
       pic:          'erwise_icon.png',
-      partial_name: 'firstbrowser'
+      partial_name: 'firstbrowser',
+      preview_partial: 'firstbrowser_preview'
     }, {
       folder_name:  '1990',
       title:        'Первый лендинг',
       pic:          'att_icon.png',
-      partial_name: 'firstlanding'
+      partial_name: 'firstlanding',
+      preview_partial: 'firstlanding_preview'
     }, {
       folder_name:  '1990',
       title:        'Друзья',
