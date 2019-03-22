@@ -11,7 +11,7 @@ $default-cursor: url('cursor-pointer.png'), pointer;
   height: 43px;
   width: 100%;
   background: #D8D8D8;
-  border-top: 2px solid black;
+  border-top: $default-border;
 }
 
 .icons-left {
