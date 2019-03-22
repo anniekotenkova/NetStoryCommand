@@ -36,7 +36,7 @@ $(function() {
   });
 
   $(".cbfastlink_att").click(function() {
-    $('#fastlink_att').hide();
+    $('.fastlink_att').hide();
   });
 
   $(".infobtn").click(function() {
