@@ -80,13 +80,11 @@ def create_articles
       title:        'Первый браузер',
       pic:          'erwise_icon.png',
       partial_name: 'firstbrowser',
-      preview_partial: 'firstbrowser_preview'
     }, {
       folder_name:  '1990',
       title:        'Первый лендинг',
       pic:          'att_icon.png',
       partial_name: 'firstlanding',
-      preview_partial: 'firstlanding_preview'
     }, {
       folder_name:  '1990',
       title:        'Друзья',
