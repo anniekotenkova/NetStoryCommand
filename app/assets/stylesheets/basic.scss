@@ -17,7 +17,12 @@ html {
     color: #000;
     outline: none;
   }
+
+  button:focus {
+    outline: none;
+  }
 }
+
 
 *,
 *:after,
