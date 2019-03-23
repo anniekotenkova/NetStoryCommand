@@ -87,17 +87,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Italic.eot');
-    src: local('Cera Pro Italic'), local('CeraPro-Italic'),
-        font-url('CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Italic.woff') format('woff'),
-        font-url('CeraPro-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-} */
-
 @font-face {
     font-family: 'Cera Pro';
     src: font-url('CeraPro-Regular.eot');
@@ -109,113 +98,13 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-BlackItalic.eot');
-    src: local('Cera Pro Black Italic'), local('CeraPro-BlackItalic'),
-        font-url('CeraPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-BlackItalic.woff') format('woff'),
-        font-url('CeraPro-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-} */
-
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Light.eot');
-    src: local('Cera Pro Light'), local('CeraPro-Light'),
-        font-url('CeraPro-Light.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Light.woff') format('woff'),
-        font-url('CeraPro-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-BoldItalic.eot');
-    src: local('Cera Pro Bold Italic'), local('CeraPro-BoldItalic'),
-        font-url('CeraPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-BoldItalic.woff') format('woff'),
-        font-url('CeraPro-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-} */
-
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Black.eot');
-    src: local('Cera Pro Black'), local('CeraPro-Black'),
-        font-url('CeraPro-Black.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Black.woff') format('woff'),
-        font-url('CeraPro-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Medium.eot');
-    src: local('Cera Pro Medium'), local('CeraPro-Medium'),
-        font-url('CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Medium.woff') format('woff'),
-        font-url('CeraPro-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Bold.eot');
-    src: local('Cera Pro Bold'), local('CeraPro-Bold'),
-        font-url('CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Bold.woff') format('woff'),
-        font-url('CeraPro-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-} */
-/*
 @font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-Thin.eot');
-    src: local('Cera Pro Thin'), local('CeraPro-Thin'),
-        font-url('CeraPro-Thin.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-Thin.woff') format('woff'),
-        font-url('CeraPro-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-} */
-/*
-@font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-MediumItalic.eot');
-    src: local('Cera Pro Medium Italic'), local('CeraPro-MediumItalic'),
-        font-url('CeraPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-MediumItalic.woff') format('woff'),
-        font-url('CeraPro-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: 'Courier New';
+  src: local('Courier New'),
+      font-url('CourierStd.otf') format('opentype'),
+      font-url('CourierStd-Bold.otf') format('opentype'),
+      font-url('CourierStd.woff') format('woff'),
+      font-url('CourierStd-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-LightItalic.eot');
-    src: local('Cera Pro Light Italic'), local('CeraPro-LightItalic'),
-        font-url('CeraPro-LightItalic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-LightItalic.woff') format('woff'),
-        font-url('CeraPro-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: font-url('CeraPro-ThinItalic.eot');
-    src: local('Cera Pro Thin Italic'), local('CeraPro-ThinItalic'),
-        font-url('CeraPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        font-url('CeraPro-ThinItalic.woff') format('woff'),
-        font-url('CeraPro-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
- */
