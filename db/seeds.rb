@@ -23,10 +23,10 @@ def create_folders
   )
 
   computer.folders.create([{
-    name: '1970',
-    icon: 'folder.svg',
-    partial_name: 'window',
-    same_window: true
+      name: '1970',
+      icon: 'folder.svg',
+      partial_name: 'window',
+      same_window: true
     },{
       name: '1980',
       icon: 'folder.svg',
@@ -79,12 +79,12 @@ def create_articles
       folder_name:  '1990',
       title:        'Первый браузер',
       pic:          'erwise_icon.png',
-      partial_name: 'firstbrowser',
+      partial_name: 'firstbrowser'
     }, {
       folder_name:  '1990',
       title:        'Первый лендинг',
       pic:          'att_icon.png',
-      partial_name: 'firstlanding',
+      partial_name: 'firstlanding'
     }, {
       folder_name:  '1990',
       title:        'Друзья',
