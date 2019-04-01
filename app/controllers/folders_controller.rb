@@ -38,7 +38,6 @@ class FoldersController < ApplicationController
     @articles = @folder.articles
     @parent_folder = @folder.parent_folder
     @current_folder_id = params[:current_folder_id]
-    #@my_computer_folder = Folder.find_by_name('Мой компьютер')
 
     respond_to do |format|
       #format.html

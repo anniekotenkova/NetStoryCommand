@@ -1,55 +1,23 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require reset.css
- *= require about_folder.scss
- *= require article_default.scss
- *= require article_email.scss
- *= require article_error404.scss
- *= require article_firstbrowser.scss
- *= require article_firstlanding.scss
- *= require article_theGlobe.scss
- *= require article_wikipedia.scss
- *= require articles.scss
- *= require basic.scss
- *= require err.scss
- *= require fonts.css
- *= require menubar.scss
- *= require my_computer_folder.scss
- *= require fonts.css
- *= require settings.scss
- *= require nodata.scss
- *= require spams.scss
- *= require taskbar_items.scss
- *= require taskbar.scss
- *= require welcomealert.scss
- *= require_self
- */
+@import 'vars.scss';
+@import 'reset.css';
+@import 'fonts.css';
+@import 'basic.scss';
 
- $color-card-background: #FFFFFF;
- $color-tag-background: #E3E5E9;
- $color-anchor: #E62A5D;
- $color-body-copy: #b9bcbd;
- $default-border-radius: 5px;
- $default-border: 2px solid black;
- $default-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
- $default-font-family: 'Cera Pro';
- $breakpoint-medium: "screen and (min-width: 700px)";
- $mainColor: #FF85A6;
- $secondaryColor: #EBFFFA;
- $cursor-pointer: url('cursor-pointer.png'), pointer;
- $background-elemts: #DADAD3;
- $repeat: no-repeat;
- $decoration: none;
-
-
- @import "reset.css";
+@import 'about_folder.scss';
+@import 'article_default.scss';
+@import 'article_email.scss';
+@import 'article_error404.scss';
+@import 'article_firstbrowser.scss';
+@import 'article_firstlanding.scss';
+@import 'article_theGlobe.scss';
+@import 'article_wikipedia.scss';
+@import 'articles.scss';
+@import 'err.scss';
+@import 'menubar.scss';
+@import 'my_computer_folder.scss';
+@import 'settings.scss';
+@import 'nodata.scss';
+@import 'spams.scss';
+@import 'taskbar_items.scss';
+@import 'taskbar.scss';
+@import 'welcomealert.scss';

@@ -11,7 +11,7 @@ console.log(layer)
 <% else %>
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
-    $('#Desktop').append('<%= j render partial: "spams/spam" %>')
+    // $('#Desktop').append('<%= j render partial: "spams/spam" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
     $('.foldercontent' + folderId).css("z-index", layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
@@ -66,7 +66,9 @@ $('.searchbutton').on('click', function() {
     var time = delay * i;
     delayWindowOpen(spamWindows[i], time);
   }
+  console.log('hi');
   $('.spam').removeClass('hidden');
+  console.log('oh, no');
 })
 
   function delayWindowOpen(el, time) {

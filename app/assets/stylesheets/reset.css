@@ -1,4 +1,53 @@
-html {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -323,9 +372,6 @@ h4 small, h5 .small, h5 small, h6 .small, h6 small {
     font-size: 30px
 }
 
-.h3, h3 {
-    font-size: 24px
-}
 
 .h4, h4 {
     font-size: 18px
@@ -499,7 +545,7 @@ blockquote .small, blockquote footer, blockquote small {
 }
 
 blockquote .small:before, blockquote footer:before, blockquote small:before {
-    content: '\2014 \00A0'
+    content: '2014 00A0'
 }
 
 .blockquote-reverse, blockquote.pull-right {
@@ -519,7 +565,7 @@ blockquote.pull-right footer:before, blockquote.pull-right small:before {
 .blockquote-reverse .small:after, .blockquote-reverse footer:after,
 .blockquote-reverse small:after, blockquote.pull-right .small:after,
 blockquote.pull-right footer:after, blockquote.pull-right small:after {
-    content: '\00A0 \2014'
+    content: '00A0 2014'
 }
 
 address {
@@ -742,10 +788,6 @@ pre code {
     padding-left: 0;
     margin: 20px 0;
     border-radius: 4px
-}
-
-.pagination > li {
-    display: inline
 }
 
 .pagination > li > a, .pagination > li > span {
@@ -2849,5 +2891,6 @@ button.close {
     }
 }
 
-/*# sourceMappingURL=bootstrap.min.css.map */
+# sourceMappingURL=bootstrap.min.css.map
 @charset "UTF-8";
+ */

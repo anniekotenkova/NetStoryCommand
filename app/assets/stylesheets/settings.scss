@@ -1,4 +1,4 @@
-@import "application.scss";
+/* @import "application.scss"; */
 
 /* START BUTTON */
 #start {
@@ -119,10 +119,14 @@ h3 {
   display: block;
   font-weight: bold;
 }
-
+.setting {
+  h3 {
+    color: #000000;
+  }
+}
 .setting__title {
-  font-size: 1.4rem !important;
-  letter-spacing: 0.04rem !important;
+  /* font-size: 1.4rem !important; */
+  /* letter-spacing: 0.04rem !important; */
   text-align: center;
 }
 
@@ -133,7 +137,8 @@ h3 {
   height: 120px;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+
 }
 
 .setting_border {
@@ -173,7 +178,7 @@ h3 {
 }
 
 h4 {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   letter-spacing: 0.1em;
   // text-transform: uppercase;
 }
@@ -190,12 +195,12 @@ h4 {
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
 	    position: relative;
-	    display: flex;
+	    /* display: flex; */
 	    margin: 0 auto;
 	    width: 80%;
 	    height: 32px;
 	    color: black;
-	    font-size: 1.2rem;
+	    font-size: 0.9rem;
 	    text-align: left;
 	    background-color: $background-elemts;
 	    border: $default-border;
@@ -206,8 +211,8 @@ h4 {
 
 	.setting__dropdown {
 	    position: relative;
-	    margin: 0 auto;
-	    width: 80%;
+	    /* margin: 0 auto; */
+	    width: 84%;
 	    background-color: $background-elemts;
 	    border: $default-border;
 	    border-top: none;
@@ -215,11 +220,13 @@ h4 {
 
 	.setting__dropdown-wrap {
 	    position: relative;
+      left: 8%;
 	}
 
 	.dropdown__arrow-wrap {
 	    position: absolute;
 	    margin-right: 2.2rem;
+      padding: 2%;
 	    box-sizing: border-box;
 	    display: flex;
 	    justify-content: center;
@@ -234,7 +241,7 @@ h4 {
 	}
 
 	.dropdown__arrow-wrap img {
-	    width: 1.7rem;
+	    /* width: 1.7rem; */
 	}
 
 	.setting__dropdown__option,
@@ -246,6 +253,7 @@ h4 {
 	    color: black;
 	    text-decoration: none !important;
       filter: none !important;
+      font-size: 0.9rem;
 	}
 
 	.setting__dropdown__option:hover {

@@ -1,4 +1,4 @@
-@import "application.scss";
+/* @import "application.scss"; */
 
 $default-cursor: url('cursor-pointer.png'), pointer;
 
@@ -90,7 +90,7 @@ span.focus:after {
 
 .back p {
   margin: 0 auto;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .back img {
@@ -170,8 +170,10 @@ span.focus:after {
 }
 
 .searchbutton {
-  margin: 1rem;
+  /* margin: 1rem; */
+  color: #000000;
   position: relative;
+  top: -8px;
   width: 20%;
   height: 32px;
   border: $default-border;
@@ -193,7 +195,7 @@ span.focus:after {
 
 /*Google search*/
 .search {
-  margin: 3rem;
+  margin: 1rem;
   position: relative;
   width: 400px;
   height: 21px;
@@ -204,7 +206,8 @@ span.focus:after {
 
 .searchtext {
   position: relative;
-  font-size: 1.2rem !important;
+  padding: 3px;
+  /* font-size: 1.2rem;  !important*/
   font-weight: normal !important;
   margin-left: 2rem;
   color: #000;
@@ -235,7 +238,7 @@ span.focus:after {
   align-items: center;
   width: 100%;
   height: 30px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: normal;
   letter-spacing: 1px;
   // text-align: center;
@@ -244,6 +247,7 @@ span.focus:after {
 }
 
 .folder_title {
+  color: #000000;
   position: absolute;
   display: flex;
   left: 50%;
@@ -265,11 +269,11 @@ span.focus:after {
 
 .foldercontent p {
   font-weight: bold;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .atitle {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   padding-top: 0.8rem;
   line-height: 1.3rem;
 }
@@ -289,10 +293,6 @@ span.focus:after {
 }
 
 .project-list__item {
-  width: auto;
-}
-
-.project-list__item {
   display: flex;
   flex-direction: column;
   width: 19%;
@@ -303,8 +303,8 @@ span.focus:after {
   flex: 1;
   padding: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
 }
 
 .article-icon {

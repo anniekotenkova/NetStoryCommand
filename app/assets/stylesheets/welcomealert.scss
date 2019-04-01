@@ -1,5 +1,5 @@
 /*WELCOME ALERT*/
-@import "application.scss";
+/* @import "application.scss"; */
 
 .welcome {
 	width: 400px !important;
@@ -16,10 +16,10 @@
 
 	p {
 		position: relative;
-		font-family: $default-font-family;
-		font-weight: 300;
+		font-family: 'Courier New';
+		font-weight: bold;
 		text-align: left;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		white-space: nowrap;
 		overflow: hidden;
 		width: 0;

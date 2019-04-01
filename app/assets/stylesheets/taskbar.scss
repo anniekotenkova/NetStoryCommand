@@ -1,10 +1,10 @@
-@import "application.scss";
-
-$background-size: 26px 26px;
+/* @import "application.scss";
+ */
+/* $background-size: 26px 26px;
 $position: center;
 $default-cursor: url('cursor-pointer.png'), pointer;
 
-
+ */
 .taskbar {
   position: fixed;
   bottom: 0;
@@ -17,6 +17,7 @@ $default-cursor: url('cursor-pointer.png'), pointer;
 .icons-left {
   height: 43px;
   display: inline-block;
+  margin-top: 8px;
 }
 
 #start-menu, .taskbar .icons-left #trash {
@@ -137,6 +138,6 @@ $default-cursor: url('cursor-pointer.png'), pointer;
 }
 
 #clock {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   font-weight: bold;
 }

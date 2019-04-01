@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 2019_03_21_110051) do
     t.string "preview_partial"
   end
 
-  create_table "attachmennts", force: :cascade do |t|
-    t.string "type"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "cover"
-  end
-
   create_table "folders", force: :cascade do |t|
     t.string "type"
     t.string "name"

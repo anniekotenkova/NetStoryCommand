@@ -1,4 +1,4 @@
-@import "application.scss";
+/* @import "application.scss"; */
 
 .computer.foldercontent.about {
   width: 400px !important;
@@ -16,8 +16,14 @@
 
   p {
     color: #000;
-    font-size: 1.2rem;
+    line-height: 1rem;
   	font-weight: 300;
+  }
+
+  h4 {
+    font-size: 80%;
+    letter-spacing: 0.1em;
+    line-height: 1.5rem;
   }
 }
 
@@ -29,7 +35,7 @@
 
 #info.folder-content {
   position: relative;
-  font-family:  $default-font-family;
+  font-family: $default-font-family;
   font-weight: 300;
 }
 
@@ -73,7 +79,7 @@
 }
 
 .item .labels {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   font-weight: 600;
   color: var(--primary);
 }
@@ -85,13 +91,13 @@
 }
 
 .skills .labels {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   font-weight: 600;
   color: var(--primary);
 }
 
 .skills .value {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   line-height: 1.5rem;
   height: 2rem;
 }
