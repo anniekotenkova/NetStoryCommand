@@ -11,11 +11,13 @@ console.log(layer)
 <% else %>
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
-    // $('#Desktop').append('<%= j render partial: "spams/spam" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
     $('.foldercontent' + folderId).css("z-index", layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }
+  <% else %>
+  <% if @folder.partial_name = 'matrix'  %>
+  $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
 
 $(".draggable").draggable({
