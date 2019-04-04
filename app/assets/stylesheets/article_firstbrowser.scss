@@ -6,33 +6,35 @@
 } */
 
 .erwise {
+  font-family: 'Courier New';
+  color: #000000;
   background: #729CFE;
   width: 780px;
-  height: 700px;
+  height: 550px;
 
   .text {
+    background: #729CFE;
     width: 740px;
     position: relative;
-    left: 20px;
-    top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 
   p {
-    font-family: Courier New;
     font-size: 16px;
     pointer-events: none;
   }
 
   h1 {
-    font-family: Courier New;
+    margin-bottom: 10px;
+    font-weight: bold;
     font-size: 20px;
     display: flex;
     justify-content: center;
   }
 
   .secondpage {
-    display: none;
-    margin-top: -20px;
+    display: none;;
   }
 
   // #second.text {
@@ -48,131 +50,146 @@
 
 }
 
-  .pages {
+.pages {
+  font-family: 'Courier New';
+  color: #000000;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: underline;
+  width: 40px;
+  justify-content: space-between;
+}
+
+.navigation {
+  font-family: 'Courier New';
+  color: #000000;
+  height: 40px;
+  width: 780px;
+  position: relative;
+  background: #729CFE;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  display: flex;
+  align-items: center;
+
+
+  .left {
+    width: 400px;
     position: relative;
-    top: 40px;
-    left: 20px;
+    left: 15px;
     display: flex;
     flex-direction: row;
-    text-decoration: underline;
-    width: 40px;
     justify-content: space-between;
   }
 
-  .navigation {
-    height: 40px;
-    width: 780px;
+
+  #close {
     position: relative;
+    left: 255px;
+  }
+
+  .button {
+    height: 25px;
+    width: 110px;
+    position: relative;
+    /* top: -30px; */
     background: #729CFE;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
     box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
     display: flex;
     align-items: center;
-
-
-    .left {
-      width: 400px;
-      position: relative;
-      left: 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-
-    #close {
-      position: relative;
-      left: 255px;
-    }
-
-    .button {
-      font-family: Courier New;
-      height: 25px;
-      width: 110px;
-      position: relative;
-      /* top: -30px; */
-      background: #729CFE;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
+    justify-content: center;
+    cursor: pointer;
   }
+}
 
-  .popup {
-    display: block;
-    height: 320px;
-    width: 500px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.popup {
+  font-family: 'Courier New';
+  color: #000000;
+  display: block;
+  height: 320px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #818184;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+  box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  .brow {
+    position: relative;
+    top: -56px;
+    height: 20px;
+    width: 480px;
     background: #818184;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
     box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  }
+
+  .field {
+    position: absolute;
+    z-index: -1;
+    height: 300px;
+    width: 480px;
+    background: #729CFE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
+  }
+
+  .button {
+    height: 20px;
+    width: 30px;
+    top: 38px;
+    left: 180px;
+    background: #729CFE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-
-    .brow {
-      position: relative;
-      top: -50px;
-      height: 20px;
-      width: 480px;
-      background: #818184;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-    }
-
-    .field {
-      position: absolute;
-      z-index: -1;
-      height: 300px;
-      width: 480px;
-      background: #729CFE;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 3px;
-      box-shadow: inset rgba(255, 255, 255, 0.5) 3px 3px 3px;
-    }
-
-    .button {
-      top: 38px;
-      left: 180px;
-    }
-
-    .button:hover {
-      box-shadow: inset rgba(255, 255, 255, 0.3) 3px 3px 3px;
-    }
-
-    p {
-      width: 350px;
-      text-align: center;
-    }
-
-    #first-child {
-      width: 180px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      position: absolute;
-      left: 40px;
-      top: 60px;
-      background-image: url("er.svg");
-      background-size: cover;
-    }
-
-    .isClosed {
-      display: none;
-    }
+    cursor: pointer;
   }
+
+  .button:hover {
+    box-shadow: inset rgba(255, 255, 255, 0.3) 3px 3px 3px;
+  }
+
+  p {
+    width: 350px;
+    text-align: center;
+  }
+
+  #first-child {
+    width: 180px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    background-image: url("er.svg");
+    background-size: cover;
+  }
+
+  .isClosed {
+    display: none;
+  }
+}
