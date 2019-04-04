@@ -15,5 +15,6 @@ $(function() {
 
   $("#black").click(function() {
     $('#Desktop').css('background', '#1B1725');
+    $('.folderfolder   a').css('color', 'white')
   })
 })
