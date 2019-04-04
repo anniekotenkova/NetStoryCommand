@@ -9,6 +9,12 @@ $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>')
 $('.articleContainer' + articleId).css("z-index", layer)
 document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 
+$('.articleContainer' + articleId).on("click", function() {
+  console.log('.articleContainer' + articleId)
+  $(this).css("z-index", layer)
+  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+})
+
 $('.closebtn').on('click', function() {
   console.log('Click')
   $(this).parents('.articleContainer').remove()
@@ -29,12 +35,6 @@ $(".draggable").draggable({
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
     $('.articleContainer' + articleId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
   }
-})
-
-$('.articleContainer' + articleId).on("click", function() {
-  console.log('.articleContainer' + articleId)
-  $(this).css("z-index", layer)
-  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
 //articles

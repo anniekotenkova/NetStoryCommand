@@ -19,6 +19,11 @@ console.log(layer)
   }
 <% end %>
 
+$('.foldercontent' + folderId).on("click", function() {
+  $(this).css("z-index", layer)
+    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+})
+
 <% if @folder.partial_name === 'matrix'  %>
     $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
@@ -30,10 +35,6 @@ $(".draggable").draggable({
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
     $('.foldercontent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
   }
-})
-$('.foldercontent' + folderId).on("click", function() {
-  $(this).css("z-index", layer)
-  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
 $(".folderfolder #folderfolder").draggable({
