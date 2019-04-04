@@ -268,8 +268,11 @@ span.focus:after {
 }
 
 .foldercontent p {
+  color: #000000;
   font-weight: bold;
-  /* font-size: 1.4rem; */
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: center;
 }
 
 .atitle {

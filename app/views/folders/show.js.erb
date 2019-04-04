@@ -8,16 +8,16 @@ console.log(layer)
   $('.foldercontent' + parentFolderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
   $('.mycomputer .menu_top').append('<%= j render partial: "back", folder: @parent_folder %>')
   $('.taskbarItems' + parentFolderId).replaceWith('<%= j render "task_bar_folder" %>')
-<% else %>
+  <% elsif %>
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
     $('.foldercontent' + folderId).css("z-index", layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }
-  <% else %>
-  <% if @folder.partial_name = 'matrix'  %>
-  $('#Desktop').append('<%= j render partial: "spams/spam" %>')
+<% end %>
+<% if @folder.partial_name === 'matrix'  %>
+    $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
 
 $(".draggable").draggable({
@@ -36,7 +36,7 @@ $(".folderfolder #folderfolder").draggable({
   containment: ".content_inside",
 })
 
-//закрытие папок
+//close
 $('.closebtn').on('click', function() {
   var id = $(this).parents('.foldercontent').attr("id")
   $('.foldercontent#' + id).remove()
@@ -44,18 +44,6 @@ $('.closebtn').on('click', function() {
   $(this).parents('.spam-window').remove()
 })
 
-//Unknow открытие
-$('#unknown').on('click', function() {
-  $('.nodata').css('display', 'flex');
-});
-
-$('.re').on('click', function() {
-  location.reload(true);
-});
-
-
-
-//spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
     spamWindows = document.querySelectorAll('.spam-window'),
     spamContainer = document.querySelector('.spam');
@@ -68,10 +56,8 @@ $('.searchbutton').on('click', function() {
     var time = delay * i;
     delayWindowOpen(spamWindows[i], time);
   }
-  console.log('hi');
   $('.spam').removeClass('hidden');
-  console.log('oh, no');
-})
+  })
 
   function delayWindowOpen(el, time) {
     console.log(i);
@@ -80,7 +66,7 @@ $('.searchbutton').on('click', function() {
     }, time)
   }
 
-spamContainer.addEventListener('click', function() {
+  spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
     called = false;
     for (i = 0; i < spamWindows.length; i++) {

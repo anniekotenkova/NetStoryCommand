@@ -5,6 +5,7 @@ $(function() {
 
   startTime()
   $('#setting').hide()
+
   $('#start').click(function() {
     $('#setting').toggle()
     $(this).toggleClass('startClick')
@@ -26,7 +27,7 @@ $(function() {
     dropDown.classList.add('hidden')
     dropDownButton.textContent = e.target.textContent;
 
-    document.querySelector('body').className = '#body' + ' ' + e.target.id;
+    // document.querySelector('body').className = '#body' + ' ' + e.target.id;
   })
 
 })
