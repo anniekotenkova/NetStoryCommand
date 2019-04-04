@@ -20,6 +20,7 @@ console.log(layer)
     $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
 
+
 $(".draggable").draggable({
   zIndex: layer,
   stop: function() {
@@ -44,6 +45,8 @@ $('.closebtn').on('click', function() {
   $(this).parents('.spam-window').remove()
 })
 
+
+//spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
     spamWindows = document.querySelectorAll('.spam-window'),
     spamContainer = document.querySelector('.spam');
@@ -52,12 +55,13 @@ var delay = 300,
   called = false;
 
 $('.searchbutton').on('click', function() {
+  console.log();
   for (i = 0; i < spamWindows.length; i++) {
     var time = delay * i;
     delayWindowOpen(spamWindows[i], time);
   }
   $('.spam').removeClass('hidden');
-  })
+})
 
   function delayWindowOpen(el, time) {
     console.log(i);
@@ -66,7 +70,7 @@ $('.searchbutton').on('click', function() {
     }, time)
   }
 
-  spamContainer.addEventListener('click', function() {
+spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
     called = false;
     for (i = 0; i < spamWindows.length; i++) {

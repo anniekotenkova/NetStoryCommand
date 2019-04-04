@@ -59,6 +59,16 @@ span.focus:after {
   background-color: #FFF;
   border: $default-border;
   box-shadow: $default-box-shadow;
+
+  .searchtext {
+    position: relative;
+    padding: 3px;
+    text-align: left;
+    line-height: 0,8rem;
+    font-weight: normal !important;
+    margin-left: 2rem;
+    color: #000;
+  }
 }
 
 
@@ -202,15 +212,6 @@ span.focus:after {
   background-color: #FFF;
   border: $default-border;
   border-radius: 10px;
-}
-
-.searchtext {
-  position: relative;
-  padding: 3px;
-  /* font-size: 1.2rem;  !important*/
-  font-weight: normal !important;
-  margin-left: 2rem;
-  color: #000;
 }
 
 .searchfield {
