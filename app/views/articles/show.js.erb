@@ -1,8 +1,13 @@
 var articleId = "#article_" + "<%= @article.id %>"
 var layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer)
+console.log(document.getElementsByTagName('body')[0].dataset.layer)
+console.log(layer)
 
 
 $('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>')
+$('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>')
+$('.articleContainer' + articleId).css("z-index", layer)
+document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 
 $('.closebtn').on('click', function() {
   console.log('Click')
@@ -10,9 +15,6 @@ $('.closebtn').on('click', function() {
 })
 
  $(".articleContainer").draggable()
-
-
-$('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>')
 
 $('.closebtn').on('click', function() {
   var id = $(this).parents('.articleContainer').attr("id")

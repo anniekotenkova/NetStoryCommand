@@ -16,6 +16,7 @@ console.log(layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }
 <% end %>
+
 <% if @folder.partial_name === 'matrix'  %>
     $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
