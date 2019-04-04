@@ -124,6 +124,11 @@ h3 {
     color: #000000;
   }
 }
+
+.setting_100 .setting__title {
+  padding-bottom: 1rem;
+}
+
 .setting__title {
   /* font-size: 1.4rem !important; */
   /* letter-spacing: 0.04rem !important; */
@@ -134,7 +139,7 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 120px;
+  height: 100px;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-top: 1rem;
@@ -142,7 +147,7 @@ h3 {
 }
 
 .setting_border {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   border-bottom: $default-border;
 }
 

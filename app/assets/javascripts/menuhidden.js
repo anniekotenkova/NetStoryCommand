@@ -27,7 +27,7 @@ $(function() {
     dropDown.classList.add('hidden')
     dropDownButton.textContent = e.target.textContent;
 
-    // document.querySelector('body').className = '#body' + ' ' + e.target.id;
+    document.querySelector('body').className = e.target.id;
   })
 
 })
