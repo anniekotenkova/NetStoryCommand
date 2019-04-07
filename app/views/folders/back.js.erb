@@ -4,7 +4,8 @@ var layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer)
 console.log($('.foldercontent' + folderId))
 
 $('.foldercontent' + folderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
-$('.taskbarItems' + folderId).replaceWith('<%= j render "task_bar_folder" %>')
+$('.taskbarItems' + folderId).replaceWith('<%= j render "task_bar_folder" %>', '<%= @folder.name %>')
+// $('.taskbarItems' + folderId).append('<%= @folder.name %>')
 
 $(".draggable").draggable({
   containment: ".content_inside",
@@ -17,7 +18,7 @@ $(".draggable").draggable({
 
 $(".folderfolder").draggable({
   containment: ".content_inside",
-});
+})
 
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)

@@ -8,12 +8,14 @@ console.log(layer)
   $('.foldercontent' + parentFolderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
   $('.mycomputer .menu_top').append('<%= j render partial: "back", folder: @parent_folder %>')
   $('.taskbarItems' + parentFolderId).replaceWith('<%= j render "task_bar_folder" %>')
+  $('.taskbarItems' + folderId).append('<%= @folder.name %>')
   $('.foldercontent' + folderId).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   <% elsif %>
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
+    $('.taskbarItems' + folderId).append('<%= @folder.name %>')
     $('.foldercontent' + folderId).css("z-index",layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }

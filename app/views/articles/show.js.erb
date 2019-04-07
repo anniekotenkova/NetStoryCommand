@@ -6,6 +6,7 @@ console.log(layer)
 
 $('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>')
 $('.taskbar_elements').append('<%= j render "folders/task_bar_article" %>')
+$('.taskbarItems' + articleId).append('<%= @article.title %>')
 $('.articleContainer' + articleId).css("z-index", layer)
 document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 
