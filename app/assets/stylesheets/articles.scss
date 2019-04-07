@@ -147,6 +147,7 @@ img {
 
 .details {
 	padding: 2.1875em 5%;
+
 	@media #{$breakpoint-medium} {
 		width: 100%;
 	}
@@ -211,7 +212,7 @@ img {
 		text-decoration: none;
 	}
 
-	& :hover {
+	&:hover {
 		text-decoration: none;
 	}
 

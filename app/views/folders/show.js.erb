@@ -14,13 +14,14 @@ console.log(layer)
   if ($('.foldercontent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
     $('.taskbar_elements').append('<%= j render "task_bar_folder" %>')
-    $('.foldercontent' + folderId).css("z-index", layer)
+    $('.foldercontent' + folderId).css("z-index",layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }
 <% end %>
 
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
+    console.log('ff');
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
@@ -33,7 +34,7 @@ $(".draggable").draggable({
   zIndex: layer,
   stop: function() {
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-    $('.foldercontent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+    $('.foldercontent' + folderId).css("z-index", "1", document.getElementsByTagName('body')[0].dataset.layer)
   }
 })
 
