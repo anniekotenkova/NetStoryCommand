@@ -7,7 +7,7 @@ $('.foldercontent' + folderId).replaceWith('<%= j render partial: "#{ @folder.pa
 $('.taskbarItems' + folderId).replaceWith('<%= j render "task_bar_folder" %>')
 
 $(".draggable").draggable({
-  // containment: ".content_inside",
+  containment: ".content_inside",
   zIndex: layer,
   stop: function() {
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
@@ -15,9 +15,9 @@ $(".draggable").draggable({
   }
 })
 
-// $(".folderfolder").draggable({
-//   containment: ".content_inside",
-// });
+$(".folderfolder").draggable({
+  containment: ".content_inside",
+});
 
 $('.foldercontent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
@@ -32,7 +32,3 @@ $('.closebtn').on('click', function() {
   $('.taskbarItems#' + id).remove()
   $(this).parents('.spam-window').remove()
 })
-
-$('#unknown').dbclick(function() {
-  $('.nodata').remove('hidden')
-});

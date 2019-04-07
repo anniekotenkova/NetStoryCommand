@@ -50,6 +50,16 @@ $('.closebtn').on('click', function() {
   $(this).parents('.spam-window').remove()
 })
 
+//nodata
+$('#unknown').on('click', function() {
+  $('.nodata').remove('hidden')
+  $('.nodata').css('display', 'flex')
+  $('.re').on('click', function() {
+    console.log('jh');
+    location.reload(true)
+  })
+})
+
 
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
