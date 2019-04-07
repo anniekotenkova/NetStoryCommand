@@ -1,6 +1,6 @@
  /* @import "application.scss"; */
 
-#error {
+#error_article {
   font-family: none;
   width: 750px;
   height: 545px;
@@ -10,33 +10,32 @@
 
   .t {
     position: relative;
+    color: #000000;
     left: 20px;
     width: 700px;
-  }
 
-  h1 {
-    color: #000000;
-    font-size: 30px;
-    line-height: 60px;
-    margin: 0 auto;
-  }
-  p {
-    margin-top: 10px;
-  }
+    h1 {
+      font-size: 30px;
+      line-height: 60px;
+      margin: 0 auto;
+    }
 
-  .line {
-    width: 300px;
-    height: 2px;
-    background: black;
-  }
+    .text {
+      margin-top: 40px;
 
-  .text {
-    margin-top: 40px;
-    color: #000000;
-  }
+      p {
+        margin-top: 10px;
+      }
+    }
 
-  .quote {
-    color: #000000;
-    font-style: italic;
+    .line {
+      width: 300px;
+      height: 2px;
+      background: black;
+    }
+
+    .quote {
+      font-style: italic;
+    }
   }
 }
