@@ -60,11 +60,25 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
+
+    .google {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      padding-top: 6rem;
+
+      img{
+        position: relative;
+        width: 70%;
+      }
+    }
   }
 
   .searchbutton {
     color: #000000;
     position: relative;
+    margin: 0 auto;
     top: -8px;
     width: 20%;
     height: 32px;
