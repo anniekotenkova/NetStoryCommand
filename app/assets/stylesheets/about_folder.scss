@@ -33,6 +33,59 @@
       letter-spacing: 0.1em;
       line-height: 1.5rem;
     }
+
+    .cardinside {
+      display: grid;
+      grid-template-columns: 25% auto;
+      align-items: center;
+      padding-top: 3rem;
+
+      .occupation {
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .card-avatar {
+        display: grid;
+        height: 70px;
+        width: 70px;
+        place-items: center;
+      }
+
+      .card-about {
+        margin-top: 1.25rem;
+        display: grid;
+        grid-auto-flow: column;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+
+          .labels {
+            font-weight: 600;
+            color: var(--primary);
+          }
+        }
+      }
+
+
+
+      .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.75rem;
+
+        .labels {
+         font-weight: 600;
+         color: var(--primary);
+       }
+
+       .value {
+         line-height: 1.5rem;
+         height: 2rem;
+       }
+      }
+    }
   }
 }
 
@@ -41,65 +94,6 @@
   --primary: #FF85A6;
   --secondary: #1effc3;
   --card-size: 300px;
-}
-
-
-.cardinside {
-  display: grid;
-  grid-template-columns: 25% auto;
-  align-items: center;
-}
-
-
-.occupation {
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.card-avatar {
-  display: grid;
-  height: 70px;
-  width: 70px;
-  place-items: center;
-}
-
-.card-about {
-  margin-top: 1.25rem;
-  display: grid;
-  grid-auto-flow: column;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-}
-
-.item .labels {
-  /* font-size: 1.2rem; */
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0.75rem;
-}
-
-.skills .labels {
-  /* font-size: 1.2rem; */
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.skills .value {
-  /* font-size: 1.2rem; */
-  line-height: 1.5rem;
-  height: 2rem;
-}
-
-.cardinside {
-  padding-top: 3rem;
 }
 
 #one {
