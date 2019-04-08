@@ -1,3 +1,5 @@
+/* @import "application.scss"; */
+
 :root {
   --main-color: $mainColor;
   --background: white;
@@ -12,54 +14,20 @@
  box-sizing: inherit;
 }
 
-html {
- box-sizing: border-box;
- color: $color-body-copy;
- font-family: $default-font-family;
+html body {
+ background-color: $color-tag-background;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ width: 100vw;
+ background-position: center;
+ background-size: cover;
+ cursor: default;
+ cursor: url('../images/cursor-mouse.png'), default;
+ position: relative;
  overflow: hidden;
-
- img {
- 	vertical-align: middle;
- 	object-fit: contain;
- 	width: 100%;
- }
-
- font: {
-   family: 'Cera Pro', sans-serif;
-   size: 100%;
-   weight: 300;
- }
-
- a:focus {
-    text-decoration: none!important;
-    text-transform: none;
-    background-color: inherit;
-    color: #000;
-    outline: none;
-  }
-
-  button:focus {
-    outline: none;
-  }
-
-  body {
-   background-color: $color-tag-background;
-   margin: 0;
-   height: 100vh;
-   width: 100vw;
-   background-position: center;
-   background-size: cover;
-   cursor: default;
-   cursor: url('../images/cursor-mouse.png'), default;
-   position: relative;
-   overflow: hidden;
-   padding: 2.1875em;
-
-   a {
-    text-decoration: none!important;
-    text-transform: none;
-    color: #000;
-    line-height: 1rem;
+ /* background-color: $mainColor; */
+}
 
 html {
  box-sizing: border-box;
@@ -112,26 +80,5 @@ body {
      text-transform: none;
      background-color: inherit;
    }
-
-    &:hover {
-      text-decoration: none!important;
-      text-transform: none;
-      background-color: inherit;
-    }
-   }
-
-   p {
-     margin: 0 0 10px;
-   }
-  }
-
-  *,
-  *:after,
-  *:before {
-   box-sizing: inherit;
-  }
-
-  .hidden {
-    display: none !important
   }
 }
