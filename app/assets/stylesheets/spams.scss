@@ -1,6 +1,10 @@
 /* @import "application.scss"; */
 
 /* SPAM */
+.hidden {
+  display: none !important
+}
+
 .spam-window {
   display: flex;
   align-items: flex-start;

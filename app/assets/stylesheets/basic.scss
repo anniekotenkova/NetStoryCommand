@@ -2,27 +2,11 @@
 
 :root {
   --main-color: $mainColor;
+  --background: white;
+  --primary: #FF85A6;
+  --secondary: #1effc3;
+  --card-size: 300px;
 }
-
-html {
- box-sizing: border-box;
- color: $color-body-copy;
- font-family: $default-font-family;
- overflow: hidden;
-
- a:focus {
-    text-decoration: none!important;
-    text-transform: none;
-    background-color: inherit;
-    color: #000;
-    outline: none;
-  }
-
-  button:focus {
-    outline: none;
-  }
-}
-
 
 *,
 *:after,
@@ -45,24 +29,56 @@ html body {
  /* background-color: $mainColor; */
 }
 
-body a {
- text-decoration: none!important;
- text-transform: none;
- color: #000;
- /* /* font-size: 1.2rem; */
- line-height: 1rem;
+html {
+ box-sizing: border-box;
+ color: $color-body-copy;
+ font-family: $default-font-family;
+ overflow: hidden;
 
- &:hover {
+ font {
+   family: 'Cera Pro', sans-serif;
+   size: 100%;
+   weight: 300;
+ }
+
+ a:focus {
+    text-decoration: none!important;
+    text-transform: none;
+    background-color: inherit;
+    color: #000;
+    outline: none;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+body {
+	padding: 2.1875em;
+
+  img {
+  	vertical-align: middle;
+  	object-fit: contain;
+  	width: 100%;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+
+  a {
    text-decoration: none!important;
    text-transform: none;
-   background-color: inherit;
- }
-}
+   color: #000;
+   /* /* font-size: 1.2rem; */
+   line-height: 1rem;
 
-body p {
-  margin: 0 0 10px;
-}
-
-.hidden {
-  display: none !important
+   &:hover {
+     text-decoration: none!important;
+     text-transform: none;
+     background-color: inherit;
+   }
+  }
 }
