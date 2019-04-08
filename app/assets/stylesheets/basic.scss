@@ -1,3 +1,5 @@
+/* @import "application.scss"; */
+
 :root {
   --main-color: $mainColor;
   --background: white;
@@ -6,19 +8,34 @@
   --card-size: 300px;
 }
 
+*,
+*:after,
+*:before {
+ box-sizing: inherit;
+}
+
+html body {
+ background-color: $color-tag-background;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ width: 100vw;
+ background-position: center;
+ background-size: cover;
+ cursor: default;
+ cursor: url('../images/cursor-mouse.png'), default;
+ position: relative;
+ overflow: hidden;
+ /* background-color: $mainColor; */
+}
+
 html {
  box-sizing: border-box;
  color: $color-body-copy;
  font-family: $default-font-family;
  overflow: hidden;
 
- img {
- 	vertical-align: middle;
- 	object-fit: contain;
- 	width: 100%;
- }
-
- font: {
+ font {
    family: 'Cera Pro', sans-serif;
    size: 100%;
    weight: 300;
@@ -35,46 +52,34 @@ html {
   button:focus {
     outline: none;
   }
+}
 
-  body {
-   background-color: $color-tag-background;
-   margin: 0;
-   height: 100vh;
-   width: 100vw;
-   background-position: center;
-   background-size: cover;
-   cursor: default;
-   cursor: url('../images/cursor-mouse.png'), default;
-   position: relative;
-   overflow: hidden;
-   padding: 2.1875em;
+body {
+	padding: 2.1875em;
 
-   a {
-    text-decoration: none!important;
-    text-transform: none;
-    color: #000;
-    line-height: 1rem;
-
-    &:hover {
-      text-decoration: none!important;
-      text-transform: none;
-      background-color: inherit;
-    }
-   }
-
-   p {
-     margin: 0 0 10px;
-   }
+  img {
+  	vertical-align: middle;
+  	object-fit: contain;
+  	width: 100%;
   }
 
-  *,
-  *:after,
-  *:before {
-   box-sizing: inherit;
+  p {
+    margin: 0 0 10px;
   }
 
-  .hidden {
-    display: none !important
+
+  a {
+   text-decoration: none!important;
+   text-transform: none;
+   color: #000;
+   /* /* font-size: 1.2rem; */
+   line-height: 1rem;
+
+   &:hover {
+     text-decoration: none!important;
+     text-transform: none;
+     background-color: inherit;
+   }
   }
 
   ::-webkit-scrollbar-track {

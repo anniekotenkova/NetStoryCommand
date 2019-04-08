@@ -1,6 +1,24 @@
+/* @import "application.scss"; */
 .articleContainer {
 	position: absolute;
 	left: 300px;
 	top: 0;
   border: 2px solid black;
+}
+
+//firstbrowser preview
+#fastlink_erwise {
+
+	#close-btn.cbfastlink_erwise {
+		border-radius: 0;
+		width: 23px;
+		height: 23px;
+		margin-bottom: 5px;
+		background-color: transparent;
+		display: inline-block;
+		cursor: pointer;
+		position: relative;
+		left: 8px;
+		top: 9px;
+	}
 }
