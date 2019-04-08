@@ -4,7 +4,9 @@
 @import 'fonts.css';
 @import 'basic.scss';
 
+@import 'folders.scss';
 @import 'articles.scss';
+@import 'navigation.scss';
 @import 'about_folder.scss';
 @import 'article_default.scss';
 @import 'article_email.scss';
@@ -15,6 +17,7 @@
 @import 'article_wikipedia.scss';
 
 @import 'menubar.scss';
+@import 'preview.scss';
 @import 'my_computer_folder.scss';
 @import 'settings.scss';
 @import 'nodata.scss';

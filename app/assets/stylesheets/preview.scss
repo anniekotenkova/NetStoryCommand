@@ -1,0 +1,32 @@
+#fastlink_erwise {
+  width: 237px;
+  height: 300px;
+  background-image: url("erwise/fastlink_erwise.png");
+  background-size: cover;
+  position: absolute;
+  left: 928px;
+  top: 21px;
+  box-shadow: $default-box-shadow;
+  color: #00000030;
+  cursor: $default-cursor;
+}
+
+#fastlink_att {
+  width: 515px;
+  height: 90px;
+  position: absolute;
+  box-shadow: $default-border;
+  color: #00000030;
+  cursor: $default-cursor;
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+  top: 420px;
+  left: 554px;
+  border: $default-border;
+}
+
+.fastlink_img {
+  background-image: url("att/tfba.png");
+  background-size: cover;
+  width: 515px;
+  height: 60px;
+}

@@ -9,21 +9,21 @@
   align-items: center;
   justify-content: center;
   align-items: flex-start;
-}
 
-.message {
-  position: relative;
-  left: 7rem;
-}
+  img {
+    position: relative;
+    width: 100px;
+    height: 122.58px;
+  }
 
-.nodata img {
-  position: relative;
-  width: 100px;
-  height: 122.58px;
-}
+  .message {
+    position: relative;
+    left: 7rem;
 
-.re{
-  margin-left: 0;
-  margin-top: 3rem;
-  width: 100px;
+    .re{
+      margin-left: 0;
+      margin-top: 3rem;
+      width: 100px;
+    }
+  }
 }

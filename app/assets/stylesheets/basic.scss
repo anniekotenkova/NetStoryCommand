@@ -76,4 +76,22 @@ html {
   .hidden {
     display: none !important
   }
+
+  ::-webkit-scrollbar-track {
+    border: 2px solid #1D1D1B;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1.2 rem;
+    background-color: #DADAD3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid #1D1D1B;
+    border-right: none;
+    background-color: #C1C1BF;
+  }
 }

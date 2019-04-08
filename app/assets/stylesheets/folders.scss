@@ -1,0 +1,91 @@
+.foldercontent {
+  display: none;
+  height: 403px;
+  width: 560px;
+  background-color: #FFF;
+  border: $default-border;
+  box-shadow: $default-box-shadow;
+
+  p {
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  .content_inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 80%;
+
+    .draggable {
+      height: 80px;
+    }
+  }
+
+  .searchtext {
+    position: relative;
+    padding: 3px;
+    text-align: left;
+    line-height: 0.8rem;
+    font-weight: normal !important;
+    margin-left: 1rem;
+    color: #000;
+  }
+
+  .search {
+    margin: 1rem;
+    position: relative;
+    width: 400px;
+    height: 21px;
+    background-color: #FFF;
+    border: $default-border;
+    border-radius: 10px;
+  }
+
+  .searchfield {
+    margin: 2rem;
+    position: relative;
+    width: 80%;
+    height: 32px;
+    color: #DADAD3;
+    border: $default-border;
+  }
+
+  .forinternet {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .searchbutton {
+    color: #000000;
+    position: relative;
+    top: -8px;
+    width: 20%;
+    height: 32px;
+    border: $default-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADAD3;
+
+    p {
+      display: inline-block;
+      margin: 0;
+      font-weight: normal !important;
+    }
+
+    &:hover {
+      cursor: $default-cursor;
+    }
+  }
+}
+
+.computer.foldercontent {
+  display: block;
+}
