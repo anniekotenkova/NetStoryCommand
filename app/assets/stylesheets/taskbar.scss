@@ -5,213 +5,112 @@
   width: 100%;
   background: #D8D8D8;
   border-top: $default-border;
-}
 
-#start {
-  background-size: 17px 15px;
-  text-align: right;
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  float: left;
-  width: 10rem;
-  height: 3rem;
-  display: inline-block;
-  cursor: default;
-  background-image: url(start.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#setting {
-  box-shadow: none;
-  background-color: #D8D8D8;
-  border-bottom: none !important;
-}
-
-#startMenu {
-  top: -230px;
-  height: 240px;
-  width: 164px;
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  border: 2px solid black;
-
-  #left {
-    width: 28px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    background-color: rgb(128, 128, 128);
-    font-family:  $default-font-family;
-    font-weight: 900;
-    text-transform: capitalize;
-
-    .b {
-      color: rgb(192, 192, 192);
-      transform: rotateZ(-90deg);
-      transform-origin: center left;
-      display: inline-block;
-      width: 200px;
-      white-space: nowrap;
-      font-size: 20px;
-      margin-top: 215px;
-      margin-left: 10px;
-    }
-
-    .num95 {
-      font-weight: 100 !important;
-      color: white;
-    }
-  }
-
-  .menuItem {
+  .taskbarItems {
+    padding: 0 5px;
+    height: 43px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.3);
+    justify-content: space-around;
+    align-items: center;
     color: black;
-    height: 32px;
-    width: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
-    vertical-align: central;
+    font-size: 13px;
+    outline: 1px solid black;
 
-    &:hover {
-      color: white;
-      background-color: black;
+    .taskbarItemsBox {
+      display: flex;
+      height: 25px;
+      width: 25px;
+      margin: 3px;
     }
   }
 
-  .menuItem:first-letter {
-    text-decoration: underline;
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+
+    .icons-left {
+      height: 43px;
+      display: inline-block;
+      margin-top: 8px;
+
+      a {
+        display: table-cell;
+        border-bottom: 2px solid transparent;
+
+        &:not(:first-child) {
+          margin-left: -4px;
+        }
+      }
+
+      .px {
+        width: 1px;
+
+        a {
+          pointer-events: none;
+        }
+      }
+
+      #start {
+        background-size: 17px 15px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        float: left;
+        width: 10rem;
+        height: 3rem;
+        display: inline-block;
+        cursor: default;
+        background-image: url("start.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+
+      #start-menu {
+        height: 47px;
+        width: 100px;
+        background-size: 100px 28px;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+      }
+    }
+
+    .taskbar_elements {
+      margin: 0 15px;
+      height: 43px;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+    }
   }
-}
-
-
-.icons-left {
-  height: 43px;
-  display: inline-block;
-  margin-top: 8px;
-}
-
-#start-menu, .taskbar .icons-left #trash {
-  height: 43px;
-  width: 48px;
-  position: relative;
-}
-
-
-#start-menu i, .taskbar .icons-left #trash i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 21px;
-  color: white;
-}
-
-#start-menu, #about-icon, #computer-icon, #folder-icon,  #trash-icon {
-  background-repeat: $repeat;
-  background-position: $position;
-}
-
-#about-icon, #computer-icon, #folder-icon,  #trash-icon {
-  background-size: $background-size;
-}
-
-#start-menu {
-  height: 47px;
-  width: 100px;
-  background-size: 100px 28px;
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-}
-
-#start:active {
-  transform: translateY(2px);
-}
-
-#about-icon {
-  height: 43px;
-  width: 49px;
-  background-image: url(about.png);
-}
-
-#computer-icon {
-  height: 43px;
-  width: 49px;
-  background-image: url(Komp.svg);
-}
-
-#folder-icon {
-  height: 43px;
-  width: 49px;
-  background-image: url(Papka.svg);
-}
-
-#trash-icon {
-  height: 43px;
-  width: 49px;
-  background-image: url(Korzina.svg);
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.taskbar_elements {
-  margin: 0 15px;
-  height: 43px;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-}
-
-.taskbar .icons-left a {
-  display: table-cell;
-  border-bottom: 2px solid transparent;
-}
-
-
-.taskbar .icons-left a:not(:first-child) {
-  margin-left: -4px;
-}
-
-
-.taskbar .icons-left .px {
-  width: 1px;
-}
-
-.taskbar .icons-left .px a {
-  pointer-events: none;
-}
-
-.taskbar .icons-right {
-  height: 47px;
-  float: right;
 }
 
 /* TIME AND DATE */
-
 .datetime {
   display: inline-block;
   cursor: $default-cursor;
   height: 47px;
   padding-right: 1.5rem;
-}
 
-.datetime span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  height: 47px;
-  width: 70px;
-}
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 47px;
+    width: 70px;
+  }
 
-#clock {
-  /* font-size: 1.3rem; */
-  font-weight: bold;
+  #clock {
+    font-weight: bold;
+  }
 }
