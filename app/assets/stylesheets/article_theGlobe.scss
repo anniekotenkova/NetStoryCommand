@@ -21,6 +21,7 @@
 
     .content {
       position: relative;
+
       .white {
         background-color: #ffff;
         border-radius: 43%;
@@ -72,12 +73,12 @@
       }
 
       .oval {
+        position: relative;
         width: 158px;
         height: 86px;
         background: #FEFDC5;
         border: 3px solid #32679E;
         border-radius: 69%;
-        position: relative;
         top: 20px;
         left: 10px;
 
@@ -96,9 +97,9 @@
         top: 23px;
 
         p {
+          position: relative;
           color: #FF5900;
           line-height: 22px;
-          position: relative;
           left: -5px;
         }
       }
@@ -109,9 +110,9 @@
       }
 
       .globeText {
+        position: absolute;
         width: 400px;;
         scroll-behavior: smooth;
-        position: absolute;
         margin-top: 100px;
         margin-left: 50px;
 
@@ -131,13 +132,10 @@
 
         h4,
         p {
-          width: 400px;
           position: relative;
+          width: 400px;
         }
       }
     }
-
-
   }
-
 }
