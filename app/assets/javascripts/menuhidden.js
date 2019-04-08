@@ -1,6 +1,6 @@
 $(function() {
   var dropDown = document.querySelector('.setting__dropdown'),
-  dropDownButton = document.querySelector('.setting__dropdown-button');
+  dropDownButton = document.querySelector('.setting__dropdown-button')
 
   startTime()
 
@@ -10,7 +10,7 @@ $(function() {
   })
 
   $('.setting__dropdown-button').click(function() {
-    var dropDown = document.querySelector('.setting__dropdown');
+    var dropDown = document.querySelector('.setting__dropdown')
     if (dropDown.className.indexOf('hidden') >= 0) {
       dropDown.classList.remove('hidden')
     } else {
@@ -27,5 +27,4 @@ $(function() {
 
     document.querySelector('body').className = e.target.id;
   })
-
 })
