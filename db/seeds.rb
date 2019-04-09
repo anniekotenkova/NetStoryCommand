@@ -94,7 +94,7 @@ def create_articles
       folder_name:  '1990',
       title:        'TheGlobe',
       pic:          'theglobe_icon.png',
-      partial_name: 'theGlobe'
+      partial_name: 'the_globe'
     }, {
       folder_name:  '2000',
       title:        'Википедия',

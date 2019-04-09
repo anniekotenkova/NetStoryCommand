@@ -49,7 +49,7 @@ $('.closeBtn').on('click', function() {
   var id = $(this).parents('.folderContent').attr("id")
   $('.folderContent#' + id).remove()
   $('.taskbarItems#' + id).remove()
-  $(this).parents('.spam-window').remove()
+  $(this).parents('.spamWindow').remove()
 })
 
 //nodata
@@ -65,7 +65,7 @@ $('#unknown').on('click', function() {
 
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
-    spamWindows = document.querySelectorAll('.spam-window'),
+    spamWindows = document.querySelectorAll('.spamWindow'),
     spamContainer = document.querySelector('.spam');
 var i;
 var delay = 300,

@@ -1,7 +1,7 @@
 .spam {
   position: absolute;
 
-  .spam-window {
+  .spamWindow {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -10,7 +10,7 @@
     box-shadow: $default-box-shadow;
     border: $default-border;
 
-    .spam_img {
+    .spamImg {
       box-sizing: border-box;
       width: 100%;
     }
