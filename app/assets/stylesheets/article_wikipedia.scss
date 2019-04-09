@@ -365,7 +365,7 @@
     clear: left;
   }
 
-  div.thumbinner {
+  div.thumbInner {
     border: 1px solid #c8ccd1;
     padding: 3px;
     background-color: #f8f9fa;
@@ -374,11 +374,11 @@
     overflow: hidden;
   }
 
-  .mwContentLtr .thumbcaption {
+  .mwContentLtr .thumbCaption {
     text-align: left;
   }
 
-  html .thumbcaption {
+  html .thumbCaption {
     border: 0;
     line-height: 1.4em;
     padding: 3px;
@@ -391,7 +391,7 @@
     border: 1px solid #c8ccd1;
   }
 
-  .wikitable {
+  .wikiTable {
     background-color: #f8f9fa;
     color: #222;
     margin: 1em 0;
@@ -399,13 +399,13 @@
     border-collapse: collapse;
   }
 
-  div.tright {
+  div.tRight {
     margin: 0.5em 0 1.3em 1.4em;
   }
 
-  div.floatright,
-  div.tright,
-  table.floatright {
+  div.floatRight,
+  div.tRight,
+  table.floatRight {
     clear: right;
     float: right;
   }
