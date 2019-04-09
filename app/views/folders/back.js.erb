@@ -8,11 +8,10 @@ $('.taskbarItems').replaceWith('<%= j render "task_bar_folder" %>')
 $('.taskbarItems').append('<%= @folder.name %>')
 
 $(".draggable").draggable({
-  containment: ".contentInside",
   zIndex: layer,
   stop: function() {
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-    $('.folderContent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+    $('.folderContent' + folderId).css("z-index", "1", document.getElementsByTagName('body')[0].dataset.layer)
   }
 })
 
