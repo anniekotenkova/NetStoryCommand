@@ -1,26 +1,26 @@
 var folderId = "#folder_" + "<%= @current_folder_id %>"
 var layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer)
 
-console.log($('.foldercontent' + folderId))
+console.log($('.folderContent' + folderId))
 
-$('.foldercontent' + folderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
+$('.folderContent' + folderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
 $('.taskbarItems' + folderId).replaceWith('<%= j render "task_bar_folder" %>', '<%= @folder.name %>')
 // $('.taskbarItems' + folderId).append('<%= @folder.name %>')
 
 $(".draggable").draggable({
-  containment: ".content_inside",
+  containment: ".contentInside",
   zIndex: layer,
   stop: function() {
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-    $('.foldercontent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+    $('.folderContent' + folderId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
   }
 })
 
 $(".folderFolder").draggable({
-  containment: ".content_inside",
+  containment: ".contentInside",
 })
 
-$('.foldercontent' + folderId).on("click", function() {
+$('.folderContent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
@@ -28,8 +28,8 @@ $('.foldercontent' + folderId).on("click", function() {
 //закрытие папок
 $('.closeBtn').on('click', function() {
   console.log('hh');
-  var id = $(this).parents('.foldercontent').attr("id")
-  $('.foldercontent#' + id).remove()
+  var id = $(this).parents('.folderContent').attr("id")
+  $('.folderContent#' + id).remove()
   $('.taskbarItems#' + id).remove()
   $(this).parents('.spam-window').remove()
 })

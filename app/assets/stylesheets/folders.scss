@@ -1,4 +1,4 @@
-.foldercontent {
+.folderContent {
   display: none;
   height: 403px;
   width: 560px;
@@ -14,7 +14,7 @@
     text-align: center;
   }
 
-  .content_inside {
+  .contentInside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,7 +31,7 @@
     }
   }
 
-  .searchtext {
+  .searchText {
     position: relative;
     padding: 3px;
     text-align: left;
@@ -51,7 +51,7 @@
     border-radius: 10px;
   }
 
-  .searchfield {
+  .searchField {
     margin: 2rem;
     position: relative;
     width: 80%;
@@ -60,7 +60,7 @@
     border: $default-border;
   }
 
-  .forinternet {
+  .forInternet {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
@@ -79,7 +79,7 @@
     }
   }
 
-  .searchbutton {
+  .searchButton {
     color: #000000;
     position: relative;
     margin: 0 auto;
@@ -104,6 +104,6 @@
   }
 }
 
-.computer.foldercontent {
+.computer.folderContent {
   display: block;
 }

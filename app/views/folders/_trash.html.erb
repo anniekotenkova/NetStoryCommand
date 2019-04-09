@@ -1,12 +1,12 @@
-<div id="<%= "folder_#{ @folder.id }" %>" class=" computer foldercontent draggable">
+<div id="<%= "folder_#{ @folder.id }" %>" class=" computer folderContent draggable">
   <div class="menuTop">
     <span class="folderTitle"><%= @folder.name %></span>
     <div class="closeBtn">
       <%= image_tag 'x.svg' %>
     </div>
   </div>
-  <div class="infoldercontent">
-    <span class="article-icon draggable" id="unknown" data-title="Папка">
+  <div class="infolderContent">
+    <span class="articleIcon draggable" id="unknown" data-title="Папка">
       <%= image_tag 'rainbow_icon.png' %>
       <p>Unknown</p>
     </span>

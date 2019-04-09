@@ -11,14 +11,14 @@
   background-color: #D8D8D8;
   border-bottom: none !important;
 
-  .infoldercontent {
+  .infolderContent {
     display: flex;
     position: relative;
     justify-content: space-between;
     font-family: $default-font-family;
     font-weight: 300;
 
-    .settings_first {
+    .settingsFirst {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -27,12 +27,12 @@
       margin-right: 2rem;
       padding-top: 1rem;
 
-      .color-list {
+      .colorList {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .backgroundcolor {
+        .backgroundColor {
           display: block;
           width: 32px;
           height: 32px;
@@ -75,19 +75,19 @@
       color: #000000;
     }
 
-    .setting_100 {
+    .setting100 {
       padding-bottom: 1rem;
     }
 
-    .setting__title {
+    .settingTitle {
       text-align: center;
     }
 
-    .setting__dropdown-wrap {
+    .settingDropdownWrap {
       position: relative;
       left: 8%;
 
-      .setting__dropdown-button {
+      .settingDropdownButton {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         position: relative;
@@ -105,15 +105,15 @@
         cursor: url('../img/cursor-pointer.png'), pointer;
       }
 
-      .setting__dropdown {
+      .settingDropdown {
         position: relative;
         width: 84%;
         background-color: $background-elemts;
         border: $default-border;
         border-top: none;
 
-        .setting__dropdown__option,
-        .setting__dropdown__option:visited {
+        .settingDropdownOption,
+        .settingDropdownOption:visited {
           display: block;
           margin: 0 auto;
           width: 100%;
@@ -130,7 +130,7 @@
         }
       }
 
-      .dropdown__arrow-wrap {
+      .dropdownArrowWrap {
         position: absolute;
         margin-right: 2.2rem;
         padding: 2%;
@@ -149,7 +149,7 @@
     }
   }
 
-  .setting_border {
+  .settingBorder {
     margin-bottom: 1rem;
     border-bottom: $default-border;
   }
@@ -164,20 +164,20 @@
   filter: none;
 }
 
-#black-white {
+#blackWhite {
   filter: grayscale(100%);
 }
 
-.black-white {
+.blackWhite {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-#hue-rotate {
+#hueRotate {
   filter: hue-rotate(180deg);
 }
 
-.hue-rotate {
+.hueRotate {
   -webkit-filter: hue-rotate(180deg);
   filter: hue-rotate(180deg);
 }

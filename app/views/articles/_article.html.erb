@@ -1,7 +1,7 @@
 <div class="draggable" draggable="true">
   <div class="folderFolder scrollbar" id="<%= "article_#{ article.id }" %>">
     <div id="folderFolder" class="computerFolders navBasic">
-      <span class="article-icon ">
+      <span class="articleIcon ">
         <%= link_to article_path(article), remote: true do %>
           <%= image_tag(article.pic.url) %>
           <div class="articleTitle"><%= article.title %></div>

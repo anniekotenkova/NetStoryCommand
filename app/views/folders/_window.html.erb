@@ -1,6 +1,6 @@
-<div id='<%= "folder_#{ @folder.id }" %>' class="mycomputer foldercontent draggable computer <%= @folder.partial_name %>">
+<div id='<%= "folder_#{ @folder.id }" %>' class="mycomputer folderContent draggable computer <%= @folder.partial_name %>">
   <%= render 'folders/menu' %>
-  <div class="content_inside">
+  <div class="contentInside">
     <%= render @folders %>
     <%= render @articles %>
   </div>

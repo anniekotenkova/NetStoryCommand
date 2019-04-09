@@ -1,6 +1,6 @@
 $(function() {
-  var dropDown = document.querySelector('.setting__dropdown'),
-  dropDownButton = document.querySelector('.setting__dropdown-button')
+  var dropDown = document.querySelector('.settingDropdown'),
+  dropDownButton = document.querySelector('.settingDropdownButton')
 
   startTime()
 
@@ -9,8 +9,8 @@ $(function() {
     $(this).toggleClass('startClick')
   })
 
-  $('.setting__dropdown-button').click(function() {
-    var dropDown = document.querySelector('.setting__dropdown')
+  $('.settingDropdownButton').click(function() {
+    var dropDown = document.querySelector('.settingDropdown')
     if (dropDown.className.indexOf('hidden') >= 0) {
       dropDown.classList.remove('hidden')
     } else {
@@ -18,7 +18,7 @@ $(function() {
     }
   })
 
-  $('.setting__dropdown__option').click(function(e) {
+  $('.settingDropdownOption').click(function(e) {
     console.log('Filter')
     e.preventDefault()
 

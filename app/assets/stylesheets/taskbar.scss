@@ -31,7 +31,7 @@
     display: flex;
     justify-content: flex-start;
 
-    .icons-left {
+    .iconsLeft {
       height: 43px;
       display: inline-block;
       margin-top: 8px;
@@ -74,7 +74,7 @@
         }
       }
 
-      #start-menu {
+      #startMenu {
         height: 47px;
         width: 100px;
         background-size: 100px 28px;
@@ -84,7 +84,7 @@
       }
     }
 
-    .taskbar_elements {
+    .taskbarElements {
       margin: 0 15px;
       height: 43px;
       width: 90%;
@@ -95,7 +95,7 @@
 }
 
 /* TIME AND DATE */
-.datetime {
+.dateTime {
   display: inline-block;
   cursor: $default-cursor;
   height: 47px;
