@@ -39,33 +39,33 @@ $(".draggable").draggable({
 })
 
 //articles
-$('#popup-close').on('click', function() {
+$('#popupClose').on('click', function() {
   console.log('close')
   $(this).parents('.popup').remove()
 })
 
 $(".next").click(function() {
-  if ('.firstpage') {
-    $('.firstpage').css('display', 'none');
-    $('.secondpage').css('display', 'block');
-  } else if ('.secondpage') {
-    $('.secondpage').css('display', 'none');
-    $('.thirdpage').css('display', 'block');
+  if ('.firstPage') {
+    $('.firstPage').css('display', 'none');
+    $('.secondPage').css('display', 'block');
+  } else if ('.secondPage') {
+    $('.secondPage').css('display', 'none');
+    $('.thirdPage').css('display', 'block');
   } else {
-    $('.secondpage').css('display', 'none');
-    $('.firstpage').css('display', 'none');
+    $('.secondPage').css('display', 'none');
+    $('.firstPage').css('display', 'none');
   }
 });
 
 $(".prev").click(function() {
-  if ('.secondpage') {
-    $('.secondpage').css('display', 'none');
-    $('.firstpage').css('display', 'block');
-  } else if ('.firstpage') {
-    $('.firstpage').css('display', 'none');
-    $('.secondpage').css('display', 'block');
+  if ('.secondPage') {
+    $('.secondPage').css('display', 'none');
+    $('.firstPage').css('display', 'block');
+  } else if ('.firstPage') {
+    $('.firstPage').css('display', 'none');
+    $('.secondPage').css('display', 'block');
   } else {
-    $('.firstpage').css('display', 'none');
-    $('.secondpage').css('display', 'none');
+    $('.firstPage').css('display', 'none');
+    $('.secondPage').css('display', 'none');
   }
 });
