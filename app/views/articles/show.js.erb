@@ -16,14 +16,14 @@ $('.articleContainer' + articleId).on("click", function() {
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
-$('.closebtn').on('click', function() {
+$('.closeBtn').on('click', function() {
   console.log('Click')
   $(this).parents('.articleContainer').remove()
 })
 
  $(".articleContainer").draggable()
 
-$('.closebtn').on('click', function() {
+$('.closeBtn').on('click', function() {
   var id = $(this).parents('.articleContainer').attr("id")
   $('.articleContainer#' + id).remove()
   $('.taskbarItems#' + id).remove()

@@ -80,16 +80,16 @@ class ArticlesController < ApplicationController
       end
     end
 
-    def set_folderfolder
-        #@folderfolder = Folderfolder.find(params[:article_id])
+    def set_folderFolder
+        #@folderFolder = folderFolder.find(params[:article_id])
     end
 
-    def set_folderfolder_from_params
-        #@folderfolder = Folderfolder.find(params[:folderfolder_id])
+    def set_folderFolder_from_params
+        #@folderFolder = folderFolder.find(params[:folderFolder_id])
     end
 
-    def set_folderfolder_from_Article
-        #@folderfolder = @article.folderfolder
+    def set_folderFolder_from_Article
+        #@folderFolder = @article.folderFolder
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

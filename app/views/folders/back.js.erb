@@ -16,7 +16,7 @@ $(".draggable").draggable({
   }
 })
 
-$(".folderfolder").draggable({
+$(".folderFolder").draggable({
   containment: ".content_inside",
 })
 
@@ -26,7 +26,7 @@ $('.foldercontent' + folderId).on("click", function() {
 })
 
 //закрытие папок
-$('.closebtn').on('click', function() {
+$('.closeBtn').on('click', function() {
   console.log('hh');
   var id = $(this).parents('.foldercontent').attr("id")
   $('.foldercontent#' + id).remove()

@@ -6,7 +6,7 @@ console.log(layer)
 
 <% if @folder.same_window %>
   $('.foldercontent' + parentFolderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
-  $('.mycomputer .menu_top').append('<%= j render partial: "back", folder: @parent_folder %>')
+  $('.mycomputer .menuTop').append('<%= j render partial: "back", folder: @parent_folder %>')
   $('.taskbarItems' + parentFolderId).replaceWith('<%= j render "task_bar_folder" %>')
   $('.taskbarItems' + folderId).append('<%= @folder.name %>')
   $('.foldercontent' + folderId).css("z-index", layer)
@@ -40,12 +40,12 @@ $(".draggable").draggable({
   }
 })
 
-$(".folderfolder #folderfolder").draggable({
+$(".folderFolder #folderFolder").draggable({
   containment: ".content_inside",
 })
 
 //close
-$('.closebtn').on('click', function() {
+$('.closeBtn').on('click', function() {
   var id = $(this).parents('.foldercontent').attr("id")
   $('.foldercontent#' + id).remove()
   $('.taskbarItems#' + id).remove()

@@ -1,12 +1,10 @@
- /* @import "application.scss"; */
-
-#mail_article {
-font-family: 'Courier New';
-position: relative;
-color: #ffffff;
-background-color: #272827;
-width: 900px;
-height: 600px;
+#mailArticle {
+  font-family: 'Courier New';
+  position: relative;
+  color: #ffffff;
+  background-color: #272827;
+  width: 900px;
+  height: 600px;
 
   h1 {
     font-size: 16px;
@@ -24,7 +22,7 @@ height: 600px;
     border-radius: 5px;
   }
 
-  .top_header {
+  .topHeader {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -41,7 +39,7 @@ height: 600px;
     left: 20px;
   }
 
-  .bottom_header {
+  .bottomHeader {
     display: flex;
     position: relative;
     flex-direction: row;

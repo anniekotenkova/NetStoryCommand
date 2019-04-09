@@ -1,4 +1,4 @@
-.menu_top {
+.menuTop {
   border-bottom: 2px solid #1d1e1c;
   box-sizing: border-box;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   background-color: #DADAD3;
   vertical-align: middle;
 
-  .folder_title {
+  .folderTitle {
     color: #000000;
     position: absolute;
     display: flex;
@@ -46,7 +46,7 @@
     }
   }
 
-  .closebtn {
+  .closeBtn {
     position: relative !important;
     display: flex;
     justify-content: flex-start;
