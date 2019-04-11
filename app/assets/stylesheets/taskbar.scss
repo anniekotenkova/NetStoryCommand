@@ -47,7 +47,7 @@
         width: 100px;
         height: 35px;
         border: $default-border;
-        box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, .2);
+        box-shadow: inset 2px -2px 2px 0px rgba(0, 0, 0, 0.2);
 
         .iconStart {
           background-image: url('iconStart.svg');
