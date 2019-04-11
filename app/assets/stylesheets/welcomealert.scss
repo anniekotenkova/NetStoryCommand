@@ -10,7 +10,7 @@
 		padding: 20px;
 		word-wrap: break-word;
 	}
-	
+
 	.card {
 		resize: both;
 		background-color: $color-card-background;
@@ -27,14 +27,15 @@
 
 	p {
 		position: relative;
-		font-family: 'Courier New';
-		font-weight: bold;
+		font-weight: 400;
+		letter-spacing: 0.08rem;
 		text-align: left;
 		font-size: 0.8em;
 		white-space: nowrap;
 		overflow: hidden;
 		width: 0;
 		color: #fff;
+		opacity: 0.7;
 	}
 
 	span {

@@ -2,22 +2,22 @@ $(function() {
 
   // background color change
   $("#pink").click(function() {
-    $('#Desktop').css('background', '#FF85A6')
+    $('#Desktop').css('background', '#FEC2CE')
     $('.folderFolder a').removeClass('black')
   })
 
   $("#blue").click(function() {
-    $('#Desktop').css('background', '#2196F3')
+    $('#Desktop').css('background', '#4696FC')
     $('.folderFolder a').removeClass('black')
   })
 
   $("#yellow").click(function() {
-    $('#Desktop').css('background', '#FEC006')
+    $('#Desktop').css('background', '#FCD120')
     $('.folderFolder a').removeClass('black')
   })
 
   $("#black").click(function() {
-    $('#Desktop').css('background', '#1B1725')
-    $('.folderFolder a').addClass('black')
+    $('#Desktop').css('background', '#68EDC6')
+    $('.folderFolder a').removeClass('black')
   })
 })

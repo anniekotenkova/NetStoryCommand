@@ -1,29 +1,31 @@
 .taskbar {
   position: fixed;
   bottom: 0;
-  height: 43px;
+  height: 50px;
   width: 100%;
   background: #D8D8D8;
   border-top: $default-border;
 
   .taskbarItems {
-    padding: 0 5px;
-    height: 43px;
+    margin-right: 0.4rem;
+    padding: 0.8rem;
+    height: 35px;
     width: auto;
     display: flex;
     flex-direction: row;
-    background: rgba(255, 255, 255, 0.3);
+    background: #D8D8D8;
     justify-content: space-around;
     align-items: center;
     color: black;
-    font-size: 13px;
-    outline: 1px solid black;
+    font-size: 0.7rem;
+    border: $default-border;
+    box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, .2);
 
     .taskbarItemsBox {
       display: flex;
       height: 25px;
       width: 25px;
-      margin: 3px;
+      margin-right: 0.6rem;
     }
   }
 
@@ -32,42 +34,15 @@
     justify-content: flex-start;
 
     .iconsLeft {
-      height: 43px;
-      display: inline-block;
-      margin-top: 8px;
-
-      a {
-        display: table-cell;
-        border-bottom: 2px solid transparent;
-
-        &:not(:first-child) {
-          margin-left: -4px;
-        }
-      }
-
-      .px {
-        width: 1px;
-
-        a {
-          pointer-events: none;
-        }
-      }
+      display: flex;
 
       #start {
-        background-size: 17px 15px;
-        text-align: right;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        float: left;
-        width: 10rem;
-        height: 3rem;
-        display: inline-block;
         cursor: default;
         background-image: url("start.svg");
         background-size: contain;
         background-repeat: no-repeat;
+        width: 95px;
+        height: 40px;
 
         &:active {
           transform: translateY(2px);
@@ -75,21 +50,19 @@
       }
 
       #startMenu {
-        height: 47px;
-        width: 100px;
-        background-size: 100px 28px;
         display: flex;
         align-items: center;
         padding-left: 1.5rem;
+        margin-top: 0.5rem;
       }
     }
 
     .taskbarElements {
       margin: 0 15px;
-      height: 43px;
       width: 90%;
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
   }
 }
@@ -111,6 +84,7 @@
   }
 
   #clock {
-    font-weight: bold;
+    font-size: 0.7rem;
+    font-weight: 400;
   }
 }

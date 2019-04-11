@@ -6,7 +6,6 @@
   font-family: $default-font-family;
   font-weight: 300;
 
-
   #info {
     position: relative;
     padding: 1.2rem;
@@ -23,15 +22,18 @@
 
     p {
       color: #000;
-      line-height: 1rem;
-    	font-weight: 300;
+      font-size: 0.75rem;
+      line-height: 1.24rem;
+      font-weight: 300;
       text-align: left;
     }
 
     h4 {
-      font-size: 80%;
-      letter-spacing: 0.1em;
+      color: #000;
+      font-size: 1.4rem;
+      font-weight: 500;
       line-height: 1.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .cardInside {
@@ -68,22 +70,20 @@
         }
       }
 
-
-
       .skills {
         display: flex;
         flex-direction: column;
         margin-top: 0.75rem;
 
         .labels {
-         font-weight: 600;
-         color: var(--primary);
-       }
+          font-weight: 600;
+          color: var(--primary);
+        }
 
-       .value {
-         line-height: 1.5rem;
-         height: 2rem;
-       }
+        .value {
+          line-height: 1.5rem;
+          height: 2rem;
+        }
       }
     }
   }
