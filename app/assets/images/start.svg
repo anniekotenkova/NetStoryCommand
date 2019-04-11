@@ -1,75 +1,30 @@
-<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 50">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #d8d8d8;
-      }
-
-      .cls-1, .cls-10, .cls-11, .cls-8, .cls-9 {
-        stroke: #000;
-        stroke-width: 3px;
-      }
-
-      .cls-2 {
-        fill-opacity: 0.3;
-      }
-
-      .cls-3, .cls-4 {
-        isolation: isolate;
-      }
-
-      .cls-4 {
-        font-size: 24px;
-        font-family: Circe-ExtraBold, Circe;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-      }
-
-      .cls-5 {
-        letter-spacing: 0em;
-      }
-
-      .cls-6 {
-        letter-spacing: 0.05em;
-      }
-
-      .cls-7 {
-        letter-spacing: 0.02em;
-      }
-
-      .cls-8 {
-        fill: #74ffa4;
-      }
-
-      .cls-9 {
-        fill: #ff85a6;
-      }
-
-      .cls-10 {
-        fill: #3544f1;
-      }
-
-      .cls-11 {
-        fill: #ffdf50;
-      }
-    </style>
-  </defs>
-  <title>start</title>
-  <g id="Page-1">
-    <g id="Group-30">
-      <g id="Group-29">
-        <path id="Path-18-Copy" class="cls-1" d="M2,7V44a5,5,0,0,0,5,5H128q6-1,6-6V7q-2-5-6-5H7A5,5,0,0,0,2,7Z" transform="translate(-0.5 -0.5)"/>
-        <path id="Path-19-Copy" class="cls-2" d="M3.62,4q3,31,5,35c2,4,8,6,16,6h110q-4,4-12,4H8.62q-5-.16-6-2c-1.19-2.15-.36-6.32,0-11Q3.62,23,3.62,4Z" transform="translate(-0.5 -0.5)"/>
-        <g id="start-copy" class="cls-3">
-          <text class="cls-4" transform="translate(47.5 32.5)">S<tspan class="cls-5" x="14.57" y="0">T</tspan><tspan class="cls-6" x="28.87" y="0">A</tspan><tspan class="cls-7" x="47.47" y="0">R</tspan><tspan class="cls-6" x="64.1" y="0">T</tspan></text>
-        </g>
-      </g>
-      <g id="Group-2">
-        <rect id="Rectangle-51" class="cls-8" x="18" y="12" width="12" height="12"/>
-        <rect id="Rectangle-51-Copy-2" class="cls-9" x="18" y="24" width="12" height="12"/>
-        <rect id="Rectangle-51-Copy" class="cls-10" x="30" y="12" width="12" height="12"/>
-        <rect id="Rectangle-51-Copy-3" class="cls-11" x="30" y="24" width="12" height="12"/>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490 179" style="enable-background:new 0 0 490 179;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C1C1BF;}
+	.st1{fill:#D8D8D8;stroke:#000000;stroke-width:10;}
+	.st2{fill:#FEC2CE;stroke:#000000;stroke-width:10;}
+	.st3{fill:#4696FC;stroke:#000000;stroke-width:10;}
+	.st4{fill:#FCD120;stroke:#000000;stroke-width:10;}
+	.st5{fill:#68EDC6;stroke:#000000;stroke-width:10;}
+	.st6{font-family:'TTNorms-Medium';}
+	.st7{font-size:76px;}
+</style>
+<title>Group 2</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Group-2" transform="translate(417.000000, 1144.000000)">
+		<rect id="Rectangle-3-Copy-4" x="-417" y="-1132" class="st0" width="479" height="167"/>
+		<rect id="Rectangle-3" x="-401" y="-1139" class="st1" width="469" height="157"/>
+		<rect id="Rectangle-3_1_" x="-347" y="-1104" class="st2" width="42" height="42"/>
+		<rect id="Rectangle-3-Copy-2" x="-347" y="-1059" class="st3" width="42" height="42"/>
+		<rect id="Rectangle-3-Copy" x="-301" y="-1104" class="st4" width="42" height="42"/>
+		<rect id="Rectangle-3-Copy-3" x="-301" y="-1059" class="st5" width="42" height="42"/>
+		<text transform="matrix(1 0 0 1 -219.0259 -1037.9998)" class="st6 st7">STAR</text>
+		<text transform="matrix(1 0 0 1 -29.2808 -1037.9998)" class="st6 st7"> </text>
+		<text transform="matrix(1 0 0 1 -29.2808 -1037.9998)" class="st6 st7">T</text>
+	</g>
+</g>
 </svg>
