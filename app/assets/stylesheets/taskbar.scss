@@ -36,6 +36,10 @@
     .iconsLeft {
       display: flex;
 
+      .startRest {
+        border: $default-border;
+      }
+
       #start {
         padding: 0.8rem;
         display: flex;
@@ -46,7 +50,6 @@
         background-repeat: no-repeat;
         width: 100px;
         height: 35px;
-        border: $default-border;
         box-shadow: inset 2px -2px 2px 0px rgba(0, 0, 0, 0.2);
 
         .iconStart {
@@ -70,10 +73,17 @@
         }
       }
 
+      .startClick {
+        border-top: inset 2px black;
+        border-left: inset 2px black;
+        border-bottom: inset 2px white;
+        border-right: inset 2px white;
+      }
+
       #startMenu {
         display: flex;
         align-items: center;
-        padding-left: 1.5rem;
+        padding-left: 0.5rem;
       }
     }
 
