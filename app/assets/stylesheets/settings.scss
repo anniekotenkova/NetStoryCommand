@@ -3,13 +3,12 @@
   position: absolute;
   height: 384px;
   width: 224px;
-  left: -.5rem;
-  bottom: 48px;
+  left: 8px;
+  bottom: 40px;
   font-family: $default-font-family;
   font-weight: 300;
   box-shadow: none;
   background-color: #D8D8D8;
-  border-bottom: none !important;
 
   .infolderContent {
     display: flex;
