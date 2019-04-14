@@ -27,4 +27,13 @@ $(function() {
 
     document.querySelector('body').className = e.target.id;
   })
+
+  $('.colorsbtn').click(function() {
+    $('.colorsChange').removeClass('hidden')
+  })
+
+  $('.filtersbtn').click(function() {
+    $('.filtersChange').removeClass('hidden')
+  })
+
 })

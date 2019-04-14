@@ -3,3 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
+
+@mixin border-color($border-light, $border-dark) {
+  border-top: $border-light;
+  border-right: $border-dark;
+  border-bottom: $border-dark;
+  border-left: $border-light;
+}

@@ -12,21 +12,21 @@
 }
 
 #fastLinkAtt {
-  width: 515px;
-  height: 90px;
+  left: 502px;
+  top: 288px;
+  width: 240px;
+  height: 270px;
   position: absolute;
   box-shadow: $default-border;
   color: #00000030;
   cursor: $default-cursor;
   box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
-  top: 420px;
-  left: 554px;
   border: $default-border;
 }
 
 .fastLinkImg {
-  background-image: url("att/tfba.png");
+  position: relative;
+  background-image: url("att/first_banner.gif");
   background-size: cover;
-  width: 515px;
-  height: 60px;
+  height: 236px;
 }

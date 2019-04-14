@@ -1,14 +1,111 @@
 #setting {
   box-sizing: border-box;
   position: absolute;
-  height: 384px;
-  width: 224px;
+  height: 286px;
+  width: 215px;
   left: 8px;
-  bottom: 40px;
+  bottom: 48px;
   font-family: $default-font-family;
+  @include border-color($border-light, $border-dark);
   font-weight: 300;
   box-shadow: none;
   background-color: #D8D8D8;
+
+  .titleContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 37px;
+    height: 100%;
+    background: linear-gradient(#77B2FC 60%, #4696FC);
+
+    .title {
+      position: absolute;
+      transform: rotate(-90deg);
+      color: white;
+      top: 190px;
+      left: -51px;
+      font-size: 25px;
+      font-weight: bold;
+
+      span {
+        font-weight: 100;
+      }
+    }
+  }
+
+  .menuContainer {
+    font-family: $default-font-family;
+    font-weight: 300;
+    color: #000;
+    font-size: 0.8rem;
+    margin: 0 4px 0 40px;
+
+    li {
+      padding: 15px 0 15px 15px;
+
+      &:hover {
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    hr {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#normal {
+  filter: none;
+}
+
+.normal {
+  -webkit-filter: none;
+  filter: none;
+}
+
+#blackWhite {
+  filter: grayscale(100%);
+}
+
+.blackWhite {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#hueRotate {
+  filter: hue-rotate(180deg);
+}
+
+.hueRotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+
+#negative {
+  filter: invert(100%);
+}
+
+.negative {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.black {
+  color: #ffffff;
+}
+
+.colorsChange {
+  left: 181px;
+  top: -262px;
+  width: 236px;
+  height: 306px;
+  border: $default-border;
+  box-shadow: $default-box-shadow;
+  background-color: #fff;
 
   .infolderContent {
     display: flex;
@@ -16,6 +113,15 @@
     justify-content: space-between;
     font-family: $default-font-family;
     font-weight: 300;
+
+    h3 {
+      color: #000;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
 
     .settingsFirst {
       display: flex;
@@ -59,7 +165,30 @@
     }
   }
 
+  .settingBorder {
+    margin-bottom: 1rem;
+    // border-bottom: $default-border;
+  }
+}
+
+.filtersChange {
+  left: 181px;
+  top: -262px;
+  width: 236px;
+  height: 306px;
+  border: $default-border;
+  box-shadow: $default-box-shadow;
+  background-color: #fff;
+
   .setting {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1rem;
+
     h3 {
       color: #000;
       font-size: 1rem;
@@ -73,20 +202,18 @@
     }
 
     .settingTitle {
-      text-align: center;
+      // text-align: center;
     }
 
     .settingDropdownWrap {
       position: relative;
-      left: 8%;
 
       .settingDropdownButton {
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         position: relative;
         /* display: flex; */
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
         height: 32px;
         color: black;
         font-size: 0.7rem;
@@ -100,7 +227,7 @@
 
       .settingDropdown {
         position: relative;
-        width: 84%;
+        width: 100%;
         background-color: $background-elemts;
         border: $default-border;
         border-top: none;
@@ -126,7 +253,6 @@
 
       .dropdownArrowWrap {
         position: absolute;
-        margin-right: 2.2rem;
         padding: 2%;
         box-sizing: border-box;
         display: flex;
@@ -142,49 +268,4 @@
       }
     }
   }
-
-  .settingBorder {
-    margin-bottom: 1rem;
-    border-bottom: $default-border;
-  }
-}
-
-#normal {
-  filter: none;
-}
-
-.normal {
-  -webkit-filter: none;
-  filter: none;
-}
-
-#blackWhite {
-  filter: grayscale(100%);
-}
-
-.blackWhite {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-#hueRotate {
-  filter: hue-rotate(180deg);
-}
-
-.hueRotate {
-  -webkit-filter: hue-rotate(180deg);
-  filter: hue-rotate(180deg);
-}
-
-#negative {
-  filter: invert(100%);
-}
-
-.negative {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-.black {
-  color: #ffffff;
 }

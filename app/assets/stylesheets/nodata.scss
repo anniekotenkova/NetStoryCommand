@@ -21,10 +21,41 @@
     left: 7rem;
     color: #000000;
 
-    .re{
-      margin-left: 0;
+    h1 {
       margin-top: 3rem;
-      width: 100px;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  .re {
+    margin-left: 0;
+    margin-top: 3rem;
+    width: 100px;
+  }
+
+  .searchButton {
+    color: #000;
+    position: relative;
+    top: 2rem;
+    width: 20%;
+    height: 32px;
+    @include border-color($border-light, $border-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADAD3;
+
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    &:hover {
+      cursor: $default-cursor;
     }
   }
 }

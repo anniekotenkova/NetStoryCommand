@@ -1,0 +1,33 @@
+<div class="filtersChange hidden draggable">
+  <div class="menuTop">
+    <span class="folderTitle"></span>
+    <div class="closeCard">
+      <div class="closeBtn">
+        <%= image_tag 'x.svg' %>
+      </div>
+    </div>
+  </div>
+  <section class="setting setting100">
+    <h3 class="settingTitle">Фильтры</h3>
+    <div class="settingDropdownWrap">
+      <button class="settingDropdownButton">Обычный</button>
+      <div class="dropdownArrowWrap">
+        <%= image_tag 'dropdown-arrow.svg' %>
+      </div>
+      <div class="settingDropdown hidden">
+        <a href="#" class="settingDropdownOption" id="normal">
+          Обычный
+        </a>
+        <a href="#" class="settingDropdownOption" id="blackWhite">
+          Черно-белый
+        </a>
+        <a href="#" class="settingDropdownOption" id="hueRotate">
+          Инверсия
+        </a>
+        <a href="#" class="settingDropdownOption" id="negative">
+          Негатив
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
