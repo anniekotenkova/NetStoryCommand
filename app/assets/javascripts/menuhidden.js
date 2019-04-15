@@ -31,7 +31,7 @@ $(function() {
   $('.colorsbtn').click(function() {
     $('.colorsChange').removeClass('hidden')
   })
-
+  
   $('.filtersbtn').click(function() {
     $('.filtersChange').removeClass('hidden')
   })
