@@ -1,0 +1,41 @@
+#blueScreenArticle {
+  background: #100FDB;
+  font-family: 'Lucida Console';
+  color: #E2E2E2;
+  width: 915px;
+  height: 600px;
+  overflow: scroll;
+  padding: 10px;
+
+  .blueLine {
+    p {
+      line-height: 21px;
+
+      &:last-Child {
+        margin-top: 21px;
+      }
+    }
+  }
+
+  h1 {
+    width: 118px;
+    height: 23px;
+    background: #E2E2E2;
+    color: #100FDB;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .blueScreenTable {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    p {
+      display: flex;
+      flex-direction: column;
+      width: 227px;
+      margin: 10px;
+    }
+  }
+}

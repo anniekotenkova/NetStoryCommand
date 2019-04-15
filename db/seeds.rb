@@ -71,6 +71,12 @@ def create_articles
       partial_name: 'nsfnet'
     },
     {
+      folder_name:  '1980',
+      title:        'Синий экран смерти',
+      pic:          'blue_screen_icon.png',
+      partial_name: 'blue_screen'
+    },
+    {
       folder_name:  '1990',
       title:        'Ошибка 404',
       pic:          'notfound_icon.png',

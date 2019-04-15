@@ -208,3 +208,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Lucida Console';
+  src: local('Lucida Console'),
+      url('Lucida Console.ttf') format('truetype'),
+      url('Lucida Console.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
