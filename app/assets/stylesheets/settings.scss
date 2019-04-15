@@ -99,10 +99,11 @@
 }
 
 .colorsChange {
-  left: 181px;
-  top: -262px;
+  position: absolute;
+  left: 150px;
+  top: 13px;
   width: 236px;
-  height: 306px;
+  height: 143px;
   border: $default-border;
   box-shadow: $default-box-shadow;
   background-color: #fff;
@@ -172,10 +173,11 @@
 }
 
 .filtersChange {
-  left: 181px;
-  top: -262px;
+  position: absolute;
+  left: 238px;
+  top: 207px;
   width: 236px;
-  height: 306px;
+  height: 143px;
   border: $default-border;
   box-shadow: $default-box-shadow;
   background-color: #fff;
