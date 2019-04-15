@@ -66,6 +66,12 @@ def create_articles
     },
     {
       folder_name:  '1980',
+      title:        'WWW',
+      pic:          'www_icon.png',
+      partial_name: 'www'
+    },
+    {
+      folder_name:  '1980',
       title:        'NSFNET',
       pic:          'nsfnet_icon.png',
       partial_name: 'nsfnet'
