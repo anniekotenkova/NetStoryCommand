@@ -31,9 +31,17 @@ $(function() {
   $('.colorsbtn').click(function() {
     $('.colorsChange').removeClass('hidden')
   })
-  
+
+  $('.closeCardColor').click(function() {
+    $('.colorsChange').addClass('hidden')
+  })
+
   $('.filtersbtn').click(function() {
     $('.filtersChange').removeClass('hidden')
+  })
+
+  $('.closeCardFilter').click(function() {
+    $('.filtersChange').addClass('hidden')
   })
 
 })
