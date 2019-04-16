@@ -46,13 +46,13 @@ def create_folders
   ])
 
   icons = Folder.create([{
-      name: 'Корзина',
-      icon: 'Korzina.png',
-      partial_name: 'trash'
-    }, {
       name: 'Интернет',
       icon: 'internet.svg',
       partial_name: 'matrix'
+    }, {
+      name: 'Корзина',
+      icon: 'Korzina.png',
+      partial_name: 'trash'
     }
   ])
 end
