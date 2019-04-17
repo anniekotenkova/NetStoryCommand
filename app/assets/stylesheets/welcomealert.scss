@@ -1,7 +1,7 @@
 .welcome {
-	left: 35%;
-	top: 25%;
-	width: 400px !important;
+	left: 25%;
+	top: 2%;
+	width: 380px !important;
   position: absolute;
 	cursor:  $cursor-pointer;
 	.fakeScreen {
@@ -30,14 +30,13 @@
 	p {
 		position: relative;
 		font-weight: 400;
-		letter-spacing: 0.08rem;
+		letter-spacing: 0.05rem;
 		text-align: left;
-		font-size: 0.8em;
+		font-size: 0.8rem;
 		white-space: nowrap;
 		overflow: hidden;
 		width: 0;
 		color: #fff;
-		opacity: 0.7;
 	}
 
 	span {

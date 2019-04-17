@@ -1,38 +1,39 @@
 #fastLinkErwise {
-  width: 237px;
+  width: 259px;
   height: 300px;
   position: absolute;
   left: 70%;
   top: 21px;
-  background-color: #729CFE;
+  background-color: #4696FC;
   box-shadow: $default-box-shadow;
   color: #00000030;
   border: 2px solid black;
   cursor: $default-cursor;
 
   .fastLinkErwiseImg {
-    background-image: url("erwise/fastlink_erwise.svg");
+    background-image: url("erwise/erwise-02.svg");
     background-size: cover;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 20px auto;
   }
 
   p {
-    color: #000000;
+    color: #fff;
     font-family: 'Courier New';
-    width: 95%;
-    margin-left: 10px;
-    line-height: 18px;
+    margin: 0 auto;
+    width: 80%;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
   }
 
 }
 
 #fastLinkAtt {
-  left: 58%;
-  top: 50%;
+  left: 48%;
+  top: 30%;
   width: 240px;
-  height: 270px;
+  height: 350px;
   position: absolute;
   box-shadow: $default-border;
   color: #00000030;
@@ -43,7 +44,7 @@
 
 .fastLinkImg {
   position: relative;
-  background-image: url("att/first_banner.gif");
+  background-image: url("att/first_banner.png");
   background-size: cover;
-  height: 236px;
+  height: 316px;
 }
