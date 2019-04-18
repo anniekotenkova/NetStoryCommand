@@ -108,6 +108,11 @@ def create_articles
       pic:          'theglobe_icon.png',
       partial_name: 'the_globe'
     }, {
+      folder_name:  '1990',
+      title:        'Браузерные войны',
+      pic:          'netscape_icon.png',
+      partial_name: 'netscape'
+    },{
       folder_name:  '2000',
       title:        'Википедия',
       pic:          'wiki_icon.png',
