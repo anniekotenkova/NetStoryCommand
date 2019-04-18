@@ -4,108 +4,135 @@
   background: #FFFFFF;
   overflow: scroll;
 
-  .browserLine {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(#EBEBEB, #CAD6E5);
-    border-bottom: 2px solid #808fa0;
+  .netscapeHead {
+    position: absolute;
+    z-index: 2;
 
-    .searchField {
+    .browserLine {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      color: #000000;
-      width: 300px;
-      height: 35px;
+      width: 663px;
+      height: 80px;
+      background: linear-gradient(#EBEBEB, #CAD6E5);
+      border-bottom: 2px solid #808fa0;
+
+      .searchField {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000000;
+        width: 300px;
+        height: 35px;
+        position: relative;
+        left: 8%;
+        background: #ffffff;
+        border: 2px solid #808fa0;
+
+        p {
+          margin: 10px 12px;
+          font-size: 13px;
+        }
+
+        .netscapeIcon {
+          width: 33px;
+          position: relative;
+          left: 50px;
+        }
+      }
+
+      .netscapeButton {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #808fa0;
+        margin: 10px;
+        padding: 7px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(202,214,229,1) 52%, rgba(182,205,203,1) 99%);
+
+        &:first-child {
+          margin-left: 15px;
+        }
+
+        img {
+          opacity: 0.6;
+        }
+      }
+
+      .forward {
+        transform: rotate(180deg);
+      }
+    }
+
+    .searchTab {
+      width: 100%;
+      height: 40px;
+      background: linear-gradient(#EBEBEB, #CAD6E5);
+      border-bottom: 2px solid #808fa0;
+      display: flex;
+
+      .lineTab {
+        width: 100%;
+        height: 10px;
+        margin-top: 28px;
+        background: linear-gradient(#EBEBEB, #CAD6E5);
+        border-top: 2px solid #808f9f;
+      }
+
+      .netscapeTab {
+        width: 130px;
+        height: 25px;
+        background: linear-gradient(#CAD6E5, #EBEBEB);
+        position: relative;
+        left: 30px;
+        top: -25px;
+        border: 2px solid #808f9f;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .netscapeBody {
+
+    position: relative;
+    top: 120px;
+
+    .netscapeWelcome {
+      width: 100%;
+    }
+
+    .netscapeLink {
       position: relative;
-      left: 8%;
-      background: #ffffff;
-      border: 2px solid #808fa0;
+      width: 80px;
+      top: 339px;
+      margin: 0 auto;
+      cursor: $default-cursor;
+    }
+
+    .netscapeText {
+      color: #000000;
+      line-height: 21px;
+
+      h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 21px;
+      }
+
+      .firstText {
+        margin: 30px 50px 80px;
+      }
+
+      .headings {
+        width: 200px;
+        height: 150px;
+        background: linear-gradient(#CAD6E5, #EBEBEB);
+      }
 
       p {
-        margin: 10px 12px;
-        font-size: 13px;
+        margin: 10px 25px;
+        font-size: 15px;
       }
-
-      .netscapeIcon {
-        width: 33px;
-        position: relative;
-        left: 50px;
-      }
-    }
-
-    .netscapeButton {
-      width: 40px;
-      height: 40px;
-      border: 2px solid #808fa0;
-      margin: 10px;
-      padding: 7px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(202,214,229,1) 52%, rgba(182,205,203,1) 99%);
-
-      &:first-child {
-        margin-left: 15px;
-      }
-
-      img {
-        opacity: .6;
-      }
-    }
-  }
-
-  .searchTab {
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(#EBEBEB, #CAD6E5);
-    border-bottom: 2px solid #808fa0;
-    display: flex;
-
-    .lineTab {
-      width: 100%;
-      height: 10px;
-      margin-top: 28px;
-      background: linear-gradient(#EBEBEB, #CAD6E5);
-      border-top: 2px solid #808f9f;
-    }
-
-    .netscapeTab {
-      width: 130px;
-      height: 25px;
-      background: linear-gradient(#CAD6E5, #EBEBEB);
-      position: relative;
-      left: 30px;
-      top: -25px;
-      border: 2px solid #808f9f;
-      border-bottom: none;
-    }
-  }
-
-  .netscapeWelcome {
-    width: 100%;
-  }
-
-  .netscapeLink {
-    width: 80px;
-  }
-
-  .netscapeText {
-
-    color: #000000;
-
-    h1 {
-      margin: 0 auto;
-    }
-
-    .firstText {
-      margin: 25px;
-    }
-
-    .headings {
-      width: 200px;
-      height: 150px;
-      background: linear-gradient(#CAD6E5, #EBEBEB);
     }
   }
 }
