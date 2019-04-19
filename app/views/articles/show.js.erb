@@ -70,3 +70,8 @@ $(".prev").click(function() {
     $('.secondPage').css('display', 'none');
   }
 })
+
+$(".loadMore").on("click", function() {
+  $(".netscapeSecondPage").css('display', 'block')
+  $(".loadMore").remove()
+})

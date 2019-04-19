@@ -124,14 +124,34 @@
       }
 
       .headings {
-        width: 200px;
-        height: 150px;
+        width: 587px;
+        height: 129px;
+        margin: 35px 35px;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 42px 37px;
         background: linear-gradient(#CAD6E5, #EBEBEB);
+        font-style: italic;
       }
 
       p {
         margin: 10px 25px;
         font-size: 15px;
+      }
+
+      .netscapeSecondPage {
+        display: none;
+      }
+
+      .loadMore {
+        width: 117px;
+        height: 35px;
+        margin: 0 274px 25px;
+        font-size: 13px;
+        color: blue;
+        text-decoration: underline;
+        text-align: center;
+        cursor: $default-cursor;
       }
     }
   }
