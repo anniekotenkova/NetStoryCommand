@@ -62,6 +62,38 @@ $('#unknown').on('click', function() {
   })
 })
 
+//turning off
+
+$('.shutDown').on('click', function() {
+  console.log('hhh');
+  $('#body').addClass('.screen')
+  .to(SELECTOR_SCREEN_ELEMENT, .2, {
+      width: '100vw',
+      height: '2px',
+      background: '#ffffff',
+      ease: Power2.easeOut
+    })
+})
+
+  //   .to('.body', .2, {
+  //     width: '100vw',
+  //     height: '2px',
+  //     background: '#ffffff',
+  //     ease: Power2.easeOut
+  //   })
+  //   .to('.body', .2, {
+  //     width: '0',
+  //     height: '0',
+  //     background: '#ffffff'
+  //   });
+  // }
+
+
+  // Bindings
+  // $('.shutDown').on('click', function() {
+  //   toggleSwitcherTV();
+  // })
+
 
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),

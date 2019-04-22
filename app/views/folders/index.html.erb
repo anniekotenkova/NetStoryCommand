@@ -1,22 +1,19 @@
 <section id="body">
 
-  <!-- Menubar -->
-  <div id="Desktop">
-    <div class="folderContainer" style="position:absolute"></div>
-    <div class="computerContainer"></div>
-    <div class="folderArticles" style="position:absolute"></div>
+    <div id="Desktop">
+      <div class="folderContainer" style="position:absolute"></div>
+      <div class="computerContainer"></div>
+      <div class="folderArticles" style="position:absolute"></div>
 
-    <%= render @folders %>
+      <%= render @folders %>
 
-
-  <%= render "task_bar" %>
-  <%= render "articles/preview" %>
-  <%= render "settings" %>
-  <%= render "welcome_alert"%>
-  <%= render "nodata"%>
-  <%= render "colors"%>
-  <%= render "filters"%>
-  <%= render "screensaver"%>
-  </div>
-
+      <%= render "task_bar" %>
+      <%= render "articles/preview" %>
+      <%= render "settings" %>
+      <%= render "welcome_alert"%>
+      <%= render "nodata"%>
+      <%= render "colors"%>
+      <%= render "filters"%>
+      <%= render "screensaver"%>
+    </div>
 </section>
