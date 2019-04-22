@@ -13,7 +13,10 @@
     margin-right: 0.4rem;
     padding: 0.8rem;
     height: 35px;
-    width: auto;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     display: flex;
     flex-direction: row;
     background: #D8D8D8;
@@ -119,4 +122,11 @@
       align-items: center;
     }
   }
+}
+
+#folder_2#text {
+  width: 50px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction: ltr;
 }
