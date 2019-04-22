@@ -13,10 +13,7 @@
     margin-right: 0.4rem;
     padding: 0.8rem;
     height: 35px;
-    width: 120px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    width: 209px;
     display: flex;
     flex-direction: row;
     background: #D8D8D8;
@@ -26,11 +23,24 @@
     font-size: 0.7rem;
     @include border-color($border-light, $border-dark);
 
+    p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+    }
+
     .taskbarItemsBox {
       display: flex;
       height: 25px;
       width: 25px;
       margin-right: 0.6rem;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 
@@ -122,11 +132,4 @@
       align-items: center;
     }
   }
-}
-
-#folder_2#text {
-  width: 50px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  direction: ltr;
 }

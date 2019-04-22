@@ -61,51 +61,51 @@ def create_articles
   articles = [{
       folder_name:  '1970',
       title:        'Первая почта',
-      pic:          'mail_icon.png',
+      pic:          'mail_icon.svg',
       partial_name: 'email'
     },
     {
       folder_name:  '1980',
       title:        'WWW',
-      pic:          'www_icon.png',
+      pic:          'www_icon.svg',
       partial_name: 'www'
     },
     {
       folder_name:  '1980',
       title:        'NSFNET',
-      pic:          'nsfnet_icon.png',
+      pic:          'nsfnet_icon.svg',
       partial_name: 'nsfnet'
     },
     {
       folder_name:  '1980',
       title:        'Синий экран смерти',
-      pic:          'blue_screen_icon.png',
+      pic:          'blue_screen_icon.svg',
       partial_name: 'blue_screen'
     },
     {
       folder_name:  '1990',
       title:        'Ошибка 404',
-      pic:          'notfound_icon.png',
+      pic:          'notfound_icon.svg',
       partial_name: 'error404'
     }, {
       folder_name:  '1990',
       title:        'Первый браузер',
-      pic:          'erwise_icon.png',
+      pic:          'erwise_icon.svg',
       partial_name: 'firstbrowser'
     }, {
       folder_name:  '1990',
       title:        'Первый лендинг',
-      pic:          'att_icon.png',
+      pic:          'att_icon.svg',
       partial_name: 'firstlanding'
     }, {
       folder_name:  '1990',
       title:        'Друзья',
-      pic:          'friends_icon.png',
+      pic:          'friends_icon.svg',
       partial_name: 'friends'
     }, {
       folder_name:  '1990',
       title:        'TheGlobe',
-      pic:          'theglobe_icon.png',
+      pic:          'theglobe_icon.svg',
       partial_name: 'the_globe'
     }, {
       folder_name:  '1990',
@@ -115,7 +115,7 @@ def create_articles
     },{
       folder_name:  '2000',
       title:        'Википедия',
-      pic:          'wiki_icon.png',
+      pic:          'wiki_icon.svg',
       partial_name: 'wikipedia'
     }
   ]
