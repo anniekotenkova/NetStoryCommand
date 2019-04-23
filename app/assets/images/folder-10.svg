@@ -1,0 +1,48 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 127 151">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M72,13l40,40v75a5,5,0,0,1-5,5H17a5,5,0,0,1-5-5V18a5,5,0,0,1,5-5Z" fill="#100fdb"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path d="M72,13l40,40v66a14,14,0,0,1-14,14H26a14,14,0,0,1-14-14V27A14,14,0,0,1,26,13Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="127" height="151" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path d="M112,53H86.71C79,53,72,46,72,38.29V13Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect x="-1034.44" y="228.5" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect x="-867.44" y="228.5" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <rect x="-700.44" y="228.5" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-10">
+      <rect x="-526.44" y="228.5" width="130" height="130" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>folder</title>
+  <g>
+    <path d="M72,13l40,40v75a5,5,0,0,1-5,5H17a5,5,0,0,1-5-5V18a5,5,0,0,1,5-5Z" fill="#100fdb"/>
+    <g clip-path="url(#clip-path)">
+      <rect x="0.2" y="3.3" width="128.05" height="146.44" fill="#100fdb"/>
+    </g>
+  </g>
+  <g clip-path="url(#clip-path-3)">
+    <path d="M72,13l40,40v75a5,5,0,0,1-5,5H17a5,5,0,0,1-5-5V18a5,5,0,0,1,5-5Z" fill="none" stroke="#000105" stroke-miterlimit="10" stroke-width="6"/>
+  </g>
+  <g clip-path="url(#clip-path-4)">
+    <g clip-path="url(#clip-path-3)">
+      <rect x="67" y="8" width="50" height="50" fill="#fff"/>
+    </g>
+  </g>
+  <g clip-path="url(#clip-path-3)">
+    <path d="M112,53H86.71C79,53,72,46,72,38.29V13Z" fill="none" stroke="#000105" stroke-linejoin="round" stroke-width="6"/>
+    <text transform="translate(38.81 80)" font-size="30" fill="#fff" font-family="BebasNeue, Bebas Neue">Dead</text>
+    <text transform="translate(27.79 105)" font-size="30" fill="#fff" font-family="BebasNeue, Bebas Neue">Screen</text>
+  </g>
+</svg>

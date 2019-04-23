@@ -1,0 +1,24 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 127.5 151">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="-49.65" y="-165.06" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect x="117.35" y="-165.06" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect x="284.35" y="-165.06" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect x="458.35" y="-165.06" width="130" height="130" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect x="-49.65" y="-27.06" width="130" height="22" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>folder</title>
+  <g clip-path="url(#clip-path-5)">
+    <text transform="translate(-24.83 -6.06)" font-size="18" fill="#555d6e" font-family="Inter-LightBETA, Inter">#FEC2CE</text>
+  </g>
+  <image width="556" height="300" transform="translate(-214.7 37.55) scale(0.5)" xlink:href="../../../../../Downloads/win98-icons-1.png"/>
+</svg>
