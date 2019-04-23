@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.5 151">
+  <title>computer</title>
+  <rect x="14.86" y="9.34" width="97.64" height="107.83" rx="6" ry="6" fill="#efcf3b" stroke="#000" stroke-miterlimit="10" stroke-width="6"/>
+  <path d="M20.14,117.16h87.07a0,0,0,0,1,0,0v13.68a6,6,0,0,1-6,6H26.14a6,6,0,0,1-6-6V117.16A0,0,0,0,1,20.14,117.16Z" fill="#efcf3b" stroke="#000" stroke-miterlimit="10" stroke-width="6"/>
+  <rect x="24.78" y="21.9" width="77.79" height="56.29" rx="5.29" ry="5.29" fill="#f7efdf" stroke="#000" stroke-miterlimit="10" stroke-width="6"/>
+  <line x1="24.78" y1="103.68" x2="32.13" y2="103.68" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="72.77" y1="99.28" x2="97.49" y2="99.28" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="53.13" y1="66.76" x2="68.71" y2="66.76" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="63.68" y1="36.57" x2="63.68" y2="52.54" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="57.19" y1="54.57" x2="63.68" y2="54.57" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="46.7" y1="36.57" x2="46.7" y2="44.56" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="75.14" y1="36.57" x2="75.14" y2="44.56" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="48.39" y1="63.25" x2="53.13" y2="63.25" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+  <line x1="68.71" y1="63.25" x2="73.45" y2="63.25" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="6"/>
+</svg>

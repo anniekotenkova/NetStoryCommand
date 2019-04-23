@@ -12,13 +12,13 @@ def create_folders
 
   icons = Folder.create(
     name: 'Справка',
-    icon: 'about.png',
+    icon: 'about.svg',
     partial_name: 'about'
   )
 
   computer = Folder.create(
     name: 'Мой компьютер',
-    icon: 'Komp.png',
+    icon: 'computer.svg',
     partial_name: 'window'
   )
 
@@ -51,7 +51,7 @@ def create_folders
       partial_name: 'matrix'
     }, {
       name: 'Корзина',
-      icon: 'Korzina.png',
+      icon: 'trash.svg',
       partial_name: 'trash'
     }
   ])
