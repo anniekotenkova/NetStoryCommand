@@ -4,9 +4,19 @@ $(function() {
 
   startTime()
 
-  $('#start').click(function() {
+  $('#start').click(function(e) {
+    e.preventDefault()
+    e.stopPropagation()
     $('#setting').toggle()
     $(this).toggleClass('startClick')
+  })
+
+  $('#setting').click( function(e) {
+    e.stopPropagation()
+  })
+
+  $('#Desktop').click( function(е) {
+    $('#setting').hide()
   })
 
   $('.settingDropdownButton').click(function() {
@@ -28,19 +38,21 @@ $(function() {
     document.querySelector('body').className = e.target.id;
   })
 
-  $('.colorsbtn').click(function() {
+  $('.colorsbtn').click(function(e) {
     $('.colorsChange').removeClass('hidden')
   })
 
-  $('.closeCardColor').click(function() {
+  $('.closeCardColor').click(function(e) {
+    e.stopPropagation()
     $('.colorsChange').addClass('hidden')
   })
 
-  $('.filtersbtn').click(function() {
+  $('.filtersbtn').click(function(e) {
     $('.filtersChange').removeClass('hidden')
   })
 
-  $('.closeCardFilter').click(function() {
+  $('.closeCardFilter').click(function(e) {
+    e.stopPropagation()
     $('.filtersChange').addClass('hidden')
   })
 
