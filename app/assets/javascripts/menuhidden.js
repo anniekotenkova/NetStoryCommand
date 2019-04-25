@@ -4,9 +4,19 @@ $(function() {
 
   startTime()
 
-  $('#start').click(function() {
+  $('#start').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
     $('#setting').toggle()
     $(this).toggleClass('startClick')
+  })
+
+  $('#setting').click( function(e) {
+    e.stopPropagation();
+  })
+  
+  $('#Desktop').click( function() {
+    $('#setting').hide();
   })
 
   $('.settingDropdownButton').click(function() {
