@@ -18,7 +18,7 @@ def create_folders
 
   computer = Folder.create(
     name: 'Мой компьютер',
-    icon: 'Komp.png',
+    icon: 'computer_icon.svg',
     partial_name: 'window'
   )
 
@@ -110,7 +110,7 @@ def create_articles
     }, {
       folder_name:  '1990',
       title:        'Браузерные войны',
-      pic:          'netscape_icon.png',
+      pic:          'netscape_icon.svg',
       partial_name: 'netscape'
     },{
       folder_name:  '2000',
