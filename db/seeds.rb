@@ -112,11 +112,16 @@ def create_articles
       title:        'Браузерные войны',
       pic:          'netscape_icon.svg',
       partial_name: 'netscape'
-    },{
+    }, {
       folder_name:  '2000',
       title:        'Википедия',
       pic:          'wiki_icon.svg',
       partial_name: 'wikipedia'
+    }, {
+      folder_name:  '2000',
+      title:        'Facebook',
+      pic:          'wiki_icon.svg',
+      partial_name: 'facebook'
     }
   ]
 
