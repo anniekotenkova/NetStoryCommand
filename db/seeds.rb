@@ -57,10 +57,6 @@ def create_folders
       name: 'Корзина',
       icon: 'trash.svg',
       partial_name: 'trash'
-    }, {
-      name: 'Credits',
-      icon: 'credits.svg',
-      partial_name: 'credits'
     }
   ])
 end
