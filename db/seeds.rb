@@ -46,7 +46,7 @@ def create_folders
   ])
 
   icons = Folder.create([{
-      name: 'Интернет',
+      name: 'Procrastinate Explorer',
       icon: 'internet.svg',
       partial_name: 'matrix'
     }, {
