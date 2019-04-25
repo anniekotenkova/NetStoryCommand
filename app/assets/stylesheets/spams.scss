@@ -11,6 +11,7 @@
     border: $default-border;
 
     .spamImg {
+      position: relative;
       box-sizing: border-box;
       width: 100%;
     }
@@ -26,7 +27,7 @@
 
   #alert2 {
     z-index: 100;
-    width: 17vw;
+    width: 240px;
     left: 208px;
     top: 331px;
   }
@@ -40,9 +41,14 @@
 
   #alert4 {
     z-index: 100;
-    width: 19vw;
+    width: 20vw;
+    height: 20vw;
     left: 34px;
     top: 87px;
+
+    img {
+      width: 100%;
+    }
   }
 
   #alert5 {
