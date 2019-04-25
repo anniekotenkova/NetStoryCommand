@@ -124,7 +124,7 @@ def create_articles
     }, {
       folder_name:  '2000',
       title:        'Facebook',
-      pic:          'wiki_icon.svg',
+      pic:          'facebook_icon.svg',
       partial_name: 'facebook'
     }
   ]
