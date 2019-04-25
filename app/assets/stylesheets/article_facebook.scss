@@ -1,0 +1,63 @@
+#facebookArticle {
+  width: 700px;
+  height: 580px;
+  background: #ffffff;
+  overflow-y: scroll;
+  line-height: 1.4rem;
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  td {
+    border: 0px;
+    color: #000000;
+    font-family: tahoma,arial,sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration: none;
+  }
+
+  table {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    text-align: start;
+    font-variant: normal;
+  }
+
+  .bottomBorder {
+    border-style: solid;
+    border-color: #3B5998;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  a {
+    color: #538ADC;
+    font-size: 11px;
+    font-weight: none;
+    font-family: tahoma,arial,sans-serif;
+    text-decoration: none;
+  }
+
+  .menu {
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: none;
+  font-family: tahoma,arial,sans-serif;
+  text-decoration: none;
+  }
+}

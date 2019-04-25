@@ -50,6 +50,10 @@ def create_folders
       icon: 'internet.svg',
       partial_name: 'matrix'
     }, {
+      name: 'О нас',
+      icon: 'credits.svg',
+      partial_name: 'credits'
+    }, {
       name: 'Корзина',
       icon: 'trash.svg',
       partial_name: 'trash'
@@ -116,11 +120,16 @@ def create_articles
       title:        'Браузерные войны',
       pic:          'netscape_icon.svg',
       partial_name: 'netscape'
-    },{
+    }, {
       folder_name:  '2000',
       title:        'Википедия',
       pic:          'wiki_icon.svg',
       partial_name: 'wikipedia'
+    }, {
+      folder_name:  '2000',
+      title:        'Facebook',
+      pic:          'wiki_icon.svg',
+      partial_name: 'facebook'
     }
   ]
 
