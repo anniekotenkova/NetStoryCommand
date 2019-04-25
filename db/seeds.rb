@@ -50,6 +50,10 @@ def create_folders
       icon: 'internet.svg',
       partial_name: 'matrix'
     }, {
+      name: 'О нас',
+      icon: 'credits.svg',
+      partial_name: 'credits'
+    }, {
       name: 'Корзина',
       icon: 'trash.svg',
       partial_name: 'trash'
