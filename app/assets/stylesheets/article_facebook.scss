@@ -31,7 +31,7 @@
 
     .menu {
       width: 150px;
-      height: 90px;
+      height: 127px;
       border: dashed 1px #3B5998;
       padding: 10px;
 
@@ -47,8 +47,9 @@
     .main {
       display: block;
       margin-left: 5px;
+      margin-bottom: 5px;
       width: 526px;
-      height: 700px;
+      height: 1400px;
       border-style: solid;
       border-width: 1px;
       border-color: #3B5998;
@@ -60,7 +61,7 @@
         color: #ffffff;
         padding-left: 3px;
 
-        p {
+        h2 {
           position: relative;
           font-size: 12px;
         }
@@ -118,18 +119,31 @@
 
       .facebookText {
         width: 500px;
-        height: 233px;
+        height: 1110px;
         border-style: solid;
         border-width: 1px;
         border-color: #3B5998;
         margin-left: 12px;
+        color: #000000;
 
         h1{
-          margin-top: 10px;
+          margin-top: 20px;
           font-weight: bold;
           text-align: center;
-          color: #000000;
         }
+
+        p, li {
+          margin: 10px;
+          font-size: 13px;
+          line-height: 15px;
+
+          li {
+            list-style-position: outside
+          }
+        }
+
+
+
       }
     }
   }
