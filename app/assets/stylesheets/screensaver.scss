@@ -1,0 +1,14 @@
+#screensaver {
+  position: absolute;
+  width: 100vw;
+  height:100vh;
+  display: none;
+  z-index:9999;
+
+  .y {
+    width: 100px;
+    height: 100px;
+    /* background-image: url(bubble.png); */
+    background-size: cover;
+  }
+}
