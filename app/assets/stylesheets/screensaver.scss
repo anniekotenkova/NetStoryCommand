@@ -4,45 +4,73 @@
   height: 100vh;
   display: none;
   z-index: 9999;
+  background-color: rgba(25, 85, 457, .5);
+
 
   .x {
+    display: flex;
+    justify-content: space-between;
     -webkit-animation: x 10s linear infinite alternate;
     animation: x 10s linear infinite alternate;
-  }
+}
 
-  .bubble_blue {
-    width: 200px;
-    height: 200px;
+  .bubbleBlue {
+    width: 250px;
+    height: 250px;
     background-size: cover;
     background-image: url("bubble_blue.png");
     -webkit-animation: y 7s linear infinite alternate;
-    animation: y 7s linear infinite alternate;
+    position: absolute;
+    left: 300px;
+    animation:
+    y 6s linear infinite alternate,
+    x 20s linear infinite alternate;
   }
 
-  .bubble_pink {
-    width: 200px;
-    height: 200px;
+  .bubblePink {
+    position: absolute;
+    width: 250px;
+    height: 250px;
     background-size: cover;
     background-image: url("bubble_pink.png");
-    -webkit-animation: y 5s linear infinite alternate;
-    animation: y 5s linear infinite alternate;
-    animation-delay: 5s;
-    position: absolute;
+    -webkit-animation: y 17s linear infinite alternate;
+    animation: y 17s linear infinite alternate;
     top: 100px;
-    left: 200px;
+    left: 500px;
   }
 
-  .bubble_yellow {
-    width: 200px;
-    height: 200px;
+  .bubbleYellow {
+    position: absolute;
+    width: 250px;
+    height: 250px;
     background-size: cover;
     background-image: url("bubble_yellow.png");
     -webkit-animation: y 9s linear infinite alternate;
     animation: y 9s linear infinite alternate;
-    animation-delay: 2s;
-    position: absolute;
     left: 100px;
   }
+
+  .bubbleBlueSecond {
+    position: absolute;
+    -webkit-animation: y 2s linear infinite alternate;
+    animation: y 2s linear infinite alternate;
+  }
+
+  .bubblePinkSecond {
+    position: absolute;
+    -webkit-animation: y 10s linear infinite alternate;
+    animation: y 10s linear infinite alternate;
+    animation-delay: 6s ease 2;
+  }
+
+  .bubbleYellowSecond {
+    position: absolute;
+    top: 300px;
+    -webkit-animation: y 4s linear infinite alternate;
+    animation: y 4s linear infinite alternate;
+    transition: all 1.5s linear;
+  }
+
   @-webkit-keyframes x {
     100% {
       -webkit-transform: translateX(calc(100vw - 100px));

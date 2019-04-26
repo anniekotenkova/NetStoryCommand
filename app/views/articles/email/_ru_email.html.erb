@@ -1,9 +1,3 @@
-<%# if I18n.locale == "ru" %>
-  <%#= render "articles/email/ru_email" %>
-<%# else %>
-  <%#= render "articles/email/en_email" %>
-<%# end %>
-
 <div id="<%= "article_#{ @article.id }" %>" class="articleContainer draggable">
   <div class="menuTop">
     <span class="folderTitle"><%= @article.title %></span>
