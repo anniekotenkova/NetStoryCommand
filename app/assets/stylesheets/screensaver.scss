@@ -1,14 +1,70 @@
 #screensaver {
   position: absolute;
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   display: none;
-  z-index:9999;
+  z-index: 9999;
 
-  .y {
-    width: 100px;
-    height: 100px;
-    /* background-image: url(bubble.png); */
+  .x {
+    -webkit-animation: x 10s linear infinite alternate;
+    animation: x 10s linear infinite alternate;
+  }
+
+  .bubble_blue {
+    width: 200px;
+    height: 200px;
     background-size: cover;
+    background-image: url("bubble_blue.png");
+    -webkit-animation: y 7s linear infinite alternate;
+    animation: y 7s linear infinite alternate;
+  }
+
+  .bubble_pink {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("bubble_pink.png");
+    -webkit-animation: y 5s linear infinite alternate;
+    animation: y 5s linear infinite alternate;
+    animation-delay: 5s;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+
+  .bubble_yellow {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("bubble_yellow.png");
+    -webkit-animation: y 9s linear infinite alternate;
+    animation: y 9s linear infinite alternate;
+    animation-delay: 2s;
+    position: absolute;
+    left: 100px;
+  }
+  @-webkit-keyframes x {
+    100% {
+      -webkit-transform: translateX(calc(100vw - 100px));
+      transform: translateX(calc(400vw - 100px));
+    }
+  }
+  @keyframes x {
+    100% {
+      -webkit-transform: translateX(calc(100vw - 100px));
+      transform: translateX(calc(100vw - 100px));
+    }
+  }
+  @-webkit-keyframes y {
+    100% {
+      -webkit-transform: translateY(calc(100vh - 100px));
+      transform: translateY(calc(100vh - 100px));
+    }
+  }
+  @keyframes y {
+    100% {
+      -webkit-transform: translateY(calc(100vh - 100px));
+      transform: translateY(calc(100vh - 100px));
+    }
   }
 }
