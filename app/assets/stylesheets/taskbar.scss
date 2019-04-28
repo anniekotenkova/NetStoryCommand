@@ -107,12 +107,15 @@
       display: flex;
       flex-direction: row;
       padding-right: 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 500;
 
       .localizationBlock{
-        @include border-color($border-medium, $border-light);
         display: flex;
+        @include border-color($border-medium, $border-light);
         padding: 3px;
         margin: 5px;
+
       }
       /* TIME AND DATE */
       .dateTime {
@@ -128,8 +131,6 @@
           color: black;
           height: 31px;
           width: 70px;
-          font-size: 0.7rem;
-          font-weight: 500;
         }
       }
     }
