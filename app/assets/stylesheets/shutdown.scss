@@ -6,16 +6,24 @@
   .pressRestart {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 20%;
     transform: translate(-50%, -50%);
     transform: translate(-50, -50);
     font-size: 50px;
     color: #ffffff;
-    animation-delay: 6s;
     cursor: $default-cursor;
+    background: #F0491F;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     &:hover {
       color: #F0491F;
+      background: #ffffff;
     }
 
   }
@@ -30,7 +38,7 @@
 
     &:after {
       content: '';
-      animation: shutdown 20s linear infinite;
+      animation: shutdown 23s linear infinite;
     }
 
     .end {
