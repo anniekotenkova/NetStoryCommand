@@ -56,6 +56,8 @@ en:
     start:
       update: "Update"
       wallaper: "Change wallaper"
+        color: "Background color"
       settings: "Screen settings"
+        filter: "Filter"
       off: "Shut down"
       sleep: "Sleep mode"

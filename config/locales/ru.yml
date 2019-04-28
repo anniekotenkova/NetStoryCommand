@@ -25,6 +25,8 @@ ru:
     start:
       update: "Обновление"
       wallaper: "Обои"
+        color: "Цвет фона"
       settings: "Настройки экрана"
+        filter: "Фильтр"
       off: "Выключение"
       sleep: "Спящий режим"
