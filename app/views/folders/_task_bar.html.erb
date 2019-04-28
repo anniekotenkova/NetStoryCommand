@@ -11,6 +11,14 @@
     <div class="taskbarElements">
     </div>
     <div class="iconsRight">
+      <div class="localizationBlock">
+        <% if I18n.locale == I18n.default_locale %>
+          <%= link_to "EN", { :locale=>'en' } %>
+        <% else %>
+          <%= link_to "RU", { :locale=>'ru' } %>
+        <%end%>
+      </div>
+
       <div class="dateTime">
         <span class="floatRight" id="clock"></span>
       </div>

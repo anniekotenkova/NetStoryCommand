@@ -104,12 +104,21 @@
     }
 
     .iconsRight {
-      float: right;
+      display: flex;
+      flex-direction: row;
       padding-right: 0.5rem;
+
+      .localizationBlock{
+        @include border-color($border-medium, $border-light);
+        display: flex;
+        padding: 3px;
+        margin: 5px;
+      }
       /* TIME AND DATE */
       .dateTime {
+        float: right;
         @include border-color($border-medium, $border-light);
-        display: inline-block;
+        display: flex;
         cursor: $default-cursor;
 
         #clock {
@@ -127,7 +136,7 @@
 
     .taskbarElements {
       margin: 0 15px;
-      width: 90%;
+      width: 80%;
       display: flex;
       flex-direction: row;
       align-items: center;
