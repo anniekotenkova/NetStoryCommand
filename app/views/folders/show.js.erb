@@ -62,38 +62,6 @@ $('#unknown').on('click', function() {
   })
 })
 
-//turning off
-
-$('.shutDown').on('click', function() {
-  console.log('hhh');
-  $('#body').addClass('.screen')
-  .to(SELECTOR_SCREEN_ELEMENT, .2, {
-      width: '100vw',
-      height: '2px',
-      background: '#ffffff',
-      ease: Power2.easeOut
-    })
-})
-
-  //   .to('.body', .2, {
-  //     width: '100vw',
-  //     height: '2px',
-  //     background: '#ffffff',
-  //     ease: Power2.easeOut
-  //   })
-  //   .to('.body', .2, {
-  //     width: '0',
-  //     height: '0',
-  //     background: '#ffffff'
-  //   });
-  // }
-
-
-  // Bindings
-  // $('.shutDown').on('click', function() {
-  //   toggleSwitcherTV();
-  // })
-
 
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
@@ -101,21 +69,21 @@ var spamLinks = document.querySelectorAll('[href="#spam"]'),
     spamContainer = document.querySelector('.spam');
 var i;
 var delay = 300,
-  called = false;
+  called = false
 
 $('.searchButton').on('click', function() {
   console.log();
   for (i = 0; i < spamWindows.length; i++) {
     var time = delay * i;
-    delayWindowOpen(spamWindows[i], time);
+    delayWindowOpen(spamWindows[i], time)
   }
-  $('.spam').removeClass('hidden');
+  $('.spam').removeClass('hidden')
 })
 
   function delayWindowOpen(el, time) {
     console.log(i);
     setTimeout(function() {
-      el.classList.remove('hidden');
+      el.classList.remove('hidden')
     }, time)
   }
 
@@ -123,52 +91,7 @@ spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
     called = false;
     for (i = 0; i < spamWindows.length; i++) {
-      spamWindows[i].classList.remove('.hidden');
+      spamWindows[i].classList.remove('.hidden')
     }
   }
 })
-
-var mousetimeout;
-var screensaver_active = false;
-var idletime = 5;
-
-function show_screensaver(){
-    $('#screensaver').fadeIn();
-    screensaver_active = true;
-    screensaver_animation();
-}
-
-function stop_screensaver(){
-    $('#screensaver').fadeOut();
-    screensaver_active = false;
-}
-
-function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.round(Math.random() * 15)];
-    }
-    return color;
-}
-
-$(document).mousemove(function(){
-    clearTimeout(mousetimeout);
-
-    if (screensaver_active) {
-        stop_screensaver();
-    }
-
-    mousetimeout = setTimeout(function(){
-        show_screensaver();
-    }, 1000 * idletime); // 5 secs
-});
-
-function screensaver_animation(){
-    if (screensaver_active) {
-        $('#screensaver').animate(
-            {backgroundColor: getRandomColor()},
-            400,
-            screensaver_animation);
-    }
-}

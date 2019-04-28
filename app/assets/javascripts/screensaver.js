@@ -1,7 +1,7 @@
 
 var mousetimeout;
 var screensaver_active = false;
-var idletime = 10;
+var idletime = 30;
 
 function show_screensaver(){
     $('#screensaver').fadeIn();

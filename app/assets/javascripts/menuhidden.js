@@ -56,4 +56,12 @@ $(function() {
     $('.filtersChange').addClass('hidden')
   })
 
+
+  //turning off
+
+  $('.shutDown').on('click', function(e) {
+    $('.screenBack').removeClass('hidden')
+    $('.screen').delay('4s').show()
+    $('.screen').toggleClass('shutdown')
+    })
 })
