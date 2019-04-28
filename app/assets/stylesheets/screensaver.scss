@@ -6,93 +6,139 @@
   z-index: 9999;
   background-color: rgba(25, 85, 457, .5);
 
-
-  .x {
+  .animation {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
-    -webkit-animation: x 10s linear infinite alternate;
-    animation: x 10s linear infinite alternate;
-}
 
-  .bubbleBlue {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-image: url("bubble_blue.png");
-    -webkit-animation: y 7s linear infinite alternate;
-    position: absolute;
-    left: 300px;
-    animation:
-    y 6s linear infinite alternate,
-    x 20s linear infinite alternate;
-  }
+    .x {
+      position: absolute;
 
-  .bubblePink {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-image: url("bubble_pink.png");
-    -webkit-animation: y 17s linear infinite alternate;
-    animation: y 17s linear infinite alternate;
-    top: 100px;
-    left: 500px;
-  }
+      .bubbleBlue {
+        -webkit-animation: x 7s linear infinite alternate;
+        animation: x 7s linear infinite alternate;
 
-  .bubbleYellow {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-image: url("bubble_yellow.png");
-    -webkit-animation: y 9s linear infinite alternate;
-    animation: y 9s linear infinite alternate;
-    left: 100px;
-  }
+        .y {
+          width: 250px;
+          height: 250px;
+          background-size: cover;
+          background-image: url("bubble_blue.png");
+          -webkit-animation: y 5s linear infinite alternate;
+          animation: y 5s linear infinite alternate;
+        }
+      }
 
-  .bubbleBlueSecond {
-    position: absolute;
-    -webkit-animation: y 2s linear infinite alternate;
-    animation: y 2s linear infinite alternate;
-  }
+      .bubbleBlueSecond {
+        -webkit-animation: x 5s linear infinite alternate;
+        animation: x 5s linear infinite alternate;
 
-  .bubblePinkSecond {
-    position: absolute;
-    -webkit-animation: y 10s linear infinite alternate;
-    animation: y 10s linear infinite alternate;
-    animation-delay: 6s ease 2;
-  }
+        .y {
+          -webkit-animation: y 2s linear infinite alternate;
+          animation: y 2s linear infinite alternate;
+        }
+      }
 
-  .bubbleYellowSecond {
-    position: absolute;
-    top: 300px;
-    -webkit-animation: y 4s linear infinite alternate;
-    animation: y 4s linear infinite alternate;
-    transition: all 1.5s linear;
-  }
+      .bubblePink {
+        top: 100px;
+        left: 500px;
+        -webkit-animation: x 12s linear infinite alternate;
+        animation: x 12s linear infinite alternate;
 
-  @-webkit-keyframes x {
-    100% {
-      -webkit-transform: translateX(calc(100vw - 100px));
-      transform: translateX(calc(400vw - 100px));
+        .y {
+          width: 250px;
+          height: 250px;
+          background-size: cover;
+          background-image: url("bubble_pink.png");
+          -webkit-animation: y 17s linear infinite alternate;
+          animation: y 17s linear infinite alternate;
+        }
+      }
+
+      .bubblePinkSecond {
+        -webkit-animation: x 8s linear infinite alternate;
+        animation: x 8s linear infinite alternate;
+        animation-delay: 6s ease 2;
+
+        .y {
+          -webkit-animation: y 10s linear infinite alternate;
+          animation: y 10s linear infinite alternate;
+        }
+      }
+
+      .bubbleYellow {
+        -webkit-animation: x 12s linear infinite alternate;
+        animation: x 12s linear infinite alternate;
+
+        .y {
+          width: 250px;
+          height: 250px;
+          background-size: cover;
+          background-image: url("bubble_yellow.png");
+          -webkit-animation: y 9s linear infinite alternate;
+          animation: y 9s linear infinite alternate;
+        }
+      }
+
+      .bubbleYellowSecond {
+        -webkit-animation: x 10s linear infinite alternate;
+        animation: x 10s linear infinite alternate;
+
+        .y {
+          -webkit-animation: y 4s linear infinite alternate;
+          animation: y 4s linear infinite alternate;
+        }
+      }
+
+      .bubbleGreen {
+        -webkit-animation: x 21s linear infinite alternate;
+        animation: x 21s linear infinite alternate;
+
+        .y {
+          width: 250px;
+          height: 250px;
+          background-size: cover;
+          background-image: url("bubble_green.png");
+          -webkit-animation: y 16s linear infinite alternate;
+          animation: y 16s linear infinite alternate;
+        }
+      }
+
+      .bubbleGreenSecond {
+        -webkit-animation: x 4s linear infinite alternate;
+        animation: x 4s linear infinite alternate;
+
+        .y {
+          -webkit-animation: y 13s linear infinite alternate;
+          animation: y 13s linear infinite alternate;
+        }
+      }
     }
-  }
-  @keyframes x {
-    100% {
-      -webkit-transform: translateX(calc(100vw - 100px));
-      transform: translateX(calc(100vw - 100px));
+
+
+    @-webkit-keyframes x {
+      100% {
+        -webkit-transform: translateX(calc(100vw - 100px));
+        transform: translateX(calc(400vw - 100px));
+      }
     }
-  }
-  @-webkit-keyframes y {
-    100% {
-      -webkit-transform: translateY(calc(100vh - 100px));
-      transform: translateY(calc(100vh - 100px));
+    @keyframes x {
+      100% {
+        -webkit-transform: translateX(calc(100vw - 100px));
+        transform: translateX(calc(100vw - 100px));
+      }
     }
-  }
-  @keyframes y {
-    100% {
-      -webkit-transform: translateY(calc(100vh - 100px));
-      transform: translateY(calc(100vh - 100px));
+    @-webkit-keyframes y {
+      100% {
+        -webkit-transform: translateY(calc(100vh - 100px));
+        transform: translateY(calc(100vh - 100px));
+      }
+    }
+    @keyframes y {
+      100% {
+        -webkit-transform: translateY(calc(100vh - 100px));
+        transform: translateY(calc(100vh - 100px));
+      }
     }
   }
 }
