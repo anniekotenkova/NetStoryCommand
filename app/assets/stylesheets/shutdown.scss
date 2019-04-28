@@ -3,7 +3,22 @@
   z-index: 100000;
   background: #000000;
 
+  .pressRestart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50, -50);
+    font-size: 50px;
+    color: #ffffff;
+    animation-delay: 6s;
+    cursor: $default-cursor;
 
+    &:hover {
+      color: #F0491F;
+    }
+
+  }
 
   .screen {
     z-index: 100001;
@@ -98,4 +113,7 @@
       opacity: 0.3;
     }
   }
+
+
+
 }

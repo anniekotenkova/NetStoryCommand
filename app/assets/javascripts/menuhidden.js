@@ -63,5 +63,8 @@ $(function() {
     $('.screenBack').removeClass('hidden')
     $('.screen').delay('4s').show()
     $('.screen').toggleClass('shutdown')
-    })
+  })
+  $('.pressRestart').on('click', function() {
+    location.reload(true)
+  })
 })
