@@ -67,4 +67,9 @@ $(function() {
   $('.pressRestart').on('click', function() {
     location.reload(true)
   })
+
+  //sleep mode
+  $('.logOut').on('click', function(e) {
+    $('.sleepMode').removeClass('hidden')
+  })
 })
