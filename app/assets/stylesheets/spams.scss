@@ -52,16 +52,15 @@
   }
 
   #alert5 {
-    width: 13vw;
     z-index: 100;
-    left: 938px;
-    top: -218px;
+    width: 400px;
+    height: 205px;
+    left: 702px;
+    top: 386px;
+
+    img {
+      width: 100%;
+    }
   }
 
-  #alert6 {
-    width: 13vw;
-    z-index: 100;
-    left: 1092px;
-    top: 290px;
-  }
 }
