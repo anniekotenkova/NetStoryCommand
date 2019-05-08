@@ -44,6 +44,16 @@ $(".contentInside .computerFolders").draggable({
   containment: ".contentInside",
 })
 
+//move to trash
+$( "#containerFolder_9" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+        // alert( "dropped" )
+        //   $('#containerFolder_2').hide()
+        $('.screenBack').removeClass('hidden')
+      }
+    })
+
 //close
 $('.closeBtn').on('click', function() {
   var id = $(this).parents('.folderContent').attr("id")
