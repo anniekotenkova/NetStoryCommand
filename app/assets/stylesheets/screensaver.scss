@@ -118,14 +118,14 @@
 
     @-webkit-keyframes x {
       100% {
-        -webkit-transform: translateX(calc(100vw - 100px));
-        transform: translateX(calc(400vw - 100px));
+        -webkit-transform: translateX(calc(100vw - 200px));
+        transform: translateX(calc(400vw - 200px));
       }
     }
     @keyframes x {
       100% {
-        -webkit-transform: translateX(calc(100vw - 100px));
-        transform: translateX(calc(100vw - 100px));
+        -webkit-transform: translateX(calc(100vw - 200px));
+        transform: translateX(calc(100vw - 200px));
       }
     }
     @-webkit-keyframes y {
