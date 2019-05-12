@@ -5,10 +5,18 @@
   background: #4696FC;
 
   .warningLine {
-    background: #FCD120;
+    /* background: #FCD120; */
     width: 100%;
     height: 20px;
-    /* как полоску сделать */
+    background-image: linear-gradient(
+    135deg,
+    #fcd120 33.33%,
+    #000000 33.33%,
+    #000000 50%,
+    #fcd120 50%,
+    #fcd120 83.33%,
+    #000000 83.33%, #000000 100%);
+    background-size: 21.21px 21.21px;
   }
 
   .date {

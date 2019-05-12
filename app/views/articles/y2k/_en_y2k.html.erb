@@ -1,0 +1,35 @@
+<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <div class="menuTop">
+    <span class="folderTitle"><%= @article.title %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="y2kArticle">
+    <div class="warningLine"></div>
+    <div class="date">
+      <div class="warning">
+        <p>23:59:59</p>
+        <p>Dec 31 1999</p>
+        <div class="blind"></div>
+      </div>
+      <div class="milenium">
+        <p>00:00:01</p>
+        <p>Jan 1 1900</p>
+      </div>
+    </div>
+    <div class="text">
+      <p>In the 60’s, computers were limited. English-like processing made things easier, but it also had to abstract away some of the complexity and conserve vital bytes of memory wherever possible. The designers of COBOL made a deliberate, and potentially short-sighted decision. Instead of representing dates in a four digit notation (i.e. 1960), they would lop off the “19” and convert all years to two digits (i.e. 60). That might seem like an unnecessary micro-optimization but at the time, literally every byte counted and dates were used constantly in code.</p>
+      <p>Forty years later, the millennium was ending. Computers running languages like COBOL were faced with a pretty serious issue. At the turn of the millennium the year would register as a double zero, 00, instead of 2000. In general, computers don’t like when you feed them a zero when they are expecting a date. For some systems, it was enough to trigger a failure.</p>
+      <p>Programmers, smart ones at least, had known about the issue all along. Eventually, the problem would catch up with us as all. But as the millennium entered its final decade, most systems were still saddled with the old code. Meanwhile, the world had become much more dependent on technology, and networks and, of course, the World Wide Web. Banking, power plants, electrical grids, the stock market, it all depended on networked computers, most of them running legacy COBOL code. The theory was that it just took one. If just one of these essential cogs were to fail because of Y2K, it could pull everything else down with it. And this theory didn’t even account for an entirely different problem with «embedded systems», small bits of software running old code in everything from household microwaves to medical equipment like pacemakers.</p>
+      <div class="nameMeaning">The abbreviation combines the letter Y for "year", and k for the SI unit prefix kilo meaning 1000</div>
+      <p>The solution, it turned out, was fairly simple. Each line of code had to be updated in all that COBOL code, one by one, to include the full date notation. But simple doesn’t mean easy. Systems are, by design, interconnected. So every bit of potentially dangerous code, the whole world round, would have to be updated before the year 2000. Yet a concerted effort to fix Y2K didn’t truly get started until the mid to late 90’s.</p>
+      <div class="timeCover"></div>
+      <p>As a reaction to this monumental task, a small group of people in the technology field decided to completely lose their minds. They panicked, claiming that there was not enough time to get the work done and spread the news that the end of the world was indeed nigh. A newsgroup message board created in the fall of 1996 to discuss potential solutions to the Y2K problem quickly transformed into a survivalist outreach board. Users posted their plans to move out of the country, stock up on supplies, and hunker down to wait things out. Experienced programmers, people who had worked for the field for decades, were all of a sudden reaching out to any press outlets that would run a story to tell them all about their new plans to build a shelter, forage for food, and tan the hides of bears.</p>
+      <p>This group, and they weren’t even a majority of programmers, acted as a lightning rod for worldwide hysteria. If the computer scientists were worried, the reasoning went, shouldn’t we be too? Is anybody going to be able to fix this? Soon, others began to embrace the survivalist trend. In some circles, the end of the world was treated as a foregone conclusion.</p>
+      <p>When the clock did finally strike midnight on January 1, 2000 most people weren’t even paying attention to Y2K. Those taking shelter in their bunkers were probably the first to learn that, in fact, just about nothing went wrong. An alarm was triggered here, a bus ticketing machine stopped working there. But aside from a few minuscule and isolated incidents, everything was just fine.</p>
+      <p>To this day, we have no idea if the fears were mostly unfounded to begin with or if the collaborative effort spearheaded by programmers around the world reversed potential damage. We may never know. We do know the worst never happened. Governments and corporations and network admins had avoided disaster. And sometimes, when we’re so focused on the problems we think are inevitable we miss an entirely different kind of trouble.</p>
+    </div>
+    <div class="warningLine"></div>
+  </div>
+</div>
