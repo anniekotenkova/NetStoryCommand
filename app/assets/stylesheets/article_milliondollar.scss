@@ -4,14 +4,12 @@
   overflow-y: scroll;
   line-height: 1.4rem;
   color: #000000;
+  background-image: url("articles/milliondollar/Million Dollar.png");
+  background-size: contain;
 
-
-  .background {
-    background-image: url("articles/milliondollar/Million Dollar.png");
-    height: 1180px;
 
     .text {
-      margin: 0 75px 50px 40px;
+      margin: 590px 50px 50px 50px;
       padding: 20px;
       background-color: #ffffff;
 
@@ -34,11 +32,4 @@
         }
       }
     }
-  }
-
-
-
-  #100WidthPic {
-    width: 100%;
-  }
 }
