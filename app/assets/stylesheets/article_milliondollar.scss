@@ -1,6 +1,6 @@
 #millionDollarArticle {
   width: 700px;
-  height: 700px;
+  height: 685px;
   overflow-y: scroll;
   line-height: 1.4rem;
   color: #000000;
@@ -8,9 +8,10 @@
 
   .background {
     background-image: url("articles/milliondollar/Million Dollar.png");
+    height: 1180px;
 
     .text {
-      margin: 0 75px 50px 75px;
+      margin: 0 75px 50px 40px;
       padding: 20px;
       background-color: #ffffff;
 
