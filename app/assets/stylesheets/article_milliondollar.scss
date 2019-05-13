@@ -1,0 +1,43 @@
+#millionDollarArticle {
+  width: 700px;
+  height: 700px;
+  overflow-y: scroll;
+  line-height: 1.4rem;
+  color: #000000;
+
+
+  .background {
+    background-image: url("articles/milliondollar/Million Dollar.png");
+
+    .text {
+      margin: 0 75px 50px 75px;
+      padding: 20px;
+      background-color: #ffffff;
+
+      h2 {
+        font-size: 27pt;
+        font-weight: bold;
+        color: #575756;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        font-size: 12pt;
+        font-weight: normal;
+        color: #000000;
+        margin-top: 40px;
+
+        a {
+          color: #4696FC;
+        }
+      }
+    }
+  }
+
+
+
+  #100WidthPic {
+    width: 100%;
+  }
+}

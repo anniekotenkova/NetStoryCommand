@@ -72,87 +72,93 @@ end
 
 def create_articles
   articles = [{
-      folder_name:  '1970',
-      folder_name_en:  '1970',
-      title:        'Первая почта',
-      pic:          'mail_icon.svg',
-      partial_name: 'email'
+      folder_name:    '1970',
+      folder_name_en: '1970',
+      title:          'Первая почта',
+      pic:            'mail_icon.svg',
+      partial_name:   'email'
     },
     {
-      folder_name:  '1980',
-      folder_name_en:  '1980',
-      title:        'WWW',
-      pic:          'www_icon.svg',
-      partial_name: 'www'
+      folder_name:    '1980',
+      folder_name_en: '1980',
+      title:          'WWW',
+      pic:            'www_icon.svg',
+      partial_name:   'www'
     },
     {
-      folder_name:  '1980',
-      folder_name_en:  '1980',
-      title:        'NSFNET',
-      pic:          'nsfnet_icon.svg',
-      partial_name: 'nsfnet'
+      folder_name:    '1980',
+      folder_name_en: '1980',
+      title:          'NSFNET',
+      pic:            'nsfnet_icon.svg',
+      partial_name:   'nsfnet'
     },
     {
-      folder_name:  '1980',
-      folder_name_en:  '1980',
-      title:        'Синий экран смерти',
-      pic:          'blue_screen_icon.svg',
-      partial_name: 'blue_screen'
+      folder_name:    '1980',
+      folder_name_en: '1980',
+      title:          'Синий экран смерти',
+      pic:            'blue_screen_icon.svg',
+      partial_name:   'blue_screen'
     },
     {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'Ошибка 404',
-      pic:          'notfound_icon.svg',
-      partial_name: 'error404'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'Ошибка 404',
+      pic:            'notfound_icon.svg',
+      partial_name:   'error404'
     }, {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'Первый браузер',
-      pic:          'erwise_icon.svg',
-      partial_name: 'firstbrowser'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'Первый браузер',
+      pic:            'erwise_icon.svg',
+      partial_name:   'firstbrowser'
     }, {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'Первый лендинг',
-      pic:          'att_icon.svg',
-      partial_name: 'firstlanding'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'Первый лендинг',
+      pic:            'att_icon.svg',
+      partial_name:   'firstlanding'
     }, {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'Друзья',
-      pic:          'friends_icon.svg',
-      partial_name: 'friends'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'Друзья',
+      pic:            'friends_icon.svg',
+      partial_name:   'friends'
     }, {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'TheGlobe',
-      pic:          'theglobe_icon.svg',
-      partial_name: 'the_globe'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'TheGlobe',
+      pic:            'theglobe_icon.svg',
+      partial_name:   'the_globe'
     }, {
-      folder_name:  '1990',
-      folder_name_en:  '1990',
-      title:        'Браузерные войны',
-      pic:          'netscape_icon.svg',
-      partial_name: 'netscape'
+      folder_name:    '1990',
+      folder_name_en: '1990',
+      title:          'Браузерные войны',
+      pic:            'netscape_icon.svg',
+      partial_name:   'netscape'
     }, {
-      folder_name:  '2000',
-      folder_name_en:  '2000',
-      title:        'Википедия',
-      pic:          'wiki_icon.svg',
-      partial_name: 'wikipedia'
+      folder_name:    '2000',
+      folder_name_en: '2000',
+      title:          'Википедия',
+      pic:            'wiki_icon.svg',
+      partial_name:   'wikipedia'
     }, {
-      folder_name:  '2000',
-      folder_name_en:  '2000',
-      title:        'Facebook',
-      pic:          'facebook_icon.svg',
-      partial_name: 'facebook'
+      folder_name:    '2000',
+      folder_name_en: '2000',
+      title:          'Facebook',
+      pic:            'facebook_icon.svg',
+      partial_name:   'facebook'
     }, {
-      folder_name:  '2000',
-      folder_name_en:  '2000',
-      title:        'Y2K',
-      pic:          'y2k_icon.svg',
-      partial_name: 'y2k'
+      folder_name:    '2000',
+      folder_name_en: '2000',
+      title:          'Y2K',
+      pic:            'y2k_icon.svg',
+      partial_name:   'y2k'
+    }, {
+      folder_name:    '2000',
+      folder_name_en: '2000',
+      title:          'Million Dollar Page',
+      pic:            'facebook_icon.svg',
+      partial_name:   'million_dollar'
     }
   ]
 
