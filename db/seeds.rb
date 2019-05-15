@@ -159,6 +159,12 @@ def create_articles
       title:          'Million Dollar Page',
       pic:            'facebook_icon.svg',
       partial_name:   'million_dollar'
+    }, {
+      folder_name:    '2000',
+      folder_name_en: '2000',
+      title:          'YouTube',
+      pic:            'facebook_icon.svg',
+      partial_name:   'youtube'
     }
   ]
 
