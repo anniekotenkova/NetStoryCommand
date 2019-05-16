@@ -1,0 +1,35 @@
+<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <div class="menuTop">
+    <span class="folderTitle"><%= @article.title %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="blueScreenArticle">
+    <h1>
+      STOP ERROR
+    </h1>
+    <div class="blueLine">
+        <p>0x0000007B INACCESSIBLE_BOOT_DEVICE</p>
+        <p>WARNING YOU_ARE_FACED_WITH_BLUE_SCREEN_OF_DEATH</p>
+        <p>EVERYTHING_CAN_BE_OK</p>
+        <div class="class="dots"">
+          <p>................................</p>
+        </div>
+        <p>The blue screen of death is one of the iconic parts of the operating system Window. This is a message about a serious system error or about a system crash.</p>
+        <p>Its emergence may be caused by poorly written device drivers or faulty hardware, such as faulty memory, power problems, overheating of components, or hardware beyond its specification.</p>
+        <p>For the first time this error appeared in 1987 in the first version of windows, Windows 1.01, but the usual form of the error for us acquired in the NT version of Windows. The screen displays an error and offers some ways to solve it, but there is no guarantee of data retention.</p>
+        <p>Who created this frightening people of the 90s and 2000s message? In 2014, a lot of media publications released articles on the blue screen, they attributed it to the creation of Steve Balmer, the CEO of Windows at the time, but it was a mistake. The real creator was Raymond Chen, who also created a view of the screen "Ctrl + Alt + Del", later the mistake was corrected.</p>
+        <p>The text on the error screen contains the error code and its symbolic name (for example,  "0x0000001E, KMODE_EXCEPTION_NOT_HANDLED ") along with four error-dependent values in parentheses that help the software engineers to resolve the problem. Depending on the error code, it may display the address, where the problem occurred or the driver, downloaded to that address.</p>
+        <p>In Windows NT, the second and third parts of the screen may contain information about all loaded drivers and stack dumps, respectively.</p>
+        <div class="blueScreenTable">
+          <p>Information about the driver in three columns; the first list shows the base address of the driver...</p>
+          <p>in the second - the date of the driver creation (as a Unix timestamp)...</p>
+          <p>and in the third - the driver’s name.</p>
+        </div>
+        <p>As much as Microsoft would not want to, till this day the blue screen of death remains a symbol of Windows. This inspired perhaps to the biggest office joke of all time: a desktop screensaver with a blue screen of death.</p>
+        <p>*** NTOSKRNL.EXE — Address 80000003 base at 80000000, DateStamp 46198139 </p>
+        <p>*** NTOSKRNL.EXE — Address 8000Bc62 base at 80000000, DateStamp 46198139</p>
+      </div>
+      </div>
+</div>
