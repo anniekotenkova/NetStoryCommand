@@ -1,0 +1,23 @@
+<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <div class="menuTop">
+    <span class="folderTitle"><%= @article.title %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="errorArticle">
+    <div class="t" data-article="1">
+    <h1>
+      Error: 404 Not Found
+    </h1>
+    <div class="line"></div>
+      <div class="text">
+        <p>The requested URL/page.html was not found on this server</p>
+        <p>Before the modern Internet became worldwide, the network was not global. Modern protocols, which are used in it, invented in the 1980s and 90s in CERN. Tim Berners-Lee, the inventor of HTTP, the most famous of them, created it based on the FTP file protocol. Tim Berners-Lee, the inventor of HTTP, the most famous of them, created it based on the FTP file protocol. Berners-Lee also invented URI, URL, HTML and, of course, WWW in general — abbreviations familiar to any experienced Internet user.</p>
+        <p>The version of HTTP 0.9, which appeared in 1992, included codes consisting of three digits. The first one denoted the message type: 1-Information, 2-success, 3-redirection, 4-Client error, 5-server error. The second digit denoted a sub-group of messages, and the third was a specific message in that group. Codes like 200 ("good") and 304 ("not changed") we never see, because instead of these numbers browsers display the contents of pages. But the error 404 ("Not Found") is well known to everyone. Any user, who incorrectly typed the address of the page in the browser line or clicked on a link to a nonexistent page, has faced it.</p>
+        <p>Error 404 is connected with urban legend. Supposedly at the time in the CERN Office on the fourth floor there was a room 404, where there was a central server. There were several people who were manually processing the incoming requests. If the request was incorrect, this message appeared: "Room 404: File Not Found". And although it is only a legend, it has already entered the Internet folklore, and the error 404 became a part of popular culture and slang, the field for the humor of web-designers and a symbol of charity.</p>
+        <p class="quote">«As a person who worked in CERN, I will tell you that there were no rooms 404 on the fourth floor of the office. In CERN rooms are numbered differently: the first digit denotes the number of the building, and the other two - the room number. But in the building number 4 there is no room 04, the count begins with 410 and goes up - do not ask me why». c. Tim Berners-Lee</p>
+      </div>
+    </div>
+  </div>
+</div>

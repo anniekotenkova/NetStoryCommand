@@ -1,49 +1,5 @@
-<%# if I18n.locale == "ru" %>
-  <%#= render "articles/email/ru_email" %>
-<%# else %>
-  <%#= render "articles/email/en_email" %>
-<%# end %>
-
-<div id="<%= "article_#{ @article.id }" %>" class="articleContainer draggable">
-  <div class="menuTop">
-    <span class="folderTitle"><%= @article.title %></span>
-    <div class="closeBtn">
-      <%= image_tag 'x.svg' %>
-    </div>
-  </div>
-  <div id="mailArticle">
-    <div class="rectangle">
-      <div class="topHeader">
-        <h1>Electronic Mail Mailbox</h1>
-        <h1>&lt;12,040&gt; NEW ELECTRONIC MAIL MESSAGES</h1>
-      </div>
-
-      <div class="messages">
-        <p>[] from: Ray Tomlinson >> "something like QWERTYUIOP."</p>
-        <p>[] to: Ray Tomlinson >> "It’s the first e-mail in the world"
-        </p>
-        <p>[] from: Ray Tomlinson >> "Рэй Томлинсон отправил первое сетевое сообщение в 1971 году"</p>
-        <p>[] to: Ray Tomlinson >> "Подобно первому телеграфному или телефонному звонку, первое электронное письмо ознаменовало исторический момент в эволюции коммуникации."
-        </p>
-        <p>[] from: Ray Tomlinson >> "Это электронное письмо было просто тестовым сообщением самому себе."</p>
-        <p>[] to: Ray Tomlinson >> "Оно было отправлено с одного компьютера на другой, стоявший рядом с ним в Кембридже, штат Массачусетс, через ARPANET, сеть компьютеров, которая была предшественником Интернета."
-        </p>
-        <p>[] from: Ray Tomlinson >> "Работая на Болта Беранека и Ньюмана (компанию, выбранную Министерством обороны США для создания ARPANET), Томлинсон дурачился с двумя программами под названием SNDMSG и READMAIL, которые позволяли пользователям оставлять
-                сообщения друг для друга на одной машине."</p>
-        <p>[] to: Ray Tomlinson >> "Он применил идею этих программ к третьей программе под названием CYPNET, которая позволяла пользователям отправлять и получать файлы между компьютерами."
-        </p>
-        <p>[] from: Ray Tomlinson >> "Комбинированная технология позволяет людям отправлять и получать файлы, которые могут быть добавлены между разными компьютерами."</p>
-        <p>[] to: Ray Tomlinson >> "Несмотря на его новаторский успех с электронной почтой, Томлинсон более известен введением знака собаки "@" в качестве локатора в адресах электронной почты."
-        </p>
-      </div>
-
-      <div class="bottomHeader">
-        <h1>Open</h1>
-        <h1>New</h1>
-        <h1>Mark as delicious meat</h1>
-        <h1 class="date">1971-09-16T23:59:58.75</h1>
-      </div>
-
-    </div>
-  </div>
-</div>
+<% if I18n.locale == "ru" %>
+  <%= render "articles/email/ru_email" %>
+<% else %>
+  <%= render "articles/email/en_email" %>
+<% end %>
