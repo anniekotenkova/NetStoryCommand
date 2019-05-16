@@ -1,0 +1,68 @@
+.updateOS {
+  position: absolute;
+  left: 27vw;
+  top: 50vh;
+  z-index: 2;
+  width: 550px;
+  height: 320px;
+  border: $default-border;
+  box-shadow: $default-box-shadow;
+  background: #ffffff;
+
+  .closeBtnInactive {
+    position: relative !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: #C1C1BF;
+    border-right: $default-border;
+    border-top: $default-border;
+    border-bottom: $default-border;
+    cursor: $default-cursor !important;
+
+    img {
+      width: 21px;
+      height: 21px;
+      margin: 0 auto;
+    }
+  }
+
+  .infolderContent {
+    h3 {
+      color: #000;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bar {
+      width: 480px;
+      height: 25px;
+      background: green;
+    }
+
+    .cancel {
+      padding: 0.8rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: default;
+      background: #D8D8D8;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 35px;
+      border-top: 2px solid white;
+      border-right: 2px solid #222;
+      border-bottom: 2px solid #222;
+      border-left: 2px solid white;
+      color: #000000;
+    }
+  }
+}

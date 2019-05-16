@@ -38,6 +38,10 @@ $(function() {
     document.querySelector('body').className = e.target.id;
   })
 
+  $('.update').click(function(e) {
+    $('.updateOS').removeClass('hidden')
+  })
+
   $('.colorsbtn').click(function(e) {
     $('.colorsChange').removeClass('hidden')
   })
