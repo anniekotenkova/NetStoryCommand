@@ -52,10 +52,16 @@
     }
 
     .remaining {
+      display: flex;
       color: #000000;
       position: relative;
-      bottom: 35px;
+      bottom: 33px;
       font-size: 12px;
+
+      .bold {
+        font-weight: bold;
+        margin-right: 5px;
+      }
     }
 
     .bar {
