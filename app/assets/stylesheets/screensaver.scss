@@ -130,14 +130,14 @@
     }
     @-webkit-keyframes y {
       100% {
-        -webkit-transform: translateY(calc(100vh - 100px));
-        transform: translateY(calc(100vh - 100px));
+        -webkit-transform: translateY(calc(100vh - 200px));
+        transform: translateY(calc(100vh - 200px));
       }
     }
     @keyframes y {
       100% {
-        -webkit-transform: translateY(calc(100vh - 100px));
-        transform: translateY(calc(100vh - 100px));
+        -webkit-transform: translateY(calc(100vh - 200px));
+        transform: translateY(calc(100vh - 200px));
       }
     }
   }
