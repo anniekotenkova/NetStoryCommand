@@ -7,7 +7,10 @@
   height: 320px;
   border: $default-border;
   box-shadow: $default-box-shadow;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: #D8D8D8;
+
+
 
   .closeBtnInactive {
     position: relative !important;
@@ -33,6 +36,13 @@
   }
 
   .infolderContent {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+
     h3 {
       color: #000;
       font-size: 1rem;
@@ -41,17 +51,37 @@
       margin-bottom: 0.5rem;
     }
 
+    .remaining {
+      color: #000000;
+      position: relative;
+      bottom: 35px;
+      font-size: 12px;
+    }
+
     .bar {
       width: 480px;
       height: 25px;
-      background: green;
+      border-top: 2px solid #666;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      border-left: 2px solid #666;
+      display: flex;
+
+      .downloaded {
+        width: 25%;
+        height: auto;
+        background: blue;
+      }
     }
 
     .cancel {
+      position: relative;
+      left: 80%;
       padding: 0.8rem;
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
       cursor: default;
       background: #D8D8D8;
       background-size: contain;
