@@ -1,7 +1,7 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
   <div id="theGlobe">
     <div class="menuTop">
-      <span class="folderTitle"><%= @article.title %></span>
+      <span class="folderTitle"><%= I18n.locale == :ru ? @article.title : @article.title_en %></span>
       <div class="closeBtn">
         <%= image_tag 'x.svg' %>
       </div>

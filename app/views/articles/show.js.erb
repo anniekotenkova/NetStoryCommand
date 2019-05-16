@@ -7,7 +7,7 @@ console.log(layer)
 if($('.articleContainer' + articleId).length == 0) {
 $('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>')
 $('.taskbarElements').append('<%= j render "folders/task_bar_article" %>')
-$('.taskbarItems' + articleId).append('<p><%= @article.title %></p>')
+$('.taskbarItems' + articleId).append('<p><%= I18n.locale == :ru ? @article.title : @article.title_en %></p>')
 $('.articleContainer' + articleId).css("z-index", layer)
 document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 }
