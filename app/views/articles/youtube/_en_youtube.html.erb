@@ -1,0 +1,37 @@
+<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <div class="menuTop">
+    <span class="folderTitle"><%= @article.title %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="youtubeArticle">
+    <div class="blueMenu">
+      <div class="youtubeMenu">
+        <a href="#" class="home">Home</a>
+        <td>|</td>
+        <a href="#">My Videos</a>
+        <td>|</td>
+        <a href="#">My Favorites</a>
+        <td>|</td>
+        <a href="#">My Messages</a>
+        <td>|</td>
+        <a href="#">My Profile</a>
+      </div>
+      <div class="helpMenu">
+        <a href="#">Sign Up</a>
+        <td>|</td>
+        <a href="#">Log In</a>
+        <td>|</td>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="youtubeLogoBlock">
+      <div class="youtubeLogo">
+        <%= image_tag 'articles/youtube/logo_of_youtube.svg' %>
+        <p>Your Digital Video Repository</p>
+      </div>
+    </div>
+
+  </div>
+</div>
