@@ -1,5 +1,5 @@
 <div class="menuTop">
-  <span class="folderTitle"><%= @folder.name %></span>
+  <span class="folderTitle"><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></span>
   <div class="closeBtn">
     <%= image_tag 'x.svg' %>
   </div>

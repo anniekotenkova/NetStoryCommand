@@ -4,10 +4,9 @@
       <%= link_to folder_path(folder), class: 'projectListItem', id: 'folderFolder', remote: true do %>
         <span class="articleIcon" data-title="Папка">
           <%= image_tag folder.icon %>
-          <div><%#= folder.name %>
+          <div>
             <%= I18n.locale == :ru ? folder.name : folder.name_en %>
           </div>
-          <%#= I18n.locale == "ru" ? folder.name : folder.name_en %>
         </span>
       <% end %>
     </div>
