@@ -118,26 +118,26 @@
 
     @-webkit-keyframes x {
       100% {
-        -webkit-transform: translateX(calc(100vw - 200px));
-        transform: translateX(calc(400vw - 200px));
+        -webkit-transform: translateX(calc(100vw - 250px));
+        transform: translateX(calc(400vw - 250px));
       }
     }
     @keyframes x {
       100% {
-        -webkit-transform: translateX(calc(100vw - 200px));
-        transform: translateX(calc(100vw - 200px));
+        -webkit-transform: translateX(calc(100vw - 250px));
+        transform: translateX(calc(100vw - 250px));
       }
     }
     @-webkit-keyframes y {
       100% {
-        -webkit-transform: translateY(calc(100vh - 200px));
-        transform: translateY(calc(100vh - 200px));
+        -webkit-transform: translateY(calc(100vh - 250px));
+        transform: translateY(calc(100vh - 250px));
       }
     }
     @keyframes y {
       100% {
-        -webkit-transform: translateY(calc(100vh - 200px));
-        transform: translateY(calc(100vh - 200px));
+        -webkit-transform: translateY(calc(100vh - 250px));
+        transform: translateY(calc(100vh - 250px));
       }
     }
   }
