@@ -1,26 +1,28 @@
 <section id="body">
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-    <div id="Desktop">
-      <div class="folderContainer" style="position:absolute"></div>
-      <div class="computerContainer"></div>
-      <div class="folderArticles" style="position:absolute"></div>
+  <div id="Desktop">
+    <div class="folderContainer" style="position:absolute"></div>
+    <div class="computerContainer"></div>
+    <div class="folderArticles" style="position:absolute"></div>
+    <audio id="clickSound">
+      <source src="assets/sounds/start.ogg">
+    </audio>
 
+    <%= render @folders %>
 
-      <%= render @folders %>
-
-      <%= render "task_bar" %>
-      <%= render "articles/preview" %>
-      <%= render "settings" %>
-      <%= render "welcome_alert"%>
-      <%= render "nodata"%>
-      <%= render "colors"%>
-      <%= render "filters"%>
-      <%= render "screensaver"%>
-      <%= render "shutdown"%>
-      <%= render "sleep_mode"%>
-      <%= render "update"%>
-    </div>
+    <%= render "task_bar" %>
+    <%= render "articles/preview" %>
+    <%= render "settings" %>
+    <%= render "welcome_alert"%>
+    <%= render "nodata"%>
+    <%= render "colors"%>
+    <%= render "filters"%>
+    <%= render "screensaver"%>
+    <%= render "shutdown"%>
+    <%= render "sleep_mode"%>
+    <%= render "update"%>
+  </div>
 </section>

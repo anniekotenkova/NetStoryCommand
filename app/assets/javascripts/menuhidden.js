@@ -2,6 +2,8 @@ $(function() {
   var dropDown = document.querySelector('.settingDropdown'),
   dropDownButton = document.querySelector('.settingDropdownButton')
 
+  var clicked = document.getElementById("clickSound")
+
   startTime()
 
   $('#start').click(function(e) {
@@ -9,6 +11,7 @@ $(function() {
     e.stopPropagation()
     $('#setting').toggle()
     $(this).toggleClass('startClick')
+    clicked.play()
   })
 
   $('#setting').click( function(e) {

@@ -23,7 +23,7 @@ class FoldersController < ApplicationController
     #@my_computer_folder = Folder.find_by_name('Мой компьютер')
 
     respond_to do |format|
-      #format.html
+      format.html
       format.js
     end
   end

@@ -62,9 +62,32 @@
         font-weight: bold;
         margin-right: 5px;
       }
+
+      .stable {
+        left: 66px;
+      }
+
+      .firstSecond {
+        position: absolute;
+        left: 208px;
+      }
+      .secondSecond {
+        position: absolute;
+        left: 208px;
+        background: #d8d8d8;
+        animation: blink 1.2s steps(7, start) infinite;
+        animation-delay: 2s;
+
+        @keyframes blink {
+          to {
+            visibility: hidden;
+          }
+        }
+      }
     }
 
     .bar {
+      position: relative;
       width: 480px;
       height: 25px;
       border-top: 2px solid #666;
@@ -72,11 +95,49 @@
       border-bottom: 2px solid white;
       border-left: 2px solid #666;
       display: flex;
+      overflow: hidden;
 
       .downloaded {
-        width: 25%;
+        width: 40%;
         height: auto;
         background: blue;
+      }
+
+      .shine {
+        position: absolute;
+        left: -450px;
+        width: 380px;
+        height: 21px;
+        opacity: .4;
+        border-radius: 40%;
+        background: linear-gradient(
+        135deg,
+        rgba(216, 216, 216, 0.3) 10%,
+        rgba(255, 255, 255, .8) 10%,
+        rgba(216, 216, 216, 0.3) 20%,
+        rgba(255, 255, 255, .8) 20%,
+        rgba(216, 216, 216, 0.3) 30%,
+        rgba(255, 255, 255, .8) 30%,
+        rgba(216, 216, 216, 0.3) 40%,
+        rgba(255, 255, 255, .8) 40%,
+        rgba(216, 216, 216, 0.3) 50%,
+        rgba(255, 255, 255, .8) 50%,
+        rgba(216, 216, 216, 0.3) 60%,
+        rgba(255, 255, 255, .8) 60%,
+        rgba(216, 216, 216, 0.3) 70%,
+        rgba(255, 255, 255, .8) 70%,
+        rgba(216, 216, 216, 0.3) 80%,
+        rgba(255, 255, 255, .8) 80%,
+        rgba(216, 216, 216, 0.3) 90%,
+        rgba(255, 255, 255, .8) 90%,
+        rgba(216, 216, 216, .1) 100%);
+        animation: move infinite;
+        animation-duration: 9s;
+
+        @keyframes move {
+        from { transform : translateX(0) }
+        to   { transform : translateX(930px) }
+        }
       }
     }
 

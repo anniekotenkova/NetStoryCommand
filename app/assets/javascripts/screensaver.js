@@ -14,15 +14,6 @@ function stop_screensaver(){
     screensaver_active = false;
 }
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.round(Math.random() * 15)];
-    }
-    return color;
-}
-
 $(document).mousemove(function(){
     clearTimeout(mousetimeout);
 
@@ -38,8 +29,6 @@ $(document).mousemove(function(){
 function screensaver_animation(){
     if (screensaver_active) {
         $('#screensaver').animate(
-            {backgroundColor: getRandomColor()},
-            400,
             screensaver_animation);
     }
 }
