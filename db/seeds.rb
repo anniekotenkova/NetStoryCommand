@@ -164,7 +164,7 @@ def create_articles
       folder_name_en: '2000',
       title:          'Y2K',
       title_en:       'Y2K',
-      pic:            'y2k_icon.svg',
+      pic:            'facebook_icon.svg',
       partial_name:   'y2k'
     }, {
       folder_name:    '2000',
