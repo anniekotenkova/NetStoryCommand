@@ -125,6 +125,10 @@ body {
 }
 
 
-  #containerFolder_2 {
-    z-index: 2;
+  #containerFolder_1, #containerFolder_2, #containerFolder_7, #containerFolder_8 {
+    z-index: 1;
   }
+
+   #containerFolder_9 {
+     z-index: 0;
+   }
