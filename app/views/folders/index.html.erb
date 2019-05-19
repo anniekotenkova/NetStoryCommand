@@ -7,9 +7,7 @@
     <div class="folderContainer" style="position:absolute"></div>
     <div class="computerContainer"></div>
     <div class="folderArticles" style="position:absolute"></div>
-    <audio id="clickSound">
-      <source src="assets/sounds/start.ogg">
-    </audio>
+
 
     <%= render @folders %>
 
@@ -24,5 +22,9 @@
     <%= render "shutdown"%>
     <%= render "sleep_mode"%>
     <%= render "update"%>
+
+    <audio id="clickSound" src="audio/start.ogg" type="audio/ogg"></audio>
+    <audio id="errorSound" src="audio/criticalstop.wav" type="audio/wav"></audio>
+
   </div>
 </section>
