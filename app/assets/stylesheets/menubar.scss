@@ -40,7 +40,6 @@
 
 .articleTitle {
   font-size: 0.8rem;
-  /* padding-top: 0.2rem; */
   width: 65%;
 }
 
@@ -69,5 +68,6 @@
     text-align: center;
     font-size: 0.8rem;
     line-height: 0.9rem;
+    cursor: $default-cursor;
   }
 }

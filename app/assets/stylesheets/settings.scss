@@ -49,7 +49,7 @@
       &:hover {
         background-color: #000;
         color: white;
-        cursor: pointer;
+        cursor: $default-cursor;
       }
     }
 
@@ -225,7 +225,7 @@
         background-color: $background-elemts;
         border: $default-border;
         cursor: $cursor-pointer;
-        cursor: pointer;
+        cursor: $default-cursor;
         cursor: url('../img/cursor-pointer.png'), pointer;
       }
 

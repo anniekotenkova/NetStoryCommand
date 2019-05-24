@@ -67,6 +67,8 @@
         width: 100px;
         height: 35px;
         @include border-color($border-light, $border-dark);
+        cursor: $default-cursor;
+
 
         .iconStart {
           background-image: url('iconStart.svg');
