@@ -77,4 +77,7 @@ $(function() {
   $('.logOut').on('click', function(e) {
     $('.sleepMode').removeClass('hidden')
   })
+  $('.user').on('click', function() {
+    location.reload(true)
+  })
 })

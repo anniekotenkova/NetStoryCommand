@@ -1,17 +1,5 @@
-<div class="sleepMode hidden">
-  <div class="sleepComputer"></div>
-  <span class="table">
-    <div class="login">Please, login to NetStory</div>
-    <div class="tableInside">
-      <div class="user">
-        <div class="userImage"><%= image_tag 'admin.svg' %></div>
-        <p>Admin</p>
-      </div>
-      <div class="user">
-        <div class="userImage"><%= image_tag 'happy.svg' %></div>
-        <p>User</p>
-      </div>
-    </div>
-    <div class="shutDown">Shut Down</div>
-  </span>
-</div>
+<% if I18n.locale == :ru %>
+  <%= render "folders/sleep_mode/ru_sleep_mode" %>
+<% else %>
+  <%= render "folders/sleep_mode/en_sleep_mode" %>
+<% end %>
