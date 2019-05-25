@@ -131,4 +131,9 @@ body {
 
    #containerFolder_9 {
      z-index: 0;
+
+     .hover {
+       border-radius: 2px;
+       box-shadow: inset 0px 0px 16px #ffff;
+     }
    }

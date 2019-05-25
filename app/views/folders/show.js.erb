@@ -8,14 +8,14 @@ console.log(layer)
   $('.folderContent' + parentFolderId).replaceWith('<%= j render partial: "#{ @folder.partial_name }" %>')
   $('.mycomputer .menuTop').append('<%= j render partial: "back", folder: @parent_folder %>')
   $('.taskbarItems' + parentFolderId).replaceWith('<%= j render "task_bar_folder" %>')
-  $('.taskbarItems' + folderId).append('<p><%= @folder.name %></p>')
+  $('.taskbarItems' + folderId).append('<p><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></p>')
   $('.folderContent' + folderId).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   <% elsif %>
   if ($('.folderContent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
     $('.taskbarElements').append('<%= j render "task_bar_folder" %>')
-    $('.taskbarItems' + folderId).append('<p><%= @folder.name %></p>')
+    $('.taskbarItems' + folderId).append('<p><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></p>')
     $('.folderContent' + folderId).css("z-index",layer)
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
   }
