@@ -1,13 +1,5 @@
-<section class="screenBack hidden">
-    <!-- <div class="pressRestart">ВКЛ</div> -->
-  <div class="screen">
-    <div class="end">
-      <div class="endMessage">
-        <div class="logo">нужен логтип</div>
-        <p>Подождите... </p>
-        <p>Идёт завершение работы NetStory</p>
-        <div class="loading"></div>
-      </div>
-    </div>
-  </div>
-</section>
+<% if I18n.locale == :ru %>
+  <%= render "folders/shutdown/ru_shutdown" %>
+<% else %>
+  <%= render "folders/shutdown/en_shutdown" %>
+<% end %>
