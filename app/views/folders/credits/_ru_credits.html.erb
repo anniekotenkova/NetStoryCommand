@@ -1,0 +1,94 @@
+<div id="<%= "folder_#{ @folder.id }" %>" class="computer folderContent draggable credits">
+  <div class="menuTop">
+    <span class="folderTitle"><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="info">
+    <div class="infolderContent infolder information scrollbar">
+      <h4>Над проектом работали</h4>
+      <p>
+        Студенты второго курса факультета ФКМД программы Дизайн  по&nbspнаправлению Дизайн и&nbspпрограммирование.
+      </p>
+
+      <section class="creator right">
+        <div class="photo">
+          <div class="img">
+            <%= image_tag 'credits/kotenkova.jpg' %>
+          </div>
+          <div class="figure pink"></div>
+        </div>
+        <div class="info">
+          <h4>Аня<br>Котенкова</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Социальные сети</h2>
+            <div class="socialNet">
+              <%= image_tag 'social/instagram.svg' %>
+              <%= image_tag 'social/facebook.svg' %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creator">
+        <div class="info">
+          <h4>Оксана<br>Кочуева</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Социальные сети</h2>
+            <div class="socialNet">
+              <%= image_tag 'social/instagram.svg' %>
+              <%= image_tag 'social/facebook.svg' %>
+            </div>
+          </div>
+        </div>
+        <div class="photo">
+          <%= image_tag 'credits/kochueva.png' %>
+          <div class="figure blue"></div>
+        </div>
+      </section>
+
+      <section class="creator right">
+        <div class="photo">
+          <%= image_tag 'credits/shumilova.png' %>
+          <div class="figure yellow"></div>
+        </div>
+        <div class="info">
+          <h4>Оля<br>Шумилова</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Социальные сети</h2>
+            <div class="socialNet">
+              <%= image_tag 'social/instagram.svg' %>
+              <%= image_tag 'social/facebook.svg' %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h4 class="cr">Куратор проекта</h4>
+
+      <section class="creator">
+        <div class="info">
+          <h4>Захар<br>День</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Социальные сети</h2>
+            <div class="socialNet">
+              <%= image_tag 'social/instagram.svg' %>
+              <%= image_tag 'social/facebook.svg' %>
+            </div>
+          </div>
+        </div>
+        <div class="photo">
+          <%= image_tag 'credits/day.png' %>
+          <div class="figure cyan"></div>
+        </div>
+      </section>
+
+      <h4>Проекту помогали</h4>
+    </div>
+  </div>
+</div>
