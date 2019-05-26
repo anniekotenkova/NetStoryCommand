@@ -89,13 +89,18 @@
         text-align: center;
         flex-direction: column;
 
+        .img {
+          height: 50px;
+          width: 100%;
+        }
+
         p {
           margin: 0px;
-          line-height: 13px;
+          line-height: 11px;
         }
 
         .name, .name2 {
-          margin-top: 10px;
+          margin-top: 65px;
           font-size: 10px;
           font-weight: normal;
           color: #0033CC;
