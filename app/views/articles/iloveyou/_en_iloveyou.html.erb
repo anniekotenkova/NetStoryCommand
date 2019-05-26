@@ -1,0 +1,34 @@
+<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <div class="menuTop">
+    <span class="folderTitle"><%= I18n.locale == :ru ? @article.title : @article.title_en %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="iloveyouArticle">
+    <span class="virusMenu">
+      <div class="string">
+        <div class="virusIcon"></div>
+        <div class="virusFrom">From</div>
+        <div class="virusSubject">Subject</div>
+        <div class="virusReceived">Received</div>
+      </div>
+      <div class="inbox">
+        <div class="virusIcon"></div>
+        <div class="virusFrom">From</div>
+        <div class="virusSubject">Subject</div>
+        <div class="virusReceived">Received</div>
+      </div>
+      <div class="letter">
+        <p>On May 5, 2000, people around the world began receiving an email with the subject line ILOVEYOU. Inside was a simple message that read, «Kindly check the attached LOVELETTER coming from me» with a simple attachment.</p>
+        <p>If you happened to open that attachment, instead of a lovely letter a script would fire off that would immediately begin rewriting all of the media files on your computer with versions of itself (so it would run again if you ever opened them). Beneath the surface, it opened up a password stealing application and began trying to steal all your computer’s passwords, emailing them to an undisclosed address whenever they were found. And when it was all done, the virus would hijack your email contact list and email copies of itself to all your friends with the same subject and message.</p>
+        <p>It got the name from it’s subject. The ILOVEYOU virus.</p>
+        <p>The ILOVEYOU virus was devastating. In just a day’s time, it infected tens of millions of computers and caused an estimate 10 billion dollars in damages. Government agencies had to shut down their mail server altogether just to stop it from spreading. Before anyone realized what had happened, the ILOVEYOU virus was everywhere.</p>
+        <p>There’s a lot of reasons why the virus worked. It used a Visual Basic Script common on Windows computer, so the suspicious executable file extension was hidden whenever the email was opened in Outlook. It also spread itself to everybody on your contact list incredibly fast. It was undoubtedly widespread. But the real reason it worked is because it didn’t attack our computers directly. It attacked our innate social and human desires. No matter who the email was coming from, there’s a bit of curiosity that follows an email with the subject line «ILOVEYOU».</p>
+        <p>In the days before spam and viruses were everywhere, who wouldn’t click on an email like that? Wouldn’t you?</p>
+        <p>Eventually, the effect was reversed. And although the perpetuators for the virus were never formally charged they were caught. No major data was breached. All in all, it could have been a lot worse. </p>
+      </div>
+    </span>
+
+  </div>
+</div>
