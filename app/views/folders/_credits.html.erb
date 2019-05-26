@@ -1,12 +1,5 @@
-<div id="<%= "folder_#{ @folder.id }" %>" class="computer folderContent draggable credits">
-  <div class="menuTop">
-    <span class="folderTitle"><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></span>
-    <div class="closeBtn">
-      <%= image_tag 'x.svg' %>
-    </div>
-  </div>
-  <div id="info">
-    <div class="infolderContent infolder information scrollbar">
-
-  </div>
-</div>
+<% if I18n.locale == :ru %>
+  <%= render "folders/credits/ru_credits" %>
+<% else %>
+  <%= render "folders/credits/en_credits" %>
+<% end %>
