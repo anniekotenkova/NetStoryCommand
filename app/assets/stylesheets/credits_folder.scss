@@ -42,34 +42,13 @@
     .creator {
       display: flex;
       flex-direction: row;
-      margin-bottom: 33px;
+      margin-bottom: 100px;
 
       .photo {
         width: 187px;
         height: 189px;
-
-        .figure {
-          position: relative;
-          top: -168px;
-          width: 178px;
-          height: 178px;
-        }
-
-        .pink {
-          background-color: #FEC2CE;
-        }
-
-        .blue {
-          background-color: #0C74F9
-        }
-
-        .yellow {
-          background-color: #FCD120;
-        }
-
-        .cyan {
-          background-color: #68EDC6;
-        }
+        position: absolute;
+        left: 200px;
 
         img {
           width: 178px;
@@ -78,6 +57,29 @@
         }
 
 
+      }
+      .figure {
+        position: absolute;
+        left: 200px;
+        width: 178px;
+        height: 178px;
+        margin-top: 10px;
+      }
+
+      .pink {
+        background-color: #FEC2CE;
+      }
+
+      .blue {
+        background-color: #0C74F9
+      }
+
+      .yellow {
+        background-color: #FCD120;
+      }
+
+      .cyan {
+        background-color: #68EDC6;
       }
 
       .info {
@@ -123,6 +125,17 @@
     .right {
       .info {
         margin-left: 20px;
+        position: relative;
+        left: 200px;
+      }
+
+      .photo {
+        left: 0;
+      }
+
+      .figure {
+        left: 0;
+        margin-top: 10px;
       }
     }
   }
