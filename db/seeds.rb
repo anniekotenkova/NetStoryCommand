@@ -171,7 +171,7 @@ def create_articles
       folder_name_en: '2000',
       title:          'ILOVEYOU',
       title_en:       'ILOVEYOU',
-      pic:            'million_dollar_icon.svg',
+      pic:            'iloveyou_icon.svg',
       partial_name:   'iloveyou'
     }, {
       folder_name:    '2000',
