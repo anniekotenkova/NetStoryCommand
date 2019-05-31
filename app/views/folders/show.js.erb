@@ -11,7 +11,7 @@ console.log(layer)
   $('.taskbarItems' + folderId).append('<p><%= @folder.name %></p>')
   $('.folderContent' + folderId).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-  <% elsif %>
+<% elsif %>
   if ($('.folderContent' + folderId).length == 0) {
     $('body').append('<%= j render partial: "#{ @folder.partial_name }" %>')
     $('.taskbarElements').append('<%= j render "task_bar_folder" %>')
@@ -23,20 +23,33 @@ console.log(layer)
 
 $('.folderContent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
-    console.log('ff');
-    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+  console.log(layer);
+  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
 <% if @folder.partial_name === 'matrix'  %>
-    $('#Desktop').append('<%= j render partial: "spams/spam" %>')
+  $('#Desktop').append('<%= j render partial: "spams/spam" %>')
 <% end %>
 
 
+// $(".draggable").draggable({
+//   zIndex: layer,
+//   stop: function() {
+//     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+//     $('.folderContent' + folderId).css("z-index", "1", document.getElementsByTagName('body')[0].dataset.layer)
+//   }
+// })
+
 $(".draggable").draggable({
-  zIndex: layer,
+  // var self = this
+  // zIndex: layer,
+  start: function() {
+    layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer) + 1
+    document.getElementsByTagName('body')[0].dataset.layer = layer
+    $(this).css("z-index", layer)
+  },
   stop: function() {
-    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-    $('.folderContent' + folderId).css("z-index", "1", document.getElementsByTagName('body')[0].dataset.layer)
+    $(this).css("z-index", layer)
   }
 })
 
@@ -81,12 +94,13 @@ $('.searchButton').on('click', function() {
   $('.spam').removeClass('hidden')
 })
 
-  function delayWindowOpen(el, time) {
-    console.log(i);
-    setTimeout(function() {
-      el.classList.remove('hidden')
-    }, time)
-  }
+function delayWindowOpen(el, time) {
+  console.log(i);
+
+  setTimeout(function() {
+    el.classList.remove('hidden')
+  }, time)
+}
 
 spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
