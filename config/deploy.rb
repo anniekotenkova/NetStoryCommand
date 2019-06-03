@@ -8,7 +8,7 @@ set :application, "netstory"
 set :repo_url, "git@github.com:HeadExchange/HSEADCS-NetStory.git"
 
 # Default branch is :master
-set :branch, "master"
+set :branch, "zindex"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deployer/apps/#{fetch :application}"
