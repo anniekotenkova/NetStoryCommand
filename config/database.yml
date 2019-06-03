@@ -30,6 +30,4 @@ test:
 
 production:
   <<: *default
-  database: NetStoryCommand-master_production
-  username: NetStoryCommand-master
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: NetStory_dev
