@@ -68,6 +68,9 @@ $(function() {
     $('.screenBack').removeClass('hidden')
     $('.screen').delay('4s').show()
     $('.screen').toggleClass('shutdown')
+    e.preventDefault()
+    e.stopPropagation()
+    $('#shutDownSound').get(0).play()
   })
   $('.pressRestart').on('click', function() {
     location.reload(true)

@@ -21,6 +21,7 @@ console.log(layer)
   }
 <% end %>
 
+
 $('.folderContent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
     console.log('ff');
@@ -67,13 +68,16 @@ $('#unknown').on('click', function() {
 //spam
 var spamLinks = document.querySelectorAll('[href="#spam"]'),
     spamWindows = document.querySelectorAll('.spamWindow'),
-    spamContainer = document.querySelector('.spam');
-var i;
+    spamContainer = document.querySelector('.spam')
+var i
 var delay = 300,
   called = false
 
-$('.searchButton').on('click', function() {
-  console.log();
+$('.searchButton').on('click', function(e) {
+  e.preventDefault()
+  e.stopPropagation()
+  $('#virusSound').get(0).play()
+  console.log()
   for (i = 0; i < spamWindows.length; i++) {
     var time = delay * i;
     delayWindowOpen(spamWindows[i], time)
@@ -82,7 +86,7 @@ $('.searchButton').on('click', function() {
 })
 
   function delayWindowOpen(el, time) {
-    console.log(i);
+    console.log(i)
     setTimeout(function() {
       el.classList.remove('hidden')
     }, time)
