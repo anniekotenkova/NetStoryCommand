@@ -226,7 +226,7 @@
         border: $default-border;
         cursor: $cursor-pointer;
         cursor: $default-cursor;
-        cursor: url('../img/cursor-pointer.png'), pointer;
+        cursor: image-url('cursor-pointer.png'), pointer;
       }
 
       .settingDropdown {

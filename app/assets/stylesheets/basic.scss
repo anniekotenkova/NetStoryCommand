@@ -21,7 +21,7 @@ html body {
   background-position: center;
   background-size: cover;
   cursor: default;
-  cursor: url('cursor-mouse.png'), default;
+  cursor: image-url('cursor-mouse.png'), default;
   position: relative;
   overflow: hidden;
 }
