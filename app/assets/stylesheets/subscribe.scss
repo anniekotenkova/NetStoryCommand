@@ -1,0 +1,31 @@
+.plug {
+  .subscribeImage {
+    width: 79vw;
+    height: 87vh;
+    background-image: url("Netstory.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-top: -15%;
+    margin-top: -4%;
+  }
+
+  .text {
+    color: #000000;
+    width: 400px;
+    position: relative;
+    bottom:  9vh;
+    left: 50vw;
+    transform: translateX(-50%);
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
+}
