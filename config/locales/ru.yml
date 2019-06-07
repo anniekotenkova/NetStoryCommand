@@ -9,3 +9,6 @@ ru:
       filter: "Фильтр"
       goodbye: "Выключение"
       sleep: "Спящий режим"
+    form:
+      placeholder: "Введите почту"
+      button: "Подписаться"
