@@ -15,4 +15,14 @@
     <%= form.text_field :email, placeholder: "Введите почту", class: "enter" %>
     <%= form.submit "Подписаться", class: "button" %>
   </div>
+  <div class="changeLang">
+    <div class="welcomeLocalizationBlock">
+      <% if I18n.locale == I18n.default_locale %>
+        <%= link_to "en", { :locale=>'en' } %>
+      <% else %>
+        <%= link_to "ru", { :locale=>'ru' } %>
+      <%end%>
+    </div>
+  </div>
+
 <% end %>

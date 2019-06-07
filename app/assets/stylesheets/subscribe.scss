@@ -14,7 +14,7 @@
     color: #000000;
     width: 400px;
     position: relative;
-    bottom:  9vh;
+    bottom:  10vh;
     left: 50vw;
     transform: translateX(-50%);
 
@@ -26,6 +26,21 @@
 
     p {
       line-height: 20px;
+    }
+  }
+
+  .changeLang {
+    display: flex;
+    color: #000000;
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 160px;
+    padding: 2px;
+    @include border-color($border-light, $border-dark);
+
+    .welcomeLocalizationBlock {
+      position: center;
     }
   }
 }
