@@ -25,11 +25,13 @@
         font-size: 14px;
         font-weight: 500;
         font-family: "TT Norms";
+        color: #d8d8d8;
         padding-left: 10px;
         box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 
         &:focus {
           outline: none;
+          color: #000000;
         }
       }
 
