@@ -1,0 +1,18 @@
+<%= form_with(model: subscription, class: "subscribe") do |form| %>
+  <% if subscription.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
+
+      <ul>
+      <% subscription.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.text_field :email, placeholder: "Введите почту", class: "enter" %>
+    <%= form.submit "Subscribe", class: "button" %>
+  </div>
+<% end %>

@@ -1,0 +1,67 @@
+.plug {
+  width: 100vw;
+  height: 100vh;
+  background: #FEC2CE;
+
+    .welcome {
+      width: 480px;
+      left: 50%;
+      top: 25%;
+      transform: translateX(-50%);
+    }
+
+    .subscribe {
+      width: 400px;
+      height: 30px;
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translateX(-50%);
+
+      .enter {
+        height: 35px;
+        width: 280px;
+        border: $default-border;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "TT Norms";
+        color: #d8d8d8;
+        padding-left: 10px;
+        box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+
+        &:focus {
+          outline: none;
+          color: #000000;
+        }
+      }
+
+      .button {
+        width: 100px;
+        height: 35px;
+        border-top: 2px solid white;
+        border-right: 2px solid #222;
+        border-bottom: 2px solid #222;
+        border-left: 2px solid white;
+        cursor: url(cursor-pointer.png), pointer;
+        background: #d8d8d8;
+        font-size: .9rem;
+        font-weight: 500;
+        margin-left: 5px;
+        box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+
+        &:active {
+          border-top: 2px solid #222;
+          border-right: 2px solid white;
+          border-bottom: 2px solid white;
+          border-left: 2px solid #222;
+          transform: translateY(2px);
+          outline: none;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+
+    }
+
+}
