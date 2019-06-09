@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
 
+
   private
     # Before every request, we set the locale, from the specified or detected settings, or from the cookie
     def set_locale

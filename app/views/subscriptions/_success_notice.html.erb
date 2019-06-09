@@ -1,3 +1,5 @@
-<div class="subscribe">
-  <p>You're done</p>
-</div>
+<% if I18n.locale == :ru %>
+  <%= render "subscriptions/success/ru_success" %>
+<% else %>
+  <%= render "subscriptions/success/en_success" %>
+<% end %>
