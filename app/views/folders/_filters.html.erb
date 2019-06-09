@@ -8,24 +8,24 @@
     </div>
   </div>
   <section class="setting setting100">
-    <h3 class="settingTitle">Фильтры</h3>
+    <h3 class="settingTitle"><%= t('desktop.start.filter') %></h3>
     <div class="settingDropdownWrap">
-      <button class="settingDropdownButton">Обычный</button>
+      <button class="settingDropdownButton"><%= t('desktop.start.normal') %></button>
       <div class="dropdownArrowWrap">
         <%= image_tag 'dropdown-arrow.svg' %>
       </div>
       <div class="settingDropdown hidden">
         <a href="#" class="settingDropdownOption" id="normal">
-          Обычный
+        <%= t('desktop.start.normal') %>
         </a>
         <a href="#" class="settingDropdownOption" id="blackWhite">
-          Черно-белый
+          <%= t('desktop.start.bw') %>
         </a>
         <a href="#" class="settingDropdownOption" id="hueRotate">
-          Инверсия
+          <%= t('desktop.start.inversion') %>
         </a>
         <a href="#" class="settingDropdownOption" id="negative">
-          Негатив
+          <%= t('desktop.start.negative') %>
         </a>
       </div>
     </div>

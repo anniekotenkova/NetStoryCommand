@@ -6,7 +6,11 @@ en:
       wallaper: "Change wallaper"
       color: "Background color"
       settings: "Screen settings"
-      filter: "Filter"
+      filter: "Filters"
+      normal: "Normal"
+      bw: "Black and white"
+      inversion: "Inversion"
+      negative: "Negative"
       goodbye: "Shut down"
       sleep: "Sleep mode"
     form:

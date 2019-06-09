@@ -6,7 +6,11 @@ ru:
       wallaper: "Обои"
       color: "Цвет фона"
       settings: "Настройки экрана"
-      filter: "Фильтр"
+      filter: "Фильтры"
+      normal: "Обычный"
+      bw: "Чёрно-белый"
+      inversion: "Инверсия"
+      negative: "Негатив"
       goodbye: "Выключение"
       sleep: "Спящий режим"
     form:
