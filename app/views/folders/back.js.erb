@@ -26,7 +26,6 @@ $('.folderContent' + folderId).on("click", function() {
 
 //закрытие папок
 $('.closeBtn').on('click', function() {
-  console.log('hh');
   var id = $(this).parents('.folderContent').attr("id")
   $('.folderContent#' + id).remove()
   $('.taskbarItems#' + id).remove()

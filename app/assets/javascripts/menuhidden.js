@@ -20,7 +20,9 @@ $(function() {
     $('#setting').hide()
   })
 
-  $('.settingDropdownButton').click(function() {
+  $('.settingDropdownButton').click(function(e) {
+    e.preventDefault()
+    $('#clickSound').get(0).play()
     var dropDown = document.querySelector('.settingDropdown')
     if (dropDown.className.indexOf('hidden') >= 0) {
       dropDown.classList.remove('hidden')
@@ -30,9 +32,8 @@ $(function() {
   })
 
   $('.settingDropdownOption').click(function(e) {
-    console.log('Filter')
     e.preventDefault()
-
+    $('#clickSound').get(0).play()
     dropDown.classList.add('hidden')
     dropDownButton.textContent = e.target.textContent;
 
@@ -41,24 +42,34 @@ $(function() {
 
   $('.update').click(function(e) {
     $('.updateOS').removeClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 
   $('.colorsbtn').click(function(e) {
     $('.colorsChange').removeClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 
   $('.closeCardColor').click(function(e) {
     e.stopPropagation()
     $('.colorsChange').addClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 
   $('.filtersbtn').click(function(e) {
     $('.filtersChange').removeClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 
   $('.closeCardFilter').click(function(e) {
     e.stopPropagation()
     $('.filtersChange').addClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 
 
@@ -66,18 +77,22 @@ $(function() {
 
   $('.shutDown').on('click', function(e) {
     e.preventDefault()
-    e.stopPropagation()
     $('#shutDownSound').get(0).play()
     $('.screenBack').removeClass('hidden')
     $('.screen').delay('4s').show()
     $('.screen').toggleClass('shutdown')
+    $('#clickSound').get(0).play()
   })
 
   //sleep mode
   $('.logOut').on('click', function(e) {
     $('.sleepMode').removeClass('hidden')
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
-  $('.user').on('click', function() {
+  $('.user').on('click', function(e) {
     location.reload(true)
+    e.preventDefault()
+    $('#clickSound').get(0).play()
   })
 })

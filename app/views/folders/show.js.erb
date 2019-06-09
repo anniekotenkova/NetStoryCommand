@@ -24,7 +24,6 @@ console.log(layer)
 
 $('.folderContent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
-    console.log('ff');
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
 
@@ -46,11 +45,13 @@ $(".contentInside .computerFolders").draggable({
 })
 
 //close
-$('.closeBtn').on('click', function() {
+$('.closeBtn').click(function(e) {
   var id = $(this).parents('.folderContent').attr("id")
   $('.folderContent#' + id).remove()
   $('.taskbarItems#' + id).remove()
   $(this).parents('.spamWindow').remove()
+  e.preventDefault()
+  $('#clickSound').get(0).play()
 })
 
 //nodata
@@ -73,17 +74,19 @@ var i
 var delay = 300,
   called = false
 
-$('.searchButton').on('click', function(e) {
-  e.preventDefault()
-  e.stopPropagation()
-  $('#virusSound').get(0).play()
-  console.log()
+$('.searchButton').on('click', function() {
   for (i = 0; i < spamWindows.length; i++) {
     var time = delay * i;
     delayWindowOpen(spamWindows[i], time)
   }
   $('.spam').removeClass('hidden')
 })
+
+$('.searchButton').click(function(e) {
+  e.preventDefault()
+  $('#screamSound').get(0).play()
+})
+
 
   function delayWindowOpen(el, time) {
     console.log(i)
