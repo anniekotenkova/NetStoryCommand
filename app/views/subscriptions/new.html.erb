@@ -6,27 +6,28 @@
   </p>
 
   <%= image_tag "Netstory.png", class: "subscribeImage hide" %>
-  <%= image_tag "Netstory.png", class: "subscribeImage hidden" %>
+  <%= image_tag "spam/visitor.svg", class: "subscribeImage hidden visitor" %>
 
   <div class="text hide">
-    <h1><%= I18n.t 'subscription.h1' %></h1>
-    <p><%= I18n.t("subscription.p").html_safe %></p>
+    <h1><%= I18n.t('subscription.h1') %></h1>
+    <p><%= I18n.t('subscription.p').html_safe %></p>
   </div>
 
   <div class="text hidden">
-    <h1>Спасибо, что подписался!</h1>
-    <p>Осталось совсем немножко, и мы оповестим тебя о запуске NetStory</p>
+    <h1><%= I18n.t('subscription.hidden.h1') %></h1>
+    <p><%= I18n.t('subscription.hidden.p') %></p>
   </div>
 
   <%= render 'form', subscription: @subscription %>
 
   <div class="text">
-    <h2>Поделись с друзьями!</h2>
+    <h2><%= I18n.t('subscription.goshare') %></h2>
   </div>
 
   <div class="borderShare">
     <div class="fb-share-button" data-href="https://netstory.hack.exchange" data-layout="button_count" data-size="small">
-      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnetstory.hack.exchange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a>
+      <p></p>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnetstory.hack.exchange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><%= I18n.t('subscription.button') %></a>
     </div>
   </div>
 </div>

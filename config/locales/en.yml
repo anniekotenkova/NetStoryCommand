@@ -17,5 +17,10 @@ en:
       placeholder: "Enter email"
       button: "Subscribe"
   subscription:
-    h1: "Будь первым!"
-    p: "Подпишись на уведомления, чтобы первым узнать о&nbsp;запуске проекта"
+    h1: "Be the first!"
+    p: "Subscribe to notifications to know when project start"
+    goshare: "Share with friends!"
+    button: "Share"
+    hidden:
+      h1: "Thanks for subscribing!"
+      p: "We allow you, when NetStory starts"
