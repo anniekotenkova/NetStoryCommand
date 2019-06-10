@@ -1,7 +1,32 @@
 <div class="plug">
-  <div class="sub">
-  <%#= render 'welcome_alert' %>
-  <%= render 'subscribe' %>
+  <p>
+    <%= link_to "English", { locale: "en" }, class: "#{ I18n.locale == :ru ? 'current' : 'language' }" %>
+    |
+    <%= link_to "Русский", { locale: "ru" }, class: "#{ I18n.locale == :en ? 'current' : 'language' }" %>
+  </p>
+
+  <%= image_tag "Netstory.png", class: "subscribeImage hide" %>
+  <%= image_tag "Netstory.png", class: "subscribeImage hidden" %>
+
+  <div class="text hide">
+    <h1><%= I18n.t 'subscription.h1' %></h1>
+    <p><%= I18n.t("subscription.p").html_safe %></p>
+  </div>
+
+  <div class="text hidden">
+    <h1>Спасибо, что подписался!</h1>
+    <p>Осталось совсем немножко, и мы оповестим тебя о запуске NetStory</p>
+  </div>
+
   <%= render 'form', subscription: @subscription %>
+
+  <div class="text">
+    <h2>Поделись с друзьями!</h2>
+  </div>
+
+  <div class="borderShare">
+    <div class="fb-share-button" data-href="https://netstory.hack.exchange" data-layout="button_count" data-size="small">
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnetstory.hack.exchange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a>
+    </div>
   </div>
 </div>

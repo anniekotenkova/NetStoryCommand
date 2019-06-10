@@ -65,13 +65,13 @@ body {
   }
 
   a {
-    text-decoration: none!important;
+    text-decoration: none;
     text-transform: none;
     color: #000;
     line-height: 1rem;
 
     &:hover {
-      text-decoration: none!important;
+      text-decoration: none;
       text-transform: none;
       background-color: inherit;
     }

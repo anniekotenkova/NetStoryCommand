@@ -1,11 +1,7 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
+  <%= render 'articles/head' %>
+  
   <div id="theGlobe">
-    <div class="menuTop">
-      <span class="folderTitle"><%= I18n.locale == :ru ? @article.title : @article.title_en %></span>
-      <div class="closeBtn">
-        <%= image_tag 'x.svg' %>
-      </div>
-    </div>
     <div class="theGlobeArticle">
       <div class="blueLine"></div>
       <div class="content">

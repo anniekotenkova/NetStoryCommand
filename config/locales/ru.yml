@@ -16,3 +16,6 @@ ru:
     form:
       placeholder: "Введите почту"
       button: "Подписаться"
+  subscription:
+    h1: "Be the first!"
+    p: "Subscribe to notifications to know when project start"

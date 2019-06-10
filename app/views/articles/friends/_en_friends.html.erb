@@ -1,27 +1,30 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
-  <div class="menuTop">
-    <span class="folderTitle"><%= I18n.locale == :ru ? @article.title : @article.title_en %></span>
-    <div class="closeBtn">
-      <%= image_tag 'x.svg' %>
+  <%= render 'articles/head' %>
+
+  <div id="defaultArticle">
+    <div class="head">
+      <h1>«Друзья» и реклама
+        <br>Windows 95</h1>
+    </div>
+    <div id="100WidthPic">
+      <%= image_tag 'articles/friends/taskbar.gif'%>
+    </div>
+    <div class="text">
+      <h2>The charming tutorial shows tech companies used to fear us.
+      </h2>
+      <p>In the mid-’90s, Microsoft relied on some friends to help teach people how to use their brand-new operating system, Windows 95.</p>
+      <p>We’re talking Friends friends Jennifer Aniston and Matthew Perry, stars of a long video that fairly reeks of the Must See TV sitcom aesthetic, filled with non sequitur introductions of wacky characters. Strangely, it’s not bad. Definitely not as
+        bad as you’d think based on the central conceit: Aniston and Perry arrive at Bill Gates’ office for a casting call for a Microsoft video, and Gates’ personal secretary takes them on a helpful tour of the new operating system.</p>
+      <p>Tellingly, this is an instructional video rather than an advertorial.
+        <br>It was still two years before Steve Jobs returned from exile to lead Apple, 11 years before John Hodgman would come to embody the stodgy PC running Microsoft’s operating system. Microsoft was riding high, and Bill Gates wanted a PC running
+          Microsoft in every home. It looked like he might get it.</p>
+      <p>Perry learns to address an “internet email” to a friend in a grunge band while the geeky, Gates-like mailroom guy assures the friends that “communicating online is the hot thing right now, and the Microsoft Network is your on-ramp to the
+        information superhighway.” Then he looks up some cat photos. Cat photos are eternal.
+      </p>
+      <p>But putting aside the outdated nomenclature, the video is a fairly deft introduction to a future that was still foreign to many. Statistic study from October 1995 found that only 20 percent of “online” users actually went online daily, and only 32
+        percent said they would miss the internet if they couldn’t use it. The “World Wide Web” was just two years old, and people connected to it on modems over their home phone lines. The average email user sent three messages and received five each day..</p>
+      <p>So by dint of well-known characters Microsoft tried to dispel fears of computers and show opportunities of usage Windows 95 on simple language.</p>
     </div>
   </div>
-    <div id="defaultArticle">
-      <div class="head">
-        <h1>«Друзья» и реклама <br>Windows 95</h1>
-      </div>
-      <div id="100WidthPic">
-          <%= image_tag 'articles/friends/taskbar.gif'%>
-      </div>
-      <div class="text">
-        <h2>The charming tutorial shows tech companies used to fear us.
-</h2>
-        <p>In the mid-’90s, Microsoft relied on some friends to help teach people how to use their brand-new operating system, Windows 95.</p>
-        <p>We’re talking Friends friends Jennifer Aniston and Matthew Perry, stars of a long video that fairly reeks of the Must See TV sitcom aesthetic, filled with non sequitur introductions of wacky characters. Strangely, it’s not bad. Definitely not as bad as you’d think based on the central conceit: Aniston and Perry arrive at Bill Gates’ office for a casting call for a Microsoft video, and Gates’ personal secretary takes them on a helpful tour of the new operating system.</p>
-        <p>Tellingly, this is an instructional video rather than an advertorial. <br>It was still two years before Steve Jobs returned from exile to lead Apple, 11 years before John Hodgman would come to embody the stodgy PC running Microsoft’s operating system. Microsoft was riding high, and Bill Gates wanted a PC running Microsoft in every home. It looked like he might get it.</p>
-        <p>Perry learns to address an “internet email” to a friend in a grunge band while the geeky, Gates-like mailroom guy assures the friends that “communicating online is the hot thing right now, and the Microsoft Network is your on-ramp to the information superhighway.” Then he looks up some cat photos. Cat photos are eternal. </p>
-        <p>But putting aside the outdated nomenclature, the video is a fairly deft introduction to a future that was still foreign to many. Statistic study from October 1995 found that only 20 percent of “online” users actually  went online daily, and only 32 percent said they would miss the internet if they couldn’t use it. The “World Wide Web” was just two years old, and people connected to it on modems over their home phone lines. The average email user sent three messages and received five each day..</p>
-        <p>So by dint of well-known characters Microsoft tried to dispel fears of computers and show opportunities of usage Windows 95 on simple language.</p>
-      </div>
-    </div>
-  </div>
+</div>
 </div>

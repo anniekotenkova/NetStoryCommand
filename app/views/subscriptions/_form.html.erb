@@ -1,4 +1,4 @@
-<%= form_with(model: subscription, class: "subscribe") do |form| %>
+<%= form_with(model: subscription, class: "subscribe hide") do |form| %>
   <% if subscription.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
@@ -15,14 +15,4 @@
     <%= form.text_field :email, placeholder: t('desktop.form.placeholder'), class: "enter" %>
     <%= form.submit t('desktop.form.button'), class: "button" %>
   </div>
-  <div class="changeLang">
-    <div class="welcomeLocalizationBlock">
-      <% if I18n.locale == I18n.default_locale %>
-        <%= link_to "en", { :locale=>'en' } %>
-      <% else %>
-        <%= link_to "ru", { :locale=>'ru' } %>
-      <%end%>
-    </div>
-  </div>
-
 <% end %>

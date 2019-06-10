@@ -16,3 +16,6 @@ en:
     form:
       placeholder: "Enter email"
       button: "Subscribe"
+  subscription:
+    h1: "Будь первым!"
+    p: "Подпишись на уведомления, чтобы первым узнать о&nbsp;запуске проекта"
