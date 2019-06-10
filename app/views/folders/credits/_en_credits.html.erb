@@ -1,0 +1,94 @@
+<div id="<%= "folder_#{ @folder.id }" %>" class="computer folderContent draggable credits">
+  <div class="menuTop">
+    <span class="folderTitle"><%= I18n.locale == :ru ? @folder.name : @folder.name_en %></span>
+    <div class="closeBtn">
+      <%= image_tag 'x.svg' %>
+    </div>
+  </div>
+  <div id="info">
+    <div class="infolderContent infolder information scrollbar">
+      <h4>Worked on the project</h4>
+      <p>
+        Second-year students <%= link_to 'CMD', 'https://cmd.hse.ru', :target => "_blank" %> of the educational program Design  department <%= link_to 'Design and coding', 'https://design.hse.ru/dir/programming', :target => "_blank" %>.
+      </p>
+
+      <section class="creator right">
+        <div class="figure pink"></div>
+        <div class="photo">
+          <div class="img">
+            <%= image_tag 'credits/kotenkova.png' %>
+          </div>
+        </div>
+        <div class="info">
+          <h4>Anya<br>Kotenkova</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Social</h2>
+            <div class="socialNet">
+              <%= link_to image_tag('social/instagram.svg'), 'https://www.instagram.com/darknesswithinher/', :target => "_blank" %>
+              <%= link_to image_tag('social/facebook.svg'), 'https://www.facebook.com/kotenkova.ania', :target => "_blank" %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creator">
+        <div class="info">
+          <h4>Oxana<br>Kochueva</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Social</h2>
+            <div class="socialNet">
+              <%= link_to image_tag('social/instagram.svg'), 'https://www.instagram.com/_mirero_/', :target => "_blank" %>
+              <%= link_to image_tag('social/facebook.svg'), 'https://www.facebook.com/profile.php?id=100018275406088', :target => "_blank" %>
+            </div>
+          </div>
+        </div>
+        <div class="figure blue"></div>
+        <div class="photo">
+          <%= image_tag 'credits/kochueva.png' %>
+        </div>
+      </section>
+
+      <section class="creator right">
+        <div class="figure yellow"></div>
+        <div class="photo">
+          <%= image_tag 'credits/shumilova.png' %>
+        </div>
+        <div class="info">
+          <h4>Olya<br>Shumilova</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Social</h2>
+            <div class="socialNet">
+              <%= link_to image_tag('social/instagram.svg'), 'https://www.instagram.com/olshum_/', :target => "_blank" %>
+              <%= link_to image_tag('social/facebook.svg'), 'https://www.facebook.com/profile.php?id=100006642703665', :target => "_blank" %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h4 class="cr">Curator</h4>
+
+      <section class="creator">
+        <div class="info">
+          <h4>Zakhar<br>Day</h4>
+          <div class="line"></div>
+          <div class="details">
+            <h2>Social</h2>
+            <div class="socialNet">
+              <%= link_to image_tag('social/instagram.svg'), 'https://www.instagram.com/zakharday', :target => "_blank" %>
+              <%= link_to image_tag('social/facebook.svg'), 'https://www.facebook.com/zakharday', :target => "_blank" %>
+            </div>
+          </div>
+        </div>
+        <div class="figure cyan"></div>
+        <div class="photo">
+          <%= image_tag 'credits/day.png' %>
+        </div>
+      </section>
+
+      <h4>People, who helped us</h4>
+    </div>
+  </div>
+</div>
