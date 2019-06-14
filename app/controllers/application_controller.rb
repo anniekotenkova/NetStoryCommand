@@ -2,20 +2,24 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
 
+  def default_url_options
+    { locale: I18n.locale }
+  end
 
   private
     # Before every request, we set the locale, from the specified or detected settings, or from the cookie
     def set_locale
-      if language_change_necessary?
-        I18n.locale = the_new_locale
-        set_locale_cookie(I18n.locale)
-
-        if params.has_key?(:locale)
-          redirect_to(url_for(params.permit(:locale).except(:locale)))
-        end
-      else
-        use_locale_from_cookie
-      end
+      I18n.locale = params[:locale] || I18n.default_locale
+      # if language_change_necessary?
+      #   I18n.locale = the_new_locale
+      #   set_locale_cookie(I18n.locale)
+      #
+      #   if params.has_key?(:locale)
+      #     redirect_to(url_for(params.permit(:locale).except(:locale)))
+      #   end
+      # else
+      #   use_locale_from_cookie
+      # end
     end
 
     # A locale change is necessary if no locale cookie is found, or if the locale param has been specified
