@@ -24,10 +24,11 @@
     <h2><%= I18n.t('subscription.goshare') %></h2>
   </div>
 
-  <div class="borderShare">
-    <div class="fb-share-button" data-href="https://netstory.hack.exchange" data-layout="button_count" data-size="small">
+<!-- myPopup(url) -->
+  <a class="borderShare" href="javascript:myPopup('https://www.facebook.com/sharer/sharer.php?u=<%= current_url %>&amp;src=sdkpreparse')">
+    <div class="fb-share-button" data-href="<%= current_url %>" data-layout="button_count" data-size="small">
       <p></p>
-      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnetstory.hack.exchange%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><%= I18n.t('subscription.button') %></a>
+      <div class="fb-xfbml-parse-ignore"><%= I18n.t('subscription.button') %></div>
     </div>
-  </div>
+  </a>
 </div>
