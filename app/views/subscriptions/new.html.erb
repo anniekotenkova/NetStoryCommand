@@ -5,12 +5,7 @@
     <%= link_to "Русский", root_url(locale: "ru"), class: "#{ I18n.locale == :ru ? 'current' : 'language' }" %>
   </p>
 
-  <img srcset="
-  assets/Netstory.png 1x,
-  assets/Netstory@2x.png 2x,
-  assets/Netstory@3x.png 3x
-" alt="…", class="subscribeImage hide">
-
+  <%= image_tag("Netstory.png", srcset: [["Netstory.png", "1x"], ["Netstory@2x.png", "2x"], ["Netstory@3x.png", "3x"]], class: "subscribeImage hide") %>
   <%= image_tag "spam/visitor.svg", class: "subscribeImage hidden visitor" %>
 
   <div class="text hide">
