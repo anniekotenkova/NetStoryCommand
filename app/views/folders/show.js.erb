@@ -24,12 +24,9 @@ console.log(layer)
 
 $('.folderContent' + folderId).on("click", function() {
   $(this).css("z-index", layer)
-<<<<<<< HEAD
     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-=======
   console.log(layer);
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
->>>>>>> zindex
 })
 
 <% if @folder.partial_name === 'matrix'  %>
@@ -100,7 +97,6 @@ $('.searchButton').on('click', function() {
   $('.spam').removeClass('hidden')
 })
 
-<<<<<<< HEAD
 $('.searchButton').click(function(e) {
   e.preventDefault()
   $('#screamSound').get(0).play()
@@ -113,7 +109,7 @@ $('.searchButton').click(function(e) {
       el.classList.remove('hidden')
     }, time)
   }
-=======
+
 function delayWindowOpen(el, time) {
   console.log(i);
 
@@ -121,7 +117,7 @@ function delayWindowOpen(el, time) {
     el.classList.remove('hidden')
   }, time)
 }
->>>>>>> zindex
+
 
 spamContainer.addEventListener('click', function() {
   if (spamContainer.querySelector('.hidden')) {
