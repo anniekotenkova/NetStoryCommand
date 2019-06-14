@@ -10,14 +10,15 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'att', 'gif')
 # Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'erwise', 'png')
 # Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'icons', 'png')
-Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'att')
-Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'erwise')
-Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'icons')
+# Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'att')
+# Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'erwise')
+# Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'images', 'icons')
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'javascripts')
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( stylesheet.css, att/*, erwise/*, icons/* )
-Rails.application.config.assets.precompile += %w( stylesheet.css )
+# Rails.application.config.assets.precompile += %w( stylesheet.css )
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )

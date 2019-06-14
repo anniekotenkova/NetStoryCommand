@@ -1,10 +1,6 @@
 \<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
-  <div class="menuTop">
-    <span class="folderTitle"><%= I18n.locale == :ru ? @article.title : @article.title_en %></span>
-    <div class="closeBtn">
-      <%= image_tag 'x.svg' %>
-    </div>
-  </div>
+  <%= render 'articles/head' %>
+  
     <div id="defaultArticle">
       <div class="head">
         <h1>NSFNET</h1>

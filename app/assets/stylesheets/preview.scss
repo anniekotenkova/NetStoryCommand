@@ -11,7 +11,7 @@
   cursor: $default-cursor;
 
   .fastLinkErwiseImg {
-    background-image: url("erwise/erwise-02.svg");
+    background-image: image-url("erwise/erwise-02.svg");
     background-size: cover;
     width: 90px;
     height: 90px;
@@ -44,7 +44,7 @@
 
 .fastLinkImg {
   position: relative;
-  background-image: url("att/first_banner.svg");
+  background-image: image-url("att/first_banner.svg");
   background-size: cover;
   height: 316px;
 }

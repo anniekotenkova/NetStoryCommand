@@ -1,103 +1,201 @@
 .plug {
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background: #FEC2CE;
 
-    .welcome {
-      width: 480px;
-      left: 50%;
-      top: 25%;
-      transform: translateX(-50%);
+  .hidden {
+    display: none;
+  }
+
+  .subscribeImage {
+    width: 50vw;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    border: none;
+  }
+
+  .visitor {
+    width: 30vw;
+  }
+
+  .text {
+    width: 50vw;
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+
+    &:first-of-type {
+      margin-top: 40px;
+    }
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: black;
+  }
+
+  p {
+    line-height: 20px;
+    color: black;
+
+    a.language {
+      text-decoration: underline;
+    }
+
+    a.current {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .subscribe {
+    // width: 400px;
+    margin-top: 10px;
+
+    .enter {
+      height: 35px;
+      width: 280px;
+      border: $default-border;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "TT Norms";
+      color: #d8d8d8;
+      padding-left: 10px;
+
+      &:focus {
+        outline: none;
+        color: #000000;
+      }
+    }
+
+    .button {
+      width: 111px;
+      height: 35px;
+      border: $default-border;
+      cursor: url(cursor-pointer.png), pointer;
+      background: #d8d8d8;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      &:active {
+        outline: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .borderShare {
+    width: 130px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: $default-border;
+    cursor: $default-cursor;
+
+      iframe {
+        opacity: 0;
+      }
+
+
+    .fb-share-button {
+      width: 15px;
+      height: 18px;
+      background-image: image-url("social/facebook.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      p {
+        margin: 6px 20px 0;
+      }
+
+      a {
+        padding-left: 2px;
+        text-align: center;
+      }
+    }
+
+    .fb-xfbml-parse-ignore {
+      margin-left: 15px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+/*     iframe {
+  display: none !important;
+} */
+  }
+}
+
+.en {
+  .plug {
+    .borderShare {
+      width: 82px;
+    }
+  }
+}
+
+@media all and (max-width: 740px) {
+  .plug {
+    .subscribeImage {
+      width: 90vw;
+      /* margin-top: -140px; */
+    }
+
+    .text {
+      width: 90vw;
+      margin-top: 50px;
+      text-align: center;
+      color: black;
+
+      &:first-of-type {
+        margin-top: 40px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 17px;
+      }
     }
 
     .subscribe {
-      width: 400px;
-      height: 30px;
-      position: absolute;
-      left: 50vw;
-      bottom: 18vh;
-      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90vw;
 
       .enter {
-        height: 35px;
-        width: 280px;
+        height: 55px;
+        width: 330px;
         border: $default-border;
-        font-size: 14px;
-        font-weight: 500;
-        font-family: "TT Norms";
+        font-size: 20px;
+        font-weight: 400;
         color: #d8d8d8;
-        padding-left: 10px;
-        /* box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26); */
-
-        &:focus {
-          outline: none;
-          color: #000000;
-        }
+        text-align: center;
+        padding: 0;
       }
 
       .button {
-        width: 111px;
-        height: 35px;
-        border: $default-border;
-        margin-left: -5px;
-/*         border-top: 2px solid white;
-border-right: 2px solid #222;
-border-bottom: 2px solid #222;
-border-left: 2px solid white; */
-        cursor: url(cursor-pointer.png), pointer;
-        background: #d8d8d8;
-        font-size: .9rem;
-        font-weight: 500;
-/*         margin-left: 5px;
-box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26); */
-
-        &:active {
-/*           border-top: 2px solid #222;
-border-right: 2px solid white;
-border-bottom: 2px solid white;
-border-left: 2px solid #222;
-transform: translateY(2px); */
-          outline: none;
-        }
-        &:focus {
-          outline: none;
-        }
-      }
-
-    }
-
-}
-
-@media all and (max-width: 740px){
-  .plug {
-
-      .subscribe {
         width: 330px;
-        height: 30px;
-        position: absolute;
-        bottom: 17vh;
-
-        .enter {
-          height: 55px;
-          width: 330px;
-          border: $default-border;
-          font-size: 20px;
-          font-weight: 400;
-          color: #d8d8d8;
-          padding-left: 10px;
-        }
-
-        .button {
-          width: 330px;
-          height: 55px;
-          margin-top: 10px;
-          font-size: 1.5rem;
-          font-weight: 500;
-          margin-left: 0;
-        }
-
+        height: 55px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0;
+        text-align: center;
       }
-
+    }
   }
 }
