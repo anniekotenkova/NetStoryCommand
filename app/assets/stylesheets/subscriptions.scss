@@ -13,6 +13,8 @@
 
   .subscribeImage {
     width: 50vw;
+    margin-top: 30px;
+    margin-bottom: -30px;
     border: none;
   }
 
@@ -53,7 +55,7 @@
   }
 
   .subscribe {
-    width: 400px;
+    // width: 400px;
     margin-top: 10px;
 
     .enter {
@@ -106,7 +108,7 @@
 
     .fb-share-button {
       width: 15px;
-      height: 20px;
+      height: 18px;
       background-image: image-url("social/facebook.svg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -124,11 +126,20 @@
     .fb-xfbml-parse-ignore {
       margin-left: 15px;
       font-size: 16px;
+      line-height: 20px;
     }
 
 /*     iframe {
   display: none !important;
 } */
+  }
+}
+
+.en {
+  .plug {
+    .borderShare {
+      width: 82px;
+    }
   }
 }
 
@@ -159,6 +170,10 @@
     }
 
     .subscribe {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 90vw;
 
       .enter {

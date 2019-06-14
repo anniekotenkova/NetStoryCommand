@@ -23,7 +23,7 @@
           width: 250px;
           height: 250px;
           background-size: cover;
-          background-image: url("bubble_blue.png");
+          background-image: image-url("bubble_blue.png");
           -webkit-animation: y 5s linear infinite alternate;
           animation: y 5s linear infinite alternate;
         }
@@ -49,7 +49,7 @@
           width: 250px;
           height: 250px;
           background-size: cover;
-          background-image: url("bubble_pink.png");
+          background-image: image-url("bubble_pink.png");
           -webkit-animation: y 17s linear infinite alternate;
           animation: y 17s linear infinite alternate;
         }
@@ -74,7 +74,7 @@
           width: 250px;
           height: 250px;
           background-size: cover;
-          background-image: url("bubble_yellow.png");
+          background-image: image-url("bubble_yellow.png");
           -webkit-animation: y 9s linear infinite alternate;
           animation: y 9s linear infinite alternate;
         }
@@ -98,7 +98,7 @@
           width: 250px;
           height: 250px;
           background-size: cover;
-          background-image: url("bubble_green.png");
+          background-image: image-url("bubble_green.png");
           -webkit-animation: y 16s linear infinite alternate;
           animation: y 16s linear infinite alternate;
         }

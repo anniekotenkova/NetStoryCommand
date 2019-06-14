@@ -5,15 +5,15 @@ console.log(layer)
 
 
 if($('.articleContainer' + articleId).length == 0) {
-$('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>')
-$('.taskbarElements').append('<%= j render "folders/task_bar_article" %>')
-$('.taskbarItems' + articleId).append('<p><%= I18n.locale == :ru ? @article.title : @article.title_en %></p>')
-$('.articleContainer' + articleId).css("z-index", layer)
-document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+  $('body').append('<%= j render partial: "articles/#{ @article.partial_name }" %>')
+  $('.taskbarElements').append('<%= j render "folders/task_bar_article" %>')
+  $('.taskbarItems' + articleId).append('<p><%= I18n.locale == :ru ? @article.title : @article.title_en %></p>')
+  $('.articleContainer' + articleId).css("z-index", layer)
+  document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 }
 
 $('.articleContainer' + articleId).on("click", function() {
-  console.log('.articleContainer' + articleId)
+  console.log('.articleContainer' + articleId, this, layer, document.getElementsByTagName('body')[0].dataset.layer)
   $(this).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
 })
@@ -23,7 +23,7 @@ $('.closeBtn').on('click', function() {
   $(this).parents('.articleContainer').remove()
 })
 
- $(".articleContainer").draggable()
+// $(".articleContainer").draggable()
 
 $('.closeBtn').on('click', function() {
   var id = $(this).parents('.articleContainer').attr("id")
@@ -32,11 +32,24 @@ $('.closeBtn').on('click', function() {
 })
 
 
+// $(".draggable").draggable({
+//   zIndex: layer,
+//   stop: function() {
+//     document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+//     $('.articleContainer' + articleId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+//   }
+// })
+
 $(".draggable").draggable({
-  zIndex: layer,
+  // var self = this
+  // zIndex: layer,
+  start: function() {
+    layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer) + 1
+    document.getElementsByTagName('body')[0].dataset.layer = layer
+    $(this).css("z-index", layer)
+  },
   stop: function() {
-    document.getElementsByTagName('body')[0].dataset.layer = layer + 1
-    $('.articleContainer' + articleId).css("z-index", document.getElementsByTagName('body')[0].dataset.layer)
+    $(this).css("z-index", layer)
   }
 })
 
