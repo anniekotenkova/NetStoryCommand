@@ -29,7 +29,6 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails_sortable'
 gem 'draggable-rails'
-gem 'touchpunch-rails'
 
 gem 'barista'
 
