@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :spams
-  resources :articles
+  # resources :spams
+  # resources :articles
+  #
+  # resources :folders do
+  #   member do
+  #     get :back
+  #   end
+  # end
 
   resources :subscriptions, only: [:new, :create]
-
-  resources :folders do
-    member do
-      get :back
-    end
-  end
 
   #root 'folders#index'
   root 'subscriptions#new'

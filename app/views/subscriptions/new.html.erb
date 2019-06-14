@@ -1,8 +1,8 @@
 <div class="plug">
   <p>
-    <%= link_to "English", { locale: "en" }, class: "#{ I18n.locale == :ru ? 'current' : 'language' }" %>
+    <%= link_to "English", root_url(locale: "en"), class: "#{ I18n.locale == :en ? 'current' : 'language' }" %>
     |
-    <%= link_to "Русский", { locale: "ru" }, class: "#{ I18n.locale == :en ? 'current' : 'language' }" %>
+    <%= link_to "Русский", root_url(locale: "ru"), class: "#{ I18n.locale == :ru ? 'current' : 'language' }" %>
   </p>
 
   <%= image_tag "Netstory.png", class: "subscribeImage hide" %>
