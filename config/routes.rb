@@ -11,10 +11,10 @@ Rails.application.routes.draw do
 
     resources :subscriptions, only: [:new, :create]
 
-    # root 'folders#index'
+     #root 'folders#index'
     root 'subscriptions#new'
   end
 
-  # root 'folders#index'
+   #root 'folders#index'
   root 'subscriptions#new'
 end
