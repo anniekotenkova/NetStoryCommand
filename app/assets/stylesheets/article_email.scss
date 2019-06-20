@@ -4,7 +4,7 @@
   color: #ffffff;
   background-color: #272827;
   width: 900px;
-  height: 600px;
+  height: 635px;
 
   h1 {
     font-size: 16px;
@@ -13,10 +13,9 @@
   .rectangle {
     position: relative;
     left: 8px;
-    top: 35px;
-    padding-top: 30px;
+    top: 45px;
     width: 870px;
-    height: 550px;
+    height: 535px;
     background: transparent;
     border: 2px solid black;
     border-radius: 5px;
@@ -29,11 +28,13 @@
     justify-content: space-between;
     width: 840px;
     left: 8px;
+    top: -30px;
   }
 
   .messages p {
     position: relative;
     font-size: 16px;
+    line-height: 21px;
     width: 840px;
     top: 5px;
     left: 20px;
@@ -45,7 +46,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 700px;
-    bottom: 5px;
+    top: 35px;
     left: 10px;
     right: 20px;
   }

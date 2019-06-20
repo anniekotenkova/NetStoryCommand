@@ -14,17 +14,6 @@
       &:last-Child {
         margin-top: 21px;
       }
-
-      .dots {
-        width: 0;
-        animation: type 0.9s 1s steps(10, end) forwards;
-
-        @keyframes type {
-          to {
-            width: 100%;
-          }
-        }
-      }
     }
   }
 
@@ -36,27 +25,29 @@
     line-height: 23px;
     text-align: center;
     margin: 0 auto;
-    animation: blink 1.5s 0.5s infinite;
-    @keyframes blink {
-      0% {
-        opacity: 0;
-      }
 
-      40% {
-        opacity: 0;
-      }
+    animation: blink 1.5s 0.4s infinite;
 
-      50% {
-        opacity: 1;
-      }
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
 
-      90% {
-        opacity: 1;
-      }
+        40% {
+          opacity: 0;
+        }
 
-      100% {
-        opacity: 0;
-      }
+        50% {
+          opacity: 1;
+        }
+
+        90% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
     }
   }
 
