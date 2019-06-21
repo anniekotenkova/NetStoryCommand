@@ -63,9 +63,4 @@ ActiveRecord::Schema.define(version: 2019_06_07_075440) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "welcomes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
