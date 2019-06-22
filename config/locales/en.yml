@@ -16,6 +16,13 @@ en:
       negative: "Negative"
       goodbye: "Shut down"
       sleep: "Sleep mode"
+    updating:
+      downloading: "Update downloading"
+      remaining: "Remaining:"
+      time: "10 days 8 hours 47 minutes"
+      seconds: "28 seconds"
+      secondschanged: "03 seconds"
+      cancel: "Cancel"
     form:
       placeholder: "Enter email"
       button: "Subscribe"

@@ -16,6 +16,13 @@ ru:
       negative: "Негатив"
       goodbye: "Выключение"
       sleep: "Спящий режим"
+    updating:
+      downloading: "Загрузка обновления"
+      remaining: "Осталось:"
+      time: "10 дней 8 часов 47 минут"
+      seconds: "28 секунд"
+      secondschanged: "03 секунды"
+      cancel: "Отмена"
     form:
       placeholder: "Введите почту"
       button: "Подписаться"

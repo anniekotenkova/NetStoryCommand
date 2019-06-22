@@ -8,18 +8,18 @@
     </div>
   </div>
   <div class="infolderContent">
-    <h3>Загрузка обновления</h3>
+    <h3><%= t('desktop.updating.downloading') %></h3>
     <div class="bar">
       <div class="downloaded"></div>
       <div class="shine"></div>
     </div>
     <div class="remaining">
-      <p class="bold">Осталось:</p>
-      <p class="stable">10 дней 8 часов 47 минут</p>
-      <p class="firstSecond">28 секунд</p>
-      <p class="secondSecond">03 секунды</p>
+      <p class="bold"><%= t('desktop.updating.remaining') %></p>
+      <p class="stable"><%= t('desktop.updating.time') %></p>
+      <p class="firstSecond"><%= t('desktop.updating.seconds') %></p>
+      <p class="secondSecond"><%= t('desktop.updating.secondschanged') %></p>
     </div>
-    <div class="cancel">Отмена</div>
+    <div class="cancel"><%= t('desktop.updating.cancel') %></div>
     </div>
   </div>
 </div>
