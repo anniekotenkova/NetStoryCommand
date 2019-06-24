@@ -170,7 +170,6 @@
 
   .settingBorder {
     margin-bottom: 1rem;
-    // border-bottom: $default-border;
   }
 }
 
@@ -205,17 +204,12 @@
       padding-bottom: 1rem;
     }
 
-    .settingTitle {
-      // text-align: center;
-    }
-
     .settingDropdownWrap {
       position: relative;
 
       .settingDropdownButton {
         box-sizing: border-box;
         position: relative;
-        /* display: flex; */
         margin: 0 auto;
         width: 100%;
         height: 32px;

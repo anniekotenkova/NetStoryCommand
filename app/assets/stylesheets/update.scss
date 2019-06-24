@@ -1,16 +1,13 @@
 .updateOS {
   position: absolute;
-  left: 27vw;
-  top: 50vh;
+  left: 30vw;
+  top: 20vh;
   z-index: 2;
   width: 550px;
   height: 320px;
   border: $default-border;
   box-shadow: $default-box-shadow;
-  /* background: #ffffff; */
   background: #D8D8D8;
-
-
 
   .closeBtnInactive {
     position: relative !important;
@@ -26,7 +23,7 @@
     border-right: $default-border;
     border-top: $default-border;
     border-bottom: $default-border;
-    cursor: $default-cursor !important;
+    cursor: $default-cursor;
 
     img {
       width: 21px;
@@ -71,6 +68,7 @@
         position: absolute;
         left: 208px;
       }
+
       .secondSecond {
         position: absolute;
         left: 208px;
@@ -135,8 +133,8 @@
         animation-duration: 9s;
 
         @keyframes move {
-        from { transform : translateX(0) }
-        to   { transform : translateX(930px) }
+          from { transform : translateX(0) }
+          to   { transform : translateX(930px) }
         }
       }
     }

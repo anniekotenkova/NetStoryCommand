@@ -83,7 +83,7 @@
     border-left: $default-border;
     border-top: $default-border;
     border-bottom: $default-border;
-    cursor: $default-cursor !important;
+    cursor: $default-cursor;
     transform: scale(-1, 1);
 
     img {
@@ -107,7 +107,7 @@
     border-right: $default-border;
     border-top: $default-border;
     border-bottom: $default-border;
-    cursor: $default-cursor !important;
+    cursor: $default-cursor;
 
     img {
       width: 21px;

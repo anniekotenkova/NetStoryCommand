@@ -24,15 +24,16 @@
         height: 80px;
       }
 
-      .storageInfo{
+      .storageInfo {
         padding-left: 20px;
         display: flex;
         flex-direction: column;
 
-        .infoHeader{
+        .infoHeader {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+
           .firstp {
             font-size: 0.9rem;
             font-weight: 500;
@@ -118,7 +119,6 @@
           background-color: #4696FC;
         }
       }
-
     }
 
     .information {

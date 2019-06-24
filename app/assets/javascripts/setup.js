@@ -16,13 +16,6 @@ $(window).on("load", function() {
     }
   })
 
-  $("#containerFolder_9").droppable({
-    accept: "#containerFolder_2",
-    drop: function(event, ui) {
-      $('.screenBack').removeClass('hidden')
-    }
-  })
-
   $(".folderFolder").click(function(e) {
     e.preventDefault()
     $('#clickSound').get(0).play()
