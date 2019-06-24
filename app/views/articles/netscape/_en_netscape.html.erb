@@ -1,6 +1,6 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
   <%= render 'articles/head' %>
-  
+
   <div id="netscapeArticle">
     <span class="netscapeHead">
       <div class="browserLine">
@@ -11,7 +11,7 @@
         <div class="searchField">
           <p>http://www.netscape.com/</p>
           <div class="netscapeIcon">
-            <%= image_tag 'Netscape-icon.png' %>
+            <%= image_tag("articles/netscape/Netscape-icon.png", srcset: [["articles/netscape/Netscape-icon.png", "1x"], ["articles/netscape/Netscape-icon@2x.png", "2x"]]) %>
           </div>
         </div>
       </div>
@@ -23,10 +23,10 @@
     </span>
     <span class="netscapeBody">
       <div class="netscapeWelcome">
-        <%= image_tag 'welcome_netscape' %>
+        <%= image_tag("articles/netscape/welcome_netscape.png", srcset: [["articles/netscape/welcome_netscape.png", "1x"], ["articles/netscape/welcome_netscape@2x.png", "2x"]]) %>
       </div>
       <div class="netscapeLink">
-        <%= image_tag 'netscape_link' %>
+        <%= image_tag("articles/netscape/netscape_link.png", srcset: [["articles/netscape/netscape_link.png", "1x"], ["articles/netscape/netscape_link@2x.png", "2x"]]) %>
       </div>
       <div class="netscapeText">
         <span class="netscapeFirstPage">

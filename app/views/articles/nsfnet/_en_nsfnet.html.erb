@@ -1,12 +1,12 @@
 \<div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
   <%= render 'articles/head' %>
-  
+
     <div id="defaultArticle">
       <div class="head">
         <h1>NSFNET</h1>
       </div>
       <div id="100WidthPic">
-        <%= image_tag 'articles/nsfnet/NSFNET.jpg'%>
+        <%= image_tag("articles/nsfnet/NSFNET.jpg", srcset: [["articles/nsfnet/NSFNET.jpg", "1x"], ["articles/nsfnet/NSFNET@2x.jpg", "2x"]]) %>
       </div>
       <div class="text">
         <h2>The Network that helped to make an education more affordable</h2>

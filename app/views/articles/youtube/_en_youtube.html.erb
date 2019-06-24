@@ -1,6 +1,6 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
   <%= render 'articles/head' %>
-  
+
   <div id="youtubeArticle">
     <div class="blueMenu">
       <div class="youtubeMenu">
@@ -42,7 +42,7 @@
       <div class="greyBlock">
         <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="videoBlock">
           <div class="img">
-            <%= image_tag 'articles/youtube/FirstVideo.jpg' %>
+            <%= image_tag("articles/youtube/FirstVideo.jpg", srcset: [["articles/youtube/FirstVideo.jpg", "1x"], ["articles/youtube/FirstVideo@2x.jpg", "2x"]]) %>
           </div>
           <p class="name">Me at the zoo</p>
           <p class="public">Uploaded:</p>
@@ -51,7 +51,7 @@
         </a>
         <a href="https://www.youtube.com/watch?v=rdwz7QiG0lk&t=98s" target="_blank" class="videoBlock">
           <div class="img">
-            <%= image_tag 'articles/youtube/TubeYoutube.png' %>
+            <%= image_tag("articles/youtube/TubeYoutube.png", srcset: [["articles/youtube/TubeYoutube.png", "1x"], ["articles/youtube/TubeYoutube@2x.png", "2x"]]) %>
           </div>
           <p class="name">YouTube on the tube!</p>
           <p class="public">Uploaded:</p>
@@ -60,7 +60,7 @@
         </a>
         <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="videoBlock">
           <div class="img">
-            <%= image_tag 'articles/youtube/TellMeWhy.png' %>
+            <%= image_tag("articles/youtube/TellMeWhy.png", srcset: [["articles/youtube/TellMeWhy.png", "1x"], ["articles/youtube/TellMeWhy.png", "2x"]]) %>
           </div>
           <p class="name">tow chinese boys:i want it that way</p>
           <p class="public">Uploaded:</p>
@@ -69,7 +69,7 @@
         </a>
         <a href="https://youtu.be/Kd15ku_BVR0" target="_blank" class="videoBlock">
           <div class="img">
-            <%= image_tag 'articles/youtube/FirstBlog.png' %>
+            <%= image_tag("articles/youtube/FirstBlog.png", srcset: [["articles/youtube/FirstBlog.png", "1x"], ["articles/youtube/FirstBlog@2x.png", "2x"]]) %>
           </div>
           <p class="name">My First Kiss</p>
           <p class="public">Uploaded:</p>
@@ -78,7 +78,7 @@
         </a>
         <a href="https://www.youtube.com/watch?v=dTAAsCNK7RA&feature=youtu.be" target="_blank" class="videoBlock">
           <div class="img">
-            <%= image_tag 'articles/youtube/OkGO.png' %>
+            <%= image_tag("articles/youtube/OkGO.png", srcset: [["articles/youtube/OkGO.png", "1x"], ["articles/youtube/OkGO.png", "2x"]]) %>
           </div>
           <p class="name">OK Go - Here It Goes Again</p>
           <p class="public">Uploaded:</p>

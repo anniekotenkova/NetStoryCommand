@@ -1,10 +1,10 @@
 <div class="articleContainer" id="<%= "article_#{ @article.id }" %>">
   <%= render 'articles/head' %>
-  
+
   <div id="facebookArticle">
     <div class="facebookArticleHead">
-      <%= image_tag 'articles/facebook/logo-left.jpg', :class => "logoLeft" %>
-      <%= image_tag 'articles/facebook/logo-right.jpg', :class => "logoRight" %>
+      <%= image_tag("articles/facebook/logo-left.jpg", srcset: [["articles/facebook/logo-left.jpg", "1x"], ["articles/facebook/logo-left@2x.jpg", "2x"]], :class => "logoLeft") %>
+      <%= image_tag("articles/facebook/logo-right.jpg", srcset: [["articles/facebook/logo-right.jpg", "1x"], ["articles/facebook/logo-right@2x.jpg", "2x"]], :class => "logoRight") %>
     </div>
     <div class="facebookArticleBody">
       <div class="menu">
