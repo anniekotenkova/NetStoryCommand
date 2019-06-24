@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="50px" viewBox="0 0 96 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-38" transform="translate(0.000000, 1.000000)">
+            <path d="M17,18 L17,49.0161248" id="Path-25" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M33,16.5 L33,49.0161248" id="Path-25-Copy" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M47,16.5 L47,49.0161248" id="Path-25-Copy-2" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M61,31.5 L61,49.0161248" id="Path-25-Copy-3" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M75,20.5 L75,49.0161248" id="Path-25-Copy-4" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M0,41 L96.0052082,41" id="Path-26" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <path d="M0,28 L96.0052082,28" id="Path-26-Copy" stroke="#D8D8D8" stroke-width="0.5"></path>
+            <polyline id="Path-24" stroke="#FF5900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="1 4.3414433 4.71052632 0 4.71052632 2.17072165 10.2763158 0 10.2763158 12.4041237 15.8421053 8.6828866 15.8421053 17.9859794 20.7894737 17.9859794 25.7368421 14.8849485 27.5921053 20.4668041 39.9605263 10.2334021 39.9605263 20.4668041 44.2894737 20.4668041 48.6184211 14.8849485 51.7105263 26.668866 56.0394737 20.4668041 57.8947368 31.0103093 64.6973684 31.0103093 64.6973684 23.5678351 72.7368421 17.9859794 78.9210526 23.5678351 95 2.17072165"></polyline>
+        </g>
+    </g>
+</svg>

@@ -1,14 +1,15 @@
 #theGlobe{
   display: block;
-  height: 526px;
+  height: 513px;
   width: 700px;
   line-height: 1.4rem;
 
   .theGlobeArticle {
     position: absolute;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 100%;
-    height: 496px;
+    height: 513px;
     background: #679A9A;
     margin: 0px;
 
@@ -29,18 +30,23 @@
       .whiteBlock {
         display: inline-block;
         width: 540px;
-        height: 3400px;
+        height: 2520px;
         background-color: #ffff;
         border-top-right-radius: 50px;
         border: 3px solid #E6E6FA;
       }
 
+      .ru {
+        height: 3400px;
+      }
+
       .rightBlock {
         position: absolute;
-        display: inline-block;
-        width: 150px;
-        height: 2550px;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        top: 85px;
+        right: 0;
+        width: 144px;
 
         .blueLineMin {
           width: 100%;
@@ -52,6 +58,34 @@
           width: 100%;
           height: 80px;
           background: #FFFFFF;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 10px;
+
+          p {
+            color: #32679E;
+          }
+
+          .search {
+            height: 20px;
+            width: 80%;
+            border-top: 2px solid #666;
+            border-right: 2px solid #E6E6FA;
+            border-bottom: 2px solid #E6E6FA;
+            border-left: 2px solid #666;
+          }
+        }
+
+        .second {
+          font-size: 11px;
+          line-height: 8px;
+          font-weight: bold;
+        }
+
+        .graph {
+          background-image: image-url('graph.svg');
+          background-size: cover;
         }
 
         .blueLineMinAbs {
@@ -73,39 +107,58 @@
 
       .oval {
         position: relative;
-        width: 158px;
-        height: 86px;
+        width: 191px;
+        height: 73px;
         background: #FEFDC5;
         border: 3px solid #32679E;
-        border-radius: 69%;
+        border-radius: 65%;
         top: 20px;
-        left: 10px;
+        left: 19px;
+        transform: rotate(-18deg);
+        z-index: 1;
 
         p {
           color: #32679E;
           font-size: 13px;
-          margin-left: 31px;
-          margin-top: 8px;
+          line-height: 13px;
+          margin-top: 22px;
+          text-align: center;
         }
       }
 
       .explore {
         display: flex;
+        padding-top: 20px;
         align-items: baseline;
+        justify-content: space-around;
         position: relative;
         top: 23px;
+        background: #FF5900;
+        height: 77px;
+        width: 500px;
+        position: relative;
+        right: 30px;
+        top: 40px;
 
         p {
           position: relative;
-          color: #FF5900;
-          line-height: 22px;
-          left: -5px;
+          font-size: 23px;
+          font-weight: bold;
+          color: #FFFFFF;
         }
       }
 
       .globeIcon {
         width: 30px;
         height: 30px;
+        margin-right: 10px;
+
+        img {
+          height: 40px;
+          background: #FFFFFF;
+          width: 43px;
+          border-radius: 50px;
+        }
       }
 
       .globeText {
