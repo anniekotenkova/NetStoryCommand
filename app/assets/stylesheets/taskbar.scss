@@ -68,7 +68,6 @@
         @include border-color($border-light, $border-dark);
         cursor: $default-cursor;
 
-
         .iconStart {
           background-image: image-url('iconStart.svg');
           height: 20px;
@@ -111,15 +110,17 @@
       font-size: 0.7rem;
       font-weight: 500;
 
-      .localizationBlock{
+      .localizationBlock {
         display: flex;
         @include border-color($border-medium, $border-light);
         padding: 3px;
         margin: 5px;
-          a {
-            cursor: $default-cursor;
-          }
+
+        a {
+          cursor: $default-cursor;
+        }
       }
+      
       /* TIME AND DATE */
       .dateTime {
         float: right;
