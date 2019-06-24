@@ -10,6 +10,9 @@ if($('.articleContainer' + articleId).length == 0) {
   $('.taskbarItems' + articleId).append('<p><%= I18n.locale == :ru ? @article.title : @article.title_en %></p>')
   $('.articleContainer' + articleId).css("z-index", layer)
   document.getElementsByTagName('body')[0].dataset.layer = layer + 1
+  $(this).toggleClass('startClick')
+  $('#clickSound').get(0).play()
+
 }
 
 $('.articleContainer' + articleId).on("click", function() {
