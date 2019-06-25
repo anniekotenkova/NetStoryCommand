@@ -1,3 +1,9 @@
+function changeLayer(element, layer) {
+  if ($(element).children(".folderFolder").length == 0) {
+    $(element).css("z-index", layer)
+  }
+}
+
 $(window).on("load", function() {
   document.getElementsByTagName('body')[0].dataset.layer = 1
 
@@ -9,10 +15,10 @@ $(window).on("load", function() {
     start: function() {
       layer = parseInt(document.getElementsByTagName('body')[0].dataset.layer) + 1
       document.getElementsByTagName('body')[0].dataset.layer = layer
-      $(this).css("z-index", layer)
+      changeLayer(this, layer)
     },
     stop: function() {
-      $(this).css("z-index", layer)
+      changeLayer(this, layer)
     }
   })
 

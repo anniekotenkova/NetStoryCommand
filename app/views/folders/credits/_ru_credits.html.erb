@@ -9,14 +9,18 @@
     <div class="infolderContent infolder information scrollbar">
       <h4>Над проектом работали</h4>
       <p>
-        Студенты второго курса <%= link_to 'ФКМД', 'https://cmd.hse.ru', :target => "_blank" %> образовательной программы Дизайн  по&nbspнаправлению <%= link_to 'Дизайн и программирование', 'https://design.hse.ru/dir/programming', :target => "_blank" %>.
+        Студенты второго курса
+        <%= link_to 'Школы дизайна НИУ ВШЭ', 'https://design.hse.ru', target: '_blank' %>,
+        <br>
+        профиль
+        «<%= link_to 'Дизайн и программирование', 'https://design.hse.ru/dir/programming', target: "_blank" %>».
       </p>
 
       <section class="creator right">
         <div class="figure pink"></div>
         <div class="photo">
           <div class="img">
-            <%= image_tag 'credits/kotenkova.png' %>
+            <%= image_tag 'credits/kotenkova@2x.png' %>
           </div>
         </div>
         <div class="info">
@@ -46,14 +50,14 @@
         </div>
         <div class="figure blue"></div>
         <div class="photo">
-          <%= image_tag 'credits/kochueva.png' %>
+          <%= image_tag 'credits/kochueva@2x.png' %>
         </div>
       </section>
 
       <section class="creator right">
         <div class="figure yellow"></div>
         <div class="photo">
-          <%= image_tag 'credits/shumilova.png' %>
+          <%= image_tag 'credits/shumilova@2x.png' %>
         </div>
         <div class="info">
           <h4>Оля<br>Шумилова</h4>
@@ -84,7 +88,7 @@
         </div>
         <div class="figure cyan"></div>
         <div class="photo">
-          <%= image_tag 'credits/day.png' %>
+          <%= image_tag 'credits/day@2x.png' %>
         </div>
       </section>
     </div>
